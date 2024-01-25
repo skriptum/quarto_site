@@ -1,0 +1,99 @@
+---
+pagetitle: "marten w."
+page-layout: custom
+section-divs: false
+editor: source
+sidebar: false
+search: false
+description: | 
+  A showcase for data science in action, brought to you by the Royal Statistical Society in partnership with the American Statistical Association.
+image: images/rwds-logo-150px.png
+listing:
+  - id: blog
+    contents: 
+    - /blog
+    - "!blog/index.qmd"
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    max-items: 3
+    feed: false
+    fields: [image, date, title, description]
+
+toc: false
+---
+
+::: {.content-container}
+::: {.top-story .purple-background}
+::: grid
+
+::: {.g-col-12 .g-col-lg-6 .top-story-text}
+
+# marten w.
+
+Currently studying Economics in Halle (Germany) and on the Council of Rethinking Economics International. 
+
+Interested in monetary theory, climate economics and the history of economic thought, especially Keynesianism.
+
+
+:::
+
+::: {.g-col-12 .g-col-lg-6 .top-story-img}
+
+![](images/profil_dunkel.webp)
+
+:::
+
+:::
+:::
+:::
+
+
+<!-- -->
+
+::: {.header-text} 
+::: {.content-container}
+::: {.header-block}
+
+
+:::
+:::
+:::
+
+
+
+<!-- Blog -->
+
+::: {.content-container}
+::: {.listing-block}
+<a href="blog/index.qmd">
+
+## Blog
+</a>
+
+::: {#blog}
+:::
+
+:::
+::: 
+
+<!-- Quote -->
+
+::: {.pullout-text}
+::: {.pullout-container}
+::: {.pullout-block .black-background}
+![](images/quote-purple.png){width="100px"}
+
+## Practical men who believe themselves to be quite exempt from any intellectual influence, are usually the slaves of some defunct economist. Madmen in authority, who hear voices in the air, are distilling their frenzy from some academic scribbler of a few years back
+
+John Maynard Keynes
+
+:::
+:::
+:::
+
+
+\
+

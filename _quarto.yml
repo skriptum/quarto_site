@@ -1,0 +1,60 @@
+project:
+  type: website
+
+website:
+  title: "marten w."
+  favicon: images/logo.ico
+  open-graph: true
+  site-url: https://martenw.com/
+  search: true
+  navbar:
+    background: "#eee"
+    logo: images/logo.webp
+    logo-alt: "marten w logo"
+    title: false
+    collapse-below: lg
+    right: 
+      - projects/index.qmd
+      - blog/index.qmd
+      - text: Notes
+        href: https://vwl.martenw.com
+      - text: About
+        href: about.qmd
+      
+
+  page-navigation: true
+
+  back-to-top-navigation: false
+
+  page-footer:
+    background: "#000000"
+    left: |
+      Copyright &copy; marten w. 
+    center:
+      - href: https://github.com/skriptum
+        icon: github
+        aria-label: GitHub
+      - href: https://www.linkedin.com/in/marten-w
+        icon: linkedin
+        aria-label: LinkedIn
+      - href: https://bsky.app/profile/mwd.bsky.social
+        icon: twitter
+        aria-label: bluesky
+
+    right: |
+      [Contact](/contact.qmd)
+
+format:
+  html:
+    theme: [lux, images/rwds.scss]
+    css: images/rwds.css
+    toc: true
+    grid:
+      sidebar-width: 0px
+      body-width: 1000px
+      margin-width: 250px
+link-external-icon: true
+link-external-newwindow: true
+
+execute: 
+  freeze: auto

@@ -1,0 +1,38 @@
+---
+title:  "Bundestwitter"
+date:   "2021-02-16"
+categories: 
+- python
+- politics
+- twitter
+description: |
+  Eine Web-App, die alle Twitter-Accounts von Bundestagsmitgliedern erfahrbar macht
+  und kartiert. Damit die 90% der Wähler:innen ohne Twitter erfahren, was ihre Abgeordneten so im
+  Internet treiben
+author-title: Github
+author: '<a href="https://github.com/skriptum/bundestag">skriptum/bundestag</a>'
+---
+
+
+
+
+
+
+![Screen Shot of the Web Page](featured.png)
+
+
+
+> **Update**: aufgrund des neuen Bundestages sind die Daten nicht mehr aktuell, ich arbeite bereits an einer verbesserten Variante für die neuen MdBs 
+
+Twitter ist aus die politische Meinungsbildung heutzutage nicht mehr wegzudenken. Sei es sinnlose Diskussion, sinnvoler Austausch oder Kontakt mit Journalist:innen, all das findet auf dieser Plattform statt. Jedoch ohne Transparenz und ohne die Mehrheit der Bürger:innen, die zu 90% nicht da sind. Genau da soll diese Website ansetzen, und Interessierte über eine Karte zu einer Übersicht über das Twitter-Profil ihrer Abgeordneten führen. Es erlaubt allen, jeden MdB mit anderen zu vergleichen, sei es über die Tweetrate, die zeit auf der Plattform, die Aktivität, die genutzten Hashtags etc. 
+
+## Technisches
+
+Täglich werden über die **Twitter-API** die letzten 50 Tweets aller Accounts abgefragt und gesammelt. Daraufhin wird der Text jedes
+Tweets mit einem Machine-Learning Algorithmus anhand der Laune bewertet, was jedoch aufgrund der kurzen Länge nicht immer funktioniert.
+Anschließend werden alle Daten der Tweets aggregiert und in eine Datenbank eingespeist.
+
+Auf diese Datenbank greift dann **Web-App**, die komplett in *Python* geschrieben ist, zu und stellt sie schön dar und 
+baut Rangfolgen anhand der Daten. Zusätzlich wird noch eine Karte mit Deutschands Wahlkreisen und den Vertretern mit Twitter generiert.
+Die Visualisierungen basieren vor allem auf der *Plotly-Library* und die App baut auf *Dash* und *Flask* auf.
+

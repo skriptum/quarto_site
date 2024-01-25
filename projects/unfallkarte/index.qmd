@@ -1,0 +1,24 @@
+---
+title:  "Interaktive Unfallkarte"
+date:   "2021-02-04"
+# categories: python
+excerpt: |
+  Visualisierung aller Unfälle auf Berliner Straßen 2019, um auf die immensen Dramen
+  aufmerksam zu machen, die sich in unserem Straßenverkehr täglich abspielen. 
+author-title: GitHub
+author: '<a href="https://github.com/skriptum/zeitworte">skriptum/zeitworte</a>'
+---
+
+![Website Screenshot](featured.png)
+
+Unser Straßenverkehr ist tödlich. Allein 2020 starben etwa 2500 Menschen auf deutschen Straßen, vor allem verursacht durch Autos. Diese Website erlaubt es jedem, die Verkehrsunfälle vor der eigenen Haustür zu analysieren und besonders gefährdete Orte zu meiden. Die Unfälle sind nach selbst einstellbaren Kategorien wie Grad der Verletzungen, beteiligte Farhzeugarten, etc.
+sortierbar. Außerdem wird die zeitliche Verteilung der jeweiligen Auswahl und die räumliche Sammlung in externen
+Grafiken dargestellt.
+
+## Funktionsweise
+
+Die Unfalldaten stammen aus dem OpenData Projekt des Deutschen Statistischen Bundesamtes. Diese Daten werden zuerst nach Ort
+gefiltert und in die Website eingespeist. Diese Website ist komplett in *Python* geschrieben. Das Python-Skript verarbeitet
+die Daten und stellt sie mithilfe der *Plotly-Library* dar. Die Nutzereingaben werden in der *Flask-App* verarbeitet und 
+anschließend dargestellt. Das Gante basiert stark auf *pandas* DataFrames, die in allen möglichen Arten verändert oder angepasst werden.
+

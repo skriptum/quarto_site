@@ -1,0 +1,45 @@
+---
+title: "Hi, ich bin marten"
+subtitle: "Economics, Politics, Programming"
+pagetitle: About
+sidebar: false
+page-layout: article
+toc: false
+title-block-banner: false
+---
+
+::: {.content-container}
+::: {.top-story}
+::: grid
+
+::: {.g-col-12 .g-col-lg-8 .top-story-text}
+
+Derzeit studiere ich VWL an der Martin-Luther-Universität Halle und bin Mitlgied des Netzwerks Plurale Ökonomik. Auf dieser Website sammle ich verschiedene Projekte und Ideen, meist in einem technischen / politischen / ökonomischen Kontext.
+
+Aufgrund der orthodoxen Lehre an der MLU bin ich in letzter Zeit sehr interessiert an pluraler Ökonomik, insbesondere im Bereich Geldbegriff, Zentralbanken und Finanzmarkt.
+
+Auch an allen möglichen technischen Sachen habe ich großes Interesse, insbesondere wenn sie es einem erlauben, politische Geschehnisse einzuordnen. Beispielsweise habe ich einmal eine Website programmiert, die alle Twitter-Konten von Bundestagsabgeordneten vergleicht und analysiert, siehe dazu im Reiter Projekte
+
+Diese Website ist eine bunte Mischung an Themen zwischen diesen beiden Polen und irgendwie auch eine Möglichkeit, sich dem durchkommerzialisierten Internet entgegenzustellen.
+
+:::
+
+::: {.g-col-12 .g-col-lg-4 .pullout-block}
+
+## Blog Roll
+
+##### [Rethinking Economics](https://www.rethinkeconomics.org/blog/)
+
+##### [makronom](https://makronom.de/)
+
+##### [ChartBook](https://adamtooze.substack.com/)
+
+##### [Whats a BlogRoll?](https://blogroll.org/what-are-blogrolls/)
+
+
+:::
+
+:::
+:::
+:::
+

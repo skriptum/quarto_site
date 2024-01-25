@@ -1,0 +1,4 @@
+/.quarto/
+/.vscode/
+/_site/
+*.code_workspace

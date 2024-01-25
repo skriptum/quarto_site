@@ -1,0 +1,18 @@
+---
+title:  "Notizen meines Studiums"
+draft: false
+excerpt: |
+  Um anderen das Leben zu vereinfachen, habe ich alle meine Mitschriften zu 
+  Modulen aus dem ersten Semester VWL auf dieser Seite veröffentlicht, inklusive Zusammenfassungen
+  und einer Suchfunktion
+date: "2022-03-01"
+author-title: Github
+author: '<a href="https://github.com/skriptum/vwl">skriptum/vwl</a>'
+---
+
+![Notizen-Website](featured.jpg)
+
+Wer zum ersten Semester in ein Studium reinstolpert, wird erstmal komplett überfordert sein von all den verschiedenen Anforderungen die an einen gestellt werden. Um den Prozess ein bisschen zu vereinfachen, habe ich alle meine Mitschriften für mein gesamtes Studium VWL/BWL an der MLU Halle als Website veröffentlicht.
+
+Das ganze umfasst 30 Module und über 300 Mitschriften nach Datum sortiert und im Volltext durchsuchbar. Die Website ist im Reiter verlinkt, aber auch [hier](https://vwl.martenw.com).
+
