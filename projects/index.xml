@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>marten w.</title>
+<link>https://martenw.com/projects/</link>
+<atom:link href="https://martenw.com/projects/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.4.549</generator>
+<lastBuildDate>Tue, 01 Mar 2022 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Notizen meines Studiums</title>
+  <dc:creator>&lt;a href=&quot;https://github.com/skriptum/vwl&quot;&gt;skriptum/vwl&lt;/a&gt;</dc:creator>
+  <link>https://martenw.com/projects/vwl-notizen/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/vwl-notizen/featured.jpg" class="img-fluid figure-img"></p>
+<figcaption>Notizen-Website</figcaption>
+</figure>
+</div>
+<p>Wer zum ersten Semester in ein Studium reinstolpert, wird erstmal komplett überfordert sein von all den verschiedenen Anforderungen die an einen gestellt werden. Um den Prozess ein bisschen zu vereinfachen, habe ich alle meine Mitschriften für mein gesamtes Studium VWL/BWL an der MLU Halle als Website veröffentlicht.</p>
+<p>Das ganze umfasst 30 Module und über 300 Mitschriften nach Datum sortiert und im Volltext durchsuchbar. Die Website ist im Reiter verlinkt, aber auch <a href="https://vwl.martenw.com">hier</a>.</p>
+
+
+
+ ]]></description>
+  <guid>https://martenw.com/projects/vwl-notizen/</guid>
+  <pubDate>Tue, 01 Mar 2022 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>ZEIT API in Python</title>
+  <dc:creator>&lt;a href=&quot;https://github.com/skriptum/zeit&quot;&gt;skriptum/zeit&lt;/a&gt;</dc:creator>
+  <link>https://martenw.com/projects/zeit-api/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/zeit-api/featured.png" class="img-fluid figure-img"></p>
+<figcaption>PyPI Package Website</figcaption>
+</figure>
+</div>
+<ul>
+<li><a href="https://skriptum.github.io/zeit/">Dokumentation</a></li>
+<li><a href="https://pypi.org/project/zeit-online/">Package auf PYPI</a></li>
+<li><a href="https://github.com/skriptum/zeit">Code auf GitHub</a></li>
+</ul>
+<p>Die ZEIT ist als eine der ältesten und wichtigsten Zeitungen Deutschlands ein wahrer Schatz an Informationen, sei es über die Themen vergangener Zeiten, die politischen Interessen der Bundesrepublik oder einfach die Wichtigkeit aktueller Themen. Jeder und jede kann nun auf diesen großen Datenschatz zugreifen, und seine ganz eigenen Ideen daraus entwickeln, mithilfe des zeit-online packets in der einfachen Programmiersprache python.</p>
+<section id="technisches" class="level2">
+<h2 class="anchored" data-anchor-id="technisches">Technisches</h2>
+<blockquote class="blockquote">
+<p><strong>Update 2022</strong>: Leider hat Zeit Online die API inzwischen abgestellt, das Ganze ist also nur noch eine technische Spielerei der Vergangenheit</p>
+</blockquote>
+<p>Die API ist zwar schon ein bisschen älter, funktioniert aber noch herausragend. Darum habe ich ein Package geschrieben, um die Interaktion damit zu vereinfachen und meine Skills auszutesten. Das Ganze ist auf PYPI als Package veröffentlich und die Dokumentation ist <a href="https://skriptum.github.io/zeit/">hier</a> einsehbar, inklusive Jupyter Notebooks und vielen Erklärungen.</p>
+<section id="ausprobieren" class="level3">
+<h3 class="anchored" data-anchor-id="ausprobieren">Ausprobieren</h3>
+<p>Um das ganze auszuprobieren, am besten das Package von pip installieren</p>
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1">pip install zeit<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>online</span></code></pre></div>
+<p>und dann in eine Datei importieren und die API Klasse initiieren und den API Key einfügen</p>
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> zeit</span>
+<span id="cb2-2">api <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> zeit.API()</span>
+<span id="cb2-3">api.set_token(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"API-KEY"</span>) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#Key einfügen</span></span>
+<span id="cb2-4"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">#jetzt steht dir die Welt von Zeit Online offen</span></span></code></pre></div>
+<p>für ausführlichere Erklärungen, definitiv die <a href="https://skriptum.github.io/zeit/">Dokumentation</a> angucken !</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <guid>https://martenw.com/projects/zeit-api/</guid>
+  <pubDate>Sat, 01 May 2021 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Zeitanalyse</title>
+  <dc:creator>&lt;a href=&quot;https://github.com/skriptum/zeitworte&quot;&gt;skriptum/zeitworte&lt;/a&gt;</dc:creator>
+  <link>https://martenw.com/projects/zeitworte/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/zeitworte/featured.jpg" class="img-fluid figure-img"></p>
+<figcaption>Image</figcaption>
+</figure>
+</div>
+<p>Die Website greift mithilfe des python-Moduls der Zeit API auf die Daten zu und bereitet sie visuell auf. Das ganze wird in 3 verschiedenen Themen interaktiv dargestellt.</p>
+<section id="geschlecht-der-autorinnen" class="level2">
+<h2 class="anchored" data-anchor-id="geschlecht-der-autorinnen">Geschlecht der Autor:innen</h2>
+<p><img src="https://martenw.com/projects/zeitworte/autoren.jpg" class="img-fluid" alt="Autoren anch Geschlecht sortiert"> So beispielsweise bei den häufigsten Vornamen der Zeit-Autor:innen, die vornehmlich männlich sind. Erst auf Platz 40 kommt ein weblicher Vorname erstmals auf (Barbara).</p>
+</section>
+<section id="geografischer-fokus-der-artikel" class="level2">
+<h2 class="anchored" data-anchor-id="geografischer-fokus-der-artikel">Geografischer Fokus der Artikel</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/zeitworte/karte.jpg" class="img-fluid figure-img"></p>
+<figcaption>Geografische Karten</figcaption>
+</figure>
+</div>
+<p>Ebenso werden die geografischen Schlagworte der Zeit kartografiert. Die transatlantische Verankerung der Zeit ist hier stark zu erkennen, ebenso eine immense Ignoranz gegenüber dem afrikanischen Kontext (ein gesamtmediales Phänomen).</p>
+</section>
+<section id="stichwortvergleich" class="level2">
+<h2 class="anchored" data-anchor-id="stichwortvergleich">Stichwortvergleich</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/zeitworte/worte.jpg" class="img-fluid figure-img"></p>
+<figcaption>Stichworte</figcaption>
+</figure>
+</div>
+<p>Die Zeit hat etwa 16.000 Schlagwörter, mit denen sie Artikel versehen, gesammelt über einen Zeitraum von 75 Jahren. Mit dieser Seite ist es möglich, die Relevanz verschiedener Themen über die Jahre zu vergleichen, ähnlich zu Google Trends.</p>
+<blockquote class="blockquote">
+<p><strong>Update 2022</strong>: Aufgrund des Abstellens der Zeit-API von Verlagsseite aus ist die Funktionsweise der App leider nicht mehr möglich.</p>
+</blockquote>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://martenw.com/projects/zeitworte/</guid>
+  <pubDate>Thu, 01 Apr 2021 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Bundestwitter</title>
+  <dc:creator>&lt;a href=&quot;https://github.com/skriptum/bundestag&quot;&gt;skriptum/bundestag&lt;/a&gt;</dc:creator>
+  <link>https://martenw.com/projects/bundestwitter/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/bundestwitter/featured.png" class="img-fluid figure-img"></p>
+<figcaption>Screen Shot of the Web Page</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p><strong>Update</strong>: aufgrund des neuen Bundestages sind die Daten nicht mehr aktuell, ich arbeite bereits an einer verbesserten Variante für die neuen MdBs</p>
+</blockquote>
+<p>Twitter ist aus die politische Meinungsbildung heutzutage nicht mehr wegzudenken. Sei es sinnlose Diskussion, sinnvoler Austausch oder Kontakt mit Journalist:innen, all das findet auf dieser Plattform statt. Jedoch ohne Transparenz und ohne die Mehrheit der Bürger:innen, die zu 90% nicht da sind. Genau da soll diese Website ansetzen, und Interessierte über eine Karte zu einer Übersicht über das Twitter-Profil ihrer Abgeordneten führen. Es erlaubt allen, jeden MdB mit anderen zu vergleichen, sei es über die Tweetrate, die zeit auf der Plattform, die Aktivität, die genutzten Hashtags etc.</p>
+<section id="technisches" class="level2">
+<h2 class="anchored" data-anchor-id="technisches">Technisches</h2>
+<p>Täglich werden über die <strong>Twitter-API</strong> die letzten 50 Tweets aller Accounts abgefragt und gesammelt. Daraufhin wird der Text jedes Tweets mit einem Machine-Learning Algorithmus anhand der Laune bewertet, was jedoch aufgrund der kurzen Länge nicht immer funktioniert. Anschließend werden alle Daten der Tweets aggregiert und in eine Datenbank eingespeist.</p>
+<p>Auf diese Datenbank greift dann <strong>Web-App</strong>, die komplett in <em>Python</em> geschrieben ist, zu und stellt sie schön dar und baut Rangfolgen anhand der Daten. Zusätzlich wird noch eine Karte mit Deutschands Wahlkreisen und den Vertretern mit Twitter generiert. Die Visualisierungen basieren vor allem auf der <em>Plotly-Library</em> und die App baut auf <em>Dash</em> und <em>Flask</em> auf.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>python</category>
+  <category>politics</category>
+  <category>twitter</category>
+  <guid>https://martenw.com/projects/bundestwitter/</guid>
+  <pubDate>Tue, 16 Feb 2021 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Interaktive Unfallkarte</title>
+  <dc:creator>&lt;a href=&quot;https://github.com/skriptum/zeitworte&quot;&gt;skriptum/zeitworte&lt;/a&gt;</dc:creator>
+  <link>https://martenw.com/projects/unfallkarte/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/unfallkarte/featured.png" class="img-fluid figure-img"></p>
+<figcaption>Website Screenshot</figcaption>
+</figure>
+</div>
+<p>Unser Straßenverkehr ist tödlich. Allein 2020 starben etwa 2500 Menschen auf deutschen Straßen, vor allem verursacht durch Autos. Diese Website erlaubt es jedem, die Verkehrsunfälle vor der eigenen Haustür zu analysieren und besonders gefährdete Orte zu meiden. Die Unfälle sind nach selbst einstellbaren Kategorien wie Grad der Verletzungen, beteiligte Farhzeugarten, etc. sortierbar. Außerdem wird die zeitliche Verteilung der jeweiligen Auswahl und die räumliche Sammlung in externen Grafiken dargestellt.</p>
+<section id="funktionsweise" class="level2">
+<h2 class="anchored" data-anchor-id="funktionsweise">Funktionsweise</h2>
+<p>Die Unfalldaten stammen aus dem OpenData Projekt des Deutschen Statistischen Bundesamtes. Diese Daten werden zuerst nach Ort gefiltert und in die Website eingespeist. Diese Website ist komplett in <em>Python</em> geschrieben. Das Python-Skript verarbeitet die Daten und stellt sie mithilfe der <em>Plotly-Library</em> dar. Die Nutzereingaben werden in der <em>Flask-App</em> verarbeitet und anschließend dargestellt. Das Gante basiert stark auf <em>pandas</em> DataFrames, die in allen möglichen Arten verändert oder angepasst werden.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://martenw.com/projects/unfallkarte/</guid>
+  <pubDate>Thu, 04 Feb 2021 00:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>

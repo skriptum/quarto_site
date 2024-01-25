@@ -1,0 +1,205 @@
+[
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "write to: kontakt @ martenw.com\nfor users of PGP Encryption:\n\nFingerprint 36B18BB9C27F985832D0D1E70772DABED0FCB0DA\nKey: OpenPGP"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Hi, ich bin marten",
+    "section": "",
+    "text": "Derzeit studiere ich VWL an der Martin-Luther-Universität Halle und bin Mitlgied des Netzwerks Plurale Ökonomik. Auf dieser Website sammle ich verschiedene Projekte und Ideen, meist in einem technischen / politischen / ökonomischen Kontext.\nAufgrund der orthodoxen Lehre an der MLU bin ich in letzter Zeit sehr interessiert an pluraler Ökonomik, insbesondere im Bereich Geldbegriff, Zentralbanken und Finanzmarkt.\nAuch an allen möglichen technischen Sachen habe ich großes Interesse, insbesondere wenn sie es einem erlauben, politische Geschehnisse einzuordnen. Beispielsweise habe ich einmal eine Website programmiert, die alle Twitter-Konten von Bundestagsabgeordneten vergleicht und analysiert, siehe dazu im Reiter Projekte\nDiese Website ist eine bunte Mischung an Themen zwischen diesen beiden Polen und irgendwie auch eine Möglichkeit, sich dem durchkommerzialisierten Internet entgegenzustellen."
+  },
+  {
+    "objectID": "blog/climate/index.html",
+    "href": "blog/climate/index.html",
+    "title": "Was läuft falsch in der Klimaökonomik?",
+    "section": "",
+    "text": "Die hier dargestellte Meinung entstand vor allem in Vorbereitung und Auseinandersetzung mit Professor Pies von der MLU Halle. Ich hatte ihn in der Vorlesung für die alleinstehende These von Nordhaus kritisiert, woraufhin er mich zu einem Einzelgespräch einlud. Dieses war sehr konstruktiv und fruchtbar, wir gingen jedoch mit unterschiedlichen Meinungen auseinander; meine lege ich hier dar."
+  },
+  {
+    "objectID": "blog/climate/index.html#die-4-grad-these",
+    "href": "blog/climate/index.html#die-4-grad-these",
+    "title": "Was läuft falsch in der Klimaökonomik?",
+    "section": "Die 4-Grad These",
+    "text": "Die 4-Grad These\n\n\n\n\n\nThe optimal scenario for climate change policies results in 4° global warming\n\n\nDas optimale Szenario für die Klimapolitik führt zu einer globalen Erwärmung von 4°\nWilliam Nordhaus\n\n\n\n\nExzerpt aus der Nobelpreisvorlesung von William Nordhaus\n\n\n\nNordhaus Nobelpreisvorlesungslide\n\n\nBeim erstmaligen Lesen dieser Aussage konnte ich meinen Augen kaum trauen. Es würde doch sicher niemand ernsthaft behaupten, dass dieses Szenario dass für die Menschheit optimale ist. Wo wir uns doch mit dem Vertrag von Paris 2015 darauf geeinigt haben, die globale Erwärmung auf 1,5° beziehungsweise 2° zu begrenzen.\nDoch diese Aussage stammt keineswegs aus dem Repertoire eines Öllobbyisten oder Klimawandelbeschwichtigers. Sie stammt von William Nordhaus, dem profiliertesten Klimaökonomen, der für die Arbeit zu dieser Aussage 2018 den Nobelpreis der Wirtschaftswissenschaften erhielt.\nWie entsteht dieser extreme Widerspruch zu aktuellen politischen Zielsetzungen? Um diese Frage zu beantworten, muss man in die Tiefen der klimaökonomischen Modelle einsteigen, der sogenannten Impact-Assessment-Modelle (IAM), zu deutsch Folgenabschätzungsmodelle."
+  },
+  {
+    "objectID": "blog/climate/index.html#the-optimal-scenario-for-climate-change-policies-results-in-4-global-warming",
+    "href": "blog/climate/index.html#the-optimal-scenario-for-climate-change-policies-results-in-4-global-warming",
+    "title": "Was läuft falsch in der Klimaökonomik?",
+    "section": "The optimal scenario for climate change policies results in 4° global warming",
+    "text": "The optimal scenario for climate change policies results in 4° global warming"
+  },
+  {
+    "objectID": "blog/climate/index.html#das-optimale-szenario-für-die-klimapolitik-führt-zu-einer-globalen-erwärmung-von-4",
+    "href": "blog/climate/index.html#das-optimale-szenario-für-die-klimapolitik-führt-zu-einer-globalen-erwärmung-von-4",
+    "title": "Was läuft falsch in der Klimaökonomik?",
+    "section": "Das optimale Szenario für die Klimapolitik führt zu einer globalen Erwärmung von 4°",
+    "text": "Das optimale Szenario für die Klimapolitik führt zu einer globalen Erwärmung von 4°\nWilliam Nordhaus"
+  },
+  {
+    "objectID": "blog/climate/index.html#impact-assessment-modelle-und-ihre-tücken",
+    "href": "blog/climate/index.html#impact-assessment-modelle-und-ihre-tücken",
+    "title": "Was läuft falsch in der Klimaökonomik?",
+    "section": "Impact-Assessment-Modelle und ihre Tücken",
+    "text": "Impact-Assessment-Modelle und ihre Tücken\nEin IAM ist ein mathematisches, formalisiertes Verfahren zur Bewertung der wirtschaftlichen / sozialen / ökonomischen Folgen einer politischen Maßnahme. Das wohl bekannteste IAM der Klimaökonomie ist das Dynamic Integrated Climate-Economy Modell (DICE) von eben erwähntem William Nordhaus. Erstmals 1993 veröffentlicht und seitdem mehrfach verbessert, ist es inzwischen das Standardmodell der klimaökonomischen Forschung.\nDieses Modell besteht im Wesentlichen aus 5 Elementen: 1. Emissionen bei einem “business as usual” Szenario 2. Projektion des Temperaturanstiegs aufgrund der Emissionen (klimatologischer Teil des Modells) 3. Projektion des wirtschaftlichen Schadens aufgrund der Klimawandelfolgen (Damage Function) 4. Schätzungen der Vermeidungskosten von Emissionen 5. Annahmen über die Zeitpräferenz zwischen heutiger Vermeidung und zukünftigen Vorteilen der Vermeidung (Discount Rate)\nDie beiden wichtigsten Annahmen des Modells, die die extreme Aussage erklären, werde ich im Folgenden ausführen.\n\nTeil 1: Discount Rate\nDie grundlegende Idee einer Discount Rate ist, dass uns zukünftiger Nutzen weniger wert is als heutiger Nutzen. Wenn ich dir bspw. 100€ heute oder 100€ in 10 Jahren anbieten würde, würdest du vermutlich ersteres nehmen. Du präferierst also deinen heutigen Wohlstand gegenüber dem Wohlstand deines zukünftigen Ichs.\nAuf gesellschaftlicher Ebene ist es etwas anders, hier beschreibt die Rate, wie wir die Präferenzen der zukünftigen Generationen einschätzen und wieviel wir ihnen zugestehen wollen. Wir diskontieren ihr Wohlergehen gegen unseres und schauen, auf wieviel Wohlstand wir verzichten möchten, um ihnen eine lebenswerte Welt zu bereiten. Das ist also im Wesentlichen eine ethische Frage, und der moralische Ansatz wäre, der zukünftigen Generation die gleichen Möglichkeiten zuzustehen wie uns (und möglichst wenig zu diskontieren = niedrige Rate).\nNordhaus hingegen setzt sie sehr hoch an (3% pro Jahr). Der Effekt davon ist, dass uns das Wohlergehen zukünftiger Generationen nicht wichtig ist, sodass wir heute lieber emittieren sollten, statt uns Kosten für die Vermeidung aufzubürden.\n\n\nTeil 2: Damage Function\nEine weitere fragliche Annahme des DICE-Modells ist die Damage Function. Sie beschreibt die Auswirkungen, die erhöhte Temperaturen auf unsere Wirtschaft haben werden. Da dieser Zusammenhang unglaublich schwierig herzustellen ist, vereinfacht Nordhaus stark und behauptet, dass es einen quadratischen Zusammenhang gibt. Das sieht dann ungefähr so aus:\n\n\n\ndamage.png\n\n\nEin Anstieg der Temperatur um 5° würde also unseren Wohlstand um gerade einmal 5% senken, und dass auch nur langfristig über die nächsten 100 Jahre, also aufs Jahr runtergerechnet quasi nichts.\nDas Problem der Annahme ist, dass Kipppunkte unseres Klimas in einer quadratischen Formel nicht vorkommen können. Und neuere wissenschaftliche Erkenntnisse bestätigen, dass ab spätestens 2,5 Grad unumkehrbare Effekte eintreten werden, die die Erwärmung weiter verstärken würden. Bei 4° oder auch 5° ist nur sicher, dass der gesamte grönlandische Eisschild abgeschmolzen sein wird und wir die meisten Küstenstädte wie New York verlagern müssen. Das dass gerade einmal 8,5% unserer Wirtschaftsleistung in Anspruch nehmen wird, ist eine maßlose Untertreibung.\nBasierend auf diesen Annahmen (und noch vielen weiteren, auf die hier nicht eingegangen wird), kommt das DICE-Modell also zum Ergebnis, dass 4° Celsius die optimale Temperatur wäre. Wie wir gesehen haben, basierend auf willkürlichen Inputs und stark vereinfachenden Annahmen. Sollten wir also auf den Versuch verzichten, die Komplexität des menschengemachten Klimawandels in ein Modell zu pressen?"
+  },
+  {
+    "objectID": "blog/climate/index.html#alternative-ipcc",
+    "href": "blog/climate/index.html#alternative-ipcc",
+    "title": "Was läuft falsch in der Klimaökonomik?",
+    "section": "Alternative: IPCC",
+    "text": "Alternative: IPCC\nSo hält es jedenfalls das Intergovernmental Panel on Climate Change (IPCC), der führende Aggregator für wissenschaftliche Erkenntnisse zum Klimawandel. Der verzichtet seit 2015 auf die Modellierung der gesamtwirtschaftlichen Effekte, unter anderem wegen der schwierigen Monetarisierung von Folgen und der Nichtbeachtung von Kipppunkten in unserem Ökosystem.\n\nMany estimates do not account for the possibility of large-scale singular events and irreversibility, tipping points and other important factors, especially those that are difficult to monetize, such as loss of biodiversity.\nIPCC Assessment Report 5, S. 79\n\nInbesondere für spekulative Szenarien über 3° wird darauf hingewiesen, dass wir zu wenig wissen. Damit fällt Nordhaus’ Prognose von optimalen 4° außerhalb des wissenschaftlichen Rahmens.\n\nVery little is known about the economic cost of warming above 3°C relative to the current temperature level. (high confidence)\n\nUnd genau deswegen haben sich die Staaten der Welt darauf geeinigt, die Erderwärmung auf 1,5° zu begrenzen. Wir wissen, dass bereits jetzt dramatische Folgen des Klimawandels insbesondere ärmere Länder bedrohen und es potentielle Kipppunkte gibt, die alles noch verschlimmern könnten. Sollten wir uns also darauf verlassen, dass 4° die optimale Temperatur sind und wir einfach weitermachen können wie bisher?\n\nThe Stakes Of Losing This DICE Game Are Enormous"
+  },
+  {
+    "objectID": "blog/climate/index.html#was-kann-klimaökonomik",
+    "href": "blog/climate/index.html#was-kann-klimaökonomik",
+    "title": "Was läuft falsch in der Klimaökonomik?",
+    "section": "Was kann Klimaökonomik?",
+    "text": "Was kann Klimaökonomik?\nDie Klimaökonomik sollte also sich weniger darauf konzentrieren, große, komplexe Modelle mit stark vereinfachten Annahmen der schwierig zu beziffernden Folgen des Klimawandels zu berechnen.\nEs sollte sich stärker darauf konzentriert werden, mit welchen Instrumenten wir unsere gesteckten Ziele erreichen. Und da muss man Nordhaus trotz aller Kritik zugestehen, dass er einer der frühesten und prominentesten Verfechter einer konsequenten Besteuerung von Emissionen war, trotz eines zumeist zu niedrig angesetzten Preises.\n\nThe fact that the single most prominent orthodox economist [Nordhaus] in the world working on climate change considers the risks from 4°C of warming to be “optimal” tells us everything about the bankrupt state of orthodox economics.\nNoam Chomsky, Climate Crisis and the Global Green New Deal"
+  },
+  {
+    "objectID": "blog/climate/index.html#weiteres-zum-thema",
+    "href": "blog/climate/index.html#weiteres-zum-thema",
+    "title": "Was läuft falsch in der Klimaökonomik?",
+    "section": "Weiteres zum Thema",
+    "text": "Weiteres zum Thema\n\nNordhaus’ originales Paper\nseine Preisvorlesung für den Nobelpreis\nKritik vom heterodoxen Ökonom Steve Keen\nwissenschaftliche Kritik von Pindyck (LSE)"
+  },
+  {
+    "objectID": "blog/capitalorder/index.html",
+    "href": "blog/capitalorder/index.html",
+    "title": "The dark intellectual tradition of austerity",
+    "section": "",
+    "text": "cover\nTo understand how austerity came about, Mattei begins much earlier than most economic historians, taking us to Britain and Italy in the aftermath of World War I. There, after the wartime directed economy had shown people that capitalism wasn’t inevitable, a revolutionary atmosphere grew. Workers’ collectives took over factories, the labour movement grew and strikes were on the rise.\nAnd it is at this moment, when an alternative to the “capital order” of wage relations and private property is beginning to emerge, that the concept of austerity is conceived. International political and academic elites, educated in the prestigious universities of their countries (Oxford and Bocconi), formulate a policy of “work hard and consume less” directed at workers (or, as they would say, consumers). The stated aim of this austere policy is not to grow the economy but to reduce the bargaining power of workers.\nThe methods laid down at international conferences from 1920 onwards are what Mattei calls the “trinity of austerity”, fiscal austerity (i.e. cuts in social spending), monetary austerity (interest rate rises) and industrial austerity (i.e. anti-union legislation). The result is that the strikes and wage growth of previous years are reduced, and the movement is essentially crushed at it’s moment of greatest strength. And all this on an ideological basis of “balancing the budget” and “more work”, promoted by “pure” economic theory.\nParticularly interesting are chapters 6 and 7, in which Mattei meticulously describes the British and Italian history of austerity, using a treasure trove of historical textual sources consisting of memos by Ministry of Finance officials, central bankers and many others. It really does read like a thriller about how economists and technocrats ‘killed’ the socialist movement of the time. Interestingly, both countries developed their strategies in a very similar way, even though was a parliamentary democracy and the other a dictatorial government controlled by fascists. Ultimately, austerity does not care about the political system, but about the market working uninterrupted.\nClara Mattei’s writing style is sometimes lengthy, especially with the amount of historical sources she cites, and feels similar to “Capital in the 21st Century” by Thomas Piketty (who happens to recommend Mattei’s book). And if you really can’t fight your inner neoclassical economist and need charts not text, skip to chapter 9 for a more data-driven approach to telling the story (though I recommend the earlier chapters).\nAll in all, I can wholeheartedly recommend “The Capital Order”, it is a wonderful book that teaches the reader to stop analysing austerity through an economic lens, but as a tool of ideological class warfare. It is a somewhat quick read, despite its perceived size, because of its compelling story (and because 150 of its 450 pages are notes and bibliographies).\nThe discussion initiated by the book takes place in an environment that is gradually moving away from the austerity of the 2010s, and is part of a growing body of research critical of the current mainstream. It should give us hope to keep rethinking and reworking our current academia, and to never stop criticising the academic reflexes that got us here. The books dedication to “revolutionaries everywhere - past, present, future” tells us Rethinkers to be part of our own little revolution.\nFurther Links:"
+  },
+  {
+    "objectID": "blog/capitalorder/index.html#framing-monetary-policy-as-a-war-effort-has-been-part-of-the-playbook-for-instituting-austerity-policies-for-over-a-century",
+    "href": "blog/capitalorder/index.html#framing-monetary-policy-as-a-war-effort-has-been-part-of-the-playbook-for-instituting-austerity-policies-for-over-a-century",
+    "title": "The dark intellectual tradition of austerity",
+    "section": "Framing monetary policy as a war effort has been part of the playbook for instituting austerity policies for over a century",
+    "text": "Framing monetary policy as a war effort has been part of the playbook for instituting austerity policies for over a century\nClara Mattei"
+  },
+  {
+    "objectID": "projects/bundestwitter/index.html",
+    "href": "projects/bundestwitter/index.html",
+    "title": "Bundestwitter",
+    "section": "",
+    "text": "Screen Shot of the Web Page\nTwitter ist aus die politische Meinungsbildung heutzutage nicht mehr wegzudenken. Sei es sinnlose Diskussion, sinnvoler Austausch oder Kontakt mit Journalist:innen, all das findet auf dieser Plattform statt. Jedoch ohne Transparenz und ohne die Mehrheit der Bürger:innen, die zu 90% nicht da sind. Genau da soll diese Website ansetzen, und Interessierte über eine Karte zu einer Übersicht über das Twitter-Profil ihrer Abgeordneten führen. Es erlaubt allen, jeden MdB mit anderen zu vergleichen, sei es über die Tweetrate, die zeit auf der Plattform, die Aktivität, die genutzten Hashtags etc."
+  },
+  {
+    "objectID": "projects/bundestwitter/index.html#technisches",
+    "href": "projects/bundestwitter/index.html#technisches",
+    "title": "Bundestwitter",
+    "section": "Technisches",
+    "text": "Technisches\nTäglich werden über die Twitter-API die letzten 50 Tweets aller Accounts abgefragt und gesammelt. Daraufhin wird der Text jedes Tweets mit einem Machine-Learning Algorithmus anhand der Laune bewertet, was jedoch aufgrund der kurzen Länge nicht immer funktioniert. Anschließend werden alle Daten der Tweets aggregiert und in eine Datenbank eingespeist.\nAuf diese Datenbank greift dann Web-App, die komplett in Python geschrieben ist, zu und stellt sie schön dar und baut Rangfolgen anhand der Daten. Zusätzlich wird noch eine Karte mit Deutschands Wahlkreisen und den Vertretern mit Twitter generiert. Die Visualisierungen basieren vor allem auf der Plotly-Library und die App baut auf Dash und Flask auf."
+  },
+  {
+    "objectID": "projects/unfallkarte/index.html",
+    "href": "projects/unfallkarte/index.html",
+    "title": "Interaktive Unfallkarte",
+    "section": "",
+    "text": "Website Screenshot\nUnser Straßenverkehr ist tödlich. Allein 2020 starben etwa 2500 Menschen auf deutschen Straßen, vor allem verursacht durch Autos. Diese Website erlaubt es jedem, die Verkehrsunfälle vor der eigenen Haustür zu analysieren und besonders gefährdete Orte zu meiden. Die Unfälle sind nach selbst einstellbaren Kategorien wie Grad der Verletzungen, beteiligte Farhzeugarten, etc. sortierbar. Außerdem wird die zeitliche Verteilung der jeweiligen Auswahl und die räumliche Sammlung in externen Grafiken dargestellt."
+  },
+  {
+    "objectID": "projects/unfallkarte/index.html#funktionsweise",
+    "href": "projects/unfallkarte/index.html#funktionsweise",
+    "title": "Interaktive Unfallkarte",
+    "section": "Funktionsweise",
+    "text": "Funktionsweise\nDie Unfalldaten stammen aus dem OpenData Projekt des Deutschen Statistischen Bundesamtes. Diese Daten werden zuerst nach Ort gefiltert und in die Website eingespeist. Diese Website ist komplett in Python geschrieben. Das Python-Skript verarbeitet die Daten und stellt sie mithilfe der Plotly-Library dar. Die Nutzereingaben werden in der Flask-App verarbeitet und anschließend dargestellt. Das Gante basiert stark auf pandas DataFrames, die in allen möglichen Arten verändert oder angepasst werden."
+  },
+  {
+    "objectID": "projects/zeit-api/index.html",
+    "href": "projects/zeit-api/index.html",
+    "title": "ZEIT API in Python",
+    "section": "",
+    "text": "PyPI Package Website\nDie ZEIT ist als eine der ältesten und wichtigsten Zeitungen Deutschlands ein wahrer Schatz an Informationen, sei es über die Themen vergangener Zeiten, die politischen Interessen der Bundesrepublik oder einfach die Wichtigkeit aktueller Themen. Jeder und jede kann nun auf diesen großen Datenschatz zugreifen, und seine ganz eigenen Ideen daraus entwickeln, mithilfe des zeit-online packets in der einfachen Programmiersprache python."
+  },
+  {
+    "objectID": "projects/zeit-api/index.html#technisches",
+    "href": "projects/zeit-api/index.html#technisches",
+    "title": "ZEIT API in Python",
+    "section": "Technisches",
+    "text": "Technisches\n\nUpdate 2022: Leider hat Zeit Online die API inzwischen abgestellt, das Ganze ist also nur noch eine technische Spielerei der Vergangenheit\n\nDie API ist zwar schon ein bisschen älter, funktioniert aber noch herausragend. Darum habe ich ein Package geschrieben, um die Interaktion damit zu vereinfachen und meine Skills auszutesten. Das Ganze ist auf PYPI als Package veröffentlich und die Dokumentation ist hier einsehbar, inklusive Jupyter Notebooks und vielen Erklärungen.\n\nAusprobieren\nUm das ganze auszuprobieren, am besten das Package von pip installieren\npip install zeit-online\nund dann in eine Datei importieren und die API Klasse initiieren und den API Key einfügen\nimport zeit\napi = zeit.API()\napi.set_token(\"API-KEY\") #Key einfügen\n#jetzt steht dir die Welt von Zeit Online offen\nfür ausführlichere Erklärungen, definitiv die Dokumentation angucken !"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Notizen meines Studiums\n\n\n\n\n\n\n\n\n\n\n\nMar 1, 2022\n\n\n\n\n\n\n\n\n\n\n\n\nZEIT API in Python\n\n\n\n\n\n\n\n\n\n\n\nMay 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nZeitanalyse\n\n\n\n\n\n\n\n\n\n\n\nApr 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nBundestwitter\n\n\n\n\n\nEine Web-App, die alle Twitter-Accounts von Bundestagsmitgliedern erfahrbar macht und kartiert. Damit die 90% der Wähler:innen ohne Twitter erfahren, was ihre Abgeordneten so im Internet treiben \n\n\n\n\n\nFeb 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nInteraktive Unfallkarte\n\n\n\n\n\n\n\n\n\n\n\nFeb 4, 2021\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/vwl-notizen/index.html",
+    "href": "projects/vwl-notizen/index.html",
+    "title": "Notizen meines Studiums",
+    "section": "",
+    "text": "Notizen-Website\n\n\nWer zum ersten Semester in ein Studium reinstolpert, wird erstmal komplett überfordert sein von all den verschiedenen Anforderungen die an einen gestellt werden. Um den Prozess ein bisschen zu vereinfachen, habe ich alle meine Mitschriften für mein gesamtes Studium VWL/BWL an der MLU Halle als Website veröffentlicht.\nDas ganze umfasst 30 Module und über 300 Mitschriften nach Datum sortiert und im Volltext durchsuchbar. Die Website ist im Reiter verlinkt, aber auch hier."
+  },
+  {
+    "objectID": "projects/zeitworte/index.html",
+    "href": "projects/zeitworte/index.html",
+    "title": "Zeitanalyse",
+    "section": "",
+    "text": "Image\nDie Website greift mithilfe des python-Moduls der Zeit API auf die Daten zu und bereitet sie visuell auf. Das ganze wird in 3 verschiedenen Themen interaktiv dargestellt."
+  },
+  {
+    "objectID": "projects/zeitworte/index.html#geschlecht-der-autorinnen",
+    "href": "projects/zeitworte/index.html#geschlecht-der-autorinnen",
+    "title": "Zeitanalyse",
+    "section": "Geschlecht der Autor:innen",
+    "text": "Geschlecht der Autor:innen\n So beispielsweise bei den häufigsten Vornamen der Zeit-Autor:innen, die vornehmlich männlich sind. Erst auf Platz 40 kommt ein weblicher Vorname erstmals auf (Barbara)."
+  },
+  {
+    "objectID": "projects/zeitworte/index.html#geografischer-fokus-der-artikel",
+    "href": "projects/zeitworte/index.html#geografischer-fokus-der-artikel",
+    "title": "Zeitanalyse",
+    "section": "Geografischer Fokus der Artikel",
+    "text": "Geografischer Fokus der Artikel\n\n\n\nGeografische Karten\n\n\nEbenso werden die geografischen Schlagworte der Zeit kartografiert. Die transatlantische Verankerung der Zeit ist hier stark zu erkennen, ebenso eine immense Ignoranz gegenüber dem afrikanischen Kontext (ein gesamtmediales Phänomen)."
+  },
+  {
+    "objectID": "projects/zeitworte/index.html#stichwortvergleich",
+    "href": "projects/zeitworte/index.html#stichwortvergleich",
+    "title": "Zeitanalyse",
+    "section": "Stichwortvergleich",
+    "text": "Stichwortvergleich\n\n\n\nStichworte\n\n\nDie Zeit hat etwa 16.000 Schlagwörter, mit denen sie Artikel versehen, gesammelt über einen Zeitraum von 75 Jahren. Mit dieser Seite ist es möglich, die Relevanz verschiedener Themen über die Jahre zu vergleichen, ähnlich zu Google Trends.\n\nUpdate 2022: Aufgrund des Abstellens der Zeit-API von Verlagsseite aus ist die Funktionsweise der App leider nicht mehr möglich."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "The dark intellectual tradition of austerity\n\n\n\n\n\nWhy does austerity exist? A question heterodox economist ask themselves often enough, because of its obvious incapabilities to address our current economic problems. Conventional wisdom tells us, that austerity as an economic policy was invented in the 1970s as a reaction to the shortcomings of Keynesian theory. This view of economic thought is challenged by the new book “Capital Order - How economist invented austerity and paved the way to Fascism” by Clara Mattei, an assistant professor at the New School of Social Research in New York. \n\n\n\n\n\nApr 27, 2023\n\n\nmarten w. / Rethinking Economics\n\n\n\n\n\n\n\n\n\n\n\n\nWas läuft falsch in der Klimaökonomik?\n\n\n\n\n\nDass etwas falschläuft, kann niemand bezweifeln. Der Fakt, dass der führende Klimaökonom behauptet, dass die optimale Erwärmung 4°C wären und er dafür auch noch den Nobelpreis bekommt, sollte uns einiges vor Augen führen. \n\n\n\n\n\nJun 12, 2022\n\n\nmarten w.\n\n\n\n\n\n\n\n\n\n\n\n\nKrisen machen Geld wieder politisch\n\n\n\n\n\nIn den letzten 15 Jahren gab es in einigen großen Krisen eine gemeinsame Entwicklung: In der Finanz-, Klima-, Covid- und Russland-Ukraine-Krise wurden jeweils in der Haushalts- und Geldpolitik Regeln geändert oder gebrochen, die vorher als unumstößlich und unveränderbar gehandelt wurden. Wir müssen anfangen, über die in den letzten Jahrzehnten zunehmend entpolitisierten Bereiche der Haushalts- und Geldpolitik wieder öffentlich zu streiten und anhand der Krisen aufzeigen, dass unsere wirtschaftspolitischen Regeln selbstgemacht und also änderbar sind. \n\n\n\n\n\nMay 12, 2022\n\n\nPlurale Ökonomik Halle\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/geldpolitik/index.html",
+    "href": "blog/geldpolitik/index.html",
+    "title": "Krisen machen Geld wieder politisch",
+    "section": "",
+    "text": "Eurotower der EZB\nAls Annalena Baerbock am Morgen dieses erschütternden 24. Februars feststellte: „Wir sind heute in einer anderen Welt aufgewacht“, konnte man das noch vornehmlich auf die Verteidigungspolitik beziehen: Die angenommene Garantie für Frieden in Europa erwies sich als Illusion, der scheinbar unumstößliche Wille zur Abrüstung fing schon an zu schwanken. Einige Tage später aber stellen wir fest, dass auch die ökonomische Welt ein wenig aus den Angeln gehoben wurde. Wie schon in den großen Krisen der vergangenen 15 Jahre werden gerade in der Fiskal- und Geldpolitik unüberwindbar geglaubte Tabus gebrochen und scheinbar festgeschriebene Grenzen überschritten. Das geplante Sondervermögen für die Bundeswehr beispielsweise spottet der sonst so hochgehaltenen deutschen fiskalischen Disziplin.\nDie Sanktionen gegen russische Banken wiederum zeigen, dass Geldpolitik nicht einfach nur eine technische Angelegenheit für Expert*innengremien ist, sondern mächtige politische Instrumente birgt. Die Krise zeigt wieder einmal: Unsere wirtschaftspolitischen Regeln sind nicht gottgegeben und festgeschrieben, sondern änderbar. Und gerade der innerhalb weniger Tage vollzogene Richtungswechsel hin zur Aufrüstung zeigt, dass wir anfangen müssen, über Fragen der Haushalts- und Geldpolitik wieder zu streiten. Wir sollten sie nicht nur ad hoc in Krisenzeiten ändern, sondern kontinuierlich überprüfen und durchdacht verbessern. Es gilt, Haushalts- und Geldpolitik zu repolitisieren."
+  },
+  {
+    "objectID": "blog/geldpolitik/index.html#there-are-three-things-you-dont-talk-about-politics-religion-and-money",
+    "href": "blog/geldpolitik/index.html#there-are-three-things-you-dont-talk-about-politics-religion-and-money",
+    "title": "Krisen machen Geld wieder politisch",
+    "section": "There are three things you don´t talk about: politics, religion and money",
+    "text": "There are three things you don´t talk about: politics, religion and money\nWenn irgendetwas repolitisiert werden kann, muss es vorher entpolitisiert worden sein. Mit entpolitisieren meine ich: Eine Frage, die vorher öffentlich diskutiert und per direktem oder parlamentarischem Mehrheitsvotum entschieden wurde, von der Tagesordnung nehmen, beispielsweise indem man ihre Antwort in die Verfassung schreibt. So wie man halt bei Tisch nicht über Politik, Religion und Geld sprechen soll, haben auch wir uns entschieden, im öffentlichen Diskurs nicht mehr über bestimmte Zusammenhänge von Geld und Politik zu sprechen.\nIn der Geldpolitik steht dafür in Europa die Europäische Zentralbank: Ob der Leitzins angehoben wird oder nicht, und in welcher Menge die EZB Staatsanleihen kauft, darüber wird nicht von gewählten Vertreter*innen der europäischen Bevölkerung diskutiert. Vielmehr wurde in den Maastricht-Verträgen ein Ziel festgeschrieben: Preisstabilität, knapp unter 2% Inflation, heute genau 2%. Und dieses feste Ziel soll nun von der EZB als Expertengremium umgesetzt werden. Das hat durchaus seine Vorteile: Es kann keinen verrückten Politiker mehr geben, der immer kurz vor der Wahl den Leitzins senkt, um die Wirtschaft anzukurbeln und so kurzfristig sein Image aufzupolieren. Die langfristigen Folgen wären eine mögliche Inflation und dadurch schlechtere wirtschaftlichen Entwicklung. Das zu verhindern, ist löblich. Die Festschreibung hat aber auch Nachteile: So diskutieren wir nie darüber, ob uns nicht beispielsweise eine niedrige Arbeitslosenquote wichtiger ist als die Inflation unter 2% zu halten, und ob wir nicht den Leitzins eher an Überlegungen zur Arbeitslosigkeit ausrichten sollten.\nAuch in der Fiskalpolitik wurde eine Frage dem Diskurs entzogen, nämlich die Frage nach dem richtigen Niveau und/oder Wachstum der Schulden – und damit indirekt auch der Größe des Haushalts. Mit der Schuldenbremse hat sich Deutschland per Verfassung darauf festgelegt, (fast) keine neuen Schulden aufzunehmen. Ähnliche Regeln gibt es auf der Ebene der EU. Auch dies hat Vorteile: Ein übermäßiger Schuldenstand könnte irgendwann dazu führen, dass wir große Mengen unseres Haushalts für die Schuldentilgung verwenden. Die Nachteile aber sind unübersehbar: Selbst, wenn wir bestimmte Investitionen für unsere Zukunft als sehr sinnvoll und lohnend erachten, brauchen wir eigentlich gar nicht erst anfangen, über sie zu reden. Denn die Schuldenbremse, gepaart mit fehlendem Willen zur erhöhten Besteuerung, schränkt unseren fiskalpolitischen Spielraum eng ein.\nWie die Religion den Menschen Halt geben kann, so kann auch die quasi-religiöse Anbetung der Schuldenbremse und der Unabhängigkeit der Zentralbank stabilisierend wirken. Manchmal aber erweisen sich unsere Glaubenssätze als unbrauchbar, und dann müssen wir über neue Lösungen reden."
+  },
+  {
+    "objectID": "blog/geldpolitik/index.html#ist-christus-lindner-der-fiskal-messias",
+    "href": "blog/geldpolitik/index.html#ist-christus-lindner-der-fiskal-messias",
+    "title": "Krisen machen Geld wieder politisch",
+    "section": "Ist Christus Lindner der Fiskal-Messias?",
+    "text": "Ist Christus Lindner der Fiskal-Messias?\nDass die Regeln der Geld- und Fiskalpolitik tatsächlich von uns selbst gemacht und also auch wieder änderbar sind, ist in den letzten 15 Jahren besonders durch die großen Krisen immer wieder gezeigt worden.\nDie Finanzkrise ab 2007 führte zu einem veränderten Verhalten der Zentralbanken: Sie fingen an, Staatsanleihen in großem Maßstab aufzukaufen. Da ihnen monetäre Staatsfinanzierung untersagt ist, bewegten sie sich damit am Rande ihres Mandats – am Rande der Spielregeln. Auch ihre Entscheidung, dem Markt nicht mehr nur noch über Geschäftsbanken, sondern auch über Akteure des sogenannten Schattenbankensystems Geld bereitzustellen, bedeutete ein Novum. Genauso wurde in der Covidkrise mehr Akteuren als vorher über die Zentralbank Geld bereitgestellt: Geldpolitik wurde hier neu und außerhalb der alten Regeln gedacht.\nAuch der Klimawandel scheint bei der EZB angekommen zu sein. Sie denkt darüber nachdenkt, Investitionen in nachhaltige Anlagen zu priorisieren. Eine solche wirtschaftlich lenkende Rolle hatte sie vorher nicht eingenommen. Natürlich werden diese Kurswechsel der EZB nicht nur wohlwollend aufgenommen, sondern auch kritisiert. Aber immerhin: Wir reden darüber, was wir in Bezug auf Geldbereitstellung politisch wollen, und nehmen nicht einfach nur an, dass die alten Regeln schon dem Konsens entsprechen. Zuletzt verschiebt auch die aktuellste Krise, der russische Angriff auf die Ukraine, monetäre Paradigmen: Die wichtigsten Sanktionen gegen Putins Russland sind geldpolitischer Art. Russische Banken werden vom Zahlungssystem Swift ausgeschlossen, was die Möglichkeit internationalen Handels für Russland mit den sanktionierenden Ländern stark reduziert, weil fast kein Geld mehr nach Russland fließen kann. Und der russischen Zentralbank wird durch Einfrieren ihrer im Ausland gehaltenen Devisenreserven die Möglichkeit genommen, den Rubelkurs durch Aufkaufen von Rubel zu stützen.\nDie Antworten auf Klimawandel, Pandemie und den russischen Angriff kratzen aber nicht nur an den bisherigen Strukturen der Geld-, sondern auch der Haushaltspolitik. So wurde für 2020 bis 2022 die Schuldenbremse ausgesetzt, um die gesundheitlichen und wirtschaftlichen Folgen der Pandemie abzufedern. Und Teile der Mittel, die unter Aussetzung der Schuldenbremse im vergangenen Jahr für die Covidkrise bereitgestellt wurden, sollen nun für Investitionen für den Klimaschutz umgewidmet werden. Das muss man sich erst einmal vorstellen: Fiskalfalke Christian Lindner sucht nach Wegen, die Schuldenbremse zu umgehen. Und wie schon bei Pandemie und Klimawandel wird auch in Reaktion auf die Russland-Ukraine-Krise die wohl schon etwas ausgeleierte Schuldenbremse links (oder rechts) liegen gelassen. Olaf Scholz kündigte kürzlich an, per Sondervermögen, also vorbei an der Schuldenbremse, die Wiederaufrüstung der Bundeswehr zu ermöglichen.\nUnd hier offenbart sich das Problem: Wir verlassen uns in „normalen“ Zeiten auf festgeschriebene Regeln. Erst in Krisenfällen werden diese Regeln, wie die Schuldenbremse oder eine vorgestellte Neutralität der Zentralbanken, dann gebrochen, weil man erkennt, dass sie möglicherweise nicht so gut funktionieren, wie man angenommen hatte. Die Änderung in Krisenzeiten aber hat oft einen administrativen und nicht politischen Charakter. Es wird nicht groß diskutiert, sondern durchregiert. Das kann dann manchmal gut gehen – Stichwort Nachtragshaushalt für Klimainvestitionen – und manchmal aber auch eine bedenkliche Richtung nehmen – Stichwort Aufrüstungswettbewerb. Die Lehre, die wir ziehen müssen, ist Folgende: Lasst uns anfangen, Regeln als das zu erkennen, was sie sind – menschengemacht, änderbar und also diskussionswürdig. We gotta talk about money."
+  },
+  {
+    "objectID": "blog/geldpolitik/index.html#was-nun",
+    "href": "blog/geldpolitik/index.html#was-nun",
+    "title": "Krisen machen Geld wieder politisch",
+    "section": "Was nun?",
+    "text": "Was nun?\nEs gibt die zynische Formel, dass man Krisen auch als eine Chance begreifen kann. Die Russland-Ukraine-Krise ist keine Chance, sie ist eine Katastrophe, nichts anderes. Putins Angriff löst schon nach wenigen Tagen unvorstellbar viel Leid aus. Wir werden aber aus dieser Situation Erkenntnisse ziehen müssen, und das galt auch schon für die anderen Krisen der 2000er und 2010er Jahre. Wir sollten die Krisenpolitik betrachten und an ihr aufzeigen, dass wir zwar innerhalb eines Sets von Regeln leben, diese Regeln aber selbst geschaffen haben und also auch wieder verändern können. Während wir in der Geldpolitik noch weit von einer tatsächlichen Repolitisierung entfernt sind, muss anhand der Russland-Ukraine-Krise dem öffentlichen Bewusstsein klargemacht werden: Sieh doch hin, Geld ist politisch. In der Fiskalpolitik aber deutet sich an, dass die Politik tatsächlich lernfähig ist. Während wir derzeit noch offiziell an der Schuldenbremse festhalten, wird de facto schon versucht, sie zu umgehen. Es ist nicht auszuschließen, dass nach einer Periode der Quasi-Aussetzung der Schwarzen Null bei genügend Parlamentarier*innen durchsickert, dass das alles auch sein Gutes hat, und dass in der Folge auch eine formale Abschaffung der Schuldenbremse wieder auf die Tagesordnung kommen könnte."
+  }
+]
