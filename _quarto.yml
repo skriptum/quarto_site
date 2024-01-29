@@ -53,7 +53,7 @@ format:
       sidebar-width: 0px
       body-width: 1000px
       margin-width: 250px
-link-external-icon: true
+link-external-icon: false
 link-external-newwindow: true
 
 execute: 
