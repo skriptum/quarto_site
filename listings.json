@@ -10,7 +10,7 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/blog/index.html",
     "items": [
       "/blog/capitalorder/index.html",
       "/blog/climate/index.html",
@@ -18,7 +18,7 @@
     ]
   },
   {
-    "listing": "/blog/index.html",
+    "listing": "/index.html",
     "items": [
       "/blog/capitalorder/index.html",
       "/blog/climate/index.html",
