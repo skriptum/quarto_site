@@ -21,7 +21,7 @@ listing:
     max-items: 3
     feed: false
     fields: [image, date, title, description]
-
+    
 toc: false
 ---
 
