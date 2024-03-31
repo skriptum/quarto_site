@@ -9,24 +9,15 @@ description: |
 
 ![cover](featured.png)
 
-> Note: This review was first published on the [Rethinking Economics International Blog](https://www.rethinkeconomics.org/2023/04/25/the-dark-intellectual-traditions-of-austerity/) on 25th of April. 
+*Note: This review was first published on the [Rethinking Economics International Blog](https://www.rethinkeconomics.org/2023/04/25/the-dark-intellectual-traditions-of-austerity/) on 25th of April.*
 
 To understand how austerity came about, Mattei begins much earlier than most economic historians, taking us to Britain and Italy in the aftermath of World War I. There, after the wartime directed economy had shown people that capitalism wasn't inevitable, a revolutionary atmosphere grew. Workers' collectives took over factories, the labour movement grew and strikes were on the rise.
 
-::: {.pullout-text}
-::: {.pullout-container}
-::: {.pullout-block .black-background}
-![](../../images/quote-purple.png){width="100px"}
 
-## Framing monetary policy as a war effort has been part of the playbook for instituting austerity policies for over a century
+> *Framing monetary policy as a war effort has been part of the playbook for instituting austerity policies for over a century*
+>
+> Clara Mattei
 
-Clara Mattei
-
-:::
-:::
-:::
-
-\
 
 And it is at this moment, when an alternative to the "capital order" of wage relations and private property is beginning to emerge, that the concept of austerity is conceived. International political and academic elites, educated in the prestigious universities of their countries (Oxford and Bocconi), formulate a policy of "work hard and consume less" directed at workers (or, as they would say, consumers). The stated aim of this austere policy is not to grow the economy but to reduce the bargaining power of workers.
 

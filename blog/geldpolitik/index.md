@@ -9,7 +9,7 @@ description: |
 
 ![Eurotower der EZB](featured.jpeg)
 
-> Dieser Text stammt von Kilian von der Pluralen Ökonomik Halle und entstand im Kontext unseres Lesekreises zu Geldpolitik und Schattenbanken. Er wurde erstmals im [Transit-Magazin](https://transit-magazin.de/2022/05/krisen-machen-geld-wieder-politisch/) veröffentlicht
+*Dieser Text stammt von Kilian von der Pluralen Ökonomik Halle und entstand im Kontext unseres Lesekreises zu Geldpolitik und Schattenbanken. Er wurde erstmals im [Transit-Magazin](https://transit-magazin.de/2022/05/krisen-machen-geld-wieder-politisch/) veröffentlicht*
 
 
 Als Annalena Baerbock am Morgen dieses erschütternden 24. Februars feststellte: „Wir sind heute in einer anderen Welt aufgewacht“, konnte man das noch vornehmlich auf die Verteidigungspolitik beziehen: Die angenommene Garantie für Frieden in Europa erwies sich als Illusion, der scheinbar unumstößliche Wille zur Abrüstung fing schon an zu schwanken. Einige Tage später aber stellen wir fest, dass auch die ökonomische Welt ein wenig aus den Angeln gehoben wurde. Wie schon in den großen Krisen der vergangenen 15 Jahre werden gerade in der Fiskal- und Geldpolitik unüberwindbar geglaubte Tabus gebrochen und scheinbar festgeschriebene Grenzen überschritten. Das geplante Sondervermögen für die Bundeswehr beispielsweise spottet der sonst so hochgehaltenen deutschen fiskalischen Disziplin.
