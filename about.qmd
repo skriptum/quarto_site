@@ -8,11 +8,9 @@ toc: false
 title-block-banner: false
 ---
 
-::: {.content-container}
-::: {.top-story}
 ::: grid
 
-::: {.g-col-12 .g-col-lg-8 .top-story-text}
+::: {.g-col-12 .g-col-lg-8}
 
 Derzeit studiere ich VWL an der Martin-Luther-Universität Halle und bin Mitlgied des Netzwerks Plurale Ökonomik. Auf dieser Website sammle ich verschiedene Projekte und Ideen, meist in einem technischen / politischen / ökonomischen Kontext.
 
@@ -24,7 +22,7 @@ Diese Website ist eine bunte Mischung an Themen zwischen diesen beiden Polen und
 
 :::
 
-::: {.g-col-12 .g-col-lg-4 .pullout-block}
+::: {.g-col-12 .g-col-lg-4}
 
 ## Blog Roll
 
@@ -40,6 +38,5 @@ Diese Website ist eine bunte Mischung an Themen zwischen diesen beiden Polen und
 :::
 
 :::
-:::
-:::
+
 

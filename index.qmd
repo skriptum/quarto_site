@@ -1,6 +1,6 @@
 ---
 pagetitle: "marten w."
-page-layout: custom
+page-layout: article
 section-divs: false
 editor: source
 sidebar: false
@@ -25,75 +25,42 @@ listing:
 toc: false
 ---
 
-::: {.content-container}
-::: {.top-story .purple-background}
+::: {.content-block}
+
 ::: grid
 
-::: {.g-col-12 .g-col-lg-6 .top-story-text}
+::: {.g-col-12 .g-col-lg-6}
+# hi, i'm marten
 
-# marten w.
+Currently studying Economics in Halle (Germany) and on the Council of Rethinking Economics International. Interested in *monetary theory*, *climate economics* and the *history of economic thought*, especially Keynesianism.
 
-Currently studying Economics in Halle (Germany) and on the Council of Rethinking Economics International. 
+→ more [about](about.qmd) me
 
-Interested in monetary theory, climate economics and the history of economic thought, especially Keynesianism.
+you can also find me on [LinkedIn](https://www.linkedin.com/in/marten-w), my code on [GitHub](https://github.com/skriptum) and my small thoughts on [BlueSky](https://bsky.app/profile/mwd.bsky.social).
 
-
+→ you can [contact](contact.qmd) me at *kontakt* [at] this site
 :::
 
-::: {.g-col-12 .g-col-lg-6 .top-story-img}
-
+::: {.g-col-12 .g-col-lg-6}
 ![](images/profil_dunkel.webp)
-
 :::
 
 :::
 :::
-:::
 
-
-<!-- -->
-
-::: {.header-text} 
-::: {.content-container}
-::: {.header-block}
-
-
-:::
-:::
-:::
-
-
-
+:::{.content-block}
 <!-- Blog -->
 
-::: {.content-container}
-::: {.listing-block}
-<a href="blog/index.qmd">
-
 ## Blog
-</a>
+
 
 ::: {#blog}
 :::
 
 :::
-::: 
-
 <!-- Quote -->
 
-::: {.pullout-text}
-::: {.pullout-container}
-::: {.pullout-block .black-background}
-![](images/quote-purple.png){width="100px"}
-
-## Practical men who believe themselves to be quite exempt from any intellectual influence, are usually the slaves of some defunct economist. Madmen in authority, who hear voices in the air, are distilling their frenzy from some academic scribbler of a few years back
-
-John Maynard Keynes
-
-:::
-:::
-:::
-
-
-\
+> Practical men who believe themselves to be quite exempt from any intellectual influence, are usually the slaves of some defunct economist. Madmen in authority, who hear voices in the air, are distilling their frenzy from some academic scribbler of a few years back
+>
+> *John Maynard Keynes*
 

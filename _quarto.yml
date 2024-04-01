@@ -6,19 +6,20 @@ website:
   favicon: images/logo.ico
   open-graph: true
   site-url: https://martenw.com/
-  search: true
+  search: false
   navbar:
-    background: "#eee"
     logo: images/logo.webp
-    logo-alt: "marten w logo"
-    title: false
+    logo-alt: "logo"
+    title: "marten w."
     collapse-below: lg
     right: 
-      - projects/index.qmd
-      - blog/index.qmd
-      - text: Notes
+      - text: PROJECTS
+        href: projects/index.qmd
+      - text: BLOG
+        href: blog/index.qmd
+      - text: NOTES
         href: https://vwl.martenw.com
-      - text: About
+      - text: ABOUT
         href: about.qmd
       
 
@@ -27,7 +28,6 @@ website:
   back-to-top-navigation: false
 
   page-footer:
-    background: "#000000"
     left: |
       Copyright &copy; marten w. 
     center:
@@ -46,8 +46,7 @@ website:
 
 format:
   html:
-    theme: [lux, images/rwds.scss]
-    css: images/rwds.css
+    theme: [images/rwds.scss]
     toc: true
     grid:
       sidebar-width: 0px
