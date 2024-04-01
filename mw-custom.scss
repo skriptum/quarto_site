@@ -131,9 +131,11 @@ strong em {
 }
 
 hr {
-  margin: 2em 10vw 2em 10vw;
+  margin: 2em 20vw 2em 20vw;
   border-top: 1px solid black;
-  opacity: 0.5;
+  border-bottom: 1px solid black;
+  height: 4px;
+  opacity: 1;
 }
 
 button {
