@@ -46,7 +46,7 @@ website:
 
 format:
   html:
-    theme: [images/rwds.scss]
+    theme: [mw-custom.scss]
     toc: true
     grid:
       sidebar-width: 0px
