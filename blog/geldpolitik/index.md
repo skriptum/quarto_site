@@ -4,7 +4,7 @@ author: Plurale Ökonomik Halle
 draft: false
 date: "2022-05-12"
 description: |
-  In den letzten 15 Jahren gab es in einigen großen Krisen eine gemeinsame Entwicklung: In der Finanz-, Klima-, Covid- und Russland-Ukraine-Krise wurden jeweils in der Haushalts- und Geldpolitik Regeln geändert oder gebrochen, die vorher als unumstößlich und unveränderbar gehandelt wurden. Wir müssen anfangen, über die in den letzten Jahrzehnten zunehmend entpolitisierten Bereiche der Haushalts- und Geldpolitik wieder öffentlich zu streiten und anhand der Krisen aufzeigen, dass unsere wirtschaftspolitischen Regeln selbstgemacht und also änderbar sind.
+  In den letzten 15 Jahren gab es in einigen großen Krisen eine gemeinsame Entwicklung: In der Finanz-, Klima-, Covid- und Russland-Ukraine-Krise wurden jeweils in der Haushalts- und Geldpolitik Regeln geändert oder gebrochen, die vorher als unumstößlich und unveränderbar gehandelt wurden. 
 ---
 
 ![Eurotower der EZB](featured.jpeg)

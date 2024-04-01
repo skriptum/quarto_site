@@ -12,9 +12,9 @@ Die hier dargestellte Meinung entstand vor allem in Vorbereitung und Auseinander
 ## Die 4-Grad These
 
 
-> *The optimal scenario for climate change policies results in 4° global warming*
+> The optimal scenario for climate change policies results in 4° global warming
 >
-> William Nordhaus
+> *William Nordhaus*
 
 Exzerpt aus der Nobelpreisvorlesung von William Nordhaus
 
@@ -65,7 +65,7 @@ So hält es jedenfalls das _Intergovernmental Panel on Climate Change_ (IPCC), d
 
 > Many estimates do not account for the possibility of large-scale singular events and irreversibility, tipping points and other important factors, especially those that are difficult to monetize, such as loss of biodiversity.
 >
-> **IPCC** Assessment Report 5, S. 79
+> *__IPCC__ Assessment Report 5, S. 79*
 
 Inbesondere für spekulative Szenarien über 3° wird darauf hingewiesen, dass wir zu wenig wissen. Damit fällt Nordhaus' Prognose von optimalen 4° außerhalb des wissenschaftlichen Rahmens.
 
@@ -73,7 +73,7 @@ Inbesondere für spekulative Szenarien über 3° wird darauf hingewiesen, dass w
 
 Und genau deswegen haben sich die Staaten der Welt darauf geeinigt, die Erderwärmung auf 1,5° zu begrenzen. Wir wissen, dass bereits jetzt dramatische Folgen des Klimawandels insbesondere ärmere Länder bedrohen und es potentielle Kipppunkte gibt, die alles noch verschlimmern könnten. Sollten wir uns also darauf verlassen, dass 4° die optimale Temperatur sind und wir einfach weitermachen können wie bisher?
 
->The Stakes Of Losing This DICE Game Are Enormous
+> The Stakes Of Losing This DICE Game Are Enormous
 
 ## Was kann Klimaökonomik?
 
@@ -83,7 +83,7 @@ Es sollte sich stärker darauf konzentriert werden, mit welchen Instrumenten wir
 
 > The fact that the single most prominent orthodox economist [Nordhaus] in the world working on climate change considers the risks from  4°C of warming to be "optimal" tells us everything about the bankrupt state of orthodox economics.
 > 
-> **Noam Chomsky**, Climate Crisis and the Global Green New Deal 
+> _**Noam Chomsky**, Climate Crisis and the Global Green New Deal_
 
 ## Weiteres zum Thema
 
