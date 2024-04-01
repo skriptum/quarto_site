@@ -11,7 +11,7 @@ description: |
 
 *Note: This review was first published on the [Rethinking Economics International Blog](https://www.rethinkeconomics.org/2023/04/25/the-dark-intellectual-traditions-of-austerity/) on 25th of April.*
 
-To understand how austerity came about, Mattei begins much earlier than most economic historians, taking us to Britain and Italy in the aftermath of World War I. There, after the wartime directed economy had shown people that capitalism wasn't inevitable, a revolutionary atmosphere grew. Workers' collectives took over factories, the labour movement grew and strikes were on the rise.
+***To understand how austerity came about***, Mattei begins much earlier than most economic historians, taking us to Britain and Italy in the aftermath of World War I. There, after the wartime directed economy had shown people that capitalism wasn't inevitable, a revolutionary atmosphere grew. Workers' collectives took over factories, the labour movement grew and strikes were on the rise.
 
 
 > Framing monetary policy as a war effort has been part of the playbook for instituting austerity policies for over a century
@@ -27,7 +27,9 @@ Particularly interesting are chapters 6 and 7, in which Mattei meticulously desc
 
 Clara Mattei's writing style is sometimes lengthy, especially with the amount of historical sources she cites, and feels similar to "Capital in the 21st Century" by Thomas Piketty (who happens to recommend Mattei's book). And if you really can't fight your inner neoclassical economist and need charts not text, skip to chapter 9 for a more data-driven approach to telling the story (though I recommend the earlier chapters).
 
-All in all, I can wholeheartedly recommend "The Capital Order", it is a wonderful book that teaches the reader to stop analysing austerity through an economic lens, but as a tool of ideological class warfare. It is a somewhat quick read, despite its perceived size, because of its compelling story (and because 150 of its 450 pages are notes and bibliographies).
+---
+
+***All in all, I can wholeheartedly recommend*** "The Capital Order", it is a wonderful book that teaches the reader to stop analysing austerity through an economic lens, but as a tool of ideological class warfare. It is a somewhat quick read, despite its perceived size, because of its compelling story (and because 150 of its 450 pages are notes and bibliographies).
 
 The discussion initiated by the book takes place in an environment that is gradually moving away from the austerity of the 2010s, and is part of a growing body of research critical of the current mainstream. It should give us hope to keep rethinking and reworking our current academia, and to never stop criticising the academic reflexes that got us here. The books dedication to "*revolutionaries everywhere - past, present, future*" tells us Rethinkers to be part of our own little revolution.
 

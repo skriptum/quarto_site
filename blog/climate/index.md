@@ -20,7 +20,7 @@ Exzerpt aus der Nobelpreisvorlesung von William Nordhaus
 
 ![Nordhaus Nobelpreisvorlesungslide](featured.jpg)
 
-Beim erstmaligen Lesen dieser Aussage konnte ich meinen Augen kaum trauen. Es würde doch sicher niemand ernsthaft behaupten, dass dieses Szenario dass für die Menschheit optimale ist. Wo wir uns doch mit dem Vertrag von Paris 2015 darauf geeinigt haben, die globale Erwärmung auf 1,5° beziehungsweise 2° zu begrenzen. 
+***Beim erstmaligen Lesen dieser Aussage*** konnte ich meinen Augen kaum trauen. Es würde doch sicher niemand ernsthaft behaupten, dass dieses Szenario dass für die Menschheit optimale ist. Wo wir uns doch mit dem Vertrag von Paris 2015 darauf geeinigt haben, die globale Erwärmung auf 1,5° beziehungsweise 2° zu begrenzen. 
 
 Doch diese Aussage stammt keineswegs aus dem Repertoire eines Öllobbyisten oder Klimawandelbeschwichtigers. Sie stammt von William Nordhaus, dem profiliertesten Klimaökonomen, der für die Arbeit zu dieser Aussage 2018 den Nobelpreis der Wirtschaftswissenschaften erhielt. 
 
@@ -61,7 +61,7 @@ Basierend auf diesen Annahmen (und noch vielen weiteren, auf die hier nicht eing
 
 ## Alternative: IPCC
 
-So hält es jedenfalls das _Intergovernmental Panel on Climate Change_ (IPCC), der führende Aggregator für wissenschaftliche Erkenntnisse zum Klimawandel. Der verzichtet seit 2015 auf die Modellierung der gesamtwirtschaftlichen Effekte, unter anderem wegen der schwierigen Monetarisierung von Folgen und der Nichtbeachtung von Kipppunkten in unserem Ökosystem. 
+***So demkt jedenfalls das*** _Intergovernmental Panel on Climate Change_ (IPCC), der führende Aggregator für wissenschaftliche Erkenntnisse zum Klimawandel. Der verzichtet seit 2015 auf die Modellierung der gesamtwirtschaftlichen Effekte, unter anderem wegen der schwierigen Monetarisierung von Folgen und der Nichtbeachtung von Kipppunkten in unserem Ökosystem. 
 
 > Many estimates do not account for the possibility of large-scale singular events and irreversibility, tipping points and other important factors, especially those that are difficult to monetize, such as loss of biodiversity.
 >
@@ -77,7 +77,7 @@ Und genau deswegen haben sich die Staaten der Welt darauf geeinigt, die Erderwä
 
 ## Was kann Klimaökonomik?
 
-Die Klimaökonomik sollte also sich weniger darauf konzentrieren, große, komplexe Modelle mit stark vereinfachten Annahmen der schwierig zu beziffernden Folgen des Klimawandels zu berechnen. 
+***Die Klimaökonomik sollte also sich weniger darauf konzentrieren***, große, komplexe Modelle mit stark vereinfachten Annahmen der schwierig zu beziffernden Folgen des Klimawandels zu berechnen. 
 
 Es sollte sich stärker darauf konzentriert werden, mit welchen Instrumenten wir unsere gesteckten Ziele erreichen. Und da muss man Nordhaus trotz aller Kritik zugestehen, dass er einer der frühesten und prominentesten Verfechter einer konsequenten Besteuerung von Emissionen war, trotz eines zumeist zu niedrig angesetzten Preises. 
 
