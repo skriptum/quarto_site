@@ -11,9 +11,11 @@
 $black : #000000;
 
 
-$mw-color: #a00000;
+$mw-color: #990f3d; //a00000
+$mw-secondary: #0d7680;
+
 $mw-dark: #333333;
-$mw-light: #f4e9e6;
+$mw-light: #fff1e0; //before: f4e9e6
 $font-color: #111111;
 
 $font-family-serif: 'Libre Bodoni', serif;
@@ -25,7 +27,7 @@ $font-size-base: 1rem;
 $link-color: $mw-color;
 
 $body-bg: $mw-light;
-$code-block-bg: #e1d3d0;
+$code-block-bg: #f2dfce; //e1d3d0
 
 $navbar-bg: $mw-light;
 $navbar-fg: $mw-color;
@@ -42,10 +44,15 @@ $footer-fg: $font-color;
   border-radius: .25rem;
   background-color: $code-block-bg;
   text-align: center;
-}
+  color: black;
+  margin: 2em 5vw 2em 5vw;
 
-.blockquote em {
+  em {
   color: $mw-color;
+  font-variant: small-caps;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  }
 }
 
 .navbar {
@@ -58,6 +65,9 @@ $footer-fg: $font-color;
     font-weight: 700;
     font-style: normal;
     color: $mw-dark;
+  }
+  a:hover {
+    text-decoration: underline solid $mw-color;
   }
 }
 
@@ -92,6 +102,7 @@ $footer-fg: $font-color;
   }
   .listing-date {
     font-family: $font-family-serif;
+    color: $mw-color;
   }
   .listing-author {
     font-family: $font-family-sans-serif;
@@ -107,6 +118,36 @@ body {
 h1,h2,h3,h4,h5,h6 {
   font-family: $font-family-serif;
   border-bottom: 0 !important;
+}
+
+//Smallcaps for em tags in strong tags
+strong em {
+  font-variant: small-caps;
+  font-style: normal;
+  font-weight: 400;
+  font-family: $font-family-serif;
+  letter-spacing: 0.05em;
+  font-kerning: normal;
+}
+
+hr {
+  margin: 2em 10vw 2em 10vw;
+  border-top: 1px solid black;
+  opacity: 0.5;
+}
+
+button {
+  border: 1px solid $mw-color;
+  padding: 0.2em 1em 0.05em 1em;
+  border-radius: 100px;
+  background-size: 21px 21px;
+  min-width: 60px;
+  color: $mw-color;
+  margin: 0.2em 0;
+
+  &:hover {
+    background-color: rgba($mw-color, 0.3);
+  }
 }
 
 // Custom Classes
