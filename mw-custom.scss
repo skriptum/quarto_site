@@ -22,6 +22,7 @@ $font-family-serif: 'Libre Bodoni', serif;
 $font-family-sans-serif: 'Josefin Sans', sans-serif;
 
 $body-font-weight: 600;
+$font-size-root: 20px;
 $font-size-base: 1rem;
 
 $link-color: $mw-color;
@@ -112,7 +113,8 @@ $footer-fg: $font-color;
 // General
 
 body {
-  font-weight: 300;
+  font-weight: 350;
+  line-height: 1.3;
 }
 
 h1,h2,h3,h4,h5,h6 {
