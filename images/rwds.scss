@@ -1,9 +1,120 @@
 /*-- scss:defaults --*/
-@import 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Oswald:wght@300;400;500&display=swap';
 
-#quarto-content {
-  background-color: #eee;
-  font-family: 'Montserrat', sans-serif !important;
-  font-family: 'Oswald', sans-serif;
-  color: black;
+// Quarto Refs
+// Bootstrap Variables: https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/formats/html/bootstrap/_bootstrap-variables.scss
+// Bootstrap Rules: https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/formats/html/bootstrap/_bootstrap-rules.scss
+// How to Handle: https://silviacanelon.com/blog/2023-09-29-hello-quarto/#scss-variables
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap'); //serif
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); //sans-serif
+
+$black : #000000;
+
+
+$mw-color: #a00000;
+$mw-dark: #333333;
+$mw-light: #f4e9e6;
+$font-color: #111111;
+
+$font-family-serif: 'Libre Bodoni', serif;
+$font-family-sans-serif: 'Josefin Sans', sans-serif;
+
+$body-font-weight: 600;
+$font-size-base: 1rem;
+
+$link-color: $mw-color;
+
+$body-bg: $mw-light;
+$code-block-bg: #e1d3d0;
+
+$navbar-bg: $mw-light;
+$navbar-fg: $mw-color;
+$footer-bg: $mw-light;
+$footer-fg: $font-color;
+
+/*-- scss:rules --*/
+
+
+.blockquote {
+  border-left: 5px solid $mw-color;
+  padding-left: 1rem;
+  font-family: $font-family-serif;
+  border-radius: .25rem;
+  background-color: $code-block-bg;
+  text-align: center;
+}
+
+.blockquote em {
+  color: $mw-color;
+}
+
+.navbar {
+  border-bottom: 1px solid $black;
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  .navbar-title {
+    font-family: $font-family-sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: $mw-dark;
+  }
+}
+
+.footer {
+  border-top: 1px solid $mw-dark;
+}
+
+// Title Block 
+
+.quarto-title-block {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $black;
+}
+
+.quarto-title-meta-heading {
+  font-family: $font-family-serif;
+}
+
+.quarto-title-meta-contents {
+  font-family: $font-family-serif;
+}
+
+// Listing
+
+.quarto-post {
+  border-bottom: 1px solid $black !important;
+
+  // scss to style multiple classes at same time
+  .listing-title {
+    font-family: $font-family-serif;
+    font-size: 1.5rem;
+  }
+  .listing-date {
+    font-family: $font-family-serif;
+  }
+  .listing-author {
+    font-family: $font-family-sans-serif;
+  }
+}
+
+// General
+
+body {
+  font-weight: 300;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-family-serif;
+  border-bottom: 0 !important;
+}
+
+// Custom Classes
+
+.content-block {
+  border-bottom: 1px solid black;
+  margin-bottom: 2em;
+  .h1 {
+    text-align: center;
+  }
 }
