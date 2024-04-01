@@ -83,8 +83,13 @@ $footer-fg: $font-color;
   border-bottom: 1px solid $black;
 }
 
+.quarto-title {
+  padding-bottom: 2em;
+}
+
 .quarto-title-meta-heading {
   font-family: $font-family-serif;
+  color: $mw-color;
 }
 
 .quarto-title-meta-contents {
@@ -125,11 +130,9 @@ h1,h2,h3,h4,h5,h6 {
 //Smallcaps for em tags in strong tags
 strong em {
   font-variant: small-caps;
-  font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   font-family: $font-family-serif;
   letter-spacing: 0.05em;
-  font-kerning: normal;
 }
 
 hr {

@@ -7,7 +7,7 @@ description: |
     Dass etwas falschläuft, kann niemand bezweifeln. Der Fakt, dass der führende Klimaökonom behauptet, dass die optimale Erwärmung 4°C wären und er dafür auch noch den Nobelpreis bekommt, sollte uns einiges vor Augen führen. 
 ---
 
-Die hier dargestellte Meinung entstand vor allem in Vorbereitung und Auseinandersetzung mit Professor Pies von der MLU Halle. Ich hatte ihn in der Vorlesung für die alleinstehende These von Nordhaus kritisiert, woraufhin er mich zu einem Einzelgespräch einlud. Dieses war sehr konstruktiv und fruchtbar, wir gingen jedoch mit unterschiedlichen Meinungen auseinander; meine lege ich hier dar.
+*Die hier dargestellte Meinung entstand vor allem in Vorbereitung und Auseinandersetzung mit Professor Pies von der MLU Halle. Ich hatte ihn in der Vorlesung für die alleinstehende These von Nordhaus kritisiert, woraufhin er mich zu einem Einzelgespräch einlud.*
 
 ## Die 4-Grad These
 

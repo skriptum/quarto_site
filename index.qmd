@@ -30,7 +30,9 @@ toc: false
 ::: {.g-col-12 .g-col-lg-6}
 # hi, i'm marten
 
-Currently studying Economics in Halle (Germany) and on the Council of Rethinking Economics International. Interested in *monetary theory*, *climate economics* and the *history of economic thought*, especially Keynesianism → [more ***about*** me](about.qmd)
+Currently studying Economics in Halle (Germany) and on the Council of Rethinking Economics International. Interested in *monetary theory*, *climate economics* and the *history of economic thought*, especially Keynesianism 
+
+→  more [***about***](about.qmd) me
 
 [`<button type="button">LinkedIn</button>`{=html}](https://www.linkedin.com/in/marten-w)
 [`<button type="button">GitHub</button>`{=html}](https://github.com/skriptum)

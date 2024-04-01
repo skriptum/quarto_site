@@ -4,14 +4,16 @@ author: marten w. / Rethinking Economics
 date: "2023-04-27"
 draft: false
 description: | 
-  Why does austerity exist? A question heterodox economist ask themselves often enough, because of its obvious incapabilities to address our current economic problems. Conventional wisdom tells us, that austerity as an economic policy was invented in the 1970s as a reaction to the shortcomings of Keynesian theory. This view of economic thought is challenged by the new book "Capital Order - How economist invented austerity and paved the way to Fascism" by Clara Mattei, an assistant professor at the New School of Social Research in New York.
+  Why does austerity exist? A question heterodox economist ask themselves often enough, because of its obvious incapabilities to address our current economic problems. A book review of Clara Matteis "The Capital Order".
 ---
 
 ![cover](featured.png)
 
 *Note: This review was first published on the [Rethinking Economics International Blog](https://www.rethinkeconomics.org/2023/04/25/the-dark-intellectual-traditions-of-austerity/) on 25th of April.*
 
-***To understand how austerity came about***, Mattei begins much earlier than most economic historians, taking us to Britain and Italy in the aftermath of World War I. There, after the wartime directed economy had shown people that capitalism wasn't inevitable, a revolutionary atmosphere grew. Workers' collectives took over factories, the labour movement grew and strikes were on the rise.
+***Conventional wisdom tells us***, that austerity as an economic policy was invented in the 1970s as a reaction to the shortcomings of Keynesian theory. This view of economic thought is challenged by the new book "Capital Order - How economist invented austerity and paved the way to Fascism" by Clara Mattei, an assistant professor at the New School of Social Research in New York.
+
+To understand how austerity came about, Mattei begins much earlier than most economic historians, taking us to Britain and Italy in the aftermath of World War I. There, after the wartime directed economy had shown people that capitalism wasn't inevitable, a revolutionary atmosphere grew. Workers' collectives took over factories, the labour movement grew and strikes were on the rise.
 
 
 > Framing monetary policy as a war effort has been part of the playbook for instituting austerity policies for over a century
