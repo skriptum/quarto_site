@@ -26,20 +26,21 @@ toc: false
 ---
 
 ::: {.content-block}
-
 ::: grid
 
 ::: {.g-col-12 .g-col-lg-6}
 # hi, i'm marten
 
-Currently studying Economics in Halle (Germany) and on the Council of Rethinking Economics International. Interested in *monetary theory*, *climate economics* and the *history of economic thought*, especially Keynesianism.
+Currently studying Economics in Halle (Germany) and on the Council of Rethinking Economics International. Interested in *monetary theory*, *climate economics* and the *history of economic thought*, especially Keynesianism → [more ***about*** me](about.qmd)
 
-→ more [about](about.qmd) me
+[`<button type="button">LinkedIn</button>`{=html}](https://www.linkedin.com/in/marten-w)
+[`<button type="button">GitHub</button>`{=html}](https://github.com/skriptum)
+[`<button type="button">BlueSky</button>`{=html}](https://bsky.app/profile/mwd.bsky.social).
 
-you can also find me on [LinkedIn](https://www.linkedin.com/in/marten-w), my code on [GitHub](https://github.com/skriptum) and my small thoughts on [BlueSky](https://bsky.app/profile/mwd.bsky.social).
+→ you can [***contact***](contact.qmd) me at *kontakt @ this site*
 
-→ you can [contact](contact.qmd) me at *kontakt* [at] this site
 :::
+
 
 ::: {.g-col-12 .g-col-lg-6}
 ![](images/profil_dunkel.webp)
@@ -58,6 +59,9 @@ you can also find me on [LinkedIn](https://www.linkedin.com/in/marten-w), my cod
 :::
 
 :::
+
+\
+
 <!-- Quote -->
 
 > Practical men who believe themselves to be quite exempt from any intellectual influence, are usually the slaves of some defunct economist. Madmen in authority, who hear voices in the air, are distilling their frenzy from some academic scribbler of a few years back

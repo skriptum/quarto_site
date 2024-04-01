@@ -29,7 +29,7 @@ website:
 
   page-footer:
     left: |
-      Copyright &copy; marten w. 
+      marten w. &copy; 2024
     center:
       - href: https://github.com/skriptum
         icon: github
