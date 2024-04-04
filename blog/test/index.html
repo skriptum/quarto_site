@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Plurale Ökonomik Halle">
-<meta name="dcterms.date" content="2022-05-12">
-<meta name="description" content="In den letzten 15 Jahren gab es in einigen großen Krisen eine gemeinsame Entwicklung: In der Finanz-, Klima-, Covid- und Russland-Ukraine-Krise wurden jeweils in der Haushalts- und Geldpolitik Regeln geändert oder gebrochen, die vorher als unumstößlich und unveränderbar gehandelt wurden.">
+<meta name="author" content="HTML Editor">
+<meta name="dcterms.date" content="2023-04-27">
+<meta name="description" content="Test of different Markdown elements.">
 
-<title>marten w. - Krisen machen Geld wieder politisch</title>
+<title>marten w. - Test</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -55,10 +89,38 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<meta property="og:title" content="marten w. - Krisen machen Geld wieder politisch">
-<meta property="og:description" content="In den letzten 15 Jahren gab es in einigen großen Krisen eine gemeinsame Entwicklung: In der Finanz-, Klima-, Covid- und Russland-Ukraine-Krise wurden jeweils in der Haushalts- und Geldpolitik Regeln geändert oder gebrochen, die vorher als unumstößlich und unveränderbar gehandelt wurden.">
-<meta property="og:image" content="https://martenw.com/blog/geldpolitik/featured.jpeg">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="marten w. - Test">
+<meta property="og:description" content="Test of different Markdown elements.">
 <meta property="og:site_name" content="marten w.">
 </head>
 
@@ -113,9 +175,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#there-are-three-things-you-dont-talk-about-politics-religion-and-money" id="toc-there-are-three-things-you-dont-talk-about-politics-religion-and-money" class="nav-link active" data-scroll-target="#there-are-three-things-you-dont-talk-about-politics-religion-and-money">There are three things you don´t talk about: politics, religion and money</a></li>
-  <li><a href="#ist-christus-lindner-der-fiskal-messias" id="toc-ist-christus-lindner-der-fiskal-messias" class="nav-link" data-scroll-target="#ist-christus-lindner-der-fiskal-messias">Ist Christus Lindner der Fiskal-Messias?</a></li>
-  <li><a href="#was-nun" id="toc-was-nun" class="nav-link" data-scroll-target="#was-nun">Was nun?</a></li>
+  <li><a href="#header-1" id="toc-header-1" class="nav-link active" data-scroll-target="#header-1">Header 1</a>
+  <ul class="collapse">
+  <li><a href="#header-2" id="toc-header-2" class="nav-link" data-scroll-target="#header-2">Header 2</a>
+  <ul class="collapse">
+  <li><a href="#header-3" id="toc-header-3" class="nav-link" data-scroll-target="#header-3">Header 3</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -124,12 +190,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Krisen machen Geld wieder politisch</h1>
+<h1 class="title">Test</h1>
 </div>
 
 <div>
   <div class="description">
-    <p>In den letzten 15 Jahren gab es in einigen großen Krisen eine gemeinsame Entwicklung: In der Finanz-, Klima-, Covid- und Russland-Ukraine-Krise wurden jeweils in der Haushalts- und Geldpolitik Regeln geändert oder gebrochen, die vorher als unumstößlich und unveränderbar gehandelt wurden.</p>
+    <p>Test of different Markdown elements.</p>
   </div>
 </div>
 
@@ -139,14 +205,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Plurale Ökonomik Halle </p>
+             <p>HTML Editor </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 12, 2022</p>
+      <p class="date">April 27, 2023</p>
     </div>
   </div>
   
@@ -158,38 +224,90 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="featured.jpeg" class="img-fluid figure-img"></p>
-<figcaption>Eurotower der EZB</figcaption>
-</figure>
-</div>
-<p><em>Dieser Text stammt von Kilian von der Pluralen Ökonomik Halle und entstand im Kontext unseres Lesekreises zu Geldpolitik und Schattenbanken. Er wurde erstmals im <a href="https://transit-magazin.de/2022/05/krisen-machen-geld-wieder-politisch/">Transit-Magazin</a> veröffentlicht</em></p>
-<p><strong><em>Als Annalena Baerbock am Morgen dieses erschütternden 24. Februars feststellte</em></strong>: „Wir sind heute in einer anderen Welt aufgewacht“, konnte man das noch vornehmlich auf die Verteidigungspolitik beziehen: Die angenommene Garantie für Frieden in Europa erwies sich als Illusion, der scheinbar unumstößliche Wille zur Abrüstung fing schon an zu schwanken. Einige Tage später aber stellen wir fest, dass auch die ökonomische Welt ein wenig aus den Angeln gehoben wurde. Wie schon in den großen Krisen der vergangenen 15 Jahre werden gerade in der Fiskal- und Geldpolitik unüberwindbar geglaubte Tabus gebrochen und scheinbar festgeschriebene Grenzen überschritten. Das geplante Sondervermögen für die Bundeswehr beispielsweise spottet der sonst so hochgehaltenen deutschen fiskalischen Disziplin.</p>
-<p>Die Sanktionen gegen russische Banken wiederum zeigen, dass Geldpolitik nicht einfach nur eine technische Angelegenheit für Expert*innengremien ist, sondern mächtige politische Instrumente birgt. Die Krise zeigt wieder einmal: Unsere wirtschaftspolitischen Regeln sind nicht gottgegeben und festgeschrieben, sondern änderbar. Und gerade der innerhalb weniger Tage vollzogene Richtungswechsel hin zur Aufrüstung zeigt, dass wir anfangen müssen, über Fragen der Haushalts- und Geldpolitik wieder zu streiten. Wir sollten sie nicht nur ad hoc in Krisenzeiten ändern, sondern kontinuierlich überprüfen und durchdacht verbessern. Es gilt, Haushalts- und Geldpolitik zu repolitisieren.</p>
-<section id="there-are-three-things-you-dont-talk-about-politics-religion-and-money" class="level2">
-<h2 class="anchored" data-anchor-id="there-are-three-things-you-dont-talk-about-politics-religion-and-money">There are three things you don´t talk about: politics, religion and money</h2>
-<p><strong><em>Wenn irgendetwas repolitisiert werden kann</em></strong>, muss es vorher entpolitisiert worden sein. Mit entpolitisieren meine ich: Eine Frage, die vorher öffentlich diskutiert und per direktem oder parlamentarischem Mehrheitsvotum entschieden wurde, von der Tagesordnung nehmen, beispielsweise indem man ihre Antwort in die Verfassung schreibt. So wie man halt bei Tisch nicht über Politik, Religion und Geld sprechen soll, haben auch wir uns entschieden, im öffentlichen Diskurs nicht mehr über bestimmte Zusammenhänge von Geld und Politik zu sprechen.</p>
-<p>In der Geldpolitik steht dafür in Europa die Europäische Zentralbank: Ob der Leitzins angehoben wird oder nicht, und in welcher Menge die EZB Staatsanleihen kauft, darüber wird nicht von gewählten Vertreter*innen der europäischen Bevölkerung diskutiert. Vielmehr wurde in den Maastricht-Verträgen ein Ziel festgeschrieben: Preisstabilität, knapp unter 2% Inflation, heute genau 2%. Und dieses feste Ziel soll nun von der EZB als Expertengremium umgesetzt werden. Das hat durchaus seine Vorteile: Es kann keinen verrückten Politiker mehr geben, der immer kurz vor der Wahl den Leitzins senkt, um die Wirtschaft anzukurbeln und so kurzfristig sein Image aufzupolieren. Die langfristigen Folgen wären eine mögliche Inflation und dadurch schlechtere wirtschaftlichen Entwicklung. Das zu verhindern, ist löblich. Die Festschreibung hat aber auch Nachteile: So diskutieren wir nie darüber, ob uns nicht beispielsweise eine niedrige Arbeitslosenquote wichtiger ist als die Inflation unter 2% zu halten, und ob wir nicht den Leitzins eher an Überlegungen zur Arbeitslosigkeit ausrichten sollten.</p>
-<p>Auch in der Fiskalpolitik wurde eine Frage dem Diskurs entzogen, nämlich die Frage nach dem richtigen Niveau und/oder Wachstum der Schulden – und damit indirekt auch der Größe des Haushalts. Mit der Schuldenbremse hat sich Deutschland per Verfassung darauf festgelegt, (fast) keine neuen Schulden aufzunehmen. Ähnliche Regeln gibt es auf der Ebene der EU. Auch dies hat Vorteile: Ein übermäßiger Schuldenstand könnte irgendwann dazu führen, dass wir große Mengen unseres Haushalts für die Schuldentilgung verwenden. Die Nachteile aber sind unübersehbar: Selbst, wenn wir bestimmte Investitionen für unsere Zukunft als sehr sinnvoll und lohnend erachten, brauchen wir eigentlich gar nicht erst anfangen, über sie zu reden. Denn die Schuldenbremse, gepaart mit fehlendem Willen zur erhöhten Besteuerung, schränkt unseren fiskalpolitischen Spielraum eng ein.</p>
-<p>Wie die Religion den Menschen Halt geben kann, so kann auch die quasi-religiöse Anbetung der Schuldenbremse und der Unabhängigkeit der Zentralbank stabilisierend wirken. Manchmal aber erweisen sich unsere Glaubenssätze als unbrauchbar, und dann müssen wir über neue Lösungen reden.</p>
-</section>
-<section id="ist-christus-lindner-der-fiskal-messias" class="level2">
-<h2 class="anchored" data-anchor-id="ist-christus-lindner-der-fiskal-messias">Ist Christus Lindner der Fiskal-Messias?</h2>
-<p>Dass die Regeln der Geld- und Fiskalpolitik tatsächlich von uns selbst gemacht und also auch wieder änderbar sind, ist in den letzten 15 Jahren besonders durch die großen Krisen immer wieder gezeigt worden.</p>
-<p>Die Finanzkrise ab 2007 führte zu einem veränderten Verhalten der Zentralbanken: Sie fingen an, Staatsanleihen in großem Maßstab aufzukaufen. Da ihnen monetäre Staatsfinanzierung untersagt ist, bewegten sie sich damit am Rande ihres Mandats – am Rande der Spielregeln. Auch ihre Entscheidung, dem Markt nicht mehr nur noch über Geschäftsbanken, sondern auch über Akteure des sogenannten Schattenbankensystems Geld bereitzustellen, bedeutete ein Novum. Genauso wurde in der Covidkrise mehr Akteuren als vorher über die Zentralbank Geld bereitgestellt: Geldpolitik wurde hier neu und außerhalb der alten Regeln gedacht.</p>
-<p>Auch der Klimawandel scheint bei der EZB angekommen zu sein. Sie denkt darüber nachdenkt, Investitionen in nachhaltige Anlagen zu priorisieren. Eine solche wirtschaftlich lenkende Rolle hatte sie vorher nicht eingenommen. Natürlich werden diese Kurswechsel der EZB nicht nur wohlwollend aufgenommen, sondern auch kritisiert. Aber immerhin: Wir reden darüber, was wir in Bezug auf Geldbereitstellung politisch wollen, und nehmen nicht einfach nur an, dass die alten Regeln schon dem Konsens entsprechen. Zuletzt verschiebt auch die aktuellste Krise, der russische Angriff auf die Ukraine, monetäre Paradigmen: Die wichtigsten Sanktionen gegen Putins Russland sind geldpolitischer Art. Russische Banken werden vom Zahlungssystem Swift ausgeschlossen, was die Möglichkeit internationalen Handels für Russland mit den sanktionierenden Ländern stark reduziert, weil fast kein Geld mehr nach Russland fließen kann. Und der russischen Zentralbank wird durch Einfrieren ihrer im Ausland gehaltenen Devisenreserven die Möglichkeit genommen, den Rubelkurs durch Aufkaufen von Rubel zu stützen.</p>
-<p>Die Antworten auf Klimawandel, Pandemie und den russischen Angriff kratzen aber nicht nur an den bisherigen Strukturen der Geld-, sondern auch der Haushaltspolitik. So wurde für 2020 bis 2022 die Schuldenbremse ausgesetzt, um die gesundheitlichen und wirtschaftlichen Folgen der Pandemie abzufedern. Und Teile der Mittel, die unter Aussetzung der Schuldenbremse im vergangenen Jahr für die Covidkrise bereitgestellt wurden, sollen nun für Investitionen für den Klimaschutz umgewidmet werden. Das muss man sich erst einmal vorstellen: Fiskalfalke Christian Lindner sucht nach Wegen, die Schuldenbremse zu umgehen. Und wie schon bei Pandemie und Klimawandel wird auch in Reaktion auf die Russland-Ukraine-Krise die wohl schon etwas ausgeleierte Schuldenbremse links (oder rechts) liegen gelassen. Olaf Scholz kündigte kürzlich an, per Sondervermögen, also vorbei an der Schuldenbremse, die Wiederaufrüstung der Bundeswehr zu ermöglichen.</p>
-<p>Und hier offenbart sich das Problem: Wir verlassen uns in „normalen“ Zeiten auf festgeschriebene Regeln. Erst in Krisenfällen werden diese Regeln, wie die Schuldenbremse oder eine vorgestellte Neutralität der Zentralbanken, dann gebrochen, weil man erkennt, dass sie möglicherweise nicht so gut funktionieren, wie man angenommen hatte. Die Änderung in Krisenzeiten aber hat oft einen administrativen und nicht politischen Charakter. Es wird nicht groß diskutiert, sondern durchregiert. Das kann dann manchmal gut gehen – Stichwort Nachtragshaushalt für Klimainvestitionen – und manchmal aber auch eine bedenkliche Richtung nehmen – Stichwort Aufrüstungswettbewerb. Die Lehre, die wir ziehen müssen, ist Folgende: Lasst uns anfangen, Regeln als das zu erkennen, was sie sind – menschengemacht, änderbar und also diskussionswürdig. We gotta talk about money.</p>
-</section>
-<section id="was-nun" class="level2">
-<h2 class="anchored" data-anchor-id="was-nun">Was nun?</h2>
-<p><strong><em>Es gibt die zynische Formel</em></strong>, dass man Krisen auch als eine Chance begreifen kann. Die Russland-Ukraine-Krise ist keine Chance, sie ist eine Katastrophe, nichts anderes. Putins Angriff löst schon nach wenigen Tagen unvorstellbar viel Leid aus. Wir werden aber aus dieser Situation Erkenntnisse ziehen müssen, und das galt auch schon für die anderen Krisen der 2000er und 2010er Jahre. Wir sollten die Krisenpolitik betrachten und an ihr aufzeigen, dass wir zwar innerhalb eines Sets von Regeln leben, diese Regeln aber selbst geschaffen haben und also auch wieder verändern können. Während wir in der Geldpolitik noch weit von einer tatsächlichen Repolitisierung entfernt sind, muss anhand der Russland-Ukraine-Krise dem öffentlichen Bewusstsein klargemacht werden: Sieh doch hin, Geld ist politisch. In der Fiskalpolitik aber deutet sich an, dass die Politik tatsächlich lernfähig ist. Während wir derzeit noch offiziell an der Schuldenbremse festhalten, wird de facto schon versucht, sie zu umgehen. Es ist nicht auszuschließen, dass nach einer Periode der Quasi-Aussetzung der Schwarzen Null bei genügend Parlamentarier*innen durchsickert, dass das alles auch sein Gutes hat, und dass in der Folge auch eine formale Abschaffung der Schuldenbremse wieder auf die Tagesordnung kommen könnte.</p>
+<p><em>access this page by running <code>quarto preview</code> in the terminal and going to url /blog/test/</em></p>
+<section id="header-1" class="level1">
+<h1>Header 1</h1>
+<section id="header-2" class="level2">
+<h2 class="anchored" data-anchor-id="header-2">Header 2</h2>
+<section id="header-3" class="level3">
+<h3 class="anchored" data-anchor-id="header-3">Header 3</h3>
+<section id="header-4" class="level4">
+<h4 class="anchored" data-anchor-id="header-4">Header 4</h4>
+<section id="header-5" class="level5">
+<h5 class="anchored" data-anchor-id="header-5">Header 5</h5>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"This is a code block)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<blockquote class="blockquote">
+<p>Quote</p>
+<p><em>Author</em></p>
+</blockquote>
+<ul>
+<li>List</li>
+<li>List</li>
+<li>List</li>
+</ul>
+<ol type="1">
+<li>List</li>
+<li>List</li>
+<li>List</li>
+</ol>
+<p><a href="https://www.google.com">Link</a></p>
+<p><strong><em>Lets show</em></strong> the normal text: Normal Text (Did you see this small caps example?), <strong>Bold</strong> and <em>Italic</em>, followed by an HR.</p>
+<hr>
+<p>Here’s a simple footnote,<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> , wow would you look at that a second footnote.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>Now some cool math:</p>
+<p><span class="math display">\[
+E = mc^2
+\]</span></p>
+<p>Table:</p>
+<table class="table">
+<caption>This is a table caption.</caption>
+<thead>
+<tr class="header">
+<th>Header 1</th>
+<th>Header 2</th>
+<th>Header 3</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cell 1</td>
+<td>Cell 2</td>
+<td>Cell 3</td>
+</tr>
+<tr class="even">
+<td>Cell 4</td>
+<td>Cell 5</td>
+<td>Cell 6</td>
+</tr>
+<tr class="odd">
+<td>Cell 7</td>
+<td>Cell 8</td>
+<td>Cell 9</td>
+</tr>
+<tr class="even">
+<td>Cell 10</td>
+<td>Cell 11</td>
+<td>Cell 12</td>
+</tr>
+</tbody>
+</table>
+<p>Wow more text</p>
 
 
 </section>
+</section>
+</section>
+</section>
+</section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>This is the first footnote.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>This is the second footnote.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
