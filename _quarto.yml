@@ -21,6 +21,8 @@ website:
         href: https://vwl.martenw.com
       - text: ABOUT
         href: about.qmd
+      - text: CONTACT
+        href: contact.qmd
       
 
   page-navigation: true
