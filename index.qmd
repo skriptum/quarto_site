@@ -22,13 +22,18 @@ listing:
     fields: [image, date, title, description]
     
 toc: false
+format: 
+  html:
+    html-math-method: plain
 ---
+
 
 ::: {.content-block}
 ::: grid
 
 ::: {.g-col-12 .g-col-lg-6}
-# hi, i'm marten
+
+# hi, i'm marten ![](images/logo.webp){height=1em}
 
 Currently studying Economics in Halle (Germany) and on the Council of Rethinking Economics International. Interested in *monetary theory*, *climate economics* and the *history of economic thought*, especially Keynesianism 
 
@@ -39,6 +44,8 @@ Currently studying Economics in Halle (Germany) and on the Council of Rethinking
 [`<button type="button">BlueSky</button>`{=html}](https://bsky.app/profile/mwd.bsky.social).
 
 → you can [***contact***](contact.qmd) me at *kontakt @ this site*
+
+
 
 :::
 

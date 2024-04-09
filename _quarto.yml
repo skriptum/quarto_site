@@ -8,7 +8,7 @@ website:
   site-url: https://martenw.com/
   search: false
   navbar:
-    logo: images/logo.webp
+    #logo: images/logo.webp
     logo-alt: "logo"
     title: "marten w."
     collapse-below: lg
@@ -54,6 +54,7 @@ format:
       sidebar-width: 0px
       body-width: 1000px
       margin-width: 250px
+    html-math-method: katex
 link-external-icon: false
 link-external-newwindow: true
 
