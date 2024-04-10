@@ -43,8 +43,6 @@ Currently studying Economics in Halle (Germany) and on the Council of Rethinking
 [`<button type="button">GitHub</button>`{=html}](https://github.com/skriptum)
 [`<button type="button">BlueSky</button>`{=html}](https://bsky.app/profile/mwd.bsky.social).
 
-→ you can [***contact***](contact.qmd) me at *kontakt @ this site*
-
 
 
 :::
