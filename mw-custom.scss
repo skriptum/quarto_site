@@ -50,8 +50,8 @@ $table-border-color: $mw-color;
 .navbar {
   border-bottom: 1px solid $black;
   font-family: $font-family-sans-serif;
+  text-transform: lowercase;
   font-weight: 600;
-  font-style: italic;
   .navbar-title {
     font-family: $font-family-serif;
     font-weight: 700;
