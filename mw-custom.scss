@@ -17,16 +17,15 @@ $mw-secondary: #0d7680;
 $mw-secondary-light: #7CA6A6;
 
 $mw-dark: #333333;
-$mw-light: #fff1e0; //before: f4e9e6
-$mw-light-secondary: #F2DFCE;
+$mw-light: #FFEDE0; //before: f4e9e6
+$mw-light-secondary: #F2DBCE;
 $font-color: #111111;
 
 $font-family-serif: 'Libre Bodoni', serif;
 $font-family-sans-serif: 'Josefin Sans', sans-serif;
 
-$body-font-weight: 600;
+
 $font-size-root: 20px;
-$grid-body-width: 700px !default;
 
 $link-color: $mw-color;
 
@@ -52,11 +51,17 @@ $table-border-color: $mw-color;
   font-family: $font-family-sans-serif;
   text-transform: lowercase;
   font-weight: 600;
+  position: relative;
   .navbar-title {
     font-family: $font-family-serif;
     font-weight: 700;
     font-style: normal;
     color: $mw-dark;
+  }
+  .navbar-brand { /* position in middle */
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important;  /* 50% of your logo width */
   }
   a:hover {
     text-decoration: underline solid $mw-color;
@@ -119,8 +124,8 @@ $table-border-color: $mw-color;
 // General
 
 body {
-  font-weight: 350;
-  line-height: 1.3;
+  font-weight: 300;
+  line-height: 1.4;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -157,6 +162,10 @@ button {
   &:hover {
     background-color: $mw-color-light;
   }
+}
+
+pre code {
+  font-size: 14 !important;
 }
 
 .table {

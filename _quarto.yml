@@ -51,10 +51,15 @@ format:
     theme: [mw-custom.scss]
     toc: true
     grid:
-      sidebar-width: 0px
-      body-width: 1000px
-      margin-width: 250px
+      body-width: 800px
     html-math-method: katex
+
+#for transparency in plots in ggplot! see in Test 
+knitr: 
+  opts_chunk:
+    dev: svg
+    dev.args: { bg: "transparent" }
+
 link-external-icon: false
 link-external-newwindow: true
 
