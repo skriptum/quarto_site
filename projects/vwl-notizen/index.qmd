@@ -5,9 +5,10 @@ excerpt: |
   Um anderen das Leben zu vereinfachen, habe ich alle meine Mitschriften zu 
   Modulen aus dem ersten Semester VWL auf dieser Seite veröffentlicht, inklusive Zusammenfassungen
   und einer Suchfunktion
-date: "2022-03-01"
+date: "2023-03-01"
 author-title: Github
 author: '<a href="https://github.com/skriptum/vwl">skriptum/vwl</a>'
+image: "featured.webp"
 ---
 
 ![Notizen-Website](featured.jpg)

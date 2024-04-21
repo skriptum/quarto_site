@@ -91,7 +91,7 @@ plot_themed <- ggplot(data, aes(x, y)) +
   theme(
     panel.background = element_rect(fill = "#F2DBCE", color="#F2DBCE"),
     plot.background = element_rect(fill = "transparent", color="transparent")
-    )
+    ) 
 plot_themed
 ```
 

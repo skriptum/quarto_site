@@ -6,6 +6,7 @@ excerpt: |
 date: "2021-05-01"
 author-title: GitHub
 author: '<a href="https://github.com/skriptum/zeit">skriptum/zeit</a>'
+image: "featured.webp"
 ---
 
 ![PyPI Package Website](featured.png)

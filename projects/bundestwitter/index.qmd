@@ -11,6 +11,7 @@ description: |
   Internet treiben
 author-title: Github
 author: '<a href="https://github.com/skriptum/bundestag">skriptum/bundestag</a>'
+image: "featured.webp"
 ---
 
 

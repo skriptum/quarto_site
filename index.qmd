@@ -20,6 +20,18 @@ listing:
     max-items: 3
     feed: false
     fields: [image, date, title, description]
+  - id: projects
+    contents: 
+    - /projects
+    - "!projects/index.qmd"
+    sort: "date desc"
+    type: grid
+    categories: false
+    sort-ui: false
+    filter-ui: false
+    max-items: 3
+    feed: false
+    fields: [image, date, title, description]
     
 toc: false
 format: 
@@ -55,8 +67,18 @@ Currently studying Economics in Halle (Germany) and on the Council of Rethinking
 :::
 :::
 
+<!-- Projects -->
 :::{.content-block}
+
+## Projects
+
+:::{#projects}
+:::
+
+:::
+
 <!-- Blog -->
+:::{.content-block}
 
 ## Blog
 
@@ -72,7 +94,7 @@ Currently studying Economics in Halle (Germany) and on the Council of Rethinking
 
 > ![](images/quote.png){width=10%}
 > 
->Practical men who believe themselves to be quite exempt from any intellectual influence, are usually the slaves of some defunct economist. Madmen in authority, who hear voices in the air, are distilling their frenzy from some academic scribbler of a few years back
+> Practical men who believe themselves to be quite exempt from any intellectual influence, are usually the slaves of some defunct economist. Madmen in authority, who hear voices in the air, are distilling their frenzy from some academic scribbler of a few years back
 >
 > *John Maynard Keynes*
 

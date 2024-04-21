@@ -8,6 +8,7 @@ excerpt: |
 date: "2021-04-01"
 author-title: GitHub
 author: '<a href="https://github.com/skriptum/zeitworte">skriptum/zeitworte</a>'
+image: "featured.webp"
 ---
 
 ![Image](featured.jpg)
