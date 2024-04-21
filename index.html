@@ -83,11 +83,40 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-projects .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-date','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-projects'] = new List('listing-projects', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
 
 <meta property="og:title" content="marten w.">
 <meta property="og:description" content="personal website of marten w.">
+<meta property="og:image" content="https://martenw.com/projects/mindestlohn/featured.webp">
 <meta property="og:site_name" content="marten w.">
 </head>
 
@@ -158,15 +187,94 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </div>
-<div class="content-block">
+<!-- Projects -->
+<section id="projects" class="content-block">
+<h2 class="anchored">Projects</h2>
+<div id="listing-projects" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="R,politics,inequality" data-listing-date-sort="1710028800000" data-listing-file-modified-sort="1713711652747" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="507">
+<a href="./projects/mindestlohn/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./projects/mindestlohn/featured.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Paycheck Politics
+</h5>
+<div class="card-text listing-description">
+Research Project on the connection between minimum wage recipiency and voting for populist right for a seminar in Empirical Economics. This page presents some findings and…
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Mar 10, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-date-sort="1677628800000" data-listing-file-modified-sort="1713711652791" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="71">
+<a href="./projects/vwl-notizen/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./projects/vwl-notizen/featured.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Notizen meines Studiums
+</h5>
+<div class="card-text listing-description">
+Wer zum ersten Semester in ein Studium reinstolpert, wird erstmal komplett überfordert sein von all den verschiedenen Anforderungen die an einen gestellt werden. Um den…
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Mar 1, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-date-sort="1619827200000" data-listing-file-modified-sort="1713711652791" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="187">
+<a href="./projects/zeit-api/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./projects/zeit-api/featured.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+ZEIT API in Python
+</h5>
+<div class="card-text listing-description">
+Die ZEIT ist als eine der ältesten und wichtigsten Zeitungen Deutschlands ein wahrer Schatz an Informationen, sei es über die Themen vergangener Zeiten, die politischen…
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+May 1, 2021
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
 <!-- Blog -->
-<h2 id="blog" class="anchored">Blog</h2>
+<section id="blog" class="content-block">
+<h2 class="anchored">Blog</h2>
 <div id="listing-blog" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-date-sort="1682553600000" data-listing-file-modified-sort="1713711584244" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="670">
+<div class="g-col-1" data-index="0" data-listing-date-sort="1682553600000" data-listing-file-modified-sort="1713711652735" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="670">
 <a href="./blog/capitalorder/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/capitalorder/featured.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="./blog/capitalorder/featured.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 The dark intellectual tradition of austerity
@@ -183,10 +291,12 @@ Apr 27, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-listing-date-sort="1654992000000" data-listing-file-modified-sort="1713711584244" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1005">
+<div class="g-col-1" data-index="1" data-listing-date-sort="1654992000000" data-listing-file-modified-sort="1713711652735" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1005">
 <a href="./blog/climate/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/climate/featured.jpg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="./blog/climate/featured.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Was läuft falsch in der Klimaökonomik?
@@ -203,10 +313,12 @@ Jun 12, 2022
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-date-sort="1652313600000" data-listing-file-modified-sort="1713711584244" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1302">
+<div class="g-col-1" data-index="2" data-listing-date-sort="1652313600000" data-listing-file-modified-sort="1713711652739" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1302">
 <a href="./blog/geldpolitik/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog/geldpolitik/featured.jpeg" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<p class="card-img-top">
+<img src="./blog/geldpolitik/featured.webp" class="thumbnail-image card-img" style="height: 150px;">
+</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Krisen machen Geld wieder politisch
@@ -228,7 +340,7 @@ May 12, 2022
 No matching items
 </div>
 </div>
-</div>
+</section>
 <p><br>
 </p>
 <!-- Quote -->

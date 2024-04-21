@@ -23,7 +23,13 @@
     "items": [
       "/blog/capitalorder/index.html",
       "/blog/climate/index.html",
-      "/blog/geldpolitik/index.html"
+      "/blog/geldpolitik/index.html",
+      "/projects/mindestlohn/index.html",
+      "/projects/vwl-notizen/index.html",
+      "/projects/zeit-api/index.html",
+      "/projects/zeitworte/index.html",
+      "/projects/bundestwitter/index.html",
+      "/projects/unfallkarte/index.html"
     ]
   }
 ]

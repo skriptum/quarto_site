@@ -707,7 +707,8 @@ Residual Std. Error
 
  ]]></description>
   <guid>https://martenw.com/projects/vwl-notizen/</guid>
-  <pubDate>Tue, 01 Mar 2022 00:00:00 GMT</pubDate>
+  <pubDate>Wed, 01 Mar 2023 00:00:00 GMT</pubDate>
+  <media:content url="https://martenw.com/projects/vwl-notizen/featured.webp" medium="image" type="image/webp"/>
 </item>
 <item>
   <title>ZEIT API in Python</title>
@@ -766,6 +767,7 @@ font-style: inherit;">#jetzt steht dir die Welt von Zeit Online offen</span></sp
  ]]></description>
   <guid>https://martenw.com/projects/zeit-api/</guid>
   <pubDate>Sat, 01 May 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://martenw.com/projects/zeit-api/featured.webp" medium="image" type="image/webp"/>
 </item>
 <item>
   <title>Zeitanalyse</title>
@@ -816,6 +818,7 @@ font-style: inherit;">#jetzt steht dir die Welt von Zeit Online offen</span></sp
  ]]></description>
   <guid>https://martenw.com/projects/zeitworte/</guid>
   <pubDate>Thu, 01 Apr 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://martenw.com/projects/zeitworte/featured.webp" medium="image" type="image/webp"/>
 </item>
 <item>
   <title>Bundestwitter</title>
@@ -850,6 +853,7 @@ font-style: inherit;">#jetzt steht dir die Welt von Zeit Online offen</span></sp
   <category>twitter</category>
   <guid>https://martenw.com/projects/bundestwitter/</guid>
   <pubDate>Tue, 16 Feb 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://martenw.com/projects/bundestwitter/featured.webp" medium="image" type="image/webp"/>
 </item>
 <item>
   <title>Interaktive Unfallkarte</title>
@@ -877,6 +881,7 @@ font-style: inherit;">#jetzt steht dir die Welt von Zeit Online offen</span></sp
  ]]></description>
   <guid>https://martenw.com/projects/unfallkarte/</guid>
   <pubDate>Thu, 04 Feb 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://martenw.com/projects/unfallkarte/featured.webp" medium="image" type="image/webp"/>
 </item>
 </channel>
 </rss>
