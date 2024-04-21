@@ -10,7 +10,681 @@
 <atom:link href="https://martenw.com/projects/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.4.553</generator>
-<lastBuildDate>Tue, 01 Mar 2022 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 10 Mar 2024 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>Paycheck Politics</title>
+  <dc:creator>&lt;a href=&quot;https://skriptum.github.io/mindestlohn&quot;&gt;Online Version&lt;/a&gt;</dc:creator>
+  <link>https://martenw.com/projects/mindestlohn/</link>
+  <description><![CDATA[ 
+
+
+
+
+<div id="fig-maps" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-maps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://martenw.com/projects/mindestlohn/maps.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-maps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Representation of Minimum Wage and Vote Share Data
+</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>The Code and Data for this project can be downloaded at the <a href="https://github.com/skriptum/mindestlohn">GitHub Repo</a>. An online version of the seminar paper is available <a href="https://skriptum.github.io/mindestlohn">here</a> with more interactive graphics.</p>
+</blockquote>
+<p>Nestled in the heart of Thuringia, the German district of Sonneberg made headlines with a historic moment – it became the first constituency to elect a district administrator from the right wing Alternative for Germany (AfD) party. In an unexpected turn, Robert Sesselmann of the AfD won a closely contested run-off election against the conservative Christian Democratic Union (CDU), securing 52.8% of the votes. The results not only marked a seismic shift in local politics but sent shockwaves through the established political order <span class="citation" data-cites="schuetzeFirstGermanyFar2023">(Schuetze 2023)</span>. It exemplifies the growing right-wing populism which has been spreading in Germany and elsewhere over the last few decades.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-schuetzeFirstGermanyFar2023" class="csl-entry">
+Schuetze, Christopher F. 2023. <span>“In a <span>First</span>, <span>Germany</span>’s <span>Far Right AfD Party Will Take Control</span> of a <span>District</span>.”</span> <em>The New York Times</em>, June. <a href="https://www.nytimes.com/2023/06/26/world/europe/germany-afd-far-right.html">https://www.nytimes.com/2023/06/26/world/europe/germany-afd-far-right.html</a>.
+</div></div><p>Intriguingly, Sonneberg also holds the distinction of having the highest percentage of minimum wage workers in Germany – 44%. This paper aims to explore the connection between minimum wage recipiency and the support for right-wing populist movements, using Sonneberg as a focal point. Employing data from the WSI and the German Federal Election Officer in an Ordinary Least Squares (OLS) regression, the findings reveals a significant correlation between these variables, even when accounting for other relevant controls.</p>
+<section id="data" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>The analysis is based on data compiled by <span class="citation" data-cites="puschMindestlohn12Euro2022">Pusch and Seils (2022)</span> at the Institute of Economic and Social Sciences (WSI). They provide an estimate of the share of workers in a given district who will be affected by the increase in the minimum wage to €12 in October 2022 (henceforth minimum wage workers).</p>
+<div class="no-row-height column-margin column-container"><div id="ref-puschMindestlohn12Euro2022" class="csl-entry">
+Pusch, Toralf, and Eric Seils. 2022. <span>“<span>Mindestlohn 12 Euro - Auswirkungen in den Kreisen</span>.”</span> D<span>ü</span>sseldorf: Wirtschafts- und Sozialwissenschaftliche Institut (WSI). <a href="https://hdl.handle.net/10419/265130">https://hdl.handle.net/10419/265130</a>.
+</div><div id="ref-diebundeswahlleiterinBundestagswahl2021Endgultiges2021" class="csl-entry">
+Bundeswahlleiterin, Die. 2021. <span>“Bundestagswahl 2021: <span class="nocase">Endg<span class="nocase">ü</span>ltiges Ergebnis</span>.”</span> <a href="https://bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2021/52_21_endgueltiges-ergebnis.html">https://bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2021/52_21_endgueltiges-ergebnis.html</a>.
+</div></div><p>Alternative for Germany (AfD) results from the federal election on the 26.10.2021 are from the Federal Election Commissioner (<span class="citation" data-cites="diebundeswahlleiterinBundestagswahl2021Endgultiges2021">Bundeswahlleiterin (2021)</span>). Elections in Germany take place in constituencies (Wahlkreise), which are different from the standard counties (Landkreise). Therefore, the data is transformed by the election office, which does not lead to any losses.</p>
+<div id="fig-maps-bg" class="quarto-figure quarto-figure-center quarto-float anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-maps-bg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://martenw.com/projects/mindestlohn/maps_bg.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-maps-bg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Repr. of Minimum Wage (left) and Vote Share (right)
+</figcaption>
+</figure>
+</div>
+<p>Additional data on socio-economic and socio-demographic factors are provided by the regional statistical offices of the Länder. Most of these data are for the year 2022, with the exception of population density estimates, for which more recent data are not yet available.</p>
+<table class="table">
+<caption>Summary Statistics</caption>
+<thead>
+<tr class="header">
+<th>Statistic</th>
+<th>N</th>
+<th>Mean</th>
+<th>St.&nbsp;Dev.</th>
+<th>Min</th>
+<th>Max</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AfD vote share</td>
+<td>400</td>
+<td>0.113</td>
+<td>0.058</td>
+<td>0.029</td>
+<td>0.321</td>
+</tr>
+<tr class="even">
+<td>MW share</td>
+<td>400</td>
+<td>0.194</td>
+<td>0.064</td>
+<td>0.079</td>
+<td>0.440</td>
+</tr>
+<tr class="odd">
+<td>Ost Dummy</td>
+<td>400</td>
+<td>0.190</td>
+<td>0.393</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Unempl.</td>
+<td>400</td>
+<td>0.052</td>
+<td>0.022</td>
+<td>0.019</td>
+<td>0.148</td>
+</tr>
+<tr class="odd">
+<td>GDP</td>
+<td>400</td>
+<td>40,329.500</td>
+<td>16,743.150</td>
+<td>17,553</td>
+<td>158,749</td>
+</tr>
+<tr class="even">
+<td>Avg. Age</td>
+<td>400</td>
+<td>45.277</td>
+<td>2.008</td>
+<td>40.700</td>
+<td>51.000</td>
+</tr>
+<tr class="odd">
+<td>Pop. Density</td>
+<td>400</td>
+<td>536.540</td>
+<td>708.669</td>
+<td>35.300</td>
+<td>4,788.200</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="regression" class="level2">
+<h2 class="anchored" data-anchor-id="regression">Regression</h2>
+<p>Regression Formula:</p>
+<p><span id="eq-1"><img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bafd%7D_%7Bi%7D%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20%5Ctext%7Bmw%7D_%7Bi%7D%20+%20%5Csum_2%5Ek%5Cbeta_k%20%5Ctext%7Bcontrols%7D_%7Bi,k%7D%20+%20%5Cepsilon_%7Bi%7D%0A%5Ctag%7B1%7D"></span></p>
+<p>Simple Regression Line</p>
+<p><img src="https://martenw.com/projects/mindestlohn/plot_basic.png" class="img-fluid"></p>
+<p>Multiple Regression Results</p>
+<table style="text-align:center">
+<caption>
+<strong>Effect of Minimum Wage Recipients on AfD Vote Share</strong>
+</caption>
+<tbody><tr>
+<td colspan="7" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="6">
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="6">
+AfD Vote Share
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+<td>
+(3)
+</td>
+<td>
+(4)
+</td>
+<td>
+(5)
+</td>
+<td>
+(6)
+</td>
+</tr>
+<tr>
+<td colspan="7" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Minimum Wage Rate
+</td>
+<td>
+0.714<sup>***</sup>
+</td>
+<td>
+0.291<sup>***</sup>
+</td>
+<td>
+0.308<sup>***</sup>
+</td>
+<td>
+0.301<sup>***</sup>
+</td>
+<td>
+0.227<sup>***</sup>
+</td>
+<td>
+0.220<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.028)
+</td>
+<td>
+(0.039)
+</td>
+<td>
+(0.039)
+</td>
+<td>
+(0.044)
+</td>
+<td>
+(0.044)
+</td>
+<td>
+(0.044)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+East Germany
+</td>
+<td>
+</td>
+<td>
+0.086<sup>***</sup>
+</td>
+<td>
+0.088<sup>***</sup>
+</td>
+<td>
+0.088<sup>***</sup>
+</td>
+<td>
+0.081<sup>***</sup>
+</td>
+<td>
+0.082<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+(0.006)
+</td>
+<td>
+(0.006)
+</td>
+<td>
+(0.006)
+</td>
+<td>
+(0.006)
+</td>
+<td>
+(0.006)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Unemployment Rate
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+-0.279<sup>***</sup>
+</td>
+<td>
+-0.275<sup>***</sup>
+</td>
+<td>
+-0.244<sup>***</sup>
+</td>
+<td>
+-0.163<sup>*</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.071)
+</td>
+<td>
+(0.072)
+</td>
+<td>
+(0.070)
+</td>
+<td>
+(0.093)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Log GDP p.&nbsp;C.
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+-0.002
+</td>
+<td>
+0.011<sup>*</sup>
+</td>
+<td>
+0.013<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.005)
+</td>
+<td>
+(0.006)
+</td>
+<td>
+(0.006)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Avg. Age
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.006<sup>***</sup>
+</td>
+<td>
+0.006<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.001)
+</td>
+<td>
+(0.001)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Log Pop. Density
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+-0.003
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.002)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+-0.026<sup>***</sup>
+</td>
+<td>
+0.040<sup>***</sup>
+</td>
+<td>
+0.051<sup>***</sup>
+</td>
+<td>
+0.071
+</td>
+<td>
+-0.332<sup>***</sup>
+</td>
+<td>
+-0.315<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.006)
+</td>
+<td>
+(0.007)
+</td>
+<td>
+(0.007)
+</td>
+<td>
+(0.060)
+</td>
+<td>
+(0.091)
+</td>
+<td>
+(0.092)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="7" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+400
+</td>
+<td>
+400
+</td>
+<td>
+400
+</td>
+<td>
+400
+</td>
+<td>
+400
+</td>
+<td>
+400
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.612
+</td>
+<td>
+0.732
+</td>
+<td>
+0.742
+</td>
+<td>
+0.741
+</td>
+<td>
+0.760
+</td>
+<td>
+0.761
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Residual Std. Error
+</td>
+<td>
+0.036
+</td>
+<td>
+0.030
+</td>
+<td>
+0.030
+</td>
+<td>
+0.030
+</td>
+<td>
+0.029
+</td>
+<td>
+0.029
+</td>
+</tr>
+<tr>
+<td colspan="7" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="6" style="text-align:right">
+<sup><em></em></sup><em>p&lt;0.1; <sup><strong></strong></sup><strong>p&lt;0.05; <sup></sup></strong></em>p&lt;0.01
+</td>
+</tr>
+</tbody></table>
+
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>politics</category>
+  <category>inequality</category>
+  <guid>https://martenw.com/projects/mindestlohn/</guid>
+  <pubDate>Sun, 10 Mar 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://martenw.com/projects/mindestlohn/featured.webp" medium="image" type="image/webp"/>
+</item>
 <item>
   <title>Notizen meines Studiums</title>
   <dc:creator>&lt;a href=&quot;https://github.com/skriptum/vwl&quot;&gt;skriptum/vwl&lt;/a&gt;</dc:creator>

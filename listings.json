@@ -10,6 +10,7 @@
   {
     "listing": "/projects/index.html",
     "items": [
+      "/projects/mindestlohn/index.html",
       "/projects/vwl-notizen/index.html",
       "/projects/zeit-api/index.html",
       "/projects/zeitworte/index.html",
