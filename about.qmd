@@ -1,16 +1,12 @@
 ---
-title: "Hi, ich bin marten"
-subtitle: "Economics, Politics, Programming"
-pagetitle: About
-sidebar: false
-page-layout: article
+about: 
+    template: jolla
+    image: images/marder.png
+    image-shape: rectangle
 toc: false
-title-block-banner: false
 ---
 
-::: grid
-
-::: {.g-col-12 .g-col-lg-8}
+# marten
 
 Derzeit studiere ich VWL an der Martin-Luther-Universität Halle und bin Mitlgied des Netzwerks Plurale Ökonomik. Auf dieser Website sammle ich verschiedene Projekte und Ideen, meist in einem technischen / politischen / ökonomischen Kontext.
 
@@ -20,23 +16,9 @@ Auch an allen möglichen technischen Sachen habe ich großes Interesse, insbeson
 
 Diese Website ist eine bunte Mischung an Themen zwischen diesen beiden Polen und irgendwie auch eine Möglichkeit, sich dem durchkommerzialisierten Internet entgegenzustellen.
 
-:::
-
-::: {.g-col-12 .g-col-lg-4}
-
-## Blog Roll
-
-##### [Rethinking Economics](https://www.rethinkeconomics.org/blog/)
-
-##### [makronom](https://makronom.de/)
-
-##### [ChartBook](https://adamtooze.substack.com/)
-
-##### [Whats a BlogRoll?](https://blogroll.org/what-are-blogrolls/)
+\
 
 
-:::
 
-:::
 
 

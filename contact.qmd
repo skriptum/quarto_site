@@ -1,17 +1,17 @@
 ---
-title: Contact
-description: How to reach me?
 sidebar: false
 page-layout: article
 toc: false
 title-block-banner: false
 ---
 
-write to: *ko&#110;&#116;a&#107;t &#64; martenw&#46;co&#109;*
+# I’d love to hear from you!
 
-for users of PGP Encryption:
+You can find me online 
 
-- Fingerprint [36B18BB9C27F985832D0D1E70772DABED0FCB0DA](https://keys.openpgp.org/vks/v1/by-fingerprint/36B18BB9C27F985832D0D1E70772DABED0FCB0DA)
-- Key: [OpenPGP](https://keys.openpgp.org/vks/v1/by-fingerprint/36B18BB9C27F985832D0D1E70772DABED0FCB0DA)
+[`<button type="button">LinkedIn</button>`{=html}](https://www.linkedin.com/in/marten-w)
+[`<button type="button">GitHub</button>`{=html}](https://github.com/skriptum)
+[`<button type="button">BlueSky</button>`{=html}](https://bsky.app/profile/mwd.bsky.social).
 
 
+Or, you can drop me an e-mail at **ko&#110;&#116;a&#107;t &#64; martenw&#46;co&#109;** ([OpenPGP-Key](https://keys.openpgp.org/vks/v1/by-fingerprint/36B18BB9C27F985832D0D1E70772DABED0FCB0DA))

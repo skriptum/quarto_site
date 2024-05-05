@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "marten w."
+  title: "marten"
   favicon: images/logo.ico
   open-graph: true
   site-url: https://martenw.com/
@@ -10,15 +10,13 @@ website:
   navbar:
     #logo: images/logo.webp
     logo-alt: "logo"
-    title: "marten w."
+    title: "marten"
     collapse-below: lg
     right: 
       - text: PROJECTS
         href: projects/index.qmd
       - text: BLOG
         href: blog/index.qmd
-      - text: NOTES
-        href: https://vwl.martenw.com
       - text: ABOUT
         href: about.qmd
       - text: CONTACT
@@ -30,8 +28,6 @@ website:
   back-to-top-navigation: false
 
   page-footer:
-    left: |
-      marten w. &copy; 2024
     center:
       - href: https://github.com/skriptum
         icon: github
@@ -42,9 +38,8 @@ website:
       - href: https://bsky.app/profile/mwd.bsky.social
         icon: twitter
         aria-label: bluesky
-
-    right: |
-      [Contact](/contact.qmd)
+    left: 
+      - text: "© 2024"
 
 format:
   html:
