@@ -1,3 +1,5 @@
 # Personal Website
 
-built using Quarto and the Theme [from](https://realworlddatascience.net/)
+built using Quarto with a custom Theme inspired by the Financial Times
+
+![](images/marder.png)
