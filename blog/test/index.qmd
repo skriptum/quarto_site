@@ -25,6 +25,12 @@ description: |
 print("This is a code block)
 ```
 
+and code without a lang
+
+```
+code code code
+```
+
 > Quote
 >
 > *Author*

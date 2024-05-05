@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "marten"
+  title: "Marten Walk"
   favicon: images/logo.ico
   open-graph: true
   site-url: https://martenw.com/
@@ -10,7 +10,7 @@ website:
   navbar:
     #logo: images/logo.webp
     logo-alt: "logo"
-    title: "marten"
+    title: Marten Walk
     collapse-below: lg
     right: 
       - text: PROJECTS
@@ -21,7 +21,7 @@ website:
         href: about.qmd
       - text: CONTACT
         href: contact.qmd
-      
+
 
   page-navigation: true
 
@@ -39,7 +39,9 @@ website:
         icon: twitter
         aria-label: bluesky
     left: 
-      - text: "© 2024"
+      - text: "© 2021-2024"
+    right:
+      - text: "Built with Quarto, inspired by FT"
 
 format:
   html:
