@@ -1,11 +1,14 @@
 ---
 title: "The dark intellectual tradition of austerity" 
-author: marten w. / Rethinking Economics
+author: "marten walk / Rethinking Economics"
 date: "2023-04-27"
 draft: false
 description: | 
   Why does austerity exist? A question heterodox economist ask themselves often enough, because of its obvious incapabilities to address our current economic problems. A book review of Clara Matteis "The Capital Order".
 image: "featured.webp"
+citation: 
+  author: "marten walk"
+google-scholar: true  
 ---
 
 ![cover](featured.png)

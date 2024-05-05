@@ -33,6 +33,8 @@ $body-bg: $mw-light;
 $code-block-bg: $mw-light-secondary; //e1d3d0
 $code-bg: $mw-light-secondary;
 $code-color: $font-color;
+$border-color: #ccbbb1; // color of citation border
+
 
 $navbar-bg: $mw-light;
 $navbar-fg: $mw-color;
@@ -41,6 +43,17 @@ $footer-fg: $font-color;
 
 $table-border-width: 0px;
 $table-border-color: $mw-color;
+
+// Standard Color Palette (from Flexoki)
+
+$red: rgb(175, 48, 41);
+$orange: rgb(188, 82, 21);
+$yellow: rgb(181, 137, 0);
+$green: rgb(102, 128, 11);
+$cyan: rgb(36, 131, 123);
+$blue: rgb(32, 94, 166);
+$purple: rgb(94, 64, 157);
+$magenta: rgb(160, 47, 111);
 
 /*-- scss:rules --*/
 
