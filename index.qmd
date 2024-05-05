@@ -1,12 +1,12 @@
 ---
-pagetitle: "marten w."
+pagetitle: "Marten Walk"
 page-layout: article
 section-divs: false
 editor: source
 sidebar: false
 search: false
 description: | 
-  personal website of marten w.
+  personal website of marten walk
 listing:
   - id: blog
     contents: 

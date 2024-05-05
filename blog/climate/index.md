@@ -1,6 +1,6 @@
 ---
 title: Was läuft falsch in der Klimaökonomik?
-author: marten w.
+author: marten walk
 date: "2022-06-12"
 draft: false
 description: |
