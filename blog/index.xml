@@ -13,7 +13,7 @@
 <lastBuildDate>Thu, 27 Apr 2023 00:00:00 GMT</lastBuildDate>
 <item>
   <title>The dark intellectual tradition of austerity</title>
-  <dc:creator>marten w. / Rethinking Economics</dc:creator>
+  <dc:creator>marten walk / Rethinking Economics</dc:creator>
   <link>https://martenw.com/blog/capitalorder/</link>
   <description><![CDATA[ 
 
@@ -49,7 +49,17 @@
 
 
 
- ]]></description>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{walk2023,
+  author = {walk, marten},
+  title = {The Dark Intellectual Tradition of Austerity},
+  date = {2023-04-27},
+  url = {https://martenw.com//blog/capitalorder},
+  langid = {en}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-walk2023" class="csl-entry quarto-appendix-citeas">
+walk, marten. 2023. <span>“The Dark Intellectual Tradition of
+Austerity.”</span> April 27, 2023. <a href="https://martenw.com//blog/capitalorder">https://martenw.com//blog/capitalorder</a>.
+</div></div></section></div> ]]></description>
   <guid>https://martenw.com/blog/capitalorder/</guid>
   <pubDate>Thu, 27 Apr 2023 00:00:00 GMT</pubDate>
   <media:content url="https://martenw.com/blog/capitalorder/featured.webp" medium="image" type="image/webp"/>
