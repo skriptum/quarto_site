@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Host: https://martenw.com
+
+User-agent: GPTBot
+Disallow: /
+
+Sitemap: https://martenw.com/sitemap.xml
