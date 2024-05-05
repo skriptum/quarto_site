@@ -5,11 +5,11 @@
       xmlns:dc="http://purl.org/dc/elements/1.1/" 
       version="2.0">
 <channel>
-<title>marten w.</title>
+<title>marten</title>
 <link>https://martenw.com/projects/</link>
 <atom:link href="https://martenw.com/projects/index.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.4.553</generator>
+<generator>quarto-1.4.554</generator>
 <lastBuildDate>Sun, 10 Mar 2024 00:00:00 GMT</lastBuildDate>
 <item>
   <title>Paycheck Politics</title>
