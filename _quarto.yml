@@ -2,16 +2,16 @@ project:
   type: website
 
 website:
-  title: "Marten Walk"
+  #title: "Marten Walk"
   favicon: images/logo.ico
   open-graph: true
   site-url: https://martenw.com/
   search: false
   navbar:
-    #logo: images/logo.webp
+    logo: images/logo.webp
     logo-alt: "logo"
-    title: Marten Walk
-    collapse-below: lg
+    title: ""
+    collapse-below: sm
     right: 
       - text: PROJECTS
         href: projects/index.qmd

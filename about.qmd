@@ -6,7 +6,7 @@ about:
 toc: false
 ---
 
-# marten
+# marten walk
 
 Derzeit studiere ich VWL an der Martin-Luther-Universität Halle und bin Mitlgied des Netzwerks Plurale Ökonomik. Auf dieser Website sammle ich verschiedene Projekte und Ideen, meist in einem technischen / politischen / ökonomischen Kontext.
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <title>MW-Logo</title>
+    <g>
+      <title>schmalerBalken</title>
+      <path d="M 220.836 38.396 L 110.328 230.265 L 40.189 230.265 L 152.411 35.891 L 219.858 35.891 L 220.836 38.396 Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px;"/>
+      <path d="M 459.99 264.837 L 348.441 458.046 L 278.302 458.046 L 390.523 263.672 L 460.658 263.806 L 459.99 264.837 Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px;"/>
+      <path d="M 205.147 37.551 L 219.717 37.551 L 293.54 456.228 L 278.971 456.228 L 205.147 37.551 Z" style="stroke: rgb(0, 0, 0); stroke-width: 2px;"/>
+    </g>
+    <g>
+      <title>langerBalken</title>
+      <path d="M 406.044 37.057 L 294.495 230.265 L 224.356 230.265 L 336.578 35.891 L 404.025 35.891 L 406.044 37.057 Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px;"/>
+      <path d="M 274.278 264.489 L 162.73 457.698 L 92.59 457.698 L 204.812 263.324 L 272.259 263.324 L 274.278 264.489 Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px;"/>
+      <path d="M 330.224 168.206 L 218.675 361.414 L 148.536 361.414 L 260.758 167.04 L 328.205 167.04 L 330.224 168.206 Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px;"/>
+    </g>
+    <g>
+      <title>W-Fuß</title>
+      <path d="M 60.067 263.196 L 71.905 263.198 L 105.767 455.241 L 93.931 455.241 L 60.067 263.196 Z" style="stroke: rgb(0, 0, 0); stroke-width: 2px;"/>
+      <rect x="34.421" y="255.947" width="68.613" height="7.281" style="stroke: rgb(0, 0, 0);"/>
+      <path d="M 50.22 260.113 L 61.559 260.113 L 61.559 269.695 L 60.018 269.695 C 58.127 266.238 54.461 263.858 50.22 263.737 L 50.22 260.113 Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px;"/>
+      <path d="M 84.634 260.971 L 84.634 270.856 L 70.743 270.856 L 70.743 268.042 L 75.122 268.042 L 75.122 267.968 C 78.461 267.914 81.102 265.808 81.102 263.011 C 81.102 262.351 81.077 261.516 80.888 260.92 L 84.634 260.971 Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px; transform-origin: 77.578px 265.797px;" transform="matrix(-1, 0, 0, -1, 0, 0)"/>
+    </g>
+    <g>
+      <title>M-Fuß</title>
+      <path d="M 392.437 37.683 L 404.275 37.684 L 438.137 229.727 L 426.301 229.727 L 392.437 37.683 Z" style="stroke: rgb(0, 0, 0); stroke-width: 2px;"/>
+      <rect x="395.477" y="231.039" width="68.613" height="7.281" style="stroke: rgb(0, 0, 0);"/>
+      <path d="M 436.556 222.992 L 447.896 222.992 L 448.199 234.048 L 446.432 233.255 C 445.712 228.323 442.877 226.474 436.331 226.541 L 436.556 222.992 Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px; transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(-1, 0, 0, -1, 0, 0)"/>
+      <path d="M 427.894 223.454 L 427.894 233.339 L 414.004 233.339 L 414.004 230.525 L 418.382 230.525 L 418.382 230.451 C 421.721 230.397 424.362 228.291 424.362 225.494 C 424.362 224.834 424.338 223.999 424.148 223.403 L 427.894 223.454 Z" style="stroke: rgb(0, 0, 0); stroke-width: 0px;"/>
+    </g>
+  </g>
+</svg>

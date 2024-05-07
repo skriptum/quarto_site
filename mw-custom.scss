@@ -73,13 +73,16 @@ $magenta: rgb(160, 47, 111);
     font-style: normal;
     color: $mw-dark;
   }
-  .navbar-brand { /* position in middle */
-    position: absolute;
-    left: 50%;
-    margin-left: -50px !important;  /* 50% of your logo width */
-  }
+  // .navbar-brand { /* position in middle */
+  //   position: absolute;
+  //   left: 50%;
+  //   margin-left: -50px !important;  /* 50% of your logo width */
+  // }
   a:hover {
     text-decoration: underline solid $mw-color;
+  }
+  .navbar-logo {
+    max-height: 70px;
   }
 }
 

@@ -45,9 +45,11 @@ format:
 
 ::: {.g-col-12 .g-col-lg-6}
 
-# hi, i'm marten <!--![](images/logo.webp){height=1em}-->
+# hi, i'm marten walk
 
-Currently studying Economics in Halle (Germany) and on the Council of Rethinking Economics International. Interested in *monetary theory*, *climate economics* and the *history of economic thought*, especially Keynesianism 
+Currently studying Economics in Halle (Germany) and on the Council of Rethinking Economics International. 
+
+Interested in *monetary theory*, *climate economics* and the *history of economic thought*, especially Keynesianism 
 
 →  more [***about***](about.qmd) me
 
