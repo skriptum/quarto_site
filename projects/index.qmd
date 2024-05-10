@@ -1,8 +1,6 @@
 ---
-title: Projects
+toc: false
 pagetitle: Projects
-subtitle: "overview of my projects"
-title-block-banner: false
 listing:
   contents: ./
   sort: "date desc"
@@ -15,4 +13,9 @@ listing:
   fields: [date, title, description, image]
 ---
 
+:::{.content-block}
 
+# Projects 
+
+![](painting.webp) <!-- Vermeer: Art of Painting -->
+:::

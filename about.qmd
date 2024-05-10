@@ -1,8 +1,8 @@
 ---
 about: 
     template: jolla
-    image: images/marder.png
-    image-shape: rectangle
+    image: images/geographer.webp
+    image-shape: round
 toc: false
 ---
 

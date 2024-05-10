@@ -114,11 +114,13 @@ $magenta: rgb(160, 47, 111);
 
 .quarto-post {
   border-bottom: 1px solid $black !important;
+  padding-bottom: 1em;
 
   // scss to style multiple classes at same time
   .listing-title {
     font-family: $font-family-serif;
     font-size: 1.5rem;
+    color: $mw-color !important;
   }
   .listing-date {
     font-family: $font-family-serif;

@@ -1,9 +1,8 @@
 ---
-title: Blog
+toc: false
 pagetitle: Blog
-subtitle: "currently thinking about"
-title-block-banner: false
 listing:
+  id: blog
   contents: ./
   sort: "date desc"
   type: default
@@ -13,3 +12,10 @@ listing:
   page-size: 30
   feed: true
 ---
+
+:::{.content-block}
+
+# Blog 
+![](writing.jpg) <!-- Vermeer: Lady Writing a Letter with her Maid -->
+:::
+
