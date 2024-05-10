@@ -56,7 +56,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-blog .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -69,7 +69,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-blog'] = new List('listing-blog', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -128,11 +128,11 @@ window.Quarto = {
 </script>
 
 <meta property="og:title" content="Blog">
-<meta property="og:description" content="currently thinking about">
+<meta property="og:description" content="">
 <meta property="og:image" content="https://martenw.com/blog/capitalorder/featured.webp">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -175,39 +175,24 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Blog</h1>
-<p class="subtitle lead">currently thinking about</p>
-</div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<section id="blog" class="level1 content-block">
+<h1>Blog</h1>
+<p><img src="writing.jpg" class="img-fluid"> <!-- Vermeer: Lady Writing a Letter with her Maid --></p>
+</section>
 
 
 
 
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-default" id="listing-blog">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1682553600000" data-listing-file-modified-sort="1715088008637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="670">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1682553600000" data-listing-file-modified-sort="1715302188484" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="670">
 <div class="thumbnail">
 <p><a href="../blog/capitalorder/index.html" class="no-external"></a></p><a href="../blog/capitalorder/index.html" class="no-external">
 <p><img src="../blog/capitalorder/featured.webp" class="thumbnail-image"></p>
@@ -235,7 +220,7 @@ marten walk / Rethinking Economics
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1654992000000" data-listing-file-modified-sort="1715088008637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1005">
+<div class="quarto-post image-right" data-index="1" data-listing-date-sort="1654992000000" data-listing-file-modified-sort="1715302188484" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1005">
 <div class="thumbnail">
 <p><a href="../blog/climate/index.html" class="no-external"></a></p><a href="../blog/climate/index.html" class="no-external">
 <p><img src="../blog/climate/featured.webp" class="thumbnail-image"></p>
@@ -263,7 +248,7 @@ marten walk
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1652313600000" data-listing-file-modified-sort="1715088008637" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1302">
+<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1652313600000" data-listing-file-modified-sort="1715302188484" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1302">
 <div class="thumbnail">
 <p><a href="../blog/geldpolitik/index.html" class="no-external"></a></p><a href="../blog/geldpolitik/index.html" class="no-external">
 <p><img src="../blog/geldpolitik/featured.webp" class="thumbnail-image"></p>
