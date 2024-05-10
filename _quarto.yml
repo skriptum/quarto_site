@@ -32,7 +32,7 @@ website:
       - href: https://github.com/skriptum
         icon: github
         aria-label: GitHub
-      - href: https://www.linkedin.com/in/marten-w
+      - href: https://de.linkedin.com/in/marten-walk
         icon: linkedin
         aria-label: LinkedIn
       - href: https://bsky.app/profile/mwd.bsky.social
@@ -50,6 +50,32 @@ format:
     grid:
       body-width: 800px
     html-math-method: katex
+    include-in-header: 
+      text: |
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          "name": "Marten Walk",
+          "url": "https://martenw.com",
+          "alternateName": "Marten Walk",
+          "description": "Economist",
+          "image": "",
+          "sameAs": [
+            "https://de.linkedin.com/in/marten-walk",
+            "https://bsky.app/profile/mwd.bsky.social",
+            "https://github.com/skriptum"
+          ],
+          "jobTitle": "Economist"  
+        }
+        "alumniOf": [
+            {
+            "@type": "CollegeOrUniversity",
+            "name": "University of Halle",
+            "sameAs": "https://en.wikipedia.org/wiki/Martin_Luther_University_Halle-Wittenberg"
+            }
+          ],
+        </script>
 
 #for transparency in plots in ggplot! see in Test 
 knitr: 

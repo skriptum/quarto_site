@@ -8,4 +8,4 @@ toc: false
 
 The page you requested cannot be found → go [***home***](index.qmd)
 
-![](images/interrupt.webp)
+![](images/interrupt.webp){fig-alt="Vermeer: Girl interrupted at her Music"}

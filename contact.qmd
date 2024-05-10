@@ -12,7 +12,7 @@ pagetitle: Contact
 
 You can find me online 
 
-[`<button type="button">LinkedIn</button>`{=html}](https://www.linkedin.com/in/marten-w)
+[`<button type="button">LinkedIn</button>`{=html}](https://de.linkedin.com/in/marten-walk)
 [`<button type="button">GitHub</button>`{=html}](https://github.com/skriptum)
 [`<button type="button">BlueSky</button>`{=html}](https://bsky.app/profile/mwd.bsky.social).
 
@@ -25,7 +25,7 @@ Or, you can drop me an e-mail at
 
 ::: {.g-col-12 .g-col-lg-6}
 
-![](images/contact.webp) <!-- Vermeer: Girl Reading a Letter at an Open Window -->
+![](images/contact.webp){fig-alt="Vermeer: Girl Reading a Letter at an Open Window"}
 
 :::
 :::

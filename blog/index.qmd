@@ -16,6 +16,6 @@ listing:
 :::{.content-block}
 
 # Blog 
-![](writing.jpg) <!-- Vermeer: Lady Writing a Letter with her Maid -->
+![](writing.jpg){fig-alt="Vermeer: Lady Writing a Letter with her Maid"}
 :::
 

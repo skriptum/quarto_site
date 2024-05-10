@@ -1,10 +1,7 @@
 ---
 pagetitle: "Marten Walk"
-page-layout: article
+image: "images/logo.webp"
 section-divs: false
-editor: source
-sidebar: false
-search: false
 description: | 
   personal website of marten walk
 listing:
@@ -53,7 +50,7 @@ Interested in *monetary theory*, *climate economics* and the *history of economi
 
 →  more [***about***](about.qmd) me
 
-[`<button type="button">LinkedIn</button>`{=html}](https://www.linkedin.com/in/marten-w)
+[`<button type="button">LinkedIn</button>`{=html}](https://de.linkedin.com/in/marten-walk)
 [`<button type="button">GitHub</button>`{=html}](https://github.com/skriptum)
 [`<button type="button">BlueSky</button>`{=html}](https://bsky.app/profile/mwd.bsky.social).
 
@@ -63,7 +60,7 @@ Interested in *monetary theory*, *climate economics* and the *history of economi
 
 
 ::: {.g-col-12 .g-col-lg-6}
-![](images/geographer.webp)
+![](images/geographer.webp){fig-alt="Painting by Vermeer: The Geographer"}
 :::
 
 :::
@@ -72,7 +69,7 @@ Interested in *monetary theory*, *climate economics* and the *history of economi
 <!-- Projects -->
 :::{.content-block}
 
-## Projects
+## [Projects](projects/index.qmd)
 
 :::{#projects}
 :::
@@ -82,8 +79,7 @@ Interested in *monetary theory*, *climate economics* and the *history of economi
 <!-- Blog -->
 :::{.content-block}
 
-## Blog
-
+## [Blog](blog/index.qmd)
 
 ::: {#blog}
 :::
