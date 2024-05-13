@@ -3,7 +3,7 @@ project:
 
 website:
   #title: "Marten Walk"
-  favicon: images/logo.ico
+  favicon: images/favicon.ico
   open-graph: true
   site-url: https://martenw.com/
   search: false
@@ -76,7 +76,7 @@ format:
             }
           ],
         </script>
-      <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="e9146946-1847-401b-98ea-d1d9981a1b02"></script> #umami analytics
+        <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="e9146946-1847-401b-98ea-d1d9981a1b02"></script>
 
 #for transparency in plots in ggplot! see in Test 
 knitr: 
