@@ -52,7 +52,7 @@ format:
     html-math-method: katex
     include-in-header: 
       text: |
-        <script type="application/ld+json">
+        <script type="application/ld+json"> # JSON-LD for SEO
         {
           "@context": "https://schema.org/",
           "@type": "Person",
@@ -76,6 +76,7 @@ format:
             }
           ],
         </script>
+      <script defer src="https://analytics.eu.umami.is/script.js" data-website-id="e9146946-1847-401b-98ea-d1d9981a1b02"></script> #umami analytics
 
 #for transparency in plots in ggplot! see in Test 
 knitr: 
