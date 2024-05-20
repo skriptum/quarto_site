@@ -5,8 +5,9 @@
 // Bootstrap Rules: https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/formats/html/bootstrap/_bootstrap-rules.scss
 // How to Handle: https://silviacanelon.com/blog/2023-09-29-hello-quarto/#scss-variables
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&display=swap'); //serif
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); //serif
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); //sans-serif
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); // Smallcaps
 
 $black : #000000;
 
@@ -21,8 +22,9 @@ $mw-light: #FFEDE0; //before: f4e9e6
 $mw-light-secondary: #F2DBCE;
 $font-color: #111111;
 
-$font-family-serif: 'Libre Bodoni', serif;
+$font-family-serif: 'Playfair Display', serif;
 $font-family-sans-serif: 'Josefin Sans', sans-serif;
+$font-family-smallcaps: 'Playfair Display SC', serif;
 
 
 $font-size-root: 20px;
@@ -155,11 +157,9 @@ h1,h2,h3,h4,h5,h6 {
 
 //Smallcaps for em tags in strong tags
 strong em {
-  font-variant: small-caps;
-  font-weight: 700;
+  font-family: $font-family-smallcaps;
+  font-weight: 500;
   font-style: normal;
-  font-family: $font-family-serif;
-  letter-spacing: 0.05em;
 }
 
 hr {
@@ -209,7 +209,8 @@ pre code {
 
   em {
   color: $mw-color;
-  font-variant: small-caps;
+  font-family: $font-family-smallcaps;
+  font-style: normal;
   font-weight: 500;
   letter-spacing: 0.05em;
   }
