@@ -4,8 +4,5 @@ toc: false
 draft: true
 ---
 
-:::{.content-block}
-# CV
+# Marten Walk - CV
 
-![](letter.webp)
-:::
