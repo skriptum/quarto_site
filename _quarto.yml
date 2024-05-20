@@ -39,7 +39,7 @@ website:
         icon: twitter
         aria-label: bluesky
     left: 
-      - text: "© 2021-2024"
+      - text: "© 2021-2024 Marten Walk"
     right:
       - text: "Built with Quarto, inspired by FT"
 

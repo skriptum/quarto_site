@@ -1,9 +1,10 @@
 ---
-pagetitle: "Marten Walk"
+pagetitle: "Marten Walk - Economics, Programming, Politics"
 image: "images/logo.webp"
+canonical-url: martenw.com
 section-divs: false
 description: | 
-  personal website of marten walk
+  Interested in monetary theory, climate economics and the history of economic thought. Currently studying Economics in Halle (Germany)
 listing:
   - id: blog
     contents: 
@@ -88,7 +89,7 @@ Interested in *monetary theory*, *climate economics* and the *history of economi
 
 \
 
-> ![](images/quote.png){width=10%}
+> ![](images/quote.png){width=10% fig-alt="quote image"}
 > 
 > Practical men who believe themselves to be quite exempt from any intellectual influence, are usually the slaves of some defunct economist. Madmen in authority, who hear voices in the air, are distilling their frenzy from some academic scribbler of a few years back
 >
