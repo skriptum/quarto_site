@@ -11,7 +11,7 @@ website:
     logo: images/logo.webp
     logo-alt: "logo"
     title: ""
-    collapse-below: sm
+    collapse-below: lg
     right: 
       - text: PROJECTS
         href: projects/index.qmd

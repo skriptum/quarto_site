@@ -38,11 +38,10 @@ format:
 ---
 
 
-::: {.content-block}
+::: {.bg-class}
 ::: grid
 
 ::: {.g-col-12 .g-col-lg-6}
-
 # hi, i'm marten walk
 
 Currently studying Economics in Halle (Germany) and on the Council of Rethinking Economics International. 
@@ -51,12 +50,10 @@ Interested in *monetary theory*, *climate economics* and the *history of economi
 
 →  more [***about***](about.qmd) me
 
+
 [`<button type="button">LinkedIn</button>`{=html}](https://de.linkedin.com/in/marten-walk)
 [`<button type="button">GitHub</button>`{=html}](https://github.com/skriptum)
 [`<button type="button">BlueSky</button>`{=html}](https://bsky.app/profile/mwd.bsky.social).
-
-
-
 :::
 
 

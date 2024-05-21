@@ -61,30 +61,35 @@ $magenta: rgb(160, 47, 111);
 
 // Navbar and Footer
 
+.headroom {
+  background-color: $mw-light !important;
+}
+
 .navbar {
-  border-bottom: 1px solid $black;
   font-family: $font-family-sans-serif;
   text-transform: lowercase;
   font-weight: 600;
   position: relative;
-  margin: 0em 5vw 0em 5vw;
-  padding-top: 1em;
+  margin: 0vw 5vw 0vw 5vw;
+  border-bottom: 1px solid $black;
+  min-height: 80px;
   .navbar-title {
     font-family: $font-family-serif;
     font-weight: 700;
     font-style: normal;
     color: $mw-dark;
   }
-  // .navbar-brand { /* position in middle */
-  //   position: absolute;
-  //   left: 50%;
-  //   margin-left: -50px !important;  /* 50% of your logo width */
-  // }
   a:hover {
     text-decoration: underline solid $mw-color;
   }
-  .navbar-logo {
-    max-height: 60px;
+  .navbar-brand {
+    // position in middle always
+    position: absolute;
+    left: 50%;
+    margin-left: -30px !important;  /* 50% of your logo width */
+    .navbar-logo {
+      max-height: 60px;
+    }
   }
 }
 
@@ -136,7 +141,7 @@ $magenta: rgb(160, 47, 111);
 .card {
   background-color: $mw-light-secondary;
   border: 0px solid black;
-  border-radius: 0;
+  border-radius: 5px;
   .listing-date {
     font-family: $font-family-serif;
     color: $mw-color;
@@ -181,6 +186,7 @@ button {
   min-width: 60px;
   color: $mw-color;
   margin: 0.2em 0;
+  background-color: transparent;
 
   &:hover {
     background-color: $mw-color-light;
@@ -232,4 +238,10 @@ pre code {
   .h1 {
     text-align: center;
   }
+} 
+.bg-class {
+  background-color: $mw-light-secondary;
+  padding: 1em;
+  border-bottom: 1px solid black;
+  margin-bottom: 2em;
 }
