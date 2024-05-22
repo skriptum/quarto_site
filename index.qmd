@@ -38,7 +38,7 @@ format:
 ---
 
 
-::: {.bg-class}
+::: {.content-block}
 ::: grid
 
 ::: {.g-col-12 .g-col-lg-6}

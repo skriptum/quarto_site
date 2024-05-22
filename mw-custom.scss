@@ -61,10 +61,6 @@ $magenta: rgb(160, 47, 111);
 
 // Navbar and Footer
 
-.headroom {
-  background-color: $mw-light !important;
-}
-
 .navbar {
   font-family: $font-family-sans-serif;
   text-transform: lowercase;
@@ -239,9 +235,7 @@ pre code {
     text-align: center;
   }
 } 
-.bg-class {
-  background-color: $mw-light-secondary;
-  padding: 1em;
-  border-bottom: 1px solid black;
-  margin-bottom: 2em;
+
+.headroom {
+  background-color: $mw-light;
 }
