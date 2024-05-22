@@ -25,7 +25,7 @@ Or, you can drop me an e-mail at
 
 ::: {.g-col-12 .g-col-lg-6}
 
-![](images/contact.webp){fig-alt="Vermeer: Girl Reading a Letter at an Open Window"}
+![Vermeer: Girl Reading a Letter at an Open Window](images/contact.webp){fig-alt="Vermeer: Girl Reading a Letter at an Open Window"}
 
 :::
 :::

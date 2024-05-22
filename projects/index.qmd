@@ -17,5 +17,5 @@ listing:
 
 # Projects 
 
-![](painting.webp){fig-alt="Vermeer: Art of Painting"}
+![Vermeer: Art of Painting](painting.webp){fig-alt="Vermeer: Art of Painting"}
 :::
