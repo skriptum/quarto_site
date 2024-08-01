@@ -6,18 +6,6 @@ section-divs: false
 description: | 
   Interested in monetary theory, climate economics and the history of economic thought. Currently studying Economics in Halle (Germany)
 listing:
-  - id: blog
-    contents: 
-    - /blog
-    - "!blog/index.qmd"
-    sort: "date desc"
-    type: grid
-    categories: false
-    sort-ui: false
-    filter-ui: false
-    max-items: 3
-    feed: false
-    fields: [image, date, title, description]
   - id: projects
     contents: 
     - /projects
@@ -37,31 +25,55 @@ format:
     html-math-method: plain
 ---
 
-
-::: {.content-block}
-::: grid
-
-::: {.g-col-12 .g-col-lg-6}
 # hi, i'm marten walk
 
-Currently studying Economics in Halle (Germany) and on the Council of Rethinking Economics International. 
 
-Interested in *monetary theory*, *climate economics* and the *history of economic thought*, especially Keynesianism 
-
-→  more [***about***](about.qmd) me
-
+::: {.content-block}
 
 [`<button type="button">LinkedIn</button>`{=html}](https://de.linkedin.com/in/marten-walk)
 [`<button type="button">GitHub</button>`{=html}](https://github.com/skriptum)
 [`<button type="button">BlueSky</button>`{=html}](https://bsky.app/profile/mwd.bsky.social).
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-6 .title-block}
+![](images/window.webp){width=100% fig-alt="Painting of young men"}
+:::
+
+::: {.g-col-12 .g-col-md-6 .title-block .text-block}
+I am a third year bachelor student of economics in Halle (Germany). 
+
+<br>
+
+Currently I work as a student assistant at the Institute of Agricultural Development in Transition Economies. 
+
+<br>
+
+→  what i am doing [***Now***](now.qmd)
 :::
 
 
-::: {.g-col-12 .g-col-lg-6}
-![](images/geographer.webp){fig-alt="Painting by Vermeer: The Geographer"}
+::: {.g-col-12 .g-col-md-6 .title-block .text-block}
+My interests lie in *monetary theory*, *inequality* and *the history of economic thought*, especially (post-)Keynesianism. 
+
+<br>
+
+I also enjoy programming in Python and am currently learning R.
+
+→  more [***about***](about.qmd) me
 :::
 
+::: {.g-col-12 .g-col-md-6 .title-block .text-block}
+
+If you are not a robot, feel free to drop me a line at [kontakt@martenw.com](mailto:kontakt@martenw.com) ([PGP-Key](https://keys.openpgp.org/vks/v1/by-fingerprint/36B18BB9C27F985832D0D1E70772DABED0FCB0DA))
+
 :::
+
+
+:::
+
+\
+
 :::
 
 <!-- Projects -->
@@ -74,17 +86,7 @@ Interested in *monetary theory*, *climate economics* and the *history of economi
 
 :::
 
-<!-- Blog -->
-:::{.content-block}
-
-## [Blog](blog/index.qmd)
-
-::: {#blog}
-:::
-
-:::
-
-\
+<!-- Quote -->
 
 > ![](images/quote.png){width=10% fig-alt="quote image"}
 > 

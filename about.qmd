@@ -8,13 +8,12 @@ toc: false
 
 # marten walk
 
-Derzeit studiere ich VWL an der Martin-Luther-Universität Halle und bin Mitlgied des Netzwerks Plurale Ökonomik. Auf dieser Website sammle ich verschiedene Projekte und Ideen, meist in einem technischen / politischen / ökonomischen Kontext.
+Currently I am studying economics at the Martin-Luther-University Halle-Wittenberg and I am a member of the Network for Plural Economics. On this website I collect various projects and ideas, mostly in a technical / political / economic context.
 
-Aufgrund der orthodoxen Lehre an der MLU bin ich in letzter Zeit sehr interessiert an pluraler Ökonomik, insbesondere im Bereich Geldbegriff, Zentralbanken und Finanzmarkt.
+Due to the orthodox teaching at the MLU, I have recently become very interested in heterodox economics, especially in the area of the concept of money, central banks and financial markets.
 
-Auch an allen möglichen technischen Sachen habe ich großes Interesse, insbesondere wenn sie es einem erlauben, politische Geschehnisse einzuordnen. Beispielsweise habe ich einmal eine Website programmiert, die alle Twitter-Konten von Bundestagsabgeordneten vergleicht und analysiert, siehe dazu im Reiter Projekte
+I am also very interested in all sorts of technical things, especially when they allow you to classify political events. For example, I once programmed a website that compares and analyzes all Twitter accounts of members of the German Bundestag, see the Projects tab for more information.
 
-Diese Website ist eine bunte Mischung an Themen zwischen diesen beiden Polen und irgendwie auch eine Möglichkeit, sich dem durchkommerzialisierten Internet entgegenzustellen.
 
 \
 

@@ -177,12 +177,13 @@ hr {
 button {
   border: 1px solid $mw-color;
   padding: 0.2em 1em 0.05em 1em;
-  border-radius: 100px;
+  border-radius: 0px;
   background-size: 21px 21px;
   min-width: 60px;
   color: $mw-color;
-  margin: 0.2em 0;
+  margin: 0.2em 0.2em;
   background-color: transparent;
+  box-shadow: 3px 3px $mw-color;
 
   &:hover {
     background-color: $mw-color-light;
@@ -239,3 +240,29 @@ pre code {
 .headroom {
   background-color: $mw-light;
 }
+
+.title-block {
+  background-color: $mw-light-secondary;
+  border: 1px solid $mw-light-secondary;
+  border-radius: 0px;
+  border-color: $black;
+  padding: 0em;
+  box-shadow: 10px 10px rgb(65, 65, 65);
+  &:hover {
+    transform: translate(-5px, -5px);
+    border-color: $mw-color;
+    box-shadow: 15px 15px $mw-color;
+  }
+
+  // rule when title-block and text-block in same div
+  + .text-block {
+    padding: 1em;
+    p {
+      margin: auto
+    }
+  }
+  p {
+    margin: 0;
+  }
+}
+
