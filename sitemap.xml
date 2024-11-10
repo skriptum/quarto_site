@@ -1,63 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://martenw.com/projects/vwl-notizen/index.html</loc>
-    <lastmod>2024-08-01T16:06:15.732Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/index.html</loc>
-    <lastmod>2024-08-01T16:06:15.696Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/zeitworte/index.html</loc>
-    <lastmod>2024-08-01T16:06:15.740Z</lastmod>
+    <loc>https://martenw.com/contact.html</loc>
+    <lastmod>2024-11-10T20:07:07.216Z</lastmod>
   </url>
   <url>
     <loc>https://martenw.com/projects/bundestwitter/index.html</loc>
-    <lastmod>2024-08-01T16:06:15.696Z</lastmod>
+    <lastmod>2024-11-10T20:07:07.228Z</lastmod>
   </url>
   <url>
-    <loc>https://martenw.com/blog/climate/index.html</loc>
-    <lastmod>2024-08-01T16:06:15.684Z</lastmod>
+    <loc>https://martenw.com/projects/index.html</loc>
+    <lastmod>2024-11-10T20:07:07.228Z</lastmod>
   </url>
   <url>
-    <loc>https://martenw.com/blog/index.html</loc>
-    <lastmod>2024-08-01T16:06:15.684Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/blog/geldpolitik/index.html</loc>
-    <lastmod>2024-08-01T16:06:15.684Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/now.html</loc>
-    <lastmod>2024-08-01T16:06:15.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/about.html</loc>
-    <lastmod>2024-08-01T16:06:15.680Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/contact.html</loc>
-    <lastmod>2024-08-01T16:06:15.684Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/index.html</loc>
-    <lastmod>2024-08-01T16:06:15.688Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/blog/capitalorder/index.html</loc>
-    <lastmod>2024-08-01T16:06:15.680Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/unfallkarte/index.html</loc>
-    <lastmod>2024-08-01T16:06:15.732Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/zeit-api/index.html</loc>
-    <lastmod>2024-08-01T16:06:15.736Z</lastmod>
+    <loc>https://martenw.com/projects/zeitworte/index.html</loc>
+    <lastmod>2024-11-10T20:07:07.260Z</lastmod>
   </url>
   <url>
     <loc>https://martenw.com/projects/mindestlohn/index.html</loc>
-    <lastmod>2024-08-01T16:06:15.696Z</lastmod>
+    <lastmod>2024-11-10T20:07:07.228Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/blog/climate/index.html</loc>
+    <lastmod>2024-11-10T20:07:07.216Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/blog/capitalorder/index.html</loc>
+    <lastmod>2024-11-10T20:07:07.216Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/now/index.html</loc>
+    <lastmod>2024-11-10T20:07:07.224Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/now/2024-08.html</loc>
+    <lastmod>2024-11-10T20:07:07.224Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/blog/geldpolitik/index.html</loc>
+    <lastmod>2024-11-10T20:07:07.216Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/blog/index.html</loc>
+    <lastmod>2024-11-10T20:07:07.216Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/projects/zeit-api/index.html</loc>
+    <lastmod>2024-11-10T20:07:07.260Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/projects/vwl-notizen/index.html</loc>
+    <lastmod>2024-11-10T20:07:07.256Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/projects/unfallkarte/index.html</loc>
+    <lastmod>2024-11-10T20:07:07.256Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/about.html</loc>
+    <lastmod>2024-11-10T20:07:07.212Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/index.html</loc>
+    <lastmod>2024-11-10T20:07:07.220Z</lastmod>
   </url>
 </urlset>
