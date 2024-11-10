@@ -9,7 +9,7 @@ description: |
   Test of different Markdown elements.
 
 ---
-*access this page by running `quarto preview` in the terminal and going to url /blog/test/*
+*access this draft page by running `quarto preview` in the terminal and going to url /blog/test/*
 
 # Header 1
 

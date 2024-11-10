@@ -15,10 +15,10 @@ website:
     right: 
       - text: PROJECTS
         href: projects/index.qmd
-      # - text: BLOG
-      #   href: blog/index.qmd
+      - text: BLOG
+        href: blog/index.qmd
       - text: now
-        href: now.qmd
+        href: now/index.qmd
       - text: ABOUT
         href: about.qmd
       - text: CONTACT
