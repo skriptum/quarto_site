@@ -61,7 +61,7 @@ Currently I work as a student assistant at the Institute of Agricultural Develop
 
 <br>
 
-→  what i am doing [***Now***](now.qmd)
+→  what i am doing [***Now***](now/index.qmd)
 :::
 
 
