@@ -9,7 +9,7 @@ pagetitle: Now
 
 *inspired by [other peoples /now page](https://nownownow.com)*
 
-![Toulmoche: Dolce far Niente](images/dolce.webp){fig-alt="Dolce far Niente by Toulmouche"}
+![Toulmoche: Dolce far Niente](../images/dolce.webp){fig-alt="Dolce far Niente by Toulmouche"}
 
 ***
 
@@ -28,7 +28,7 @@ podcasts i've been listening to:
 - [Jacobin Radio](https://shows.acast.com/jacobin-radio)
 - [Macro Dose](https://podtail.com/podcast/macrodose/)
 
-last updated: 2024-08-01
+last updated: 2024-11-01
 
 <!--
 ***

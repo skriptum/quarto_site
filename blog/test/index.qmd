@@ -7,7 +7,6 @@ date: 2023-04-27
 draft: true
 description: | 
   Test of different Markdown elements.
-
 ---
 *access this draft page by running `quarto preview` in the terminal and going to url /blog/test/*
 
@@ -72,11 +71,12 @@ Table:
 
 ---
 
+````{comment}
 Lets create a theme to better fit the visual style of the website
 
 ```{r}
 #remotes::install_github("Financial-Times/ftplottools")
-library(ftplottools)
+#library(ftplottools)
 library(ggplot2)
 ```
 
@@ -93,7 +93,7 @@ plot_themed <- ggplot(data, aes(x, y)) +
   labs(title = "Simple ggplot",
      x = "X-axis",
      y = "Y-axis") +
-  ft_theme() +
+  #ft_theme() +
   theme(
     panel.background = element_rect(fill = "#F2DBCE", color="#F2DBCE"),
     plot.background = element_rect(fill = "transparent", color="transparent")
@@ -129,7 +129,7 @@ plot_2 <- ggplot(data2, aes(x, y)) +
   geom_point() +
   geom_line()+
   labs(title = "Plot 2") +
-  ft_theme() +
+  #ft_theme() +
   theme(
     panel.background = element_rect(fill = "#F2DBCE", color="#F2DBCE"),
     plot.background = element_rect(fill = "transparent", color="transparent")
@@ -138,3 +138,5 @@ plot_2 <- ggplot(data2, aes(x, y)) +
 plot_1
 plot_2
 ```
+
+````

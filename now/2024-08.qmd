@@ -9,7 +9,7 @@ pagetitle: Now
 
 *inspired by [other peoples /now page](https://nownownow.com)*
 
-![Toulmoche: Dolce far Niente](images/dolce.webp){fig-alt="Dolce far Niente by Toulmouche"}
+![Toulmoche: Dolce far Niente](../images/dolce.webp){fig-alt="Dolce far Niente by Toulmouche"}
 
 ***
 
