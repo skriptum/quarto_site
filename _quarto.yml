@@ -31,13 +31,13 @@ website:
 
   page-footer:
     center:
-      - href: https://github.com/skriptum
+      - href: https://to.martenw.com/github
         icon: github
         aria-label: GitHub
-      - href: https://de.linkedin.com/in/marten-walk
+      - href: https://to.martenw.com/linkedin
         icon: linkedin
         aria-label: LinkedIn
-      - href: https://bsky.app/profile/mwd.bsky.social
+      - href: https://to.martenw.com/bsky
         icon: twitter
         aria-label: bluesky
     left: 

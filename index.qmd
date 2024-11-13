@@ -42,9 +42,9 @@ format:
 
 ::: {.content-block}
 
-[`<button type="button">LinkedIn</button>`{=html}](https://de.linkedin.com/in/marten-walk)
-[`<button type="button">GitHub</button>`{=html}](https://github.com/skriptum)
-[`<button type="button">BlueSky</button>`{=html}](https://bsky.app/profile/mwd.bsky.social).
+[`<button type="button">LinkedIn</button>`{=html}](https://to.martenw.com/linkedin)
+[`<button type="button">GitHub</button>`{=html}](https://to.martenw.com/github)
+[`<button type="button">BlueSky</button>`{=html}](https://to.martenw.com/bsky).
 
 ::: {.grid}
 
