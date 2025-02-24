@@ -18,19 +18,18 @@ listing:
     max-items: 3
     feed: false
     fields: [image, date, title, description]
-  - id: blog
-    contents: 
-    - /blog
-    - "!blog/index.qmd"
-    sort: "date desc"
-    type: grid
-    categories: false
-    sort-ui: false
-    filter-ui: false
-    max-items: 3
-    feed: false
-    fields: [image, date, title, description]
-    
+  # - id: blog
+  #   contents: 
+  #   - /blog
+  #   - "!blog/index.qmd"
+  #   sort: "date desc"
+  #   type: grid
+  #   categories: false
+  #   sort-ui: false
+  #   filter-ui: false
+  #   max-items: 3
+  #   feed: false
+  #   fields: [image, date, title, description]   
 toc: false
 format: 
   html:
@@ -99,14 +98,14 @@ If you are not a robot, feel free to drop me a line at [kontakt@martenw.com](mai
 :::
 
 <!-- Blog -->
-:::{.content-block}
+<!-- :::{.content-block}
 
 ## [Blog](blog/index.qmd)
 
 :::{#blog}
 :::
 
-:::
+::: -->
 
 
 <!-- Quote -->

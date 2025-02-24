@@ -113,6 +113,10 @@ $magenta: rgb(160, 47, 111);
   font-family: $font-family-serif;
 }
 
+#title-block-header {
+  border-bottom: 0px solid $black !important;
+}
+
 // Listing
 
 .quarto-post {
@@ -145,6 +149,12 @@ $magenta: rgb(160, 47, 111);
   .listing-title {
     margin-bottom: 0.5em;
   }
+}
+
+.listing-description {
+  font-family: $font-family-sans-serif;
+  font-weight: 300;
+  color: $mw-dark;
 }
 
 // General
@@ -188,6 +198,10 @@ button {
   &:hover {
     background-color: $mw-color-light;
   }
+}
+
+a {
+  font-weight: 300;
 }
 
 pre code {
