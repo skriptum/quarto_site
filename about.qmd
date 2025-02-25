@@ -10,11 +10,6 @@ toc: false
 
 Currently I am studying economics at the Martin-Luther-University Halle-Wittenberg and I am a member of the Network for Plural Economics. On this website I collect various projects and ideas, mostly in a technical / political / economic context.
 
-Due to the orthodox teaching at the MLU, I have recently become very interested in heterodox economics, especially in the area of the concept of money, central banks and financial markets.
-
-I am also very interested in all sorts of technical things, especially when they allow you to classify political events. For example, I once programmed a website that compares and analyzes all Twitter accounts of members of the German Bundestag, see the Projects tab for more information.
-
-
 \
 
 ### Blog Roll

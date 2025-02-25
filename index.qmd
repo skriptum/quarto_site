@@ -1,10 +1,10 @@
 ---
-pagetitle: "Marten Walk - Economics, Programming, Politics"
+pagetitle: "marten walk"
 image: "images/logo.webp"
 canonical-url: "https://martenw.com"
 section-divs: false
 description: | 
-  Interested in monetary theory, climate economics and the history of economic thought. Currently studying Economics in Halle (Germany)
+  Interested in monetary theory, climate economics and the history of economic thought.
 listing:
   - id: projects
     contents: 
