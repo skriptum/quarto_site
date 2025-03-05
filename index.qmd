@@ -39,7 +39,7 @@ format:
 # hi, i'm marten walk
 
 
-::: {.content-block}
+:::: {.content-block}
 
 [`<button type="button">LinkedIn</button>`{=html}](https://to.martenw.com/linkedin)
 [`<button type="button">GitHub</button>`{=html}](https://to.martenw.com/github)
@@ -47,20 +47,20 @@ format:
 
 ::: {.grid}
 
-::: {.g-col-12 .g-col-md-6 .title-block}
+::: {.g-col-12 .g-col-sm-6 .title-block}
+
 ![](images/window.webp){width=100% fig-alt="Painting of a young man"}
 
 ::: {.img-text}
 I am a third year bachelor student of economics in Halle (Germany). 
-
 <br>
-
 →  more [***about***](about.qmd) me
-:::
 
 :::
 
-::: {.g-col-12 .g-col-md-6 .title-block .text-block}
+:::
+
+::: {.g-col-12 .g-col-sm-6 .title-block .text-block}
 My interests lie in *monetary theory*, *inequality* and *the history of economic thought*, especially (post-)Keynesianism. 
 
 <br>
@@ -76,7 +76,7 @@ Currently I work as a student assistant at the Institute of Agricultural Develop
 
 \
 
-:::
+::::
 
 <!-- Projects -->
 :::{.content-block}
