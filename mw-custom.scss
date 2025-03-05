@@ -257,16 +257,17 @@ pre code {
 
 .title-block {
   background-color: $mw-light-secondary;
-  border: 1px solid $mw-light-secondary;
-  border-radius: 0px;
-  border-color: $black;
-  padding: 0em;
-  box-shadow: 10px 10px rgb(65, 65, 65);
-  &:hover {
-    transform: translate(-5px, -5px);
-    border-color: black;
-    box-shadow: 15px 15px $mw-color;
-  }
+  // border: 1px solid $mw-light-secondary;
+  // border-radius: 0px;
+  // border-color: $black;
+  // padding: 0em;
+  // box-shadow: 10px 10px rgb(65, 65, 65);
+  // &:hover {
+  //   transform: translate(-5px, -5px);
+  //   border-color: black;
+  //   box-shadow: 15px 15px $mw-color;
+  // }
+  border-radius: 3px;
 
   // rule when title-block and text-block in same div
   + .text-block {
@@ -278,5 +279,15 @@ pre code {
   p {
     margin: 0;
   }
+  .img-text {
+    padding: 1em;
+    margin: auto;
+  }
+  .img-fluid {
+    border-radius: 3px 3px 0px 0px;
+  }
 }
 
+.navbar-toggler {
+  box-shadow: none;
+}
