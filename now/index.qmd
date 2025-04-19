@@ -13,27 +13,16 @@ pagetitle: Now
 
 ***
 
-continuing my studies in economics in halle, currently on an exchange semester in paris, focusing on development economics.
-
-working as a student assistant at the institute of agricultural development in transition economies (IAMO), mostly on the [agripolicy](https://www.iamo.de/en/institute/departments/agricultural-policy) department
+continuing my studies in economics in halle, on track to finish my undergraduate this year. currently thinking about a good bachelors thesis topic
 
 good book's ive read recently:
 
-- [If We Burn](https://vincentbevins.com/book2/) by Vincent Bevins 
-- [The Fraud](https://www.thalia.de/shop/home/artikeldetails/A1069591241) by Zadie Smith
+- [London NW](https://en.wikipedia.org/wiki/NW_%28novel%29) by Zadie Smith 
+- [Globalists](https://www.hup.harvard.edu/books/9780674244849) by Quinn Slobodian
 
 podcasts i've been listening to:
 
-- [if books could kill](https://www.patreon.com/IfBooksPod)
-- [Jacobin Radio](https://shows.acast.com/jacobin-radio)
-- [Macro Dose](https://podtail.com/podcast/macrodose/)
+- [dont read theory](https://dont-read-theory.podigee.io/)
+- [Teurer Fahren](https://www.ardaudiothek.de/sendung/teurer-fahren/13960205/)
 
-last updated: 2024-11-01
-
-<!--
-***
-
-archive
-
-- [2024-08-01](2024-08.qmd)
--->
+last updated: 2025-04-01
