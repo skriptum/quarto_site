@@ -4,12 +4,12 @@ date: 2025-01-15
 description: |
   easy slides in typst - 
   a package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics
-image: "title.png"
+image: "title.webp"
 author-title: GitHub Project
 author: '<a href="https://github.com/skriptum/diatypst">skriptum/diatypst</a>'
 ---
 
-![](./title.png)
+![](./title.webp)
 
 There is a new LaTeX contender on the block: [typst](typst.app). Featuring a much easier syntax and instant-preview, it feels like a serious replacement for the clunky workflows of producing PDF via `\{weird command}`. What was missing until now is an easy way to create good looking slides, the existing packages in the typst ecosystem are overblown for the quick creation of presentations.
 
