@@ -1,5 +1,13 @@
 [
   {
+    "listing": "/blog/index.html",
+    "items": [
+      "/blog/capitalorder/index.html",
+      "/blog/climate/index.html",
+      "/blog/geldpolitik/index.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/projects/diatypst/index.html",
@@ -9,14 +17,6 @@
       "/projects/zeitworte/index.html",
       "/projects/bundestwitter/index.html",
       "/projects/unfallkarte/index.html"
-    ]
-  },
-  {
-    "listing": "/blog/index.html",
-    "items": [
-      "/blog/capitalorder/index.html",
-      "/blog/climate/index.html",
-      "/blog/geldpolitik/index.html"
     ]
   },
   {
