@@ -1,7 +1,8 @@
 [
   {
-    "listing": "/projects/index.html",
+    "listing": "/index.html",
     "items": [
+      "/projects/diatypst/index.html",
       "/projects/mindestlohn/index.html",
       "/projects/vwl-notizen/index.html",
       "/projects/zeit-api/index.html",
@@ -19,8 +20,9 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/projects/index.html",
     "items": [
+      "/projects/diatypst/index.html",
       "/projects/mindestlohn/index.html",
       "/projects/vwl-notizen/index.html",
       "/projects/zeit-api/index.html",

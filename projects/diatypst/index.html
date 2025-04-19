@@ -6,11 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="skriptum/bundestag">
-<meta name="dcterms.date" content="2021-02-16">
-<meta name="description" content="Eine Web-App, die alle Twitter-Accounts von Bundestagsmitgliedern erfahrbar macht und kartiert. Damit die 90% der Wähler:innen ohne Twitter erfahren, was ihre Abgeordneten so im Internet treiben">
+<meta name="author" content="skriptum/diatypst">
+<meta name="dcterms.date" content="2025-01-15">
+<meta name="description" content="easy slides in typst - a package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics">
 
-<title>Bundestwitter</title>
+<title>diatypst</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,9 +81,11 @@ ul.task-list li input[type="checkbox"] {
 <script defer="" src="https://analytics.eu.umami.is/script.js" data-website-id="e9146946-1847-401b-98ea-d1d9981a1b02"></script>
 
 
-<meta property="og:title" content="Bundestwitter">
-<meta property="og:description" content="Eine Web-App, die alle Twitter-Accounts von Bundestagsmitgliedern erfahrbar macht und kartiert. Damit die 90% der Wähler:innen ohne Twitter erfahren, was ihre Abgeordneten so im Internet treiben">
-<meta property="og:image" content="https://martenw.com/projects/bundestwitter/featured.webp">
+<meta property="og:title" content="diatypst">
+<meta property="og:description" content="easy slides in typst - a package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics">
+<meta property="og:image" content="https://martenw.com/projects/diatypst/title.png">
+<meta property="og:image:height" content="1426">
+<meta property="og:image:width" content="1962">
 </head>
 
 <body class="nav-fixed">
@@ -134,7 +136,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#technisches" id="toc-technisches" class="nav-link active" data-scroll-target="#technisches">Technisches</a></li>
+  <li><a href="#how-to-get-started" id="toc-how-to-get-started" class="nav-link active" data-scroll-target="#how-to-get-started">How to get started?</a></li>
+  <li><a href="#what-does-diatypst-stand-for" id="toc-what-does-diatypst-stand-for" class="nav-link" data-scroll-target="#what-does-diatypst-stand-for">What does diatypst stand for?</a></li>
   </ul>
 </nav>
     </div>
@@ -143,17 +146,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bundestwitter</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">python</div>
-    <div class="quarto-category">politics</div>
-    <div class="quarto-category">twitter</div>
-  </div>
-  </div>
+<h1 class="title">diatypst</h1>
+</div>
 
 <div>
   <div class="description">
-    <p>Eine Web-App, die alle Twitter-Accounts von Bundestagsmitgliedern erfahrbar macht und kartiert. Damit die 90% der Wähler:innen ohne Twitter erfahren, was ihre Abgeordneten so im Internet treiben</p>
+    <p>easy slides in typst - a package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics</p>
   </div>
 </div>
 
@@ -161,16 +159,16 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     <div>
-    <div class="quarto-title-meta-heading">Github</div>
+    <div class="quarto-title-meta-heading">GitHub Project</div>
     <div class="quarto-title-meta-contents">
-             <p><a href="https://github.com/skriptum/bundestag">skriptum/bundestag</a> </p>
+             <p><a href="https://github.com/skriptum/diatypst">skriptum/diatypst</a> </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 16, 2021</p>
+      <p class="date">January 15, 2025</p>
     </div>
   </div>
   
@@ -182,20 +180,42 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><img src="./title.png" class="img-fluid"></p>
+<p>There is a new LaTeX contender on the block: <a href="typst.app">typst</a>. Featuring a much easier syntax and instant-preview, it feels like a serious replacement for the clunky workflows of producing PDF via <code>\{weird command}</code>. What was missing until now is an easy way to create good looking slides, the existing packages in the typst ecosystem are overblown for the quick creation of presentations.</p>
+<p>I totally get it. That’s why I created Diatypst, a package that makes it a breeze to create stunning slides without having to memorize complicated commands or settle for dull styling. The slides are set up to make your life easier, with a dot counter in the upper left corner (like the one in Beamer) and helpful defaults for title and section slides. Hey, just so you know, you can set a color that’ll influence everything from the page footer to the hyperlinks.</p>
+<p>There are two different themes available, the normal theme and the full theme. The latter one is more like a fully-fledged beamer theme that’s used a lot in academia.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Normal Theme</th>
+<th>Full Theme</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="./Example-Slide.png" class="img-fluid" alt="Example-Slide"></td>
+<td><img src="./Full-Example-Slide.png" class="img-fluid" alt="Full-Example-Slide"></td>
+</tr>
+<tr class="even">
+<td>Example <a href="https://github.com/skriptum/diatypst/blob/main/example/example.typ">.typ file</a> and the <a href="https://raw.githubusercontent.com/skriptum/diatypst/refs/heads/main/example/example.pdf">resulting PDF</a></td>
+<td>same for the <a href="https://raw.githubusercontent.com/skriptum/diatypst/refs/heads/main/example/example_full.pdf">Full Theme PDF</a></td>
+</tr>
+</tbody>
+</table>
+<section id="how-to-get-started" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-get-started">How to get started?</h3>
+<p>The easiest way to use diatypst is via the <a href="https://typst.app">Typst Webapp</a> and importing the template from the <a href="https://typst.app/universe/package/diatypst/">typst universe</a>. To create new slides, just delimit them with a header and they are created automatically. For more fine-tuning, visit the <a href="https://github.com/skriptum/diatypst">GitHub Repo</a>.</p>
+<p>Another option is to use <a href="quarto.org">Quarto</a> to create the slides. To do this, you need to import the <a href="https://quarto.org/docs/extensions/listing-formats.html">diaquarto extension</a> into your project and some things in your YAML Footer. Slides are created similar to beamer presentations with the <code>---</code> delimiter. For more info, see <a href="https://raw.githubusercontent.com/skriptum/diatypst/refs/heads/main/example/example_full.pdf">here</a></p>
+</section>
+<section id="what-does-diatypst-stand-for" class="level3">
+<h3 class="anchored" data-anchor-id="what-does-diatypst-stand-for">What does diatypst stand for?</h3>
+<p>The word diatypst is inspired by the ease of use of a <a href="https://de.wikipedia.org/wiki/Diaprojektor">Diaprojektor</a> (German for Slide Projector) and the <a href="https://en.wikipedia.org/wiki/Diatype_(machine)">Diatype</a> (60s typesetting machine)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="featured.png" class="img-fluid figure-img"></p>
-<figcaption>Screen Shot of the Web Page</figcaption>
+<p><img src="./diaprojektor.png" class="img-fluid figure-img"></p>
+<figcaption>A Diaprojektor</figcaption>
 </figure>
 </div>
-<blockquote class="blockquote">
-<p><strong>Update</strong>: aufgrund des neuen Bundestages sind die Daten nicht mehr aktuell, ich arbeite bereits an einer verbesserten Variante für die neuen MdBs</p>
-</blockquote>
-<p>Twitter ist aus die politische Meinungsbildung heutzutage nicht mehr wegzudenken. Sei es sinnlose Diskussion, sinnvoler Austausch oder Kontakt mit Journalist:innen, all das findet auf dieser Plattform statt. Jedoch ohne Transparenz und ohne die Mehrheit der Bürger:innen, die zu 90% nicht da sind. Genau da soll diese Website ansetzen, und Interessierte über eine Karte zu einer Übersicht über das Twitter-Profil ihrer Abgeordneten führen. Es erlaubt allen, jeden MdB mit anderen zu vergleichen, sei es über die Tweetrate, die zeit auf der Plattform, die Aktivität, die genutzten Hashtags etc.</p>
-<section id="technisches" class="level2">
-<h2 class="anchored" data-anchor-id="technisches">Technisches</h2>
-<p>Täglich werden über die <strong>Twitter-API</strong> die letzten 50 Tweets aller Accounts abgefragt und gesammelt. Daraufhin wird der Text jedes Tweets mit einem Machine-Learning Algorithmus anhand der Laune bewertet, was jedoch aufgrund der kurzen Länge nicht immer funktioniert. Anschließend werden alle Daten der Tweets aggregiert und in eine Datenbank eingespeist.</p>
-<p>Auf diese Datenbank greift dann <strong>Web-App</strong>, die komplett in <em>Python</em> geschrieben ist, zu und stellt sie schön dar und baut Rangfolgen anhand der Daten. Zusätzlich wird noch eine Karte mit Deutschands Wahlkreisen und den Vertretern mit Twitter generiert. Die Visualisierungen basieren vor allem auf der <em>Plotly-Library</em> und die App baut auf <em>Dash</em> und <em>Flask</em> auf.</p>
 
 
 </section>
