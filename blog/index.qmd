@@ -15,7 +15,6 @@ listing:
 
 :::{.content-block}
 
-# Blog 
-![Vermeer: Lady Writing a Letter with her Maid](writing.jpg){fig-alt="Vermeer: Lady Writing a Letter with her Maid"}
-:::
+# Blog
 
+This moved to [blog.martenw.com](https://blog.martenw.com)
