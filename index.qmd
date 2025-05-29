@@ -17,41 +17,31 @@ listing:
     filter-ui: false
     max-items: 3
     feed: false
-    fields: [image, date, title, description]
-  # - id: blog
-  #   contents: 
-  #   - /blog
-  #   - "!blog/index.qmd"
-  #   sort: "date desc"
-  #   type: grid
-  #   categories: false
-  #   sort-ui: false
-  #   filter-ui: false
-  #   max-items: 3
-  #   feed: false
-  #   fields: [image, date, title, description]   
+    fields: [image, date, title, description]  
 toc: false
 format: 
   html:
     html-math-method: plain
 ---
 
-# hi, i'm marten walk
-
-
-:::: {.content-block}
+# hi, i'm marten 
 
 [`<button type="button">LinkedIn</button>`{=html}](https://to.martenw.com/linkedin)
 [`<button type="button">GitHub</button>`{=html}](https://to.martenw.com/github)
-[`<button type="button">BlueSky</button>`{=html}](https://to.martenw.com/bsky).
+[`<button type="button">BlueSky</button>`{=html}](https://to.martenw.com/bsky)
 
-::: {.grid}
 
-::: {.g-col-12 .g-col-sm-6 .title-block}
+::::: {.content-block}
+
+
+:::: {.grid}
+
+::: {.g-col-sm-6 .g-col-12 .title-block}
 
 ![](images/window.webp){width=100% fig-alt="Painting of a young man"}
 
 ::: {.img-text}
+
 I am a third year bachelor student of economics in Halle (Germany). 
 <br>
 →  more [***about***](about.qmd) me
@@ -60,7 +50,8 @@ I am a third year bachelor student of economics in Halle (Germany).
 
 :::
 
-::: {.g-col-12 .g-col-sm-6 .title-block .text-block}
+
+::: {.g-col-sm-6 .g-col-12 .title-block .text-block}
 My interests lie in *monetary theory*, *inequality* and *the history of economic thought*, especially (post-)Keynesianism. 
 
 <br>
@@ -70,13 +61,14 @@ Currently I work as a student assistant at the Institute of Agricultural Develop
 <br>
 
 →  what i am doing [***Now***](now/index.qmd)
-:::
 
 :::
+
+::::
 
 \
 
-::::
+:::::
 
 <!-- Projects -->
 :::{.content-block}
@@ -87,17 +79,6 @@ Currently I work as a student assistant at the Institute of Agricultural Develop
 :::
 
 :::
-
-<!-- Blog -->
-<!-- :::{.content-block}
-
-## [Blog](blog/index.qmd)
-
-:::{#blog}
-:::
-
-::: -->
-
 
 <!-- Quote -->
 
