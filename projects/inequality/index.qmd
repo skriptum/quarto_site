@@ -21,7 +21,7 @@ image: "featured.webp"
 
 This project examines how rising housing prices impact wealth inequality, focusing first on Germany and then extending the analysis across Europe. Using the ECB’s Distributional Wealth Accounts (DWA), I apply inequality decomposition techniques and panel regressions to explore whether gains from housing primarily benefit the middle class or the wealthiest households. The goal is to clarify housing’s role as a driver of inequality in different ownership and price-growth contexts.
 
-The project follows the intuition that housing wealth is a significant factor in overall wealth inequality, as it is a major asset for many households. The analysis will consider how different ownership structures and housing price dynamics affect wealth distribution, particularly in the context of rising housing prices. 
+The project follows the intuition that housing wealth is a significant factor in overall wealth inequality, as it is a major asset for many households. The analysis will consider how different ownership structures and housing price dynamics affect wealth distribution.
 
 The example of Germany shows that housing is the most important asset for the middle class, while the wealthiest households hold a more diversified portfolio, including financial assets and business equity.
 
