@@ -7,7 +7,7 @@ categories:
 - politics
 - inequality
 description: |
-  Bachelors Thesis Project researching the connection between the Housing Price Increases and the Effect on Wealth Inequality
+  Bachelors Thesis Project researching the connection between housing price increases and their effect on wealth inequality across different European countries. Using novel data from the ECB's Distributional Wealth Accounts (DWA) and a range of statistical methods in R.
 author-title: GitHub Repo
 author: '<a href="https://github.com/skriptum/inequality">skriptum/inequality</a>'
 #bibliography: references.bib
