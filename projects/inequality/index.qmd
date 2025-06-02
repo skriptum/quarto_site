@@ -1,0 +1,35 @@
+---
+title: "Cementing the Divide?"
+Subtitle: "Housing and Wealth Inequality across Europe"
+date:   "2025-05-01"
+categories: 
+- R
+- politics
+- inequality
+description: |
+  Bachelors Thesis Project researching the connection between the Housing Price Increases and the Effect on Wealth Inequality
+author-title: GitHub Repo
+author: '<a href="https://github.com/skriptum/inequality">skriptum/inequality</a>'
+#bibliography: references.bib
+citation-location: margin
+image: "featured.webp"
+---
+
+![Housing Wealth Dynamics in Germany](./housing_wealth_absolute.png)
+
+> the Code for the ongoing project can be found on [GitHub](https://github.com/skriptum/inequality). This project is part of my bachelor thesis at the University of Halle-Wittenberg, supervised by prof. Dr. Börner and Hakon Albers.
+
+This project examines how rising housing prices impact wealth inequality, focusing first on Germany and then extending the analysis across Europe. Using the ECB’s Distributional Wealth Accounts (DWA), I apply inequality decomposition techniques and panel regressions to explore whether gains from housing primarily benefit the middle class or the wealthiest households. The goal is to clarify housing’s role as a driver of inequality in different ownership and price-growth contexts.
+
+The project follows the intuition that housing wealth is a significant factor in overall wealth inequality, as it is a major asset for many households. The analysis will consider how different ownership structures and housing price dynamics affect wealth distribution, particularly in the context of rising housing prices. 
+
+The example of Germany shows that housing is the most important asset for the middle class, while the wealthiest households hold a more diversified portfolio, including financial assets and business equity.
+
+![Wealth Decomposition by Assets across the Deciles](./asset_composition_deciles.png)
+
+First Figures created from the Data already show that the wealth ratio between tenants and owners has been increasing in countries with rising housing prices, indicating that the wealth gap between these groups is widening. In countries with stable or declining housing prices e.g. Spain or Italy, this is less pronounced.
+
+![Tenant-Owner Wealth Ratios](./tenant_owner_wealth_ratio.png)
+
+> ***More to follow as the project progresses.***
+
