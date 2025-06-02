@@ -2,3 +2,4 @@
 /.vscode/
 /_site/
 *.code_workspace
+.DS_Store
