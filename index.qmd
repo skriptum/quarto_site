@@ -38,13 +38,13 @@ format:
 
 ::: {.g-col-sm-6 .g-col-12 .title-block}
 
-![](images/window.webp){width=100% fig-alt="Painting of a young man"}
+![](images/window.webp){width=100% fig-alt="Abstract painting of a young man"}
 
 ::: {.img-text}
 
 I am a third year bachelor student of economics in Halle (Germany). 
 <br>
-→  more [***about***](about.qmd) me
+→  what i am doing [***Now***](now/index.qmd)
 
 :::
 
@@ -52,15 +52,14 @@ I am a third year bachelor student of economics in Halle (Germany).
 
 
 ::: {.g-col-sm-6 .g-col-12 .title-block .text-block}
-My interests lie in *monetary theory*, *inequality* and *the history of economic thought*, especially (post-)Keynesianism. 
+My interests lie in monetary theory, inequality and the history of economic thought, especially (post-)Keynesianism. 
 
 <br>
 
-Currently I work as a student assistant at the Institute of Agricultural Development in Transition Economies. 
-
+Below you can find some of my projects, which I am currently working on or have worked on in the past. 
 <br>
 
-→  what i am doing [***Now***](now/index.qmd)
+→  more [***about***](about.qmd) me
 
 :::
 

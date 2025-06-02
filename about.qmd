@@ -8,8 +8,9 @@ toc: false
 
 # marten walk
 
-Currently I am studying economics at the Martin-Luther-University Halle-Wittenberg and I am a member of the Network for Plural Economics. On this website I collect various projects and ideas, mostly in a technical / political / economic context.
+I am a student of economics in Halle, Germany and quite interested in the different aspects of political economy and economic history. this was especially sparked by my activity with Rethinking Economics, a global network of students who want to change the way economics is thought and practiced. 
 
+This is my personal website, where I collect various projects and ideas, mostly in a technical / political / economic context.
 \
 
 ### Blog Roll
