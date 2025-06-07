@@ -3,7 +3,7 @@ project:
 
 website:
   #title: "Marten Walk"
-  favicon: favicon.ico
+  favicon: images/favicon.ico
   open-graph: true
   site-url: https://martenw.com/
   search: false
