@@ -1,6 +1,5 @@
 ---
-title: "Cementing the Divide?"
-Subtitle: "Housing and Wealth Inequality across Europe"
+title: "Cementing the Divide? Housing and Wealth Inequality across Europe"
 date:   "2025-05-01"
 categories: 
 - R
@@ -8,11 +7,14 @@ categories:
 - inequality
 description: |
   Bachelors Thesis Project researching the connection between housing price increases and their effect on wealth inequality across different European countries. Using novel data from the ECB's Distributional Wealth Accounts (DWA) and a range of statistical methods in R.
-author-title: GitHub Repo
-author: '<a href="https://github.com/skriptum/inequality">skriptum/inequality</a>'
+#author-title: GitHub Repo
+#author: '<a href="https://github.com/skriptum/inequality">skriptum/inequality</a>'
+author: "Marten Walk"
 #bibliography: references.bib
 citation-location: margin
 image: "featured.webp"
+google-scholar: true
+citation: true
 ---
 
 ![Housing Wealth Dynamics in Germany](./housing_wealth_absolute.png)
