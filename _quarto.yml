@@ -54,7 +54,7 @@ format:
     html-math-method: katex
     include-in-header: 
       text: |
-        <script type="application/ld+json"> # JSON-LD for SEO
+        <script type="application/ld+json">
         {
           "@context": "https://schema.org/",
           "@type": "Person",
