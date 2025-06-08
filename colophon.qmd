@@ -1,0 +1,25 @@
+---
+sidebar: false
+page-layout: article
+toc: false
+pagetitle: Colophon
+---
+
+::: {.content-block}
+
+# Colophon
+
+![Vermeer: Lady writing a letter with her maid](images/writing.jpg){fig-alt="Vermeer: Lady writing a letter with her maid"}
+:::
+
+> In publishing, a colophon is a brief statement containing information about the publication of a book such as an "imprint" (the place of publication, the publisher, and the date of publication). 
+>
+> [*Wikipedia*](https://en.wikipedia.org/wiki/Colophon_(publishing))
+
+This website is built using [Quarto](https://quarto.org), a modern system to create Websites, Articles, PDFs or Presentations from [Markdown](https://de.wikipedia.org/wiki/Markdown).
+
+It uses a custom scss theme to overcome the boring standard theme. The complete code for the website can be found on [GitHub](https://github.com/skriptum/quarto_site). I have added some extra tricks, but in the end its just markdown.
+
+It is hosted on Cloudflare Pages, easy and free. 
+
+Some SEO tricks are taken from the must-read guide to [Guide to Academic Websites by Hendrik Erz](https://www.hendrik-erz.de/resources#academic-website). 
