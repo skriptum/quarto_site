@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/projects/index.html",
+    "listing": "/index.html",
     "items": [
       "/projects/inequality/index.html",
       "/projects/diatypst/index.html",
@@ -13,7 +13,7 @@
     ]
   },
   {
-    "listing": "/index.html",
+    "listing": "/projects/index.html",
     "items": [
       "/projects/inequality/index.html",
       "/projects/diatypst/index.html",

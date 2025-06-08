@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>about</title>
+<title>Colophon</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -78,6 +79,10 @@ ul.task-list li input[type="checkbox"] {
 <script defer="" src="https://cloud.umami.is/script.js" data-website-id="e9146946-1847-401b-98ea-d1d9981a1b02"></script>
 
 
+<meta property="og:title" content="Colophon">
+<meta property="og:description" content="">
+<meta property="og:image" content="https://martenw.com/images/writing.jpg">
+<meta property="og:image:alt" content="Vermeer: Lady writing a letter with her maid">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -105,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">now</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">ABOUT</span></a>
   </li>  
   <li class="nav-item">
@@ -125,42 +130,41 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-jolla">
-  <img src="images/geographer.webp" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block"></header><main class="content" id="quarto-document-content">
-<section id="marten-walk" class="level1">
-<h1>marten walk</h1>
-<p>I am a student of economics in Halle, Germany and quite interested in the different aspects of political economy and economic history. this was especially sparked by my activity with Rethinking Economics, a global network of students who want to change the way economics is thought and practiced.</p>
-<p>This is my personal website, where I collect various projects and ideas, mostly in a technical / political / economic context.<br>
-</p>
-<section id="blog-roll" class="level3">
-<h3 data-anchor-id="blog-roll">Blog Roll</h3>
-<section id="makronom" class="level5">
-<h5 data-anchor-id="makronom"><a href="https://makronom.de/">Makronom</a></h5>
-</section>
-<section id="adam-tooze-chartbook" class="level5">
-<h5 data-anchor-id="adam-tooze-chartbook"><a href="https://adamtooze.substack.com/">Adam Tooze: Chartbook</a></h5>
-</section>
-<section id="branko-milanovic-global-inequality" class="level5">
-<h5 data-anchor-id="branko-milanovic-global-inequality"><a href="https://branko2f7.substack.com/">Branko Milanovic: Global Inequality</a></h5>
-</section>
-<section id="dezernat-zukunft-geldbrief" class="level5">
-<h5 data-anchor-id="dezernat-zukunft-geldbrief"><a href="https://www.dezernatzukunft.org/category/geldbrief/">Dezernat Zukunft: Geldbrief</a></h5>
-</section>
-<section id="financial-times-alphaville" class="level5">
-<h5 data-anchor-id="financial-times-alphaville"><a href="https://www.ft.com/alphaville">Financial Times: Alphaville</a></h5>
-<p><a href="https://blogroll.org/what-are-blogrolls/">What’s a Blogroll?</a></p>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-</section>
-</section>
-</section>
-</main>  
+
+
+<section id="colophon" class="level1 content-block">
+<h1>Colophon</h1>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/writing.jpg" class="img-fluid figure-img" alt="Vermeer: Lady writing a letter with her maid"></p>
+<figcaption>Vermeer: Lady writing a letter with her maid</figcaption>
+</figure>
 </div>
- <!-- /main -->
+</section>
+<blockquote class="blockquote">
+<p>In publishing, a colophon is a brief statement containing information about the publication of a book such as an “imprint” (the place of publication, the publisher, and the date of publication).</p>
+<p><a href="https://en.wikipedia.org/wiki/Colophon_(publishing)"><em>Wikipedia</em></a></p>
+</blockquote>
+<p>This website is built using <a href="https://quarto.org">Quarto</a>, a modern system to create Websites, Articles, PDFs or Presentations from <a href="https://de.wikipedia.org/wiki/Markdown">Markdown</a>.</p>
+<p>It uses a custom scss theme to overcome the boring standard theme. The complete code for the website can be found on <a href="https://github.com/skriptum/quarto_site">GitHub</a>. I have added some extra tricks, but in the end its just markdown.</p>
+<p>It is hosted on Cloudflare Pages, easy and free.</p>
+<p>Some SEO tricks are taken from the must-read guide to <a href="https://www.hendrik-erz.de/resources#academic-website">Guide to Academic Websites by Hendrik Erz</a>.</p>
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -591,7 +595,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="./colophon.html">
+    <a class="nav-link active" href="./colophon.html" aria-current="page">
 <p>Colophon</p>
 </a>
   </li>  

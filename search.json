@@ -1,73 +1,80 @@
 [
   {
-    "objectID": "now/2024-11.html",
-    "href": "now/2024-11.html",
+    "objectID": "colophon.html",
+    "href": "colophon.html",
+    "title": "Colophon",
+    "section": "",
+    "text": "Colophon\n\n\n\nVermeer: Lady writing a letter with her maid\n\n\n\n\nIn publishing, a colophon is a brief statement containing information about the publication of a book such as an “imprint” (the place of publication, the publisher, and the date of publication).\nWikipedia\n\nThis website is built using Quarto, a modern system to create Websites, Articles, PDFs or Presentations from Markdown.\nIt uses a custom scss theme to overcome the boring standard theme. The complete code for the website can be found on GitHub. I have added some extra tricks, but in the end its just markdown.\nIt is hosted on Cloudflare Pages, easy and free.\nSome SEO tricks are taken from the must-read guide to Guide to Academic Websites by Hendrik Erz."
+  },
+  {
+    "objectID": "now/index.html",
+    "href": "now/index.html",
     "title": "Now",
     "section": "",
-    "text": "Now\ninspired by other peoples /now page\n\n\n\nToulmoche: Dolce far Niente\n\n\n\ncontinuing my studies in economics in halle, currently on an exchange semester in paris, focusing on development economics.\nworking as a student assistant at the institute of agricultural development in transition economies (IAMO), mostly on the agripolicy department\ngood book’s ive read recently:\n\nIf We Burn by Vincent Bevins\nThe Fraud by Zadie Smith\n\npodcasts i’ve been listening to:\n\nif books could kill\nJacobin Radio\nMacro Dose\n\nlast updated: 2024-11-01"
+    "text": "Now\ninspired by other peoples /now page\n\n\n\nToulmoche: Dolce far Niente\n\n\n\ncontinuing my studies in economics in halle, on track to finish my undergraduate this year. currently thinking about a good bachelors thesis topic\ngood book’s ive read recently:\n\nLondon NW by Zadie Smith\nGlobalists by Quinn Slobodian\n\npodcasts i’ve been listening to:\n\ndont read theory\nTeurer Fahren\n\nlast updated: 2025-04-01"
   },
   {
-    "objectID": "now/2024-08.html",
-    "href": "now/2024-08.html",
-    "title": "Now",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "hi, i’m marten",
     "section": "",
-    "text": "Now\ninspired by other peoples /now page\n\n\n\nToulmoche: Dolce far Niente\n\n\n\ncontinuing my studies in economics in halle. on track to finish my bachelor’s degree in 2025 (after an exchange semester this winter in paris)\nworking as a student assistant at the institute of agricultural development in transition economies (IAMO), mostly on the agripolicy department\ngood book’s ive read recently:\n\nIf We Burn by Vincent Bevins\nLütten Klein by Steffen Mau\nReturning to Reims by Didier Eribon\n\npodcasts i’ve been listening to:\n\nif books could kill\nLittle Talk in Slow French\nJacobin Radio\n\nlast updated: 2024-08-01"
+    "text": "hi, i’m marten\nLinkedIn GitHub BlueSky\n\n\n\n\n\nI am a third year bachelor student of economics in Halle (Germany).  → what i am doing Now\n\n\n\nMy interests lie in monetary theory, inequality and the history of economic thought, especially (post-)Keynesianism.\n\n\n→ more about me\n\n\nBelow you can find some of my projects, which I am currently working on or have worked on in the past.\n\n\nI am mostly interested in the intersection of economics and politics, and I like to analyze them using statistical methods in R or Python.\n\n→ all my Projects\n\n\n\n\n\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\nCementing the Divide? Housing and Wealth Inequality across Europe\n\n\nBachelors Thesis Project researching the connection between housing price increases and their effect on wealth inequality across different European countries. Using novel…\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\ndiatypst\n\n\neasy slides in typst - a package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nPaycheck Politics\n\n\nResearch Project on the connection between minimum wage recipiency and voting for populist right for a seminar in Empirical Economics. This page presents some findings and…\n\n\n\nMar 10, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\nThe purpose of studying economics is not to acquire a set of ready-made answers to economic questions, but to learn how to avoid being deceived by economists.\nJoan Robinson"
   },
   {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
+    "objectID": "projects/unfallkarte/index.html",
+    "href": "projects/unfallkarte/index.html",
+    "title": "Interaktive Unfallkarte",
     "section": "",
-    "text": "Blog\nThis moved to blog.martenw.com"
+    "text": "Website Screenshot\nUnser Straßenverkehr ist tödlich. Allein 2020 starben etwa 2500 Menschen auf deutschen Straßen, vor allem verursacht durch Autos. Diese Website erlaubt es jedem, die Verkehrsunfälle vor der eigenen Haustür zu analysieren und besonders gefährdete Orte zu meiden. Die Unfälle sind nach selbst einstellbaren Kategorien wie Grad der Verletzungen, beteiligte Farhzeugarten, etc. sortierbar. Außerdem wird die zeitliche Verteilung der jeweiligen Auswahl und die räumliche Sammlung in externen Grafiken dargestellt."
   },
   {
-    "objectID": "projects/bundestwitter/index.html",
-    "href": "projects/bundestwitter/index.html",
-    "title": "Bundestwitter",
+    "objectID": "projects/unfallkarte/index.html#funktionsweise",
+    "href": "projects/unfallkarte/index.html#funktionsweise",
+    "title": "Interaktive Unfallkarte",
+    "section": "Funktionsweise",
+    "text": "Funktionsweise\nDie Unfalldaten stammen aus dem OpenData Projekt des Deutschen Statistischen Bundesamtes. Diese Daten werden zuerst nach Ort gefiltert und in die Website eingespeist. Diese Website ist komplett in Python geschrieben. Das Python-Skript verarbeitet die Daten und stellt sie mithilfe der Plotly-Library dar. Die Nutzereingaben werden in der Flask-App verarbeitet und anschließend dargestellt. Das Gante basiert stark auf pandas DataFrames, die in allen möglichen Arten verändert oder angepasst werden."
+  },
+  {
+    "objectID": "projects/zeit-api/index.html",
+    "href": "projects/zeit-api/index.html",
+    "title": "ZEIT API in Python",
     "section": "",
-    "text": "Screen Shot of the Web Page\nTwitter ist aus die politische Meinungsbildung heutzutage nicht mehr wegzudenken. Sei es sinnlose Diskussion, sinnvoler Austausch oder Kontakt mit Journalist:innen, all das findet auf dieser Plattform statt. Jedoch ohne Transparenz und ohne die Mehrheit der Bürger:innen, die zu 90% nicht da sind. Genau da soll diese Website ansetzen, und Interessierte über eine Karte zu einer Übersicht über das Twitter-Profil ihrer Abgeordneten führen. Es erlaubt allen, jeden MdB mit anderen zu vergleichen, sei es über die Tweetrate, die zeit auf der Plattform, die Aktivität, die genutzten Hashtags etc."
+    "text": "PyPI Package Website\nDie ZEIT ist als eine der ältesten und wichtigsten Zeitungen Deutschlands ein wahrer Schatz an Informationen, sei es über die Themen vergangener Zeiten, die politischen Interessen der Bundesrepublik oder einfach die Wichtigkeit aktueller Themen. Jeder und jede kann nun auf diesen großen Datenschatz zugreifen, und seine ganz eigenen Ideen daraus entwickeln, mithilfe des zeit-online packets in der einfachen Programmiersprache python."
   },
   {
-    "objectID": "projects/bundestwitter/index.html#technisches",
-    "href": "projects/bundestwitter/index.html#technisches",
-    "title": "Bundestwitter",
+    "objectID": "projects/zeit-api/index.html#technisches",
+    "href": "projects/zeit-api/index.html#technisches",
+    "title": "ZEIT API in Python",
     "section": "Technisches",
-    "text": "Technisches\nTäglich werden über die Twitter-API die letzten 50 Tweets aller Accounts abgefragt und gesammelt. Daraufhin wird der Text jedes Tweets mit einem Machine-Learning Algorithmus anhand der Laune bewertet, was jedoch aufgrund der kurzen Länge nicht immer funktioniert. Anschließend werden alle Daten der Tweets aggregiert und in eine Datenbank eingespeist.\nAuf diese Datenbank greift dann Web-App, die komplett in Python geschrieben ist, zu und stellt sie schön dar und baut Rangfolgen anhand der Daten. Zusätzlich wird noch eine Karte mit Deutschands Wahlkreisen und den Vertretern mit Twitter generiert. Die Visualisierungen basieren vor allem auf der Plotly-Library und die App baut auf Dash und Flask auf."
+    "text": "Technisches\n\nUpdate 2022: Leider hat Zeit Online die API inzwischen abgestellt, das Ganze ist also nur noch eine technische Spielerei der Vergangenheit\n\nDie API ist zwar schon ein bisschen älter, funktioniert aber noch herausragend. Darum habe ich ein Package geschrieben, um die Interaktion damit zu vereinfachen und meine Skills auszutesten. Das Ganze ist auf PYPI als Package veröffentlich und die Dokumentation ist hier einsehbar, inklusive Jupyter Notebooks und vielen Erklärungen.\n\nAusprobieren\nUm das ganze auszuprobieren, am besten das Package von pip installieren\npip install zeit-online\nund dann in eine Datei importieren und die API Klasse initiieren und den API Key einfügen\nimport zeit\napi = zeit.API()\napi.set_token(\"API-KEY\") #Key einfügen\n#jetzt steht dir die Welt von Zeit Online offen\nfür ausführlichere Erklärungen, definitiv die Dokumentation angucken !"
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
+    "objectID": "projects/mindestlohn/index.html",
+    "href": "projects/mindestlohn/index.html",
+    "title": "Paycheck Politics",
     "section": "",
-    "text": "Projects\n\n\n\nVermeer: Art of Painting\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCementing the Divide? Housing and Wealth Inequality across Europe\n\n\nBachelors Thesis Project researching the connection between housing price increases and their effect on wealth inequality across different European countries. Using novel data from the ECB’s Distributional Wealth Accounts (DWA) and a range of statistical methods in R.\n\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\ndiatypst\n\n\neasy slides in typst - a package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPaycheck Politics\n\n\nResearch Project on the connection between minimum wage recipiency and voting for populist right for a seminar in Empirical Economics. This page presents some findings and visualizations of the resulting seminar paper.\n\n\n\n\n\nMar 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nNotizen meines Studiums\n\n\n\n\n\n\n\n\nMar 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nZEIT API in Python\n\n\n\n\n\n\n\n\nMay 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nZeitanalyse\n\n\n\n\n\n\n\n\nApr 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nBundestwitter\n\n\nEine Web-App, die alle Twitter-Accounts von Bundestagsmitgliedern erfahrbar macht und kartiert. Damit die 90% der Wähler:innen ohne Twitter erfahren, was ihre Abgeordneten so im Internet treiben\n\n\n\n\n\nFeb 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nInteraktive Unfallkarte\n\n\n\n\n\n\n\n\nFeb 4, 2021\n\n\n\n\n\nNo matching items"
+    "text": "Figure 1: Representation of Minimum Wage and Vote Share Data\nNestled in the heart of Thuringia, the German district of Sonneberg made headlines with a historic moment – it became the first constituency to elect a district administrator from the right wing Alternative for Germany (AfD) party. In an unexpected turn, Robert Sesselmann of the AfD won a closely contested run-off election against the conservative Christian Democratic Union (CDU), securing 52.8% of the votes. The results not only marked a seismic shift in local politics but sent shockwaves through the established political order (Schuetze 2023). It exemplifies the growing right-wing populism which has been spreading in Germany and elsewhere over the last few decades.\nIntriguingly, Sonneberg also holds the distinction of having the highest percentage of minimum wage workers in Germany – 44%. This paper aims to explore the connection between minimum wage recipiency and the support for right-wing populist movements, using Sonneberg as a focal point. Employing data from the WSI and the German Federal Election Officer in an Ordinary Least Squares (OLS) regression, the findings reveals a significant correlation between these variables, even when accounting for other relevant controls."
   },
   {
-    "objectID": "projects/vwl-notizen/index.html",
-    "href": "projects/vwl-notizen/index.html",
-    "title": "Notizen meines Studiums",
-    "section": "",
-    "text": "Notizen-Website\n\n\nWer zum ersten Semester in ein Studium reinstolpert, wird erstmal komplett überfordert sein von all den verschiedenen Anforderungen die an einen gestellt werden. Um den Prozess ein bisschen zu vereinfachen, habe ich alle meine Mitschriften für mein gesamtes Studium VWL/BWL an der MLU Halle als Website veröffentlicht.\nDas ganze umfasst 30 Module und über 300 Mitschriften nach Datum sortiert und im Volltext durchsuchbar. Die Website ist im Reiter verlinkt, aber auch hier."
+    "objectID": "projects/mindestlohn/index.html#data",
+    "href": "projects/mindestlohn/index.html#data",
+    "title": "Paycheck Politics",
+    "section": "Data",
+    "text": "Data\nThe analysis is based on data compiled by Pusch and Seils (2022) at the Institute of Economic and Social Sciences (WSI). They provide an estimate of the share of workers in a given district who will be affected by the increase in the minimum wage to €12 in October 2022 (henceforth minimum wage workers).\n\nPusch, Toralf, and Eric Seils. 2022. “Mindestlohn 12 Euro - Auswirkungen in den Kreisen.” Düsseldorf: Wirtschafts- und Sozialwissenschaftliche Institut (WSI). https://hdl.handle.net/10419/265130.\n\nBundeswahlleiterin, Die. 2021. “Bundestagswahl 2021: Endgültiges Ergebnis.” https://bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2021/52_21_endgueltiges-ergebnis.html.\nAlternative for Germany (AfD) results from the federal election on the 26.10.2021 are from the Federal Election Commissioner (Bundeswahlleiterin (2021)). Elections in Germany take place in constituencies (Wahlkreise), which are different from the standard counties (Landkreise). Therefore, the data is transformed by the election office, which does not lead to any losses.\n\n\n\n\n\n\nFigure 2: Repr. of Minimum Wage (left) and Vote Share (right)\n\n\n\nAdditional data on socio-economic and socio-demographic factors are provided by the regional statistical offices of the Länder. Most of these data are for the year 2022, with the exception of population density estimates, for which more recent data are not yet available.\n\nSummary Statistics\n\n\nStatistic\nN\nMean\nSt. Dev.\nMin\nMax\n\n\n\n\nAfD vote share\n400\n0.113\n0.058\n0.029\n0.321\n\n\nMW share\n400\n0.194\n0.064\n0.079\n0.440\n\n\nOst Dummy\n400\n0.190\n0.393\n0\n1\n\n\nUnempl.\n400\n0.052\n0.022\n0.019\n0.148\n\n\nGDP\n400\n40,329.500\n16,743.150\n17,553\n158,749\n\n\nAvg. Age\n400\n45.277\n2.008\n40.700\n51.000\n\n\nPop. Density\n400\n536.540\n708.669\n35.300\n4,788.200"
   },
   {
-    "objectID": "projects/diatypst/index.html",
-    "href": "projects/diatypst/index.html",
-    "title": "diatypst",
-    "section": "",
-    "text": "There is a new LaTeX contender on the block: typst. Featuring a much easier syntax and instant-preview, it feels like a serious replacement for the clunky workflows of producing PDF via \\{weird command}. What was missing until now is an easy way to create good looking slides, the existing packages in the typst ecosystem are overblown for the quick creation of presentations.\nI totally get it. That’s why I created Diatypst, a package that makes it a breeze to create stunning slides without having to memorize complicated commands or settle for dull styling. The slides are set up to make your life easier, with a dot counter in the upper left corner (like the one in Beamer) and helpful defaults for title and section slides. Hey, just so you know, you can set a color that’ll influence everything from the page footer to the hyperlinks.\nThere are two different themes available, the normal theme and the full theme. The latter one is more like a fully-fledged beamer theme that’s used a lot in academia.\n\n\n\nNormal Theme\nFull Theme\n\n\n\n\n\n\n\n\nExample .typ file and the resulting PDF\nsame for the Full Theme PDF\n\n\n\n\nHow to get started?\nThe easiest way to use diatypst is via the Typst Webapp and importing the template from the typst universe. To create new slides, just delimit them with a header and they are created automatically. For more fine-tuning, visit the GitHub Repo.\nAnother option is to use Quarto to create the slides. To do this, you need to import the diaquarto extension into your project and some things in your YAML Footer. Slides are created similar to beamer presentations with the --- delimiter. For more info, see here\n\n\nWhat does diatypst stand for?\nThe word diatypst is inspired by the ease of use of a Diaprojektor (German for Slide Projector) and the Diatype (60s typesetting machine)\n\n\n\nA Diaprojektor"
+    "objectID": "projects/mindestlohn/index.html#regression",
+    "href": "projects/mindestlohn/index.html#regression",
+    "title": "Paycheck Politics",
+    "section": "Regression",
+    "text": "Regression\nRegression Formula:\n\n\\text{afd}_{i} = \\beta_0 + \\beta_1 \\text{mw}_{i} + \\sum_2^k\\beta_k \\text{controls}_{i,k} + \\epsilon_{i}\n\\tag{1}\nSimple Regression Line\n\nMultiple Regression Results\n\n\nEffect of Minimum Wage Recipients on AfD Vote Share\n\n\n\n\n\n\n\n\n\nDependent variable:\n\n\n\n\n\n\n\n\n\n\n\n\nAfD Vote Share\n\n\n\n\n\n\n(1)\n\n\n(2)\n\n\n(3)\n\n\n(4)\n\n\n(5)\n\n\n(6)\n\n\n\n\n\n\n\n\nMinimum Wage Rate\n\n\n0.714***\n\n\n0.291***\n\n\n0.308***\n\n\n0.301***\n\n\n0.227***\n\n\n0.220***\n\n\n\n\n\n\n(0.028)\n\n\n(0.039)\n\n\n(0.039)\n\n\n(0.044)\n\n\n(0.044)\n\n\n(0.044)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEast Germany\n\n\n\n\n0.086***\n\n\n0.088***\n\n\n0.088***\n\n\n0.081***\n\n\n0.082***\n\n\n\n\n\n\n\n\n(0.006)\n\n\n(0.006)\n\n\n(0.006)\n\n\n(0.006)\n\n\n(0.006)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnemployment Rate\n\n\n\n\n\n\n-0.279***\n\n\n-0.275***\n\n\n-0.244***\n\n\n-0.163*\n\n\n\n\n\n\n\n\n\n\n(0.071)\n\n\n(0.072)\n\n\n(0.070)\n\n\n(0.093)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLog GDP p. C.\n\n\n\n\n\n\n\n\n-0.002\n\n\n0.011*\n\n\n0.013**\n\n\n\n\n\n\n\n\n\n\n\n\n(0.005)\n\n\n(0.006)\n\n\n(0.006)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAvg. Age\n\n\n\n\n\n\n\n\n\n\n0.006***\n\n\n0.006***\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(0.001)\n\n\n(0.001)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLog Pop. Density\n\n\n\n\n\n\n\n\n\n\n\n\n-0.003\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(0.002)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConstant\n\n\n-0.026***\n\n\n0.040***\n\n\n0.051***\n\n\n0.071\n\n\n-0.332***\n\n\n-0.315***\n\n\n\n\n\n\n(0.006)\n\n\n(0.007)\n\n\n(0.007)\n\n\n(0.060)\n\n\n(0.091)\n\n\n(0.092)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObservations\n\n\n400\n\n\n400\n\n\n400\n\n\n400\n\n\n400\n\n\n400\n\n\n\n\nAdjusted R2\n\n\n0.612\n\n\n0.732\n\n\n0.742\n\n\n0.741\n\n\n0.760\n\n\n0.761\n\n\n\n\nResidual Std. Error\n\n\n0.036\n\n\n0.030\n\n\n0.030\n\n\n0.030\n\n\n0.029\n\n\n0.029\n\n\n\n\n\n\n\n\nNote:\n\n\np&lt;0.1; p&lt;0.05; p&lt;0.01"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "marten walk",
+    "objectID": "projects/inequality/index.html",
+    "href": "projects/inequality/index.html",
+    "title": "Cementing the Divide? Housing and Wealth Inequality across Europe",
     "section": "",
-    "text": "marten walk\nI am a student of economics in Halle, Germany and quite interested in the different aspects of political economy and economic history. this was especially sparked by my activity with Rethinking Economics, a global network of students who want to change the way economics is thought and practiced.\nThis is my personal website, where I collect various projects and ideas, mostly in a technical / political / economic context.\n\n\nBlog Roll\n\nMakronom\n\n\nAdam Tooze: Chartbook\n\n\nBranko Milanovic: Global Inequality\n\n\nDezernat Zukunft: Geldbrief\n\n\nFinancial Times: Alphaville\nWhat’s a Blogroll?"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "I’d love to hear from you!",
-    "section": "",
-    "text": "You can find me online\nLinkedIn GitHub BlueSky.\nOr, you can drop me an e-mail at\nkontakt@martenw.com (OpenPGP-Key)\n\n\n\n\n\nVermeer: Girl Reading a Letter at an Open Window"
+    "text": "Housing Wealth Dynamics in Germany\n\n\n\nthe Code for the ongoing project can be found on GitHub. This project is part of my bachelor thesis at the University of Halle-Wittenberg, supervised by prof. Dr. Börner and Hakon Albers.\n\nThis project examines how rising housing prices impact wealth inequality, focusing first on Germany and then extending the analysis across Europe. Using the ECB’s Distributional Wealth Accounts (DWA), I apply inequality decomposition techniques and panel regressions to explore whether gains from housing primarily benefit the middle class or the wealthiest households. The goal is to clarify housing’s role as a driver of inequality in different ownership and price-growth contexts.\nThe project follows the intuition that housing wealth is a significant factor in overall wealth inequality, as it is a major asset for many households. The analysis will consider how different ownership structures and housing price dynamics affect wealth distribution.\nThe example of Germany shows that housing is the most important asset for the middle class, while the wealthiest households hold a more diversified portfolio, including financial assets and business equity.\n\n\n\nWealth Decomposition by Assets across the Deciles\n\n\nFirst Figures created from the Data already show that the wealth ratio between tenants and owners has been increasing in countries with rising housing prices, indicating that the wealth gap between these groups is widening. In countries with stable or declining housing prices e.g. Spain or Italy, this is less pronounced.\n\n\n\nTenant-Owner Wealth Ratios\n\n\n\nMore to follow as the project progresses.\n\n\n\n\nCitationBibTeX citation:@online{walk2025,\n  author = {Walk, Marten},\n  title = {Cementing the {Divide?} {Housing} and {Wealth} {Inequality}\n    Across {Europe}},\n  date = {2025-05-01},\n  url = {https://martenw.com/projects/inequality/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nWalk, Marten. 2025. “Cementing the Divide? Housing and Wealth\nInequality Across Europe.” May 1, 2025. https://martenw.com/projects/inequality/."
   },
   {
     "objectID": "projects/zeitworte/index.html",
@@ -98,73 +105,73 @@
     "text": "Stichwortvergleich\n\n\n\nStichworte\n\n\nDie Zeit hat etwa 16.000 Schlagwörter, mit denen sie Artikel versehen, gesammelt über einen Zeitraum von 75 Jahren. Mit dieser Seite ist es möglich, die Relevanz verschiedener Themen über die Jahre zu vergleichen, ähnlich zu Google Trends.\n\nUpdate 2022: Aufgrund des Abstellens der Zeit-API von Verlagsseite aus ist die Funktionsweise der App leider nicht mehr möglich."
   },
   {
-    "objectID": "projects/inequality/index.html",
-    "href": "projects/inequality/index.html",
-    "title": "Cementing the Divide? Housing and Wealth Inequality across Europe",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "I’d love to hear from you!",
     "section": "",
-    "text": "Housing Wealth Dynamics in Germany\n\n\n\nthe Code for the ongoing project can be found on GitHub. This project is part of my bachelor thesis at the University of Halle-Wittenberg, supervised by prof. Dr. Börner and Hakon Albers.\n\nThis project examines how rising housing prices impact wealth inequality, focusing first on Germany and then extending the analysis across Europe. Using the ECB’s Distributional Wealth Accounts (DWA), I apply inequality decomposition techniques and panel regressions to explore whether gains from housing primarily benefit the middle class or the wealthiest households. The goal is to clarify housing’s role as a driver of inequality in different ownership and price-growth contexts.\nThe project follows the intuition that housing wealth is a significant factor in overall wealth inequality, as it is a major asset for many households. The analysis will consider how different ownership structures and housing price dynamics affect wealth distribution.\nThe example of Germany shows that housing is the most important asset for the middle class, while the wealthiest households hold a more diversified portfolio, including financial assets and business equity.\n\n\n\nWealth Decomposition by Assets across the Deciles\n\n\nFirst Figures created from the Data already show that the wealth ratio between tenants and owners has been increasing in countries with rising housing prices, indicating that the wealth gap between these groups is widening. In countries with stable or declining housing prices e.g. Spain or Italy, this is less pronounced.\n\n\n\nTenant-Owner Wealth Ratios\n\n\n\nMore to follow as the project progresses.\n\n\n\n\nCitationBibTeX citation:@online{walk2025,\n  author = {Walk, Marten},\n  title = {Cementing the {Divide?} {Housing} and {Wealth} {Inequality}\n    Across {Europe}},\n  date = {2025-05-01},\n  url = {https://martenw.com/projects/inequality/},\n  langid = {en}\n}\nFor attribution, please cite this work as:\nWalk, Marten. 2025. “Cementing the Divide? Housing and Wealth\nInequality Across Europe.” May 1, 2025. https://martenw.com/projects/inequality/."
+    "text": "You can find me online\nLinkedIn GitHub BlueSky.\nOr, you can drop me an e-mail at\nkontakt@martenw.com (OpenPGP-Key)\n\n\n\n\n\nVermeer: Girl Reading a Letter at an Open Window"
   },
   {
-    "objectID": "projects/mindestlohn/index.html",
-    "href": "projects/mindestlohn/index.html",
-    "title": "Paycheck Politics",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "marten walk",
     "section": "",
-    "text": "Figure 1: Representation of Minimum Wage and Vote Share Data\nNestled in the heart of Thuringia, the German district of Sonneberg made headlines with a historic moment – it became the first constituency to elect a district administrator from the right wing Alternative for Germany (AfD) party. In an unexpected turn, Robert Sesselmann of the AfD won a closely contested run-off election against the conservative Christian Democratic Union (CDU), securing 52.8% of the votes. The results not only marked a seismic shift in local politics but sent shockwaves through the established political order (Schuetze 2023). It exemplifies the growing right-wing populism which has been spreading in Germany and elsewhere over the last few decades.\nIntriguingly, Sonneberg also holds the distinction of having the highest percentage of minimum wage workers in Germany – 44%. This paper aims to explore the connection between minimum wage recipiency and the support for right-wing populist movements, using Sonneberg as a focal point. Employing data from the WSI and the German Federal Election Officer in an Ordinary Least Squares (OLS) regression, the findings reveals a significant correlation between these variables, even when accounting for other relevant controls."
+    "text": "marten walk\nI am a student of economics in Halle, Germany and quite interested in the different aspects of political economy and economic history. this was especially sparked by my activity with Rethinking Economics, a global network of students who want to change the way economics is thought and practiced.\nThis is my personal website, where I collect various projects and ideas, mostly in a technical / political / economic context.\n\n\nBlog Roll\n\nMakronom\n\n\nAdam Tooze: Chartbook\n\n\nBranko Milanovic: Global Inequality\n\n\nDezernat Zukunft: Geldbrief\n\n\nFinancial Times: Alphaville\nWhat’s a Blogroll?"
   },
   {
-    "objectID": "projects/mindestlohn/index.html#data",
-    "href": "projects/mindestlohn/index.html#data",
-    "title": "Paycheck Politics",
-    "section": "Data",
-    "text": "Data\nThe analysis is based on data compiled by Pusch and Seils (2022) at the Institute of Economic and Social Sciences (WSI). They provide an estimate of the share of workers in a given district who will be affected by the increase in the minimum wage to €12 in October 2022 (henceforth minimum wage workers).\n\nPusch, Toralf, and Eric Seils. 2022. “Mindestlohn 12 Euro - Auswirkungen in den Kreisen.” Düsseldorf: Wirtschafts- und Sozialwissenschaftliche Institut (WSI). https://hdl.handle.net/10419/265130.\n\nBundeswahlleiterin, Die. 2021. “Bundestagswahl 2021: Endgültiges Ergebnis.” https://bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2021/52_21_endgueltiges-ergebnis.html.\nAlternative for Germany (AfD) results from the federal election on the 26.10.2021 are from the Federal Election Commissioner (Bundeswahlleiterin (2021)). Elections in Germany take place in constituencies (Wahlkreise), which are different from the standard counties (Landkreise). Therefore, the data is transformed by the election office, which does not lead to any losses.\n\n\n\n\n\n\nFigure 2: Repr. of Minimum Wage (left) and Vote Share (right)\n\n\n\nAdditional data on socio-economic and socio-demographic factors are provided by the regional statistical offices of the Länder. Most of these data are for the year 2022, with the exception of population density estimates, for which more recent data are not yet available.\n\nSummary Statistics\n\n\nStatistic\nN\nMean\nSt. Dev.\nMin\nMax\n\n\n\n\nAfD vote share\n400\n0.113\n0.058\n0.029\n0.321\n\n\nMW share\n400\n0.194\n0.064\n0.079\n0.440\n\n\nOst Dummy\n400\n0.190\n0.393\n0\n1\n\n\nUnempl.\n400\n0.052\n0.022\n0.019\n0.148\n\n\nGDP\n400\n40,329.500\n16,743.150\n17,553\n158,749\n\n\nAvg. Age\n400\n45.277\n2.008\n40.700\n51.000\n\n\nPop. Density\n400\n536.540\n708.669\n35.300\n4,788.200"
-  },
-  {
-    "objectID": "projects/mindestlohn/index.html#regression",
-    "href": "projects/mindestlohn/index.html#regression",
-    "title": "Paycheck Politics",
-    "section": "Regression",
-    "text": "Regression\nRegression Formula:\n\n\\text{afd}_{i} = \\beta_0 + \\beta_1 \\text{mw}_{i} + \\sum_2^k\\beta_k \\text{controls}_{i,k} + \\epsilon_{i}\n\\tag{1}\nSimple Regression Line\n\nMultiple Regression Results\n\n\nEffect of Minimum Wage Recipients on AfD Vote Share\n\n\n\n\n\n\n\n\n\nDependent variable:\n\n\n\n\n\n\n\n\n\n\n\n\nAfD Vote Share\n\n\n\n\n\n\n(1)\n\n\n(2)\n\n\n(3)\n\n\n(4)\n\n\n(5)\n\n\n(6)\n\n\n\n\n\n\n\n\nMinimum Wage Rate\n\n\n0.714***\n\n\n0.291***\n\n\n0.308***\n\n\n0.301***\n\n\n0.227***\n\n\n0.220***\n\n\n\n\n\n\n(0.028)\n\n\n(0.039)\n\n\n(0.039)\n\n\n(0.044)\n\n\n(0.044)\n\n\n(0.044)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEast Germany\n\n\n\n\n0.086***\n\n\n0.088***\n\n\n0.088***\n\n\n0.081***\n\n\n0.082***\n\n\n\n\n\n\n\n\n(0.006)\n\n\n(0.006)\n\n\n(0.006)\n\n\n(0.006)\n\n\n(0.006)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnemployment Rate\n\n\n\n\n\n\n-0.279***\n\n\n-0.275***\n\n\n-0.244***\n\n\n-0.163*\n\n\n\n\n\n\n\n\n\n\n(0.071)\n\n\n(0.072)\n\n\n(0.070)\n\n\n(0.093)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLog GDP p. C.\n\n\n\n\n\n\n\n\n-0.002\n\n\n0.011*\n\n\n0.013**\n\n\n\n\n\n\n\n\n\n\n\n\n(0.005)\n\n\n(0.006)\n\n\n(0.006)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAvg. Age\n\n\n\n\n\n\n\n\n\n\n0.006***\n\n\n0.006***\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(0.001)\n\n\n(0.001)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLog Pop. Density\n\n\n\n\n\n\n\n\n\n\n\n\n-0.003\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(0.002)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConstant\n\n\n-0.026***\n\n\n0.040***\n\n\n0.051***\n\n\n0.071\n\n\n-0.332***\n\n\n-0.315***\n\n\n\n\n\n\n(0.006)\n\n\n(0.007)\n\n\n(0.007)\n\n\n(0.060)\n\n\n(0.091)\n\n\n(0.092)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObservations\n\n\n400\n\n\n400\n\n\n400\n\n\n400\n\n\n400\n\n\n400\n\n\n\n\nAdjusted R2\n\n\n0.612\n\n\n0.732\n\n\n0.742\n\n\n0.741\n\n\n0.760\n\n\n0.761\n\n\n\n\nResidual Std. Error\n\n\n0.036\n\n\n0.030\n\n\n0.030\n\n\n0.030\n\n\n0.029\n\n\n0.029\n\n\n\n\n\n\n\n\nNote:\n\n\np&lt;0.1; p&lt;0.05; p&lt;0.01"
-  },
-  {
-    "objectID": "projects/zeit-api/index.html",
-    "href": "projects/zeit-api/index.html",
-    "title": "ZEIT API in Python",
+    "objectID": "projects/diatypst/index.html",
+    "href": "projects/diatypst/index.html",
+    "title": "diatypst",
     "section": "",
-    "text": "PyPI Package Website\nDie ZEIT ist als eine der ältesten und wichtigsten Zeitungen Deutschlands ein wahrer Schatz an Informationen, sei es über die Themen vergangener Zeiten, die politischen Interessen der Bundesrepublik oder einfach die Wichtigkeit aktueller Themen. Jeder und jede kann nun auf diesen großen Datenschatz zugreifen, und seine ganz eigenen Ideen daraus entwickeln, mithilfe des zeit-online packets in der einfachen Programmiersprache python."
+    "text": "There is a new LaTeX contender on the block: typst. Featuring a much easier syntax and instant-preview, it feels like a serious replacement for the clunky workflows of producing PDF via \\{weird command}. What was missing until now is an easy way to create good looking slides, the existing packages in the typst ecosystem are overblown for the quick creation of presentations.\nI totally get it. That’s why I created Diatypst, a package that makes it a breeze to create stunning slides without having to memorize complicated commands or settle for dull styling. The slides are set up to make your life easier, with a dot counter in the upper left corner (like the one in Beamer) and helpful defaults for title and section slides. Hey, just so you know, you can set a color that’ll influence everything from the page footer to the hyperlinks.\nThere are two different themes available, the normal theme and the full theme. The latter one is more like a fully-fledged beamer theme that’s used a lot in academia.\n\n\n\nNormal Theme\nFull Theme\n\n\n\n\n\n\n\n\nExample .typ file and the resulting PDF\nsame for the Full Theme PDF\n\n\n\n\nHow to get started?\nThe easiest way to use diatypst is via the Typst Webapp and importing the template from the typst universe. To create new slides, just delimit them with a header and they are created automatically. For more fine-tuning, visit the GitHub Repo.\nAnother option is to use Quarto to create the slides. To do this, you need to import the diaquarto extension into your project and some things in your YAML Footer. Slides are created similar to beamer presentations with the --- delimiter. For more info, see here\n\n\nWhat does diatypst stand for?\nThe word diatypst is inspired by the ease of use of a Diaprojektor (German for Slide Projector) and the Diatype (60s typesetting machine)\n\n\n\nA Diaprojektor"
   },
   {
-    "objectID": "projects/zeit-api/index.html#technisches",
-    "href": "projects/zeit-api/index.html#technisches",
-    "title": "ZEIT API in Python",
+    "objectID": "projects/vwl-notizen/index.html",
+    "href": "projects/vwl-notizen/index.html",
+    "title": "Notizen meines Studiums",
+    "section": "",
+    "text": "Notizen-Website\n\n\nWer zum ersten Semester in ein Studium reinstolpert, wird erstmal komplett überfordert sein von all den verschiedenen Anforderungen die an einen gestellt werden. Um den Prozess ein bisschen zu vereinfachen, habe ich alle meine Mitschriften für mein gesamtes Studium VWL/BWL an der MLU Halle als Website veröffentlicht.\nDas ganze umfasst 30 Module und über 300 Mitschriften nach Datum sortiert und im Volltext durchsuchbar. Die Website ist im Reiter verlinkt, aber auch hier."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Projects\n\n\n\nVermeer: Art of Painting\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCementing the Divide? Housing and Wealth Inequality across Europe\n\n\nBachelors Thesis Project researching the connection between housing price increases and their effect on wealth inequality across different European countries. Using novel data from the ECB’s Distributional Wealth Accounts (DWA) and a range of statistical methods in R.\n\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\ndiatypst\n\n\neasy slides in typst - a package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nPaycheck Politics\n\n\nResearch Project on the connection between minimum wage recipiency and voting for populist right for a seminar in Empirical Economics. This page presents some findings and visualizations of the resulting seminar paper.\n\n\n\n\n\nMar 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nNotizen meines Studiums\n\n\n\n\n\n\n\n\nMar 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nZEIT API in Python\n\n\n\n\n\n\n\n\nMay 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nZeitanalyse\n\n\n\n\n\n\n\n\nApr 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nBundestwitter\n\n\nEine Web-App, die alle Twitter-Accounts von Bundestagsmitgliedern erfahrbar macht und kartiert. Damit die 90% der Wähler:innen ohne Twitter erfahren, was ihre Abgeordneten so im Internet treiben\n\n\n\n\n\nFeb 16, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nInteraktive Unfallkarte\n\n\n\n\n\n\n\n\nFeb 4, 2021\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/bundestwitter/index.html",
+    "href": "projects/bundestwitter/index.html",
+    "title": "Bundestwitter",
+    "section": "",
+    "text": "Screen Shot of the Web Page\nTwitter ist aus die politische Meinungsbildung heutzutage nicht mehr wegzudenken. Sei es sinnlose Diskussion, sinnvoler Austausch oder Kontakt mit Journalist:innen, all das findet auf dieser Plattform statt. Jedoch ohne Transparenz und ohne die Mehrheit der Bürger:innen, die zu 90% nicht da sind. Genau da soll diese Website ansetzen, und Interessierte über eine Karte zu einer Übersicht über das Twitter-Profil ihrer Abgeordneten führen. Es erlaubt allen, jeden MdB mit anderen zu vergleichen, sei es über die Tweetrate, die zeit auf der Plattform, die Aktivität, die genutzten Hashtags etc."
+  },
+  {
+    "objectID": "projects/bundestwitter/index.html#technisches",
+    "href": "projects/bundestwitter/index.html#technisches",
+    "title": "Bundestwitter",
     "section": "Technisches",
-    "text": "Technisches\n\nUpdate 2022: Leider hat Zeit Online die API inzwischen abgestellt, das Ganze ist also nur noch eine technische Spielerei der Vergangenheit\n\nDie API ist zwar schon ein bisschen älter, funktioniert aber noch herausragend. Darum habe ich ein Package geschrieben, um die Interaktion damit zu vereinfachen und meine Skills auszutesten. Das Ganze ist auf PYPI als Package veröffentlich und die Dokumentation ist hier einsehbar, inklusive Jupyter Notebooks und vielen Erklärungen.\n\nAusprobieren\nUm das ganze auszuprobieren, am besten das Package von pip installieren\npip install zeit-online\nund dann in eine Datei importieren und die API Klasse initiieren und den API Key einfügen\nimport zeit\napi = zeit.API()\napi.set_token(\"API-KEY\") #Key einfügen\n#jetzt steht dir die Welt von Zeit Online offen\nfür ausführlichere Erklärungen, definitiv die Dokumentation angucken !"
+    "text": "Technisches\nTäglich werden über die Twitter-API die letzten 50 Tweets aller Accounts abgefragt und gesammelt. Daraufhin wird der Text jedes Tweets mit einem Machine-Learning Algorithmus anhand der Laune bewertet, was jedoch aufgrund der kurzen Länge nicht immer funktioniert. Anschließend werden alle Daten der Tweets aggregiert und in eine Datenbank eingespeist.\nAuf diese Datenbank greift dann Web-App, die komplett in Python geschrieben ist, zu und stellt sie schön dar und baut Rangfolgen anhand der Daten. Zusätzlich wird noch eine Karte mit Deutschands Wahlkreisen und den Vertretern mit Twitter generiert. Die Visualisierungen basieren vor allem auf der Plotly-Library und die App baut auf Dash und Flask auf."
   },
   {
-    "objectID": "projects/unfallkarte/index.html",
-    "href": "projects/unfallkarte/index.html",
-    "title": "Interaktive Unfallkarte",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
     "section": "",
-    "text": "Website Screenshot\nUnser Straßenverkehr ist tödlich. Allein 2020 starben etwa 2500 Menschen auf deutschen Straßen, vor allem verursacht durch Autos. Diese Website erlaubt es jedem, die Verkehrsunfälle vor der eigenen Haustür zu analysieren und besonders gefährdete Orte zu meiden. Die Unfälle sind nach selbst einstellbaren Kategorien wie Grad der Verletzungen, beteiligte Farhzeugarten, etc. sortierbar. Außerdem wird die zeitliche Verteilung der jeweiligen Auswahl und die räumliche Sammlung in externen Grafiken dargestellt."
+    "text": "Blog\nThis moved to blog.martenw.com"
   },
   {
-    "objectID": "projects/unfallkarte/index.html#funktionsweise",
-    "href": "projects/unfallkarte/index.html#funktionsweise",
-    "title": "Interaktive Unfallkarte",
-    "section": "Funktionsweise",
-    "text": "Funktionsweise\nDie Unfalldaten stammen aus dem OpenData Projekt des Deutschen Statistischen Bundesamtes. Diese Daten werden zuerst nach Ort gefiltert und in die Website eingespeist. Diese Website ist komplett in Python geschrieben. Das Python-Skript verarbeitet die Daten und stellt sie mithilfe der Plotly-Library dar. Die Nutzereingaben werden in der Flask-App verarbeitet und anschließend dargestellt. Das Gante basiert stark auf pandas DataFrames, die in allen möglichen Arten verändert oder angepasst werden."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "hi, i’m marten",
-    "section": "",
-    "text": "hi, i’m marten\nLinkedIn GitHub BlueSky\n\n\n\n\n\nI am a third year bachelor student of economics in Halle (Germany).  → what i am doing Now\n\n\n\nMy interests lie in monetary theory, inequality and the history of economic thought, especially (post-)Keynesianism.\n\n\n→ more about me\n\n\nBelow you can find some of my projects, which I am currently working on or have worked on in the past.\n\n\nI am mostly interested in the intersection of economics and politics, and I like to analyze them using statistical methods in R or Python.\n\n→ all my Projects\n\n\n\n\n\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\nCementing the Divide? Housing and Wealth Inequality across Europe\n\n\nBachelors Thesis Project researching the connection between housing price increases and their effect on wealth inequality across different European countries. Using novel…\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\ndiatypst\n\n\neasy slides in typst - a package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nPaycheck Politics\n\n\nResearch Project on the connection between minimum wage recipiency and voting for populist right for a seminar in Empirical Economics. This page presents some findings and…\n\n\n\nMar 10, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\nThe purpose of studying economics is not to acquire a set of ready-made answers to economic questions, but to learn how to avoid being deceived by economists.\nJoan Robinson"
-  },
-  {
-    "objectID": "now/index.html",
-    "href": "now/index.html",
+    "objectID": "now/2024-08.html",
+    "href": "now/2024-08.html",
     "title": "Now",
     "section": "",
-    "text": "Now\ninspired by other peoples /now page\n\n\n\nToulmoche: Dolce far Niente\n\n\n\ncontinuing my studies in economics in halle, on track to finish my undergraduate this year. currently thinking about a good bachelors thesis topic\ngood book’s ive read recently:\n\nLondon NW by Zadie Smith\nGlobalists by Quinn Slobodian\n\npodcasts i’ve been listening to:\n\ndont read theory\nTeurer Fahren\n\nlast updated: 2025-04-01"
+    "text": "Now\ninspired by other peoples /now page\n\n\n\nToulmoche: Dolce far Niente\n\n\n\ncontinuing my studies in economics in halle. on track to finish my bachelor’s degree in 2025 (after an exchange semester this winter in paris)\nworking as a student assistant at the institute of agricultural development in transition economies (IAMO), mostly on the agripolicy department\ngood book’s ive read recently:\n\nIf We Burn by Vincent Bevins\nLütten Klein by Steffen Mau\nReturning to Reims by Didier Eribon\n\npodcasts i’ve been listening to:\n\nif books could kill\nLittle Talk in Slow French\nJacobin Radio\n\nlast updated: 2024-08-01"
+  },
+  {
+    "objectID": "now/2024-11.html",
+    "href": "now/2024-11.html",
+    "title": "Now",
+    "section": "",
+    "text": "Now\ninspired by other peoples /now page\n\n\n\nToulmoche: Dolce far Niente\n\n\n\ncontinuing my studies in economics in halle, currently on an exchange semester in paris, focusing on development economics.\nworking as a student assistant at the institute of agricultural development in transition economies (IAMO), mostly on the agripolicy department\ngood book’s ive read recently:\n\nIf We Burn by Vincent Bevins\nThe Fraud by Zadie Smith\n\npodcasts i’ve been listening to:\n\nif books could kill\nJacobin Radio\nMacro Dose\n\nlast updated: 2024-11-01"
   }
 ]
