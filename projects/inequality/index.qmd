@@ -17,7 +17,7 @@ google-scholar: true
 citation: true
 ---
 
-![Housing Wealth Dynamics in Germany](./housing_wealth_absolute.png)
+![Wealth Composition of different Deciles in Europe](./featured.png)
 
 > the Code for the ongoing project can be found on [GitHub](https://github.com/skriptum/inequality). This project is part of my bachelor thesis at the University of Halle-Wittenberg, supervised by prof. Dr. Börner and Hakon Albers.
 
