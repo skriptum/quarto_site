@@ -37,9 +37,9 @@ website:
       - href: https://to.martenw.com/linkedin
         icon: linkedin
         aria-label: LinkedIn
-      - href: https://to.martenw.com/bsky
-        icon: twitter
-        aria-label: bluesky
+      # - href: https://to.martenw.com/bsky
+      #   icon: twitter
+      #   aria-label: bluesky
     left: 
       - text: "© 2021-2025 Marten Walk"
     right:

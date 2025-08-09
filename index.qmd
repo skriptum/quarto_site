@@ -28,8 +28,9 @@ format:
 
 [`<button type="button">LinkedIn</button>`{=html}](https://to.martenw.com/linkedin)
 [`<button type="button">GitHub</button>`{=html}](https://to.martenw.com/github)
+<!--
 [`<button type="button">BlueSky</button>`{=html}](https://to.martenw.com/bsky)
-
+-->
 
 ::::: {.content-block}
 
