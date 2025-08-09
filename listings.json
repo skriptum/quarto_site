@@ -1,28 +1,28 @@
 [
   {
-    "listing": "/projects/index.html",
-    "items": [
-      "/projects/inequality/index.html",
-      "/projects/diatypst/index.html",
-      "/projects/mindestlohn/index.html",
-      "/projects/vwl-notizen/index.html",
-      "/projects/zeit-api/index.html",
-      "/projects/zeitworte/index.html",
-      "/projects/bundestwitter/index.html",
-      "/projects/unfallkarte/index.html"
-    ]
-  },
-  {
     "listing": "/index.html",
     "items": [
       "/projects/inequality/index.html",
       "/projects/diatypst/index.html",
+      "/projects/stips/index.html",
       "/projects/mindestlohn/index.html",
       "/projects/vwl-notizen/index.html",
       "/projects/zeit-api/index.html",
       "/projects/zeitworte/index.html",
-      "/projects/bundestwitter/index.html",
-      "/projects/unfallkarte/index.html"
+      "/projects/bundestwitter/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/inequality/index.html",
+      "/projects/diatypst/index.html",
+      "/projects/stips/index.html",
+      "/projects/mindestlohn/index.html",
+      "/projects/vwl-notizen/index.html",
+      "/projects/zeit-api/index.html",
+      "/projects/zeitworte/index.html",
+      "/projects/bundestwitter/index.html"
     ]
   }
 ]

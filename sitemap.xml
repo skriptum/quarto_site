@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://martenw.com/projects/zeit-api/index.html</loc>
-    <lastmod>2025-06-25T09:14:50.023Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/index.html</loc>
-    <lastmod>2025-06-25T09:14:49.996Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/bundestwitter/index.html</loc>
-    <lastmod>2025-06-25T09:14:49.995Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/inequality/index.html</loc>
-    <lastmod>2025-06-25T09:14:49.997Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/vwl-notizen/index.html</loc>
-    <lastmod>2025-06-25T09:14:50.021Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/now/2024-11.html</loc>
-    <lastmod>2025-06-25T09:14:49.988Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/about.html</loc>
-    <lastmod>2025-06-25T09:14:49.983Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/contact.html</loc>
-    <lastmod>2025-06-25T09:14:49.983Z</lastmod>
-  </url>
-  <url>
     <loc>https://martenw.com/blog/index.html</loc>
-    <lastmod>2025-06-25T09:14:49.983Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/colophon.html</loc>
-    <lastmod>2025-06-25T09:14:49.983Z</lastmod>
+    <lastmod>2025-08-09T10:07:20.832Z</lastmod>
   </url>
   <url>
     <loc>https://martenw.com/index.html</loc>
-    <lastmod>2025-06-25T09:14:49.988Z</lastmod>
+    <lastmod>2025-08-09T10:07:20.836Z</lastmod>
   </url>
   <url>
-    <loc>https://martenw.com/now/2024-08.html</loc>
-    <lastmod>2025-06-25T09:14:49.988Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/now/index.html</loc>
-    <lastmod>2025-06-25T09:14:49.988Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/zeitworte/index.html</loc>
-    <lastmod>2025-06-25T09:14:50.026Z</lastmod>
+    <loc>https://martenw.com/about.html</loc>
+    <lastmod>2025-08-09T10:07:20.832Z</lastmod>
   </url>
   <url>
     <loc>https://martenw.com/projects/diatypst/index.html</loc>
-    <lastmod>2025-06-25T09:14:49.996Z</lastmod>
+    <lastmod>2025-08-09T10:07:20.845Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/projects/zeitworte/index.html</loc>
+    <lastmod>2025-08-09T10:07:20.874Z</lastmod>
   </url>
   <url>
     <loc>https://martenw.com/projects/mindestlohn/index.html</loc>
-    <lastmod>2025-06-25T09:14:49.998Z</lastmod>
+    <lastmod>2025-08-09T10:07:20.846Z</lastmod>
   </url>
   <url>
-    <loc>https://martenw.com/projects/unfallkarte/index.html</loc>
-    <lastmod>2025-06-25T09:14:50.020Z</lastmod>
+    <loc>https://martenw.com/projects/stips/index.html</loc>
+    <lastmod>2025-08-09T10:07:20.859Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/projects/bundestwitter/index.html</loc>
+    <lastmod>2025-08-09T10:07:20.844Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/now/2024-08.html</loc>
+    <lastmod>2025-08-09T10:07:20.837Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/now/2024-11.html</loc>
+    <lastmod>2025-08-09T10:07:20.837Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/now/index.html</loc>
+    <lastmod>2025-08-09T10:07:20.837Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/projects/zeit-api/index.html</loc>
+    <lastmod>2025-08-09T10:07:20.871Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/projects/vwl-notizen/index.html</loc>
+    <lastmod>2025-08-09T10:07:20.869Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/projects/inequality/index.html</loc>
+    <lastmod>2025-08-09T10:07:20.846Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/projects/index.html</loc>
+    <lastmod>2025-08-09T10:07:20.845Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/colophon.html</loc>
+    <lastmod>2025-08-09T10:07:20.832Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/contact.html</loc>
+    <lastmod>2025-08-09T10:07:20.832Z</lastmod>
   </url>
 </urlset>
