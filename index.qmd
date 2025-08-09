@@ -42,9 +42,7 @@ format:
 
 ::: {.img-text}
 
-I am a third year bachelor student of economics in Halle (Germany). 
-<br>
-→  what i am doing [***Now***](now/index.qmd)
+I am a fourth year bachelor student of economics in Halle (Germany). 
 
 :::
 

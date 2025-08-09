@@ -3,3 +3,4 @@
 /_site/
 *.code_workspace
 .DS_Store
+projects/.DS_Store
