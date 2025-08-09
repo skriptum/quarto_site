@@ -1,0 +1,93 @@
+---
+title:  "Stipendien nur für Privilegierte?"
+date:   "2024-10-04"
+description: |
+  Wie setzt sich eigentlich die Stipendiat:innenschaft der sog. "Begabtenförderungswerke" zusammen? Alles nur Bildungsbürgerkids aus gutem Haushalt? Eine Datenanalyse
+image: "featured.png"
+---
+
+> Die analysierten Daten stammen aus einer Informationsfreiheitsanfrage an das BMBF, veröffentlicht auf [FragDenStaat](https://fragdenstaat.de/anfrage/begabtenfoerderungswerke-anteil-bafoeg-berechtigter/). Der Schwerpunkt liegt auf der Heinrich-Böll Stiftung, da ich dort selbst Stipendiat war.
+
+Sind Stipendiat:innen der Begabtenförderungswerke privilegiert? Eine Frage, die sich der eine oder andere Stip* wahrscheinlich schonmal gestellt hat. Auch medial wird immer wieder die These aufgestellt, dass die Studienstiftungen eine Elitenförderung sind ([SZ](https://www.sueddeutsche.de/bildung/stipendien-begabtenfoerderung-kritik-1.4518691), [taz](https://taz.de/Begabtenfoerderung-in-der-Kritik/!5060373/) ,[FAZ](https://www.faz.net/aktuell/karriere-hochschule/hoersaal/begabtenfoerderung-wie-gerecht-sind-stipendien-19337664.html)). Also, was ist dran an dem Vorwurf?
+
+Vorab: es geht hier vor allem darum, die Zusammensetzung der Stips mit der Gesamtstudierendenschaft in Deutschland zu vergleichen, und auch nur anhand weniger Diskrimierungsformen. Außerdem soll natürlich nicht suggeriert werden, dass ein Studium das "einzig Wahre" ist vs. eine Ausbildung, sondern aufgezeigt werden, dass beide Optionen sehr ungleich verteilt sind.
+
+## Wer fängt überhaupt an zu studieren?
+
+Bildung ist in Deutschland eine Klassenfrage. Unser Bildungssystem ist sozial hochselektiv, und wer ein Studium anfängt ist meist bereits privilegiert. 
+
+```{=html}
+<iframe title="Bildungstrichter" aria-label="Split Bars" id="datawrapper-chart-LpEkQ" src="https://datawrapper.dwcdn.net/LpEkQ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="262" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+```
+
+Gerade einmal 27% der Kinder aus Nicht-Akademiker Haushalten schaffen es, überhaupt ein Studum anzufangen (verglichen mit 79% aus Akademikerhaushalten. Auch in den späteren Berufsphasen zieht sich diese Ungleichheit fort, beispielsweise promovieren gerade einmal 1% der Nicht-Akademiker-Kinder (6% der Aka. Kinder).
+
+```{=html}
+<iframe title="Absolute Zahlen" aria-label="Multiple Donuts" id="datawrapper-chart-BYgN8" src="https://datawrapper.dwcdn.net/BYgN8/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="277" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+```
+
+In absoluten Zahlen haben wir im Jahrgang 2022 72% Nicht-Akademiker-Kinder. Sobald man aber das erste Mal in den Audimax schaut, sind sie bereits in der Unterzahl (45% vs 55% Akademikerkinder).
+
+Die Selektion in unserer Gesellschaft fängt also schon wesentlich früher an und zieht sich in der Uni fort. Nicht-Akademikerkinder sind hier vor allem auf FHs (Fachhochschulen) und eher in praxisnäheren Studiengängen (bspw. BWL), während Akademikerkinder im Schnitt öfter an die Uni gehen und eine breitere Palette an Studiengängen studieren.
+
+# Wer bekommt ein Stipendium?
+
+Und auch in den Aufnahmeprozessen der Stiftungen zieht sich die Selektion durch. In den letzten Jahren ist die Zahl der geförderten stark gewachsen, es werden heute wesentlich mehr Stips gefördert als noch vor 10 Jahren. (Hier am Beispiel Böll Stiftung)
+
+```{=html}
+<iframe title="Anteile der Förderung" aria-label="Interactive line chart" id="datawrapper-chart-opqQA" src="https://datawrapper.dwcdn.net/opqQA/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="407" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+```
+
+Das Wachstum ist aber vor allem aufgrund eines Zuwachses bei den Studierenden mit Studienkostenpauschale (300€ Büchergeld). Der Großteil der Stips, die heutzutage in der Stiftung sind, hat keine Bafög-Anspruch, und ihr Anteil ist in der letzten Zeit gewachsen, während die Zahl der Stips mit Bafög Anspruch (ob nur eine Teilförderung oder eine Vollförderung) stagniert ist. **Die Böll Stiftung ist also heutzutage effektiv privilegierter als vor 10 Jahren**, da eine Studienkostenpauschale meist bedeutet, dass die Eltern über den Verdienstgrenzen von Bafög ist.
+
+Vergleichsweise gut sieht es hingegen beim Migrationshintergrund aus. Hier sind viele Stiftungen gut dabei und fördern mehr, als es der Durchschnitt in der Gesamtbevölkerung (22%) oder in der Studierendenschaft (20%) sind. Der Grund dafür sind vor allem spezifische Programme, die die Stiftungen aufgelegt haben, um sie mehr zu fördern, nachdem es in der Vergangenheit oft Kritik gab, dass die Stiftungen sehr *weiß* sind.
+
+```{=html}
+<iframe title="Migrationshintergrund in %, 2022" aria-label="Bar Chart" id="datawrapper-chart-O4VkQ" src="https://datawrapper.dwcdn.net/O4VkQ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="378" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+```
+
+Schlechter sieht es aus bei dem Anteil der Erstakademiker in der Stiftung. 
+
+```{=html}
+<iframe title="Erstakademiker in %, 2022" aria-label="Bar Chart" id="datawrapper-chart-tcXRX" src="https://datawrapper.dwcdn.net/tcXRX/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="407" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+```
+
+Zur Erinnerung: 72% ist der Anteil der Nicht-Akademikerkinder an einem Jahrgang, 45% der Anteil an der Studierendenschaft. Spitzenreiter ist die Böckler-Stiftung mit über 60%, gemeinsam mit der Rosa-Luxemburg Stiftung. Diese beiden haben spezifisch Programme für Erstakademiker und sind in ihrem Outreach darauf bedacht, insbesondere diese Gruppe anzusprechen. 
+
+Eine weitere starke Abweichung ist die Hochschulart, die die Böll fördert. Wie bereits erwähnt, wählen Kinder aus Nicht-Akademikerhaushalten als auch aus ärmeren Haushalten oft Studiengänge an Fachhoschulen und studieren eher praxisnähere Studiengänge.
+
+```{=html}
+<iframe title="Hochschulart" aria-label="Multiple Donuts" id="datawrapper-chart-C5cxP" src="https://datawrapper.dwcdn.net/C5cxP/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="373" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+```
+
+Diese sind aber in der Stiftung komplett unterrepräsentiert. Während in der Gesamt-studierendenschaft fast 40% auf einer FH studieren, sind sie in der Böll gerade mal mit 10% vertreten. 
+
+Und wer es sich schon immer gefragt hat, welches Bundesland unterrepräsentiert ist, es ist:
+
+```{=html}
+<iframe title="Bundesländer Representation" aria-label="Map" id="datawrapper-chart-bGQ3p" src="https://datawrapper.dwcdn.net/bGQ3p/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="739" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+```
+
+Nordrhein-Westfalen. 25% der Studis in der Gesamtstudierendenschaft, aber gerade mal 13% in der Böll. Übrigens auch ein Bundesland mit vielen ärmeren Studierenden und vielen FHs. Absolut überrepräsentiert: natürlich Berlin.
+
+# Fazit
+
+Ja, wir sind as Stips absolut privilegiert. Im Schnitt haben wir sowieso schon keine Bafög-Anspruch und kommen aus Akademikerhaushalten, und sobald wir hier sind, bauen wir natürlich auch Netzwerke auf und bekommen nochmal 300€ obendrauf. 
+
+**Was tun?**
+
+Die Antwort der Stiftungen auf diese Frage ist immer, dass wir als Stips mehr in unseren Studiengängen und Unis werben müssen für das Stipendium. Das hat natürlich wenig Sinn, wenn die meisten von uns nicht auf einer FH sind und nicht in unterrepräsentierten Studiengängen und meist auch nicht in NRW. Wenn die Stiftung ihr Ziel einer diversen Stipendiat:innenschaft auch erreichen möchte, muss auch sie nachbessern. 
+
+Andere Stiftungen zeigen, dass man mit einem Fokus auf Benachteiligungen Ungerechtigkeiten abbauen kann und die Diversität in de Förderung erhöhen kann. Das sollte auch der Anspruch aller Stiftungen sein, wenn sie ihre eigenen Werte ernstnimmt.
+
+
+
+
+
