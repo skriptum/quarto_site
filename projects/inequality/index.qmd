@@ -1,37 +1,74 @@
 ---
-title: "Cementing the Divide? Housing and Wealth Inequality across Europe"
+title: "Cementing the Divide? Distributional consequences of house prices"
+subtitle: "Empirical bachelors thesis in Economics"
 date:   "2025-05-01"
 categories: 
 - R
 - politics
 - inequality
 description: |
-  Bachelors Thesis Project researching the connection between housing price increases and their effect on wealth inequality across different European countries. Using novel data from the ECB's Distributional Wealth Accounts (DWA) and a range of statistical methods in R.
+  How do asset prices shape the wealth distribution? Motivated by the different trajectories of European housing markets after the financial crisis, this thesis examines how capital gains, particularly in housing, influence wealth inequality in Europe. Drawing on the ECB’s new Distributional Wealth Accounts, the analysis uses panel regressions that exploit cross-country variation in housing markets. The results show that asset prices have first-order consequences on the wealth distribution, driven by differences in portfolio composition across population groups. Rising house prices increase the shares of the middle 40% and especially the bottom 50%, while a booming stock market mainly benefits the top 10%. These effects are robust across specifications but vary substantially across countries, reflecting institutional and portfolio differences. Simulations of alternative price scenarios show that housing booms can slow concentration. However, no country saw house prices grow fast enough to reverse the upward trend in top wealth shares. Together, the results provide detailed insights into the distributional effects of asset prices in Europe, with implications for both monetary and housing policy.
 #author-title: GitHub Repo
 #author: '<a href="https://github.com/skriptum/inequality">skriptum/inequality</a>'
 author: "Marten Walk"
 #bibliography: references.bib
-citation-location: margin
-image: "featured.webp"
+image: "HP_coeff.png"
 google-scholar: true
 citation: true
+bibliography: bachelor.bib
 ---
 
-![Wealth Composition of different Deciles in Europe](./featured.png)
+![House price coefficients of individual countries](./HP_coeff.png){#fig-indiv}
 
-> the Code for the ongoing project can be found on [GitHub](https://github.com/skriptum/inequality). This project is part of my bachelor thesis at the University of Halle-Wittenberg, supervised by prof. Dr. Börner and Hakon Albers.
+> This project is part of my bachelor thesis at the University of Halle-Wittenberg, supervised by prof. Dr. Börner and Hakon Albers. 
+> The [latest version (PDF)](https://raw.githubusercontent.com/skriptum/inequality/refs/heads/main/text/main.pdf) and the Code for the ongoing project can be found on [GitHub](https://github.com/skriptum/inequality). 
 
-This project examines how rising housing prices impact wealth inequality, focusing first on Germany and then extending the analysis across Europe. Using the ECB’s Distributional Wealth Accounts (DWA), I apply inequality decomposition techniques and panel regressions to explore whether gains from housing primarily benefit the middle class or the wealthiest households. The goal is to clarify housing’s role as a driver of inequality in different ownership and price-growth contexts.
+### Motivation
 
-The project follows the intuition that housing wealth is a significant factor in overall wealth inequality, as it is a major asset for many households. The analysis will consider how different ownership structures and housing price dynamics affect wealth distribution.
+Housing is Europe's largest asset. Its value is central to both household finances and the macroeconomy. Yet despite advances in the literature, there is still limited comparative evidence on the distributional consequences of housing wealth accumulation in Europe. This thesis draws on recent improvements in distributional data [@blatnikIntroducingDistributionalWealth2024] and methodological approaches developed for the United States [@kuhnIncomeWealthInequality2020] to examine how the wealth distribution reacts to changes in house prices.
 
-The example of Germany shows that housing is the most important asset for the middle class, while the wealthiest households hold a more diversified portfolio, including financial assets and business equity.
+The importance of housing for the modern economy cannot be overstated: houses are the primary item on household balance sheets; mortgages make up the largest share of debt in developed economies [@jordaGreatMortgagingHousing2016]; and housing cycles play a central role in macroeconomic fluctuations [@cesa-bianchiHousingCyclesMacroeconomic2013], particularly apparent during and after the financial crisis of 2008.
 
-![Wealth Decomposition by Assets across the Deciles](./asset_composition_deciles.png)
+At the same time, inequality has returned to the forefront of economic debate. Since Piketty's Capital in the Twenty-First Century [@pikettyCapitalTwentyFirstCentury2014], research on the distribution of wealth and income has expanded rapidly, supported by large-scale data initiatives such as WID.world [@alvaredoGlobalInequalityDynamics2017] and the creation of official distributional accounts in developed economies [e.g. @battyDistributionalFinancialAccounts2022].
 
-First Figures created from the Data already show that the wealth ratio between tenants and owners has been increasing in countries with rising housing prices, indicating that the wealth gap between these groups is widening. In countries with stable or declining housing prices e.g. Spain or Italy, this is less pronounced.
+Bringing these two strands together, this thesis investigates how changes in asset prices, particularly housing, affect the distribution of wealth in Europe. Because the composition of household portfolios differs across the population (@fig-portfolio), identical price movements can have vastly different distributional consequences. While high-wealth households tend to hold more business and financial assets tied to stock market performance, middle- and lower-wealth households primarily own housing and often carry more leverage, making them more exposed to house price movements [@adamDistributionalConsequencesAsset2016].
 
-![Tenant-Owner Wealth Ratios](./tenant_owner_wealth_ratio.png)
+### Data
 
-> ***More to follow as the project progresses.***
+This analysis relies on newly released Distributional Wealth Accounts (DWA) from the European Central Bank [@blatnikIntroducingDistributionalWealth2024]. The DWA combine detailed micro-level survey's of households balance sheets with data from national accounts, ensuring macro-consistent estimates while preserving detailed information about the distribution of assets. The result is a harmonised, cross-country dataset for the Eurozone that captures changes in the wealth distribution at a much higher frequency than traditional surveys, making it well-suited for analysing the distributional effects of asset price movements.
+
+### Method
+
+Building on the regression framework of @kuhnIncomeWealthInequality2020, who relate changes in US wealth shares to asset price movements using broad survey data over several decades, this thesis applies a higher-frequency and cross-country approach. Using the quarterly data from the DWA for all euro area countries from 2009–2022, it estimates panel models linking changes in the wealth shares of the bottom 50%, middle 40%, and top 10% respectively to movements in housing and equity prices. 
+
+### Results
+
+The results demonstrate the central role asset prices play in the evolution of wealth inequality (@tbl-results). Rising house prices increase the share of the middle 40% and particularly the bottom 50% at the expense of the top decile. Conversely, increasing stock prices are found to benefit the top 10%, to the detriment of the rest of the population. Notably, these results vary strongly across european countries (@fig-indiv), reflecting differences in portfolio structures and institutional settings.
+
+### Simulations
+
+To further analyze the effects, counterfactual simulations explore how alternative asset price paths would have affected wealth shares in Europe (@fig-simulation). Scenarios with strong housing growth shift wealth away from the top 10% toward the middle and lower segments, while weak or falling house prices have the opposite effect. However, even in the most extreme housing boom observed, these appreciations cannot offset the gains of rising stock prices for the top decile. In no counterfactual scenario does the share of the top 10% decrease over the observed timeframe.
+
+
+### Selected Outputs
+
+**How did the wealth of different deciles grow?**
+
+![Portfolio composition of different Deciles in Europe](./featured.png){#fig-portfolio}
+
+**Regression Table: Elasticities of top decile wealth shares with respect to asset prices**
+
+::: {#tbl-results}
+```{=html}
+{{< include ./T10.html >}}
+```
+:::
+
+
+**How would the share of wealth held by the top decile in Europe look under different price trajectories?**
+
+![Counterfactual Simulations](./counterfactual_T10.png){#fig-simulation}
+
+
+> For the full paper, see the [latest PDF version](https://raw.githubusercontent.com/skriptum/inequality/refs/heads/main/text/main.pdf)
 

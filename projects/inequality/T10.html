@@ -1,0 +1,125 @@
+<div class="table-wrap" style="overflow-x:auto;">
+  <style>
+    /* Simple, self-contained table styling (no body overrides) */
+    .reg-table{
+      border-collapse:collapse;
+      font:12px system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      color:#333;
+      width:auto;
+      background:transparent;
+      margin:0 auto;
+    }
+    .reg-table caption{padding:4px 0;}
+    .reg-table th, .reg-table td{
+      padding:6px 8px;
+      border-top:1px solid #d3d3d3;
+      vertical-align:middle;
+      white-space:nowrap;
+    }
+    .reg-table thead th{
+      border-top-width:0;
+      border-bottom:2px solid #d3d3d3;
+      font-weight:600;
+      text-align:center;
+    }
+    /* Top/bottom table rules */
+    .reg-table{border-top:2px solid #a8a8a8;border-bottom:2px solid #a8a8a8;}
+    /* Column spanner row */
+    .reg-table .spanner-row th{
+      border-bottom:2px solid #d3d3d3;
+      font-weight:600;
+    }
+    /* Stub (row labels) */
+    .reg-table .stub{
+      text-align:left;
+      font-weight:500;
+      border-right:2px solid #d3d3d3;
+    }
+    /* Subtle zebra striping */
+    .reg-table tbody tr:nth-child(odd){background:rgba(128,128,128,0.05);}
+    /* Hard rules used in the original */
+    .reg-table .rule-top{border-top:1px solid #000;}
+    .reg-table .rule-bottom{border-bottom:1px solid #000;}
+    /* Footnotes */
+    .reg-table tfoot td{
+      font-size:90%;
+      padding:6px 8px;
+      border-top:0;
+    }
+  </style>
+
+  <table class="reg-table" role="table" aria-label="Regression results">
+    <thead>
+      <tr class="spanner-row">
+        <th class="stub" scope="col" rowspan="2"></th>
+        <th scope="colgroup" colspan="3">OLS Estimator</th>
+        <th scope="colgroup" colspan="2">Mean Group Estimator</th>
+      </tr>
+      <tr>
+        <th scope="col">(1)</th>
+        <th scope="col">(2)</th>
+        <th scope="col">(3)</th>
+        <th scope="col">(4)</th>
+        <th scope="col">(5)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="stub" scope="row">House Prices</th>
+        <td>-0.091***</td>
+        <td>-0.077***</td>
+        <td>-0.056</td>
+        <td>-0.055***</td>
+        <td>-0.057***</td>
+      </tr>
+      <tr>
+        <th class="stub" scope="row"></th>
+        <td>(0.013)</td>
+        <td>(0.009)</td>
+        <td>(0.047)</td>
+        <td>(0.020)</td>
+        <td>(0.018)</td>
+      </tr>
+      <tr>
+        <th class="stub" scope="row">Stock Prices</th>
+        <td></td>
+        <td>0.017***</td>
+        <td>0.027***</td>
+        <td></td>
+        <td>0.014***</td>
+      </tr>
+      <tr>
+        <th class="stub rule-bottom" scope="row"></th>
+        <td class="rule-bottom"></td>
+        <td class="rule-bottom">(0.007)</td>
+        <td class="rule-bottom">(0.009)</td>
+        <td class="rule-bottom"></td>
+        <td class="rule-bottom">(0.004)</td>
+      </tr>
+      <tr>
+        <th class="stub" scope="row">Unit Fixed Effects</th>
+        <td>No</td><td>Yes</td><td>Yes</td><td>-</td><td>-</td>
+      </tr>
+      <tr>
+        <th class="stub" scope="row">Time Fixed Effects</th>
+        <td>Yes</td><td>No</td><td>Year + Quarter</td><td>Yes</td><td>No</td>
+      </tr>
+      <tr class="rule-top">
+        <th class="stub" scope="row">N</th>
+        <td>860</td><td>860</td><td>860</td><td>860</td><td>860</td>
+      </tr>
+      <tr>
+        <th class="stub" scope="row">R²</th>
+        <td>0.071</td><td>0.087</td><td>0.076</td><td>0.443</td><td>0.313</td>
+      </tr>
+      <tr>
+        <th class="stub" scope="row">Adj. R²</th>
+        <td>0.013</td><td>0.062</td><td>0.050</td><td>0.408</td><td>0.269</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr><td colspan="6">* p &lt; 0.1, ** p &lt; 0.05, *** p &lt; 0.01</td></tr>
+      <tr><td colspan="6">OLS Estimators use the SCC Standard Errors by Millo (2017)</td></tr>
+    </tfoot>
+  </table>
+</div>
