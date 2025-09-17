@@ -282,3 +282,9 @@ pre code {
 .navbar-toggler {
   box-shadow: none;
 }
+
+// Custom Block for full screen text
+.screen-block {
+  background-color: $mw-light-secondary;
+  padding: 1em;
+}
