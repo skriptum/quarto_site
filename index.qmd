@@ -1,6 +1,6 @@
 ---
 pagetitle: "marten walk"
-image: "images/logo.webp"
+#image: "images/logo.webp" #open graph issue
 canonical-url: "https://martenw.com"
 section-divs: false
 description: | 
