@@ -20,6 +20,4 @@ This website is built using [Quarto](https://quarto.org), a modern system to cre
 
 It uses a custom scss theme to overcome the boring standard theme. The complete code for the website can be found on [GitHub](https://github.com/skriptum/quarto_site). I have added some extra tricks, but in the end its just markdown.
 
-It is hosted on Cloudflare Pages, easy and free. 
-
-Some SEO tricks are taken from the must-read guide to [Guide to Academic Websites by Hendrik Erz](https://www.hendrik-erz.de/resources#academic-website). 
+Some SEO tricks are taken from the must-read [Guide to Academic Websites by Hendrik Erz](https://www.hendrik-erz.de/resources#academic-website). 

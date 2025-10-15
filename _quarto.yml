@@ -4,7 +4,10 @@ project:
 website:
   #title: "Marten Walk"
   favicon: images/favicon.ico
-  open-graph: true
+  open-graph: 
+    site-name: "Marten Walk"
+    image: images/preview-og.jpg
+    description: "econ student interested in monetary theory, inequality and the history of economic thought"
   site-url: https://martenw.com/
   search: false
   navbar:
