@@ -1,20 +1,21 @@
 ---
-title: "Cementing the Divide? Distributional consequences of house prices"
-subtitle: "Empirical bachelors thesis in Economics"
+title: "The Dynamics of Wealth Inequality: Distributional Effects of Asset Prices in Europe"
+subtitle: "Empirical thesis in Economics"
 date:   "2025-05-01"
 categories: 
 - R
 - politics
 - inequality
-description: |
-  How do asset prices shape the wealth distribution? Motivated by the different trajectories of European housing markets after the financial crisis, this thesis examines how capital gains, particularly in housing, influence wealth inequality in Europe. Drawing on the ECB’s new Distributional Wealth Accounts, the analysis uses panel regressions that exploit cross-country variation in housing markets. The results show that asset prices have first-order consequences on the wealth distribution, driven by differences in portfolio composition across population groups. Rising house prices increase the shares of the middle 40% and especially the bottom 50%, while a booming stock market mainly benefits the top 10%. These effects are robust across specifications but vary substantially across countries, reflecting institutional and portfolio differences. Simulations of alternative price scenarios show that housing booms can slow concentration. However, no country saw house prices grow fast enough to reverse the upward trend in top wealth shares. Together, the results provide detailed insights into the distributional effects of asset prices in Europe, with implications for both monetary and housing policy.
 #author-title: GitHub Repo
 #author: '<a href="https://github.com/skriptum/inequality">skriptum/inequality</a>'
 author: "Marten Walk"
-#bibliography: references.bib
 image: "HP_coeff.png"
+citation:
+  type: thesis
+  pdf-url: "https://raw.githubusercontent.com/skriptum/inequality/refs/heads/main/text/main.pdf"
+  doi: 10.5281/zenodo.16941045
+  abstract:  "How do asset prices shape the wealth distribution? Motivated by the different trajectories of European housing markets after the financial crisis, this thesis examines how capital gains, particularly in housing, influence wealth inequality in Europe. Drawing on the ECB’s new Distributional Wealth Accounts, the analysis uses panel regressions that exploit cross-country variation in housing markets. The results show that asset prices have first-order consequences on the wealth distribution, driven by differences in portfolio composition across population groups. Rising house prices increase the shares of the middle 40% and especially the bottom 50%, while a booming stock market mainly benefits the top 10%. These effects are robust across specifications but vary substantially across countries, reflecting institutional and portfolio differences. Simulations of alternative price scenarios show that housing booms can slow concentration. However, no country saw house prices grow fast enough to reverse the upward trend in top wealth shares. Together, the results provide detailed insights into the distributional effects of asset prices in Europe, with implications for both monetary and housing policy."
 google-scholar: true
-citation: true
 bibliography: bachelor.bib
 ---
 
@@ -22,6 +23,8 @@ bibliography: bachelor.bib
 
 > This project is part of my bachelor thesis at the University of Halle-Wittenberg, supervised by prof. Dr. Börner and Hakon Albers. 
 > The [latest version (PDF)](https://raw.githubusercontent.com/skriptum/inequality/refs/heads/main/text/main.pdf) and the Code for the ongoing project can be found on [GitHub](https://github.com/skriptum/inequality). 
+
+**Abstract:** How do asset prices shape the wealth distribution? Motivated by the different trajectories of European housing markets after the financial crisis, this thesis examines how capital gains, particularly in housing, influence wealth inequality in Europe. Drawing on the ECB’s new Distributional Wealth Accounts, the analysis uses panel regressions that exploit cross-country variation in housing markets. The results show that asset prices have first-order consequences on the wealth distribution, driven by differences in portfolio composition across population groups. Rising house prices increase the shares of the middle 40% and especially the bottom 50%, while a booming stock market mainly benefits the top 10%. These effects are robust across specifications but vary substantially across countries, reflecting institutional and portfolio differences. Simulations of alternative price scenarios show that housing booms can slow concentration. However, no country saw house prices grow fast enough to reverse the upward trend in top wealth shares. Together, the results provide detailed insights into the distributional effects of asset prices in Europe, with implications for both monetary and housing policy.
 
 ### Motivation
 
