@@ -19,8 +19,8 @@ website:
     right: 
       - text: PROJECTS
         href: projects/index.qmd
-      - text: BLOG
-        href: "https://blog.martenw.com/"
+      # - text: BLOG
+      #   href: "https://blog.martenw.com/"
       # - text: now
       #  href: now/index.qmd
       - text: ABOUT
