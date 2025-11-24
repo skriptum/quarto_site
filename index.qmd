@@ -4,7 +4,7 @@ pagetitle: "marten walk"
 canonical-url: "https://martenw.com"
 section-divs: false
 description: | 
-  Interested in monetary theory, climate economics and the history of economic thought.
+  Interested in monetary theory, wealth inequality and the history of economic thought.
 listing:
   - id: projects
     contents: 
@@ -52,7 +52,7 @@ I am a fourth year bachelor student of economics in Halle (Germany).
 
 ::: {.g-col-sm-6 .g-col-12 .title-block .text-block}
 
-My interests lie in monetary theory, inequality and the history of economic thought, especially (post-)Keynesianism. 
+My interests lie in monetary theory, inequality and the history of economic thought.
 
 \
 
