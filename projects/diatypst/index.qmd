@@ -1,8 +1,7 @@
 ---
-title: diatypst
+title: diatypst - easy slides in typst
 date: 2025-01-15
 description: |
-  easy slides in typst - 
   a package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics
 image: "title.webp"
 author-title: GitHub Project
@@ -14,7 +13,7 @@ author: '<a href="https://github.com/skriptum/diatypst">skriptum/diatypst</a>'
 
 There is a new LaTeX contender on the block: [typst](typst.app). Featuring a much easier syntax and instant-preview, it feels like a serious replacement for the clunky workflows of producing PDF via `\{weird command}`. What was missing until now is an easy way to create good looking slides, the existing packages in the typst ecosystem are overblown for the quick creation of presentations.
 
-That's why I created Diatypst, a package that makes it a breeze to create stunning slides without having to memorize complicated commands or settle for dull styling. The slides are set up to make your life easier, with a dot counter in the upper left corner (like the one in Beamer) and helpful defaults for title and section slides. Hey, just so you know, you can set a color that'll influence everything from the page footer to the hyperlinks. 
+That's why I created Diatypst, a package that makes it a breeze to create stunning slides without having to memorize complicated commands or settle for dull styling. The slides are set up to make your life easier, with a dot counter in the upper left corner (like the one in Beamer) and helpful defaults for title and section slides. Users can also set a theme color that'll influence everything from the page footer to the hyperlinks. 
 
 There are two different themes available, the normal theme and the full theme. The latter one is more like a fully-fledged beamer theme that's used a lot in academia.
 
@@ -25,9 +24,9 @@ There are two different themes available, the normal theme and the full theme. T
 
 ### How to get started?
 
-The easiest way to use diatypst is via the [Typst Webapp](https://typst.app) and importing the template from the [typst universe](https://typst.app/universe/package/diatypst/). To create new slides, just delimit them with a header and they are created automatically. For more fine-tuning, visit the [GitHub Repo](https://github.com/skriptum/diatypst).
+The easiest way to use diatypst is via the [Typst web app](https://typst.app) and importing the template from the [typst universe](https://typst.app/universe/package/diatypst/). To create new slides, just delimit them with a header and they are created automatically. For more fine-tuning and explanation, visit the [GitHub Repo](https://github.com/skriptum/diatypst).
 
-Another option is to use [Quarto](quarto.org) to create the slides. To do this, you need to import the [diaquarto extension](https://quarto.org/docs/extensions/listing-formats.html) into your project and some things in your YAML Footer. Slides are created similar to beamer presentations with the `---` delimiter. For more info, see [here](https://raw.githubusercontent.com/skriptum/diatypst/refs/heads/main/example/example_full.pdf)
+Another option is to use [Quarto](quarto.org) to create the slides. To do this, you need to import the [diaquarto extension](https://quarto.org/docs/extensions/listing-formats.html) into your project and some things in your YAML Footer. Slides are created similar to beamer presentations with the `---` delimiter. For more info, see [here](https://mdwm.org/diatypst/quarto.html)
 
 ### What does diatypst stand for?
 

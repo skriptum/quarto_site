@@ -1,5 +1,5 @@
 ---
-title: "The Dynamics of Wealth Inequality: Distributional Effects of Asset Prices in Europe"
+title: "How do housing prices affect wealth inequality?"
 subtitle: "Empirical thesis in Economics"
 date:   "2025-05-01"
 categories: 

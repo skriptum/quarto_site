@@ -43,7 +43,7 @@ format:
 
 ::: {.img-text}
 
-I am a fourth year bachelor student of economics in Halle (Germany). 
+I'm an economics graduate, currently at the *United Nations Department of Economic and Social Affairs* in NYC
 
 :::
 
@@ -52,22 +52,26 @@ I am a fourth year bachelor student of economics in Halle (Germany).
 
 ::: {.g-col-sm-6 .g-col-12 .title-block .text-block}
 
-My interests lie in monetary theory, inequality and the history of economic thought.
+Topics im interested in: 
+
+- (wealth) inequality
+- development economics 
+- the history of economic thought
 
 \
 
-→  more [***about***](about.qmd) me
+My focus lies at the intersection of economics and politics, using quantitative
+methods in R and Python to answer interesting questions (often with a lot of data)
 
 \
 
-Below you can find some of my projects, which I am currently working on or have worked on in the past. 
+→  see some of my [***Projects***](projects/index.qmd)
 
 \
 
-I am mostly interested in the intersection of economics and politics, and I like to analyze them using statistical methods in R or Python.
-
-\
-→  all my [***Projects***](projects/index.qmd)
+<p style="font-size:0.6em; color:#666; margin-top:0.5em;">
+  ‡ btw, the style of this site is a little inspired by the elegance of the [Financial Times](https://www.ft.com/) — minus the stock tickers 
+</p>
 
 :::
 
@@ -91,8 +95,8 @@ I am mostly interested in the intersection of economics and politics, and I like
 
 > ![](images/quote.png){width=10% fig-alt="quote image"}
 > 
-> The purpose of studying economics is not to acquire a set of ready-made answers to economic questions, but to learn how to avoid being deceived by economists.
+> The purpose of studying economics is not to acquire a set of ready-made answers to economic questions, but to learn how to avoid being deceived by economists. [‡](https://hetwebsite.net/het/profiles/robinson.htm)
 >
-> *Joan Robinson*
+> *Joan Robinson* 
 
 
