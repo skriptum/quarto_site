@@ -70,7 +70,7 @@ methods in R and Python to answer interesting questions (often with a lot of dat
 \
 
 <p style="font-size:0.6em; color:#666; margin-top:0.5em;">
-  ‡ btw, the style of this site is a little inspired by the elegance of the [Financial Times](https://www.ft.com/) — minus the stock tickers 
+  ‡ btw, the style of this site is a little inspired by the elegance of the Financial Times — minus the stock tickers 
 </p>
 
 :::
