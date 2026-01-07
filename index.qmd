@@ -95,7 +95,7 @@ methods in R and Python to answer interesting questions (often with a lot of dat
 
 > ![](images/quote.png){width=10% fig-alt="quote image"}
 > 
-> The purpose of studying economics is not to acquire a set of ready-made answers to economic questions, but to learn how to avoid being deceived by economists. [‡](https://hetwebsite.net/het/profiles/robinson.htm)
+> The purpose of studying economics is not to acquire a set of ready-made answers to economic questions, but to learn how to avoid being deceived by economists. <!-- [‡](https://hetwebsite.net/het/profiles/robinson.htm) -->
 >
 > *Joan Robinson* 
 
