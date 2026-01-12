@@ -5,28 +5,22 @@ toc: false
 pagetitle: Contact
 ---
 
+
 ::: grid
-::: {.g-col-12 .g-col-lg-6}
-
-# I’d love to hear from you!
-
-You can find me online 
-
-[`<button type="button">LinkedIn</button>`{=html}](https://de.linkedin.com/in/marten-walk)
-[`<button type="button">GitHub</button>`{=html}](https://github.com/skriptum)
-[`<button type="button">BlueSky</button>`{=html}](https://bsky.app/profile/mwd.bsky.social).
-
-
-Or, you can drop me an e-mail at
-
-**[kontakt@martenw.com](mailto:kontakt@martenw.com)** ([OpenPGP-Key](https://keys.openpgp.org/vks/v1/by-fingerprint/36B18BB9C27F985832D0D1E70772DABED0FCB0DA))
-
-:::
 
 ::: {.g-col-12 .g-col-lg-6}
 
 ![Vermeer: Girl Reading a Letter at an Open Window](images/contact.webp){fig-alt="Vermeer: Girl Reading a Letter at an Open Window"}
 
 :::
+
+::: {.g-col-12 .g-col-lg-6}
+
+## how to contact me?
+
+if youre not a bot, feel free (*for real*) to drop me an e-mail at **[kontakt@martenw.com](mailto:kontakt@martenw.com)** ([OpenPGP-Key](https://keys.openpgp.org/vks/v1/by-fingerprint/36B18BB9C27F985832D0D1E70772DABED0FCB0DA) if youre into [that](https://moxie.org/2015/02/24/gpg-and-me.html) )
+
+:::
+
 :::
 

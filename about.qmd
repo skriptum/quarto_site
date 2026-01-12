@@ -1,32 +1,35 @@
 ---
-about: 
-    template: jolla
-    image: images/geographer.webp
-    image-shape: round
+sidebar: false
+page-layout: article
 toc: false
 ---
 
-# marten walk
+# About me 
 
-I am a student of economics in Halle, Germany and quite interested in the different aspects of political economy and economic history. this was especially sparked by my activity with Rethinking Economics, a global network of students who want to change the way economics is thought and practiced. 
+::: grid
+::: {.g-col-12 .g-col-lg-6}
 
-This is my personal website, where I collect various projects and ideas, mostly in a technical / political / economic context.
-\
+I am a graduate of economics from University of Halle (a small town next to Leipzig, Germany).
 
-### Blog Roll
+Im quite interested in the different aspects of political economy and economic history. This was sparked by my activity with Rethinking Economics, a global network of students who want to change the way economics is thought and practiced. 
 
-##### [Makronom](https://makronom.de/)
+On this website I collect various projects and ideas, mostly in a technical / political / economic context. All adorned with a bunch of beautiful Vermeer paintings (like the one on this page, titled ["The Geographer"](https://en.wikipedia.org/wiki/The_Geographer) )
+
+**Newsletters I find interesting and that shaped my thinking:**
 
 ##### [Adam Tooze:  Chartbook](https://adamtooze.substack.com/)
 
 ##### [Branko Milanovic:  Global Inequality](https://branko2f7.substack.com/)
 
-##### [Dezernat Zukunft:  Geldbrief](https://www.dezernatzukunft.org/category/geldbrief/)
-
 ##### [Financial Times:  Alphaville](https://www.ft.com/alphaville)
 
-[What's a Blogroll?](https://blogroll.org/what-are-blogrolls/)
 
+:::
 
+::: {.g-col-12 .g-col-lg-6}
 
+![Vermeer: The Geographer](images/geographer.webp){fig-alt="Vermeer: The Geographer"}
+
+:::
+:::
 

@@ -7,4 +7,7 @@ toc: false
 
 # Blog
 
-This moved to [blog.martenw.com](https://blog.martenw.com)
+![Vermeer: Lady Writing a Letter with her Maid](../images/writing.jpg){fig-alt="Vermeer: Lady Writing a Letter with her Maid"}
+:::
+
+### This moved to [https://mdwm.org](https://mdwm.org)
