@@ -43,7 +43,7 @@ format:
 
 ::: {.img-text}
 
-I'm an economics graduate, currently at the *United Nations Department of Economic and Social Affairs* in NYC
+I'm an economics graduate, currently interning at the [United Nations Department of Economic and Social Affairs](https://www.un.org/en/desa) in NYC
 
 :::
 

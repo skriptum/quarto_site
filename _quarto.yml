@@ -20,10 +20,7 @@ website:
       - text: PROJECTS
         href: projects/index.qmd
       - text: BLOG
-        href: "https://mdwm.org/"
-        target: _blank
-      # - text: now
-      #  href: now/index.qmd
+        href: blog/index.qmd
       - text: ABOUT
         href: about.qmd
       - text: CONTACT
