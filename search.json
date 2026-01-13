@@ -2,37 +2,30 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "marten walk",
+    "title": "About me",
     "section": "",
-    "text": "marten walk\nI am a student of economics in Halle, Germany and quite interested in the different aspects of political economy and economic history. this was especially sparked by my activity with Rethinking Economics, a global network of students who want to change the way economics is thought and practiced.\nThis is my personal website, where I collect various projects and ideas, mostly in a technical / political / economic context.\n\n\nBlog Roll\n\nMakronom\n\n\nAdam Tooze: Chartbook\n\n\nBranko Milanovic: Global Inequality\n\n\nDezernat Zukunft: Geldbrief\n\n\nFinancial Times: Alphaville\nWhat’s a Blogroll?"
-  },
-  {
-    "objectID": "now/2024-08.html",
-    "href": "now/2024-08.html",
-    "title": "Now",
-    "section": "",
-    "text": "Now\ninspired by other peoples /now page\n\n\n\nToulmoche: Dolce far Niente\n\n\n\ncontinuing my studies in economics in halle. on track to finish my bachelor’s degree in 2025 (after an exchange semester this winter in paris)\nworking as a student assistant at the institute of agricultural development in transition economies (IAMO), mostly on the agripolicy department\ngood book’s ive read recently:\n\nIf We Burn by Vincent Bevins\nLütten Klein by Steffen Mau\nReturning to Reims by Didier Eribon\n\npodcasts i’ve been listening to:\n\nif books could kill\nLittle Talk in Slow French\nJacobin Radio\n\nlast updated: 2024-08-01"
-  },
-  {
-    "objectID": "now/2025-04.html",
-    "href": "now/2025-04.html",
-    "title": "Now",
-    "section": "",
-    "text": "Now\ninspired by other peoples /now page\n\n\n\nToulmoche: Dolce far Niente\n\n\n\ncontinuing my studies in economics in halle, on track to finish my undergraduate this year. currently thinking about a good bachelors thesis topic\ngood book’s ive read recently:\n\nLondon NW by Zadie Smith\nGlobalists by Quinn Slobodian\n\npodcasts i’ve been listening to:\n\ndont read theory\nTeurer Fahren\n\nlast updated: 2025-04-01"
+    "text": "About me\n\n\nI am a graduate of economics from University of Halle (a small town next to Leipzig, Germany).\nIm quite interested in the different aspects of political economy and economic history. This was sparked by my activity with Rethinking Economics, a global network of students who want to change the way economics is thought and practiced.\nOn this website I collect various projects and ideas, mostly in a technical / political / economic context. All adorned with a bunch of beautiful Vermeer paintings (like the one on this page, titled “The Geographer” )\nNewsletters I find interesting and that shaped my thinking:\n\nAdam Tooze: Chartbook\n\n\nBranko Milanovic: Global Inequality\n\n\nFinancial Times: Alphaville\n\n\n\n\n\n\nVermeer: The Geographer"
   },
   {
     "objectID": "contact.html",
     "href": "contact.html",
-    "title": "I’d love to hear from you!",
+    "title": "",
     "section": "",
-    "text": "You can find me online\nLinkedIn GitHub BlueSky.\nOr, you can drop me an e-mail at\nkontakt@martenw.com (OpenPGP-Key)\n\n\n\n\n\nVermeer: Girl Reading a Letter at an Open Window"
+    "text": "Vermeer: Girl Reading a Letter at an Open Window\n\n\n\n\n\nif youre not a bot, feel free (for real) to drop me an e-mail at kontakt@martenw.com (OpenPGP-Key if youre into that )"
+  },
+  {
+    "objectID": "contact.html#how-to-contact-me",
+    "href": "contact.html#how-to-contact-me",
+    "title": "",
+    "section": "",
+    "text": "if youre not a bot, feel free (for real) to drop me an e-mail at kontakt@martenw.com (OpenPGP-Key if youre into that )"
   },
   {
     "objectID": "projects/vwl-notizen/index.html",
     "href": "projects/vwl-notizen/index.html",
     "title": "Notizen meines Studiums",
     "section": "",
-    "text": "Notizen-Website\n\n\nWer zum ersten Semester in ein Studium reinstolpert, wird erstmal komplett überfordert sein von all den verschiedenen Anforderungen die an einen gestellt werden. Um den Prozess ein bisschen zu vereinfachen, habe ich alle meine Mitschriften für mein gesamtes Studium VWL/BWL an der MLU Halle als Website veröffentlicht.\nDas ganze umfasst 30 Module und über 300 Mitschriften nach Datum sortiert und im Volltext durchsuchbar. Die Website ist im Reiter verlinkt, aber auch hier."
+    "text": "Notizen-Website\n\n\nhier entlang zu den mitschriften: vwl.martenw.com\nWer zum ersten Semester in ein Studium reinstolpert, wird erstmal komplett überfordert sein von all den verschiedenen Anforderungen die an einen gestellt werden. Um den Prozess ein bisschen zu vereinfachen, habe ich alle meine Mitschriften für mein gesamtes Studium VWL/BWL an der MLU Halle als Website veröffentlicht. Das ganze umfasst 30 Module und über 300 Mitschriften nach Datum sortiert und im Volltext durchsuchbar. Meinen Kommiliton:innen und mir hats geholfen, besonders die Zusammenfassungen."
   },
   {
     "objectID": "projects/bundestwitter/index.html",
@@ -95,7 +88,7 @@
     "href": "projects/diatypst/index.html",
     "title": "diatypst - easy slides in typst",
     "section": "",
-    "text": "There is a new LaTeX contender on the block: typst. Featuring a much easier syntax and instant-preview, it feels like a serious replacement for the clunky workflows of producing PDF via \\{weird command}. What was missing until now is an easy way to create good looking slides, the existing packages in the typst ecosystem are overblown for the quick creation of presentations.\nThat’s why I created Diatypst, a package that makes it a breeze to create stunning slides without having to memorize complicated commands or settle for dull styling. The slides are set up to make your life easier, with a dot counter in the upper left corner (like the one in Beamer) and helpful defaults for title and section slides. Users can also set a theme color that’ll influence everything from the page footer to the hyperlinks.\nThere are two different themes available, the normal theme and the full theme. The latter one is more like a fully-fledged beamer theme that’s used a lot in academia.\n\n\n\nNormal Theme\nFull Theme\n\n\n\n\n\n\n\n\nExample .typ file and the resulting PDF\nsame for the Full Theme PDF\n\n\n\n\nHow to get started?\nThe easiest way to use diatypst is via the Typst web app and importing the template from the typst universe. To create new slides, just delimit them with a header and they are created automatically. For more fine-tuning and explanation, visit the GitHub Repo.\nAnother option is to use Quarto to create the slides. To do this, you need to import the diaquarto extension into your project and some things in your YAML Footer. Slides are created similar to beamer presentations with the --- delimiter. For more info, see here\n\n\nWhat does diatypst stand for?\nThe word diatypst is inspired by the ease of use of a Diaprojektor (German for Slide Projector) and the Diatype (60s typesetting machine)\n\n\n\nA Diaprojektor"
+    "text": "There is a new LaTeX contender on the block: typst. Featuring a much easier syntax and instant-preview, it feels like a serious replacement for the clunky workflows of producing PDF via \\{weird command}. What was missing until now is an easy way to create good looking slides, the existing packages in the typst ecosystem are overblown for the quick creation of presentations (in my opinion).\nThat’s why I created diatypst, a package that makes it a breeze to create stunning slides without having to memorize complicated commands or settle for dull styling. The slides are set up to make your life easier, with a dot counter in the upper left corner (like the one in Beamer) and helpful defaults for title and section slides. Users can also set a theme color that’ll influence everything from the page footer to the hyperlinks.\nThere are two different themes available, the normal theme and the full theme. The latter one is more like a fully-fledged beamer theme that’s used a lot in academia.\n\n\n\nNormal Theme\nFull Theme\n\n\n\n\n\n\n\n\nExample .typ file and the resulting PDF\nsame for the Full Theme PDF\n\n\n\n\nHow to get started?\nThe easiest way to use diatypst is via the Typst web app and importing the template from the typst universe. To create new slides, just delimit them with a header and they are created automatically. For more fine-tuning and explanation, visit the GitHub Repo.\nAnother option is to use Quarto to create the slides. To do this, you need to import the diaquarto extension into your project and some things in your YAML Footer. Slides are created similar to beamer presentations with the --- delimiter. For more info, see here\n\n\nWhat does diatypst stand for?\nThe word diatypst is inspired by the ease of use of a Diaprojektor (German for Slide Projector) and the Diatype (60s typesetting machine)\n\n\n\nA Diaprojektor"
   },
   {
     "objectID": "projects/mindestlohn/index.html",
@@ -151,21 +144,7 @@
     "href": "index.html",
     "title": "hi, i’m marten",
     "section": "",
-    "text": "hi, i’m marten\nLinkedIn GitHub \n\n\n\n\n\nI’m an economics graduate, currently at the United Nations Department of Economic and Social Affairs in NYC\n\n\n\nTopics im interested in:\n\n(wealth) inequality\ndevelopment economics\nthe history of economic thought\n\n\n\nMy focus lies at the intersection of economics and politics, using quantitative methods in R and Python to answer interesting questions (often with a lot of data)\n\n\n→ see some of my Projects\n\n\n\n‡ btw, the style of this site is a little inspired by the elegance of the Financial Times — minus the stock tickers\n\n\n\n\n\n\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\nHow do housing prices affect wealth inequality?\n\n\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\ndiatypst - easy slides in typst\n\n\na package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nStipendien nur für Privilegierte?\n\n\nWie setzt sich eigentlich die Stipendiat:innenschaft der sog. “Begabtenförderungswerke” zusammen? Alles nur Bildungsbürgerkids aus gutem Haushalt? Eine Datenanalyse\n\n\n\nOct 4, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\nThe purpose of studying economics is not to acquire a set of ready-made answers to economic questions, but to learn how to avoid being deceived by economists. \nJoan Robinson"
-  },
-  {
-    "objectID": "now/2024-11.html",
-    "href": "now/2024-11.html",
-    "title": "Now",
-    "section": "",
-    "text": "Now\ninspired by other peoples /now page\n\n\n\nToulmoche: Dolce far Niente\n\n\n\ncontinuing my studies in economics in halle, currently on an exchange semester in paris, focusing on development economics.\nworking as a student assistant at the institute of agricultural development in transition economies (IAMO), mostly on the agripolicy department\ngood book’s ive read recently:\n\nIf We Burn by Vincent Bevins\nThe Fraud by Zadie Smith\n\npodcasts i’ve been listening to:\n\nif books could kill\nJacobin Radio\nMacro Dose\n\nlast updated: 2024-11-01"
-  },
-  {
-    "objectID": "now/index.html",
-    "href": "now/index.html",
-    "title": "Now",
-    "section": "",
-    "text": "Now\ninspired by other peoples /now page\n\n\n\nToulmoche: Dolce far Niente\n\n\n\nThis page is no longer updated → go home"
+    "text": "hi, i’m marten\nLinkedIn GitHub \n\n\n\n\n\nI’m an economics graduate, currently interning at the United Nations Department of Economic and Social Affairs in NYC\n\n\n\nTopics im interested in:\n\n(wealth) inequality\ndevelopment economics\nthe history of economic thought\n\n\n\nMy focus lies at the intersection of economics and politics, using quantitative methods in R and Python to answer interesting questions (often with a lot of data)\n\n\n→ see some of my Projects\n\n\n\n‡ btw, the style of this site is a little inspired by the elegance of the Financial Times — minus the stock tickers\n\n\n\n\n\n\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\nHow do housing prices affect wealth inequality?\n\n\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\ndiatypst - easy slides in typst\n\n\na package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nStipendien nur für Privilegierte?\n\n\nWie setzt sich eigentlich die Stipendiat:innenschaft der sog. “Begabtenförderungswerke” zusammen? Alles nur Bildungsbürgerkids aus gutem Haushalt? Eine Datenanalyse\n\n\n\nOct 4, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\nThe purpose of studying economics is not to acquire a set of ready-made answers to economic questions, but to learn how to avoid being deceived by economists. \nJoan Robinson"
   },
   {
     "objectID": "colophon.html",
@@ -179,6 +158,6 @@
     "href": "blog/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Blog\nThis moved to blog.martenw.com"
+    "text": "Blog\n\n\n\nVermeer: Lady Writing a Letter with her Maid\n\n\n\n\nThis moved to https://mdwm.org"
   }
 ]
