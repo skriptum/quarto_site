@@ -151,7 +151,7 @@
     "href": "colophon.html",
     "title": "Colophon",
     "section": "",
-    "text": "Colophon\n\n\n\nVermeer: Lady writing a letter with her maid\n\n\n\n\nIn publishing, a colophon is a brief statement containing information about the publication of a book such as an “imprint” (the place of publication, the publisher, and the date of publication).\nWikipedia\n\nThis website is built using Quarto, a modern system to create Websites, Articles, PDFs or Presentations from Markdown.\nIt uses a custom scss theme to overcome the boring standard theme. The complete code for the website can be found on GitHub. I have added some extra tricks, but in the end its just markdown.\nSome SEO tricks are taken from the must-read Guide to Academic Websites by Hendrik Erz."
+    "text": "Colophon\n\n\n\nVermeer: Lady Seated at a Virginal\n\n\n\n\nIn publishing, a colophon is a brief statement containing information about the publication of a book such as an “imprint” (the place of publication, the publisher, and the date of publication).\nWikipedia\n\nThis website is built using Quarto, a modern system to create Websites, Articles, PDFs or Presentations from Markdown.\nIt uses a custom scss theme to overcome the boring standard theme. The complete code for the website can be found on GitHub. I have added some extra tricks, but in the end its just markdown.\nSome SEO tricks are taken from the must-read Guide to Academic Websites by Hendrik Erz."
   },
   {
     "objectID": "blog/index.html",
