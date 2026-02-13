@@ -7,18 +7,39 @@
     "text": "About me\n\n\nI am a graduate of economics from University of Halle (a small town next to Leipzig, Germany).\nIm quite interested in the different aspects of political economy and economic history. This was sparked by my activity with Rethinking Economics, a global network of students who want to change the way economics is thought and practiced.\nOn this website I collect various projects and ideas, mostly in a technical / political / economic context. All adorned with a bunch of beautiful Vermeer paintings (like the one on this page, titled “The Geographer” )\nNewsletters I find interesting and that shaped my thinking:\n\nAdam Tooze: Chartbook\n\n\nBranko Milanovic: Global Inequality\n\n\nFinancial Times: Alphaville\n\n\n\n\n\n\nVermeer: The Geographer"
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "",
+    "objectID": "projects/stips/index.html",
+    "href": "projects/stips/index.html",
+    "title": "Stipendien nur für Privilegierte?",
     "section": "",
-    "text": "Vermeer: Girl Reading a Letter at an Open Window\n\n\n\n\n\nif youre not a bot, feel free (for real) to drop me an e-mail at kontakt@martenw.com (OpenPGP-Key if youre into that )"
+    "text": "Die analysierten Daten stammen aus einer Informationsfreiheitsanfrage an das BMBF, veröffentlicht auf FragDenStaat. Der Schwerpunkt liegt auf der Heinrich-Böll Stiftung, da ich dort selbst Stipendiat war.\nSind Stipendiat:innen der Begabtenförderungswerke privilegiert? Eine Frage, die sich der eine oder andere Stip* wahrscheinlich schonmal gestellt hat. Auch medial wird immer wieder die These aufgestellt, dass die Studienstiftungen eine Elitenförderung sind (SZ, taz ,FAZ). Also, was ist dran an dem Vorwurf?\nVorab: es geht hier vor allem darum, die Zusammensetzung der Stips mit der Gesamtstudierendenschaft in Deutschland zu vergleichen, und auch nur anhand weniger Diskrimierungsformen. Außerdem soll natürlich nicht suggeriert werden, dass ein Studium das “einzig Wahre” ist vs. eine Ausbildung, sondern aufgezeigt werden, dass beide Optionen sehr ungleich verteilt sind."
   },
   {
-    "objectID": "contact.html#how-to-contact-me",
-    "href": "contact.html#how-to-contact-me",
-    "title": "",
+    "objectID": "projects/stips/index.html#wer-fängt-überhaupt-an-zu-studieren",
+    "href": "projects/stips/index.html#wer-fängt-überhaupt-an-zu-studieren",
+    "title": "Stipendien nur für Privilegierte?",
+    "section": "Wer fängt überhaupt an zu studieren?",
+    "text": "Wer fängt überhaupt an zu studieren?\nBildung ist in Deutschland eine Klassenfrage. Unser Bildungssystem ist sozial hochselektiv, und wer ein Studium anfängt ist meist bereits privilegiert.\n\nGerade einmal 27% der Kinder aus Nicht-Akademiker Haushalten schaffen es, überhaupt ein Studum anzufangen (verglichen mit 79% aus Akademikerhaushalten. Auch in den späteren Berufsphasen zieht sich diese Ungleichheit fort, beispielsweise promovieren gerade einmal 1% der Nicht-Akademiker-Kinder (6% der Aka. Kinder).\n\nIn absoluten Zahlen haben wir im Jahrgang 2022 72% Nicht-Akademiker-Kinder. Sobald man aber das erste Mal in den Audimax schaut, sind sie bereits in der Unterzahl (45% vs 55% Akademikerkinder).\nDie Selektion in unserer Gesellschaft fängt also schon wesentlich früher an und zieht sich in der Uni fort. Nicht-Akademikerkinder sind hier vor allem auf FHs (Fachhochschulen) und eher in praxisnäheren Studiengängen (bspw. BWL), während Akademikerkinder im Schnitt öfter an die Uni gehen und eine breitere Palette an Studiengängen studieren."
+  },
+  {
+    "objectID": "projects/mindestlohn/index.html",
+    "href": "projects/mindestlohn/index.html",
+    "title": "Paycheck Politics",
     "section": "",
-    "text": "if youre not a bot, feel free (for real) to drop me an e-mail at kontakt@martenw.com (OpenPGP-Key if youre into that )"
+    "text": "Figure 1: Representation of Minimum Wage and Vote Share Data\nNestled in the heart of Thuringia, the German district of Sonneberg made headlines with a historic moment – it became the first constituency to elect a district administrator from the right wing Alternative for Germany (AfD) party. In an unexpected turn, Robert Sesselmann of the AfD won a closely contested run-off election against the conservative Christian Democratic Union (CDU), securing 52.8% of the votes. The results not only marked a seismic shift in local politics but sent shockwaves through the established political order (Schuetze 2023). It exemplifies the growing right-wing populism which has been spreading in Germany and elsewhere over the last few decades.\nIntriguingly, Sonneberg also holds the distinction of having the highest percentage of minimum wage workers in Germany – 44%. This paper aims to explore the connection between minimum wage recipiency and the support for right-wing populist movements, using Sonneberg as a focal point. Employing data from the WSI and the German Federal Election Officer in an Ordinary Least Squares (OLS) regression, the findings reveals a significant correlation between these variables, even when accounting for other relevant controls."
+  },
+  {
+    "objectID": "projects/mindestlohn/index.html#data",
+    "href": "projects/mindestlohn/index.html#data",
+    "title": "Paycheck Politics",
+    "section": "Data",
+    "text": "Data\nThe analysis is based on data compiled by Pusch and Seils (2022) at the Institute of Economic and Social Sciences (WSI). They provide an estimate of the share of workers in a given district who will be affected by the increase in the minimum wage to €12 in October 2022 (henceforth minimum wage workers).\n\nPusch, Toralf, and Eric Seils. 2022. “Mindestlohn 12 Euro - Auswirkungen in den Kreisen.” Düsseldorf: Wirtschafts- und Sozialwissenschaftliche Institut (WSI). https://hdl.handle.net/10419/265130.\n\nBundeswahlleiterin, Die. 2021. “Bundestagswahl 2021: Endgültiges Ergebnis.” https://bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2021/52_21_endgueltiges-ergebnis.html.\nAlternative for Germany (AfD) results from the federal election on the 26.10.2021 are from the Federal Election Commissioner (Bundeswahlleiterin (2021)). Elections in Germany take place in constituencies (Wahlkreise), which are different from the standard counties (Landkreise). Therefore, the data is transformed by the election office, which does not lead to any losses.\n\n\n\n\n\n\nFigure 2: Repr. of Minimum Wage (left) and Vote Share (right)\n\n\n\nAdditional data on socio-economic and socio-demographic factors are provided by the regional statistical offices of the Länder. Most of these data are for the year 2022, with the exception of population density estimates, for which more recent data are not yet available.\n\nSummary Statistics\n\n\nStatistic\nN\nMean\nSt. Dev.\nMin\nMax\n\n\n\n\nAfD vote share\n400\n0.113\n0.058\n0.029\n0.321\n\n\nMW share\n400\n0.194\n0.064\n0.079\n0.440\n\n\nOst Dummy\n400\n0.190\n0.393\n0\n1\n\n\nUnempl.\n400\n0.052\n0.022\n0.019\n0.148\n\n\nGDP\n400\n40,329.500\n16,743.150\n17,553\n158,749\n\n\nAvg. Age\n400\n45.277\n2.008\n40.700\n51.000\n\n\nPop. Density\n400\n536.540\n708.669\n35.300\n4,788.200"
+  },
+  {
+    "objectID": "projects/mindestlohn/index.html#regression",
+    "href": "projects/mindestlohn/index.html#regression",
+    "title": "Paycheck Politics",
+    "section": "Regression",
+    "text": "Regression\nRegression Formula:\n\n\\text{afd}_{i} = \\beta_0 + \\beta_1 \\text{mw}_{i} + \\sum_2^k\\beta_k \\text{controls}_{i,k} + \\epsilon_{i}\n\\tag{1}\nSimple Regression Line\n\nMultiple Regression Results\n\n\nEffect of Minimum Wage Recipients on AfD Vote Share\n\n\n\n\n\n\n\n\n\nDependent variable:\n\n\n\n\n\n\n\n\n\n\n\n\nAfD Vote Share\n\n\n\n\n\n\n(1)\n\n\n(2)\n\n\n(3)\n\n\n(4)\n\n\n(5)\n\n\n(6)\n\n\n\n\n\n\n\n\nMinimum Wage Rate\n\n\n0.714***\n\n\n0.291***\n\n\n0.308***\n\n\n0.301***\n\n\n0.227***\n\n\n0.220***\n\n\n\n\n\n\n(0.028)\n\n\n(0.039)\n\n\n(0.039)\n\n\n(0.044)\n\n\n(0.044)\n\n\n(0.044)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEast Germany\n\n\n\n\n0.086***\n\n\n0.088***\n\n\n0.088***\n\n\n0.081***\n\n\n0.082***\n\n\n\n\n\n\n\n\n(0.006)\n\n\n(0.006)\n\n\n(0.006)\n\n\n(0.006)\n\n\n(0.006)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnemployment Rate\n\n\n\n\n\n\n-0.279***\n\n\n-0.275***\n\n\n-0.244***\n\n\n-0.163*\n\n\n\n\n\n\n\n\n\n\n(0.071)\n\n\n(0.072)\n\n\n(0.070)\n\n\n(0.093)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLog GDP p. C.\n\n\n\n\n\n\n\n\n-0.002\n\n\n0.011*\n\n\n0.013**\n\n\n\n\n\n\n\n\n\n\n\n\n(0.005)\n\n\n(0.006)\n\n\n(0.006)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAvg. Age\n\n\n\n\n\n\n\n\n\n\n0.006***\n\n\n0.006***\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(0.001)\n\n\n(0.001)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLog Pop. Density\n\n\n\n\n\n\n\n\n\n\n\n\n-0.003\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(0.002)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConstant\n\n\n-0.026***\n\n\n0.040***\n\n\n0.051***\n\n\n0.071\n\n\n-0.332***\n\n\n-0.315***\n\n\n\n\n\n\n(0.006)\n\n\n(0.007)\n\n\n(0.007)\n\n\n(0.060)\n\n\n(0.091)\n\n\n(0.092)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObservations\n\n\n400\n\n\n400\n\n\n400\n\n\n400\n\n\n400\n\n\n400\n\n\n\n\nAdjusted R2\n\n\n0.612\n\n\n0.732\n\n\n0.742\n\n\n0.741\n\n\n0.760\n\n\n0.761\n\n\n\n\nResidual Std. Error\n\n\n0.036\n\n\n0.030\n\n\n0.030\n\n\n0.030\n\n\n0.029\n\n\n0.029\n\n\n\n\n\n\n\n\nNote:\n\n\np&lt;0.1; p&lt;0.05; p&lt;0.01"
   },
   {
     "objectID": "projects/vwl-notizen/index.html",
@@ -26,6 +47,55 @@
     "title": "Notizen meines Studiums",
     "section": "",
     "text": "Notizen-Website\n\n\nhier entlang zu den mitschriften: vwl.martenw.com\nWer zum ersten Semester in ein Studium reinstolpert, wird erstmal komplett überfordert sein von all den verschiedenen Anforderungen die an einen gestellt werden. Um den Prozess ein bisschen zu vereinfachen, habe ich alle meine Mitschriften für mein gesamtes Studium VWL/BWL an der MLU Halle als Website veröffentlicht. Das ganze umfasst 30 Module und über 300 Mitschriften nach Datum sortiert und im Volltext durchsuchbar. Meinen Kommiliton:innen und mir hats geholfen, besonders die Zusammenfassungen."
+  },
+  {
+    "objectID": "projects/zeit-api/index.html",
+    "href": "projects/zeit-api/index.html",
+    "title": "ZEIT API in Python",
+    "section": "",
+    "text": "PyPI Package Website\nDie ZEIT ist als eine der ältesten und wichtigsten Zeitungen Deutschlands ein wahrer Schatz an Informationen, sei es über die Themen vergangener Zeiten, die politischen Interessen der Bundesrepublik oder einfach die Wichtigkeit aktueller Themen. Jeder und jede kann nun auf diesen großen Datenschatz zugreifen, und seine ganz eigenen Ideen daraus entwickeln, mithilfe des zeit-online packets in der einfachen Programmiersprache python."
+  },
+  {
+    "objectID": "projects/zeit-api/index.html#technisches",
+    "href": "projects/zeit-api/index.html#technisches",
+    "title": "ZEIT API in Python",
+    "section": "Technisches",
+    "text": "Technisches\n\nUpdate 2022: Leider hat Zeit Online die API inzwischen abgestellt, das Ganze ist also nur noch eine technische Spielerei der Vergangenheit\n\nDie API ist zwar schon ein bisschen älter, funktioniert aber noch herausragend. Darum habe ich ein Package geschrieben, um die Interaktion damit zu vereinfachen und meine Skills auszutesten. Das Ganze ist auf PYPI als Package veröffentlich und die Dokumentation ist hier einsehbar, inklusive Jupyter Notebooks und vielen Erklärungen.\n\nAusprobieren\nUm das ganze auszuprobieren, am besten das Package von pip installieren\npip install zeit-online\nund dann in eine Datei importieren und die API Klasse initiieren und den API Key einfügen\nimport zeit\napi = zeit.API()\napi.set_token(\"API-KEY\") #Key einfügen\n#jetzt steht dir die Welt von Zeit Online offen\nfür ausführlichere Erklärungen, definitiv die Dokumentation angucken !"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "Blog\n\n\n\nVermeer: Lady Writing a Letter with her Maid\n\n\n\n\nThis moved to https://mdwm.org"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "hi, i’m marten",
+    "section": "",
+    "text": "hi, i’m marten\nLinkedIn GitHub \n\n\n\n\n\nI’m an economics graduate, currently interning at the United Nations Department of Economic and Social Affairs in NYC\n\n\n\nTopics im interested in:\n\n(wealth) inequality\ndevelopment economics\nthe history of economic thought\n\n\n\nMy focus lies at the intersection of economics and politics, using quantitative methods in R and Python to answer interesting questions (often with a lot of data)\n\n\n→ see some of my Projects\n\n\n\n‡ btw, the style of this site is a little inspired by the elegance of the Financial Times — minus the stock tickers\n\n\n\n\n\n\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\nHow do housing prices affect wealth inequality?\n\n\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\ndiatypst - easy slides in typst\n\n\na package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nStipendien nur für Privilegierte?\n\n\nWie setzt sich eigentlich die Stipendiat:innenschaft der sog. “Begabtenförderungswerke” zusammen? Alles nur Bildungsbürgerkids aus gutem Haushalt? Eine Datenanalyse\n\n\n\nOct 4, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\nThe purpose of studying economics is not to acquire a set of ready-made answers to economic questions, but to learn how to avoid being deceived by economists. \nJoan Robinson"
+  },
+  {
+    "objectID": "colophon.html",
+    "href": "colophon.html",
+    "title": "Colophon",
+    "section": "",
+    "text": "Colophon\n\n\n\nVermeer: Lady Seated at a Virginal\n\n\n\n\nIn publishing, a colophon is a brief statement containing information about the publication of a book such as an “imprint” (the place of publication, the publisher, and the date of publication).\nWikipedia\n\nThis website is built using Quarto, a modern system to create Websites, Articles, PDFs or Presentations from Markdown.\nIt uses a custom scss theme to overcome the boring standard theme. The complete code for the website can be found on GitHub. I have added some extra tricks, but in the end its just markdown.\nSome SEO tricks are taken from the must-read Guide to Academic Websites by Hendrik Erz."
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Projects\n\n\n\nVermeer: Art of Painting\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow do housing prices affect wealth inequality?\n\n\n\n\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\ndiatypst - easy slides in typst\n\n\na package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nStipendien nur für Privilegierte?\n\n\nWie setzt sich eigentlich die Stipendiat:innenschaft der sog. “Begabtenförderungswerke” zusammen? Alles nur Bildungsbürgerkids aus gutem Haushalt? Eine Datenanalyse\n\n\n\n\n\nOct 4, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPaycheck Politics\n\n\nResearch Project on the connection between minimum wage recipiency and voting for populist right for a seminar in Empirical Economics. This page presents some findings and visualizations of the resulting seminar paper.\n\n\n\n\n\nMar 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nNotizen meines Studiums\n\n\n\n\n\n\n\n\nMar 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nZEIT API in Python\n\n\n\n\n\n\n\n\nMay 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nZeitanalyse\n\n\n\n\n\n\n\n\nApr 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nBundestwitter\n\n\nEine Web-App, die alle Twitter-Accounts von Bundestagsmitgliedern erfahrbar macht und kartiert. Damit die 90% der Wähler:innen ohne Twitter erfahren, was ihre Abgeordneten so im Internet treiben\n\n\n\n\n\nFeb 16, 2021\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/diatypst/index.html",
+    "href": "projects/diatypst/index.html",
+    "title": "diatypst - easy slides in typst",
+    "section": "",
+    "text": "There is a new LaTeX contender on the block: typst. Featuring a much easier syntax and instant-preview, it feels like a serious replacement for the clunky workflows of producing PDF via \\{weird command}. What was missing until now is an easy way to create good looking slides, the existing packages in the typst ecosystem are overblown for the quick creation of presentations (in my opinion).\nThat’s why I created diatypst, a package that makes it a breeze to create stunning slides without having to memorize complicated commands or settle for dull styling. The slides are set up to make your life easier, with a dot counter in the upper left corner (like the one in Beamer) and helpful defaults for title and section slides. Users can also set a theme color that’ll influence everything from the page footer to the hyperlinks.\nThere are two different themes available, the normal theme and the full theme. The latter one is more like a fully-fledged beamer theme that’s used a lot in academia.\n\n\n\nNormal Theme\nFull Theme\n\n\n\n\n\n\n\n\nExample .typ file and the resulting PDF\nsame for the Full Theme PDF\n\n\n\n\nHow to get started?\nThe easiest way to use diatypst is via the Typst web app and importing the template from the typst universe. To create new slides, just delimit them with a header and they are created automatically. For more fine-tuning and explanation, visit the GitHub Repo.\nAnother option is to use Quarto to create the slides. To do this, you need to import the diaquarto extension into your project and some things in your YAML Footer. Slides are created similar to beamer presentations with the --- delimiter. For more info, see here\n\n\nWhat does diatypst stand for?\nThe word diatypst is inspired by the ease of use of a Diaprojektor (German for Slide Projector) and the Diatype (60s typesetting machine)\n\n\n\nA Diaprojektor"
   },
   {
     "objectID": "projects/bundestwitter/index.html",
@@ -77,87 +147,17 @@
     "text": "Stichwortvergleich\n\n\n\nStichworte\n\n\nDie Zeit hat etwa 16.000 Schlagwörter, mit denen sie Artikel versehen, gesammelt über einen Zeitraum von 75 Jahren. Mit dieser Seite ist es möglich, die Relevanz verschiedener Themen über die Jahre zu vergleichen, ähnlich zu Google Trends.\n\nUpdate 2022: Aufgrund des Abstellens der Zeit-API von Verlagsseite aus ist die Funktionsweise der App leider nicht mehr möglich."
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "",
     "section": "",
-    "text": "Projects\n\n\n\nVermeer: Art of Painting\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow do housing prices affect wealth inequality?\n\n\n\n\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\ndiatypst - easy slides in typst\n\n\na package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics\n\n\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\nStipendien nur für Privilegierte?\n\n\nWie setzt sich eigentlich die Stipendiat:innenschaft der sog. “Begabtenförderungswerke” zusammen? Alles nur Bildungsbürgerkids aus gutem Haushalt? Eine Datenanalyse\n\n\n\n\n\nOct 4, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nPaycheck Politics\n\n\nResearch Project on the connection between minimum wage recipiency and voting for populist right for a seminar in Empirical Economics. This page presents some findings and visualizations of the resulting seminar paper.\n\n\n\n\n\nMar 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\nNotizen meines Studiums\n\n\n\n\n\n\n\n\nMar 1, 2023\n\n\n\n\n\n\n\n\n\n\n\n\nZEIT API in Python\n\n\n\n\n\n\n\n\nMay 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nZeitanalyse\n\n\n\n\n\n\n\n\nApr 1, 2021\n\n\n\n\n\n\n\n\n\n\n\n\nBundestwitter\n\n\nEine Web-App, die alle Twitter-Accounts von Bundestagsmitgliedern erfahrbar macht und kartiert. Damit die 90% der Wähler:innen ohne Twitter erfahren, was ihre Abgeordneten so im Internet treiben\n\n\n\n\n\nFeb 16, 2021\n\n\n\n\n\nNo matching items"
+    "text": "Vermeer: Girl Reading a Letter at an Open Window\n\n\n\n\n\nif youre not a bot, feel free (for real) to drop me an e-mail at kontakt@martenw.com (OpenPGP-Key if youre into that )"
   },
   {
-    "objectID": "projects/diatypst/index.html",
-    "href": "projects/diatypst/index.html",
-    "title": "diatypst - easy slides in typst",
+    "objectID": "contact.html#how-to-contact-me",
+    "href": "contact.html#how-to-contact-me",
+    "title": "",
     "section": "",
-    "text": "There is a new LaTeX contender on the block: typst. Featuring a much easier syntax and instant-preview, it feels like a serious replacement for the clunky workflows of producing PDF via \\{weird command}. What was missing until now is an easy way to create good looking slides, the existing packages in the typst ecosystem are overblown for the quick creation of presentations (in my opinion).\nThat’s why I created diatypst, a package that makes it a breeze to create stunning slides without having to memorize complicated commands or settle for dull styling. The slides are set up to make your life easier, with a dot counter in the upper left corner (like the one in Beamer) and helpful defaults for title and section slides. Users can also set a theme color that’ll influence everything from the page footer to the hyperlinks.\nThere are two different themes available, the normal theme and the full theme. The latter one is more like a fully-fledged beamer theme that’s used a lot in academia.\n\n\n\nNormal Theme\nFull Theme\n\n\n\n\n\n\n\n\nExample .typ file and the resulting PDF\nsame for the Full Theme PDF\n\n\n\n\nHow to get started?\nThe easiest way to use diatypst is via the Typst web app and importing the template from the typst universe. To create new slides, just delimit them with a header and they are created automatically. For more fine-tuning and explanation, visit the GitHub Repo.\nAnother option is to use Quarto to create the slides. To do this, you need to import the diaquarto extension into your project and some things in your YAML Footer. Slides are created similar to beamer presentations with the --- delimiter. For more info, see here\n\n\nWhat does diatypst stand for?\nThe word diatypst is inspired by the ease of use of a Diaprojektor (German for Slide Projector) and the Diatype (60s typesetting machine)\n\n\n\nA Diaprojektor"
-  },
-  {
-    "objectID": "projects/mindestlohn/index.html",
-    "href": "projects/mindestlohn/index.html",
-    "title": "Paycheck Politics",
-    "section": "",
-    "text": "Figure 1: Representation of Minimum Wage and Vote Share Data\nNestled in the heart of Thuringia, the German district of Sonneberg made headlines with a historic moment – it became the first constituency to elect a district administrator from the right wing Alternative for Germany (AfD) party. In an unexpected turn, Robert Sesselmann of the AfD won a closely contested run-off election against the conservative Christian Democratic Union (CDU), securing 52.8% of the votes. The results not only marked a seismic shift in local politics but sent shockwaves through the established political order (Schuetze 2023). It exemplifies the growing right-wing populism which has been spreading in Germany and elsewhere over the last few decades.\nIntriguingly, Sonneberg also holds the distinction of having the highest percentage of minimum wage workers in Germany – 44%. This paper aims to explore the connection between minimum wage recipiency and the support for right-wing populist movements, using Sonneberg as a focal point. Employing data from the WSI and the German Federal Election Officer in an Ordinary Least Squares (OLS) regression, the findings reveals a significant correlation between these variables, even when accounting for other relevant controls."
-  },
-  {
-    "objectID": "projects/mindestlohn/index.html#data",
-    "href": "projects/mindestlohn/index.html#data",
-    "title": "Paycheck Politics",
-    "section": "Data",
-    "text": "Data\nThe analysis is based on data compiled by Pusch and Seils (2022) at the Institute of Economic and Social Sciences (WSI). They provide an estimate of the share of workers in a given district who will be affected by the increase in the minimum wage to €12 in October 2022 (henceforth minimum wage workers).\n\nPusch, Toralf, and Eric Seils. 2022. “Mindestlohn 12 Euro - Auswirkungen in den Kreisen.” Düsseldorf: Wirtschafts- und Sozialwissenschaftliche Institut (WSI). https://hdl.handle.net/10419/265130.\n\nBundeswahlleiterin, Die. 2021. “Bundestagswahl 2021: Endgültiges Ergebnis.” https://bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2021/52_21_endgueltiges-ergebnis.html.\nAlternative for Germany (AfD) results from the federal election on the 26.10.2021 are from the Federal Election Commissioner (Bundeswahlleiterin (2021)). Elections in Germany take place in constituencies (Wahlkreise), which are different from the standard counties (Landkreise). Therefore, the data is transformed by the election office, which does not lead to any losses.\n\n\n\n\n\n\nFigure 2: Repr. of Minimum Wage (left) and Vote Share (right)\n\n\n\nAdditional data on socio-economic and socio-demographic factors are provided by the regional statistical offices of the Länder. Most of these data are for the year 2022, with the exception of population density estimates, for which more recent data are not yet available.\n\nSummary Statistics\n\n\nStatistic\nN\nMean\nSt. Dev.\nMin\nMax\n\n\n\n\nAfD vote share\n400\n0.113\n0.058\n0.029\n0.321\n\n\nMW share\n400\n0.194\n0.064\n0.079\n0.440\n\n\nOst Dummy\n400\n0.190\n0.393\n0\n1\n\n\nUnempl.\n400\n0.052\n0.022\n0.019\n0.148\n\n\nGDP\n400\n40,329.500\n16,743.150\n17,553\n158,749\n\n\nAvg. Age\n400\n45.277\n2.008\n40.700\n51.000\n\n\nPop. Density\n400\n536.540\n708.669\n35.300\n4,788.200"
-  },
-  {
-    "objectID": "projects/mindestlohn/index.html#regression",
-    "href": "projects/mindestlohn/index.html#regression",
-    "title": "Paycheck Politics",
-    "section": "Regression",
-    "text": "Regression\nRegression Formula:\n\n\\text{afd}_{i} = \\beta_0 + \\beta_1 \\text{mw}_{i} + \\sum_2^k\\beta_k \\text{controls}_{i,k} + \\epsilon_{i}\n\\tag{1}\nSimple Regression Line\n\nMultiple Regression Results\n\n\nEffect of Minimum Wage Recipients on AfD Vote Share\n\n\n\n\n\n\n\n\n\nDependent variable:\n\n\n\n\n\n\n\n\n\n\n\n\nAfD Vote Share\n\n\n\n\n\n\n(1)\n\n\n(2)\n\n\n(3)\n\n\n(4)\n\n\n(5)\n\n\n(6)\n\n\n\n\n\n\n\n\nMinimum Wage Rate\n\n\n0.714***\n\n\n0.291***\n\n\n0.308***\n\n\n0.301***\n\n\n0.227***\n\n\n0.220***\n\n\n\n\n\n\n(0.028)\n\n\n(0.039)\n\n\n(0.039)\n\n\n(0.044)\n\n\n(0.044)\n\n\n(0.044)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEast Germany\n\n\n\n\n0.086***\n\n\n0.088***\n\n\n0.088***\n\n\n0.081***\n\n\n0.082***\n\n\n\n\n\n\n\n\n(0.006)\n\n\n(0.006)\n\n\n(0.006)\n\n\n(0.006)\n\n\n(0.006)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nUnemployment Rate\n\n\n\n\n\n\n-0.279***\n\n\n-0.275***\n\n\n-0.244***\n\n\n-0.163*\n\n\n\n\n\n\n\n\n\n\n(0.071)\n\n\n(0.072)\n\n\n(0.070)\n\n\n(0.093)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLog GDP p. C.\n\n\n\n\n\n\n\n\n-0.002\n\n\n0.011*\n\n\n0.013**\n\n\n\n\n\n\n\n\n\n\n\n\n(0.005)\n\n\n(0.006)\n\n\n(0.006)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAvg. Age\n\n\n\n\n\n\n\n\n\n\n0.006***\n\n\n0.006***\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(0.001)\n\n\n(0.001)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLog Pop. Density\n\n\n\n\n\n\n\n\n\n\n\n\n-0.003\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(0.002)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nConstant\n\n\n-0.026***\n\n\n0.040***\n\n\n0.051***\n\n\n0.071\n\n\n-0.332***\n\n\n-0.315***\n\n\n\n\n\n\n(0.006)\n\n\n(0.007)\n\n\n(0.007)\n\n\n(0.060)\n\n\n(0.091)\n\n\n(0.092)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObservations\n\n\n400\n\n\n400\n\n\n400\n\n\n400\n\n\n400\n\n\n400\n\n\n\n\nAdjusted R2\n\n\n0.612\n\n\n0.732\n\n\n0.742\n\n\n0.741\n\n\n0.760\n\n\n0.761\n\n\n\n\nResidual Std. Error\n\n\n0.036\n\n\n0.030\n\n\n0.030\n\n\n0.030\n\n\n0.029\n\n\n0.029\n\n\n\n\n\n\n\n\nNote:\n\n\np&lt;0.1; p&lt;0.05; p&lt;0.01"
-  },
-  {
-    "objectID": "projects/stips/index.html",
-    "href": "projects/stips/index.html",
-    "title": "Stipendien nur für Privilegierte?",
-    "section": "",
-    "text": "Die analysierten Daten stammen aus einer Informationsfreiheitsanfrage an das BMBF, veröffentlicht auf FragDenStaat. Der Schwerpunkt liegt auf der Heinrich-Böll Stiftung, da ich dort selbst Stipendiat war.\nSind Stipendiat:innen der Begabtenförderungswerke privilegiert? Eine Frage, die sich der eine oder andere Stip* wahrscheinlich schonmal gestellt hat. Auch medial wird immer wieder die These aufgestellt, dass die Studienstiftungen eine Elitenförderung sind (SZ, taz ,FAZ). Also, was ist dran an dem Vorwurf?\nVorab: es geht hier vor allem darum, die Zusammensetzung der Stips mit der Gesamtstudierendenschaft in Deutschland zu vergleichen, und auch nur anhand weniger Diskrimierungsformen. Außerdem soll natürlich nicht suggeriert werden, dass ein Studium das “einzig Wahre” ist vs. eine Ausbildung, sondern aufgezeigt werden, dass beide Optionen sehr ungleich verteilt sind."
-  },
-  {
-    "objectID": "projects/stips/index.html#wer-fängt-überhaupt-an-zu-studieren",
-    "href": "projects/stips/index.html#wer-fängt-überhaupt-an-zu-studieren",
-    "title": "Stipendien nur für Privilegierte?",
-    "section": "Wer fängt überhaupt an zu studieren?",
-    "text": "Wer fängt überhaupt an zu studieren?\nBildung ist in Deutschland eine Klassenfrage. Unser Bildungssystem ist sozial hochselektiv, und wer ein Studium anfängt ist meist bereits privilegiert.\n\nGerade einmal 27% der Kinder aus Nicht-Akademiker Haushalten schaffen es, überhaupt ein Studum anzufangen (verglichen mit 79% aus Akademikerhaushalten. Auch in den späteren Berufsphasen zieht sich diese Ungleichheit fort, beispielsweise promovieren gerade einmal 1% der Nicht-Akademiker-Kinder (6% der Aka. Kinder).\n\nIn absoluten Zahlen haben wir im Jahrgang 2022 72% Nicht-Akademiker-Kinder. Sobald man aber das erste Mal in den Audimax schaut, sind sie bereits in der Unterzahl (45% vs 55% Akademikerkinder).\nDie Selektion in unserer Gesellschaft fängt also schon wesentlich früher an und zieht sich in der Uni fort. Nicht-Akademikerkinder sind hier vor allem auf FHs (Fachhochschulen) und eher in praxisnäheren Studiengängen (bspw. BWL), während Akademikerkinder im Schnitt öfter an die Uni gehen und eine breitere Palette an Studiengängen studieren."
-  },
-  {
-    "objectID": "projects/zeit-api/index.html",
-    "href": "projects/zeit-api/index.html",
-    "title": "ZEIT API in Python",
-    "section": "",
-    "text": "PyPI Package Website\nDie ZEIT ist als eine der ältesten und wichtigsten Zeitungen Deutschlands ein wahrer Schatz an Informationen, sei es über die Themen vergangener Zeiten, die politischen Interessen der Bundesrepublik oder einfach die Wichtigkeit aktueller Themen. Jeder und jede kann nun auf diesen großen Datenschatz zugreifen, und seine ganz eigenen Ideen daraus entwickeln, mithilfe des zeit-online packets in der einfachen Programmiersprache python."
-  },
-  {
-    "objectID": "projects/zeit-api/index.html#technisches",
-    "href": "projects/zeit-api/index.html#technisches",
-    "title": "ZEIT API in Python",
-    "section": "Technisches",
-    "text": "Technisches\n\nUpdate 2022: Leider hat Zeit Online die API inzwischen abgestellt, das Ganze ist also nur noch eine technische Spielerei der Vergangenheit\n\nDie API ist zwar schon ein bisschen älter, funktioniert aber noch herausragend. Darum habe ich ein Package geschrieben, um die Interaktion damit zu vereinfachen und meine Skills auszutesten. Das Ganze ist auf PYPI als Package veröffentlich und die Dokumentation ist hier einsehbar, inklusive Jupyter Notebooks und vielen Erklärungen.\n\nAusprobieren\nUm das ganze auszuprobieren, am besten das Package von pip installieren\npip install zeit-online\nund dann in eine Datei importieren und die API Klasse initiieren und den API Key einfügen\nimport zeit\napi = zeit.API()\napi.set_token(\"API-KEY\") #Key einfügen\n#jetzt steht dir die Welt von Zeit Online offen\nfür ausführlichere Erklärungen, definitiv die Dokumentation angucken !"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "hi, i’m marten",
-    "section": "",
-    "text": "hi, i’m marten\nLinkedIn GitHub \n\n\n\n\n\nI’m an economics graduate, currently interning at the United Nations Department of Economic and Social Affairs in NYC\n\n\n\nTopics im interested in:\n\n(wealth) inequality\ndevelopment economics\nthe history of economic thought\n\n\n\nMy focus lies at the intersection of economics and politics, using quantitative methods in R and Python to answer interesting questions (often with a lot of data)\n\n\n→ see some of my Projects\n\n\n\n‡ btw, the style of this site is a little inspired by the elegance of the Financial Times — minus the stock tickers\n\n\n\n\n\n\n\n\nProjects\n\n\n\n\n\n\n\n\n\n\nHow do housing prices affect wealth inequality?\n\n\n\n\n\n\nMay 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\ndiatypst - easy slides in typst\n\n\na package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics\n\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nStipendien nur für Privilegierte?\n\n\nWie setzt sich eigentlich die Stipendiat:innenschaft der sog. “Begabtenförderungswerke” zusammen? Alles nur Bildungsbürgerkids aus gutem Haushalt? Eine Datenanalyse\n\n\n\nOct 4, 2024\n\n\n\n\n\n\nNo matching items\n\n\n\n\n\nThe purpose of studying economics is not to acquire a set of ready-made answers to economic questions, but to learn how to avoid being deceived by economists. \nJoan Robinson"
-  },
-  {
-    "objectID": "colophon.html",
-    "href": "colophon.html",
-    "title": "Colophon",
-    "section": "",
-    "text": "Colophon\n\n\n\nVermeer: Lady Seated at a Virginal\n\n\n\n\nIn publishing, a colophon is a brief statement containing information about the publication of a book such as an “imprint” (the place of publication, the publisher, and the date of publication).\nWikipedia\n\nThis website is built using Quarto, a modern system to create Websites, Articles, PDFs or Presentations from Markdown.\nIt uses a custom scss theme to overcome the boring standard theme. The complete code for the website can be found on GitHub. I have added some extra tricks, but in the end its just markdown.\nSome SEO tricks are taken from the must-read Guide to Academic Websites by Hendrik Erz."
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Blog\n\n\n\nVermeer: Lady Writing a Letter with her Maid\n\n\n\n\nThis moved to https://mdwm.org"
+    "text": "if youre not a bot, feel free (for real) to drop me an e-mail at kontakt@martenw.com (OpenPGP-Key if youre into that )"
   }
 ]
