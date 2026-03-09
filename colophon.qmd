@@ -16,8 +16,8 @@ pagetitle: Colophon
 >
 > [*Wikipedia*](https://en.wikipedia.org/wiki/Colophon_(publishing))
 
-This website is built using [Quarto](https://quarto.org), a modern system to create Websites, Articles, PDFs or Presentations from [Markdown](https://de.wikipedia.org/wiki/Markdown).
+This website is built using [Quarto](https://quarto.org), a modern system to create Websites, Articles, PDFs or Presentations from [Markdown](https://de.wikipedia.org/wiki/Markdown). I created a custom *scss* theme to overcome the boring standard theme of quarto websites. The complete code as well as content for the website can be found on [GitHub](https://github.com/skriptum/quarto_site). I have added some extra tricks, but in the end its just some markdown files combined with graphic design (inspired by the FT btw). 
 
-It uses a custom scss theme to overcome the boring standard theme. The complete code for the website can be found on [GitHub](https://github.com/skriptum/quarto_site). I have added some extra tricks, but in the end its just markdown.
+The serif font is [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) (including its Smallcaps version), paired with the beautiful [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans).
 
 Some SEO tricks are taken from the must-read [Guide to Academic Websites by Hendrik Erz](https://www.hendrik-erz.de/resources#academic-website). 

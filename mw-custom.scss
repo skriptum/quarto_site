@@ -7,7 +7,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); //serif
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap'); //sans-serif
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap'); // Smallcaps
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap'); // Smallcaps
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz@0,6..96;1,6..96&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
 $black : #000000;
 
@@ -126,6 +128,7 @@ $magenta: rgb(160, 47, 111);
   // scss to style multiple classes at same time
   .listing-title {
     font-family: $font-family-serif;
+    padding-bottom: 0.5em;
     font-size: 1.5rem;
     color: $mw-color !important;
   }
@@ -161,7 +164,7 @@ $magenta: rgb(160, 47, 111);
 
 body {
   font-weight: 300;
-  line-height: 1.4;
+  line-height: 1.25;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -204,8 +207,11 @@ a {
   font-weight: 300;
 }
 
-pre code {
-  font-size: 14 !important;
+pre {
+  background-color: $code-block-bg;
+  padding: 1em;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .table {
