@@ -8,8 +8,9 @@
 
 <meta name="author" content="Marten Walk">
 <meta name="dcterms.date" content="2025-05-01">
+<meta name="description" content="Econometric bachelors thesis analysing the distributional effects of housing prices in the EU, using the ECB’s novel Distributional Wealth Accounts.">
 
-<title>How do housing prices affect wealth inequality?</title>
+<title>Cementing the Divide? Housing and Wealth Inequality in Europe</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,7 +60,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-c17351b0a916f9dc9fe38da354cda65b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-2440f9cedd18e00d11c9cbed0704afb4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -102,13 +103,13 @@ div.csl-indent {
 <script defer="" src="https://cloud.umami.is/script.js" data-website-id="e9146946-1847-401b-98ea-d1d9981a1b02"></script>
 
 
-<meta property="og:title" content="How do housing prices affect wealth inequality?">
+<meta property="og:title" content="Cementing the Divide? Housing and Wealth Inequality in Europe">
 <meta property="og:description" content="quantitative econ student interested in monetary theory, inequality and the history of economic thought">
 <meta property="og:image" content="https://martenw.com/projects/inequality/HP_coeff.png">
 <meta property="og:site_name" content="marten walk">
 <meta property="og:image:height" content="1200">
 <meta property="og:image:width" content="2400">
-<meta name="citation_title" content="How do housing prices affect wealth inequality?">
+<meta name="citation_title" content="Cementing the Divide? Housing and Wealth Inequality in Europe">
 <meta name="citation_abstract" content="How do asset prices shape the wealth distribution? Motivated by the different trajectories of European housing markets after the financial crisis, this thesis examines how capital gains, particularly in housing, influence wealth inequality in Europe. Drawing on the ECB’s new Distributional Wealth Accounts, the analysis uses panel regressions that exploit cross-country variation in housing markets. The results show that asset prices have first-order consequences on the wealth distribution, driven by differences in portfolio composition across population groups. Rising house prices increase the shares of the middle 40% and especially the bottom 50%, while a booming stock market mainly benefits the top 10%. These effects are robust across specifications but vary substantially across countries, reflecting institutional and portfolio differences. Simulations of alternative price scenarios show that housing booms can slow concentration. However, no country saw house prices grow fast enough to reverse the upward trend in top wealth shares. Together, the results provide detailed insights into the distributional effects of asset prices in Europe, with implications for both monetary and housing policy.">
 <meta name="citation_author" content="Marten Walk">
 <meta name="citation_publication_date" content="2025-05-01">
@@ -229,7 +230,7 @@ div.csl-indent {
 <meta name="citation_reference" content="citation_title=Various Versatile Variances: An Object-Oriented Implementation of Clustered Covariances in R;,citation_abstract=Clustered covariances or clustered standard errors are very widely used to account for correlated or clustered data, especially in economics, political sciences, and other social sciences. They are employed to adjust the inference following estimation of a standard least-squares regression or generalized linear model estimated by maximum likelihood. Although many publications just refer to &amp;amp;amp;quot;the&amp;quot; clustered standard errors, there is a surprisingly wide variety of clustered covariances, particularly due to different flavors of bias corrections. Furthermore, while the linear regression model is certainly the most important application case, the same strategies can be employed in more general models (e.g., for zero-inflated, censored, or limited responses). In R, functions for covariances in clustered or panel models have been somewhat scattered or available only for certain modeling functions, notably the (generalized) linear regression model. In contrast, an object-oriented approach to &quot;robust&quot; covariance matrix estimation - applicable beyond lm() and glm() - is available in the sandwich package but has been limited to the case of cross-section or time series data. Starting with sandwich 2.4.0, this shortcoming has been corrected: Based on methods for two generic functions (estfun() and bread()), clustered and panel covariances are provided in vcovCL(), vcovPL(), and vcovPC(). Moreover, clustered bootstrap covariances are provided in vcovBS(), using model update() on bootstrap samples. These are directly applicable to models from packages including MASS, pscl, countreg, and betareg, among many others. Some empirical illustrations are provided as well as an assessment of the methods’ performance in a simulation study.;,citation_author=Achim Zeileis;,citation_author=Susanne Köll;,citation_author=Nathaniel Graham;,citation_publication_date=2020-10;,citation_cover_date=2020-10;,citation_year=2020;,citation_doi=10.18637/jss.v095.i01;,citation_issn=1548-7660;,citation_volume=95;,citation_language=en-US;,citation_journal_title=Journal of Statistical Software;">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -269,22 +270,13 @@ div.csl-indent {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#selected-outputs" id="toc-selected-outputs" class="nav-link active" data-scroll-target="#selected-outputs">Selected Outputs</a></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">How do housing prices affect wealth inequality?</h1>
-<p class="subtitle lead">Empirical thesis in Economics</p>
+<h1 class="title">Cementing the Divide? Housing and Wealth Inequality in Europe</h1>
   <div class="quarto-categories">
     <div class="quarto-category">R</div>
     <div class="quarto-category">politics</div>
@@ -292,6 +284,11 @@ div.csl-indent {
   </div>
   </div>
 
+<div>
+  <div class="description">
+    Econometric bachelors thesis analysing the distributional effects of housing prices in the EU, using the ECB’s novel Distributional Wealth Accounts.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -575,7 +572,8 @@ Piketty, Thomas. 2014. <em>Capital in the <span>Twenty-First Century</span></em>
 </div>
 </div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@phdthesis{walk2025,
   author = {Walk, Marten},
-  title = {How Do Housing Prices Affect Wealth Inequality?},
+  title = {Cementing the {Divide?} {Housing} and {Wealth} {Inequality}
+    in {Europe}},
   date = {2025-05-01},
   url = {https://martenw.com/projects/inequality/},
   doi = {10.5281/zenodo.16941045},
@@ -601,8 +599,8 @@ Piketty, Thomas. 2014. <em>Capital in the <span>Twenty-First Century</span></em>
     Europe, with implications for both monetary and housing policy.}
 }
 </code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-walk2025" class="csl-entry quarto-appendix-citeas" role="listitem">
-Walk, Marten. 2025. <span>“How Do Housing Prices Affect Wealth
-Inequality?”</span> <a href="https://doi.org/10.5281/zenodo.16941045">https://doi.org/10.5281/zenodo.16941045</a>.
+Walk, Marten. 2025. <span>“Cementing the Divide? Housing and Wealth
+Inequality in Europe.”</span> <a href="https://doi.org/10.5281/zenodo.16941045">https://doi.org/10.5281/zenodo.16941045</a>.
 </div></div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

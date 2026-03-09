@@ -8,6 +8,7 @@
 
 <meta name="author" content="skriptum/zeit">
 <meta name="dcterms.date" content="2021-05-01">
+<meta name="description" content="zeit-online is a Python package that lets you explore over 75 years of DIE ZEIT, germanys leading weekly newspaper. It wraps the ZEIT API in a simple interface, making it easy to search for articles, retrieve content, and experiment with text analysis.">
 
 <title>ZEIT API in Python</title>
 <style>
@@ -74,7 +75,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-c17351b0a916f9dc9fe38da354cda65b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-2440f9cedd18e00d11c9cbed0704afb4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -123,7 +124,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <meta property="og:site_name" content="marten walk">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -163,18 +164,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#technisches" id="toc-technisches" class="nav-link active" data-scroll-target="#technisches">Technisches</a>
-  <ul class="collapse">
-  <li><a href="#ausprobieren" id="toc-ausprobieren" class="nav-link" data-scroll-target="#ausprobieren">Ausprobieren</a></li>
-  </ul></li>
-  </ul>
-</nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -183,6 +173,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1 class="title">ZEIT API in Python</h1>
 </div>
 
+<div>
+  <div class="description">
+    <p><code>zeit-online</code> is a Python package that lets you explore over 75 years of DIE ZEIT, germanys leading weekly newspaper. It wraps the ZEIT API in a simple interface, making it easy to search for articles, retrieve content, and experiment with text analysis.</p>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -215,31 +210,69 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <figcaption>PyPI Package Website</figcaption>
 </figure>
 </div>
-<ul>
-<li><a href="https://skriptum.github.io/zeit/">Dokumentation</a></li>
-<li><a href="https://pypi.org/project/zeit-online/">Package auf PYPI</a></li>
-<li><a href="https://github.com/skriptum/zeit">Code auf GitHub</a></li>
-</ul>
-<p>Die ZEIT ist als eine der ältesten und wichtigsten Zeitungen Deutschlands ein wahrer Schatz an Informationen, sei es über die Themen vergangener Zeiten, die politischen Interessen der Bundesrepublik oder einfach die Wichtigkeit aktueller Themen. Jeder und jede kann nun auf diesen großen Datenschatz zugreifen, und seine ganz eigenen Ideen daraus entwickeln, mithilfe des zeit-online packets in der einfachen Programmiersprache python.</p>
-<section id="technisches" class="level2">
-<h2 class="anchored" data-anchor-id="technisches">Technisches</h2>
+<p>DIE ZEIT is one of the oldest and most influential newspapers in Germany. Over more than seven decades it has built a vast archive of articles covering politics, culture, science, and society. This archive is not only a historical record of events, but also a reflection of how public debates, political priorities, and social issues evolve over time.</p>
+<p>The <strong>zeit-online</strong> Python package makes it possible to explore this archive programmatically. With only a few lines of code, anyone can access articles from different decades and experiment with their own ideas for analyzing journalism and historical trends. Whether the goal is simple exploration, building datasets, or experimenting with text analysis, the archive provides a fascinating dataset that captures more than 75 years of reporting.</p>
+<p>The project was originally created as a small technical experiment. The underlying ZEIT Online API already exists, but interacting with it directly can be cumbersome. This package wraps the API in a simple Python interface and makes it easier to query articles, search the archive, and work with the results in code. At the same time, it serves as a practical way to experiment with building and publishing a Python library.</p>
 <blockquote class="blockquote">
-<p><strong>Update 2022</strong>: Leider hat Zeit Online die API inzwischen abgestellt, das Ganze ist also nur noch eine technische Spielerei der Vergangenheit</p>
+<p><strong>Update (2022):</strong> ZEIT Online has since discontinued the public API. The package therefore no longer works for retrieving new data, but the project remains available as a demonstration of how the API could be used and how such a wrapper library can be built.</p>
 </blockquote>
-<p>Die API ist zwar schon ein bisschen älter, funktioniert aber noch herausragend. Darum habe ich ein Package geschrieben, um die Interaktion damit zu vereinfachen und meine Skills auszutesten. Das Ganze ist auf PYPI als Package veröffentlich und die Dokumentation ist <a href="https://skriptum.github.io/zeit/">hier</a> einsehbar, inklusive Jupyter Notebooks und vielen Erklärungen.</p>
-<section id="ausprobieren" class="level3">
-<h3 class="anchored" data-anchor-id="ausprobieren">Ausprobieren</h3>
-<p>Um das ganze auszuprobieren, am besten das Package von pip installieren</p>
+<section id="getting-started" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started">Getting started</h3>
+<p>To try the package, install it using pip:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pip install zeit<span class="op">-</span>online</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>und dann in eine Datei importieren und die API Klasse initiieren und den API Key einfügen</p>
+<p>Then import the library and initialize the API client with your API key:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> zeit</span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>api <span class="op">=</span> zeit.API()</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>api.set_token(<span class="st">"API-KEY"</span>) <span class="co">#Key einfügen</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co">#jetzt steht dir die Welt von Zeit Online offen</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>für ausführlichere Erklärungen, definitiv die <a href="https://skriptum.github.io/zeit/">Dokumentation</a> angucken !</p>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>api <span class="op">=</span> zeit.API()</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>api.set_token(<span class="st">"API-KEY"</span>)  <span class="co"># insert your API key here</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You can quickly check that the connection works using a simple status method:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>api.get_status()  <span class="co"># returns "everything ok" if the API is reachable</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The most important method in the package is search_for, which allows you to search all available endpoints in the API for a given string. For example, searching for “Bundestag” in the default content endpoint returns a list of matching articles:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>api.search_for(<span class="st">"Bundestag"</span>)  <span class="co"># returns a search class containing results</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>Search for 'Bundestag': 42942 results, limit: 10, matches : 
+ 
+Koalition streicht Begriff "Rasse" aus dem Grundgesetz: http://api.zeit.de/content/1NRyOjRaneKYH6JRs87m46
+Bund einigt sich mit AKW-Betreibern auf Entschädigung: http://api.zeit.de/content/5A6U2BpxAaU1YV6Yx9xPY4
+"Das Gift ist da": http://api.zeit.de/content/3vrvroDbLrfwJ5VtigrEbh
+Die Losbürger: http://api.zeit.de/content/7jM8ZQEFHYM0slSPyL3AN2
+"Eine Weigerung hätte schmerzhafte Folgen für die Türkei": http://api.zeit.de/content/7h40VsJ5r2wNJgg6Msld8K
+Der nächste Schock nimmt schon Anlauf: http://api.zeit.de/content/j4LDNEBKPGN1vjbOJKpxz
+Für Störungen im Bundestag kann künftig Ordnungsgeld verhängt werden: http://api.zeit.de/content/2GOxLhUi8B48g2OziIZPCA
+Von Storch und Pazderski wollen gemeinsam Berliner AfD führen: http://api.zeit.de/content/JB8hW8UFGRB9NZyY0TgMM
+Bundestag hebt Immunität von CDU-Abgeordnetem Axel Fischer auf: http://api.zeit.de/content/tjB5SFOmwOmzGyZfOpZMq
+Bundestag verlängert Rechtsgrundlage für Pandemie-Maßnahmen: http://api.zeit.de/content/3eGseNLQSwHjA3SHwq22hP</code></pre>
+<p>On a given day, such a search might return tens of thousands of results. For example, the top matches today (March 2021) include articles like “Koalition streicht Begriff ‘Rasse’ aus dem Grundgesetz” or “Bund einigt sich mit AKW-Betreibern auf Entschädigung”, each with a link to its original content.</p>
+<p>Once you select a specific article from the search results, you can retrieve it using the get_article method. This returns an Article object, which provides access to various properties and methods:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Article <span class="op">=</span> api.get_article(<span class="st">"1NRyOjRaneKYH6JRs87m46"</span>)  <span class="co"># can use full URI or just the ID</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Article)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>Article with title 'Koalition streicht Begriff "Rasse" aus dem Grundgesetz' 
+UUID: 1NRyOjRaneKYH6JRs87m46, 
+URI: http://api.zeit.de/content/1NRyOjRaneKYH6JRs87m46        
+teaser_text: 'Die Bundesregierung hat sich auf eine Änderung des Grundgesetzes verständigt: Innen- und Justizministerium einigten sich darauf, wie das Wort "Rasse" ersetzt werden soll.'</code></pre>
+<p>The output shows basic information about the article, including its title, unique ID, URI, and teaser text. You can then access different attributes, like the supertitle, full title, and teaser text:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Article.supertitle)  <span class="co"># prints the supertitle</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Article.title)        <span class="co"># prints the title</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(Article.text)         <span class="co"># prints the teaser text</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For example, a returned article might look like this:</p>
+<pre><code>Verfassungsänderung
+Koalition streicht Begriff "Rasse" aus dem Grundgesetz
+Die Bundesregierung hat sich auf eine Änderung des Grundgesetzes verständigt: Innen- und Justizministerium einigten sich darauf, wie das Wort "Rasse" ersetzt werden soll.</code></pre>
+<p>The package also allows you to retrieve keywords linked to the article, which can help with analysis, categorization, or further exploration:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>Article.get_keywords()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre><code>{'http://api.zeit.de/keyword/grundgesetz': 'Grundgesetz',
+ 'http://api.zeit.de/keyword/rassismus': 'Rassismus',
+ 'http://api.zeit.de/keyword/diskriminierung': 'Diskriminierung',
+ 'http://api.zeit.de/keyword/justizministerium': 'Justizministerium',
+ 'http://api.zeit.de/keyword/horst-seehofer': 'Horst Seehofer',
+ 'http://api.zeit.de/keyword/berlin': 'Berlin',
+ 'http://api.zeit.de/keyword/alexanderplatz': 'Alexanderplatz',
+ 'http://api.zeit.de/keyword/usa': 'USA',
+ 'http://api.zeit.de/keyword/bundesregierung': 'Bundesregierung',
+ 'http://api.zeit.de/keyword/csu': 'CSU',
+ 'http://api.zeit.de/keyword/bundestag': 'Bundestag'}</code></pre>
+<p>Take a look at the <a href="https://github.com/skriptum/zeit/">GitHub repository</a> and the documentation for more details on how to use the package.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
