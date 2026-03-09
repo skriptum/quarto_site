@@ -1,19 +1,26 @@
 ---
-title:  "Notizen meines Studiums"
+title:  "Bachelor.zip"
 draft: false
-excerpt: |
-  Um anderen das Leben zu vereinfachen, habe ich alle meine Mitschriften zu 
-  Modulen aus dem ersten Semester VWL auf dieser Seite veröffentlicht, inklusive Zusammenfassungen
-  und einer Suchfunktion
-date: "2023-03-01"
-author-title: Github
-author: '<a href="https://github.com/skriptum/vwl">skriptum/vwl</a>'
+description: |
+  368 Notes. 31 Courses. 8 semesters. I turned all my write ups of my economics bachelor into one searchable website for studying, revising, or the occasional academic “shortcut.”
+date: "2024-09-01"
+#author-title: Github
+#author: '<a href="https://github.com/skriptum/vwl">skriptum/vwl</a>'
 image: "featured.webp"
 ---
 
-![Notizen-Website](featured.jpg)
+![](featured.jpg)
 
-hier entlang zu den mitschriften: [***vwl.martenw.com***](https://vwl.martenw.com)
+> [***vwl.martenw.com***](https://vwl.martenw.com)
 
-Wer zum ersten Semester in ein Studium reinstolpert, wird erstmal komplett überfordert sein von all den verschiedenen Anforderungen die an einen gestellt werden. Um den Prozess ein bisschen zu vereinfachen, habe ich alle meine Mitschriften für mein gesamtes Studium VWL/BWL an der MLU Halle als Website veröffentlicht. Das ganze umfasst 30 Module und über 300 Mitschriften nach Datum sortiert und im Volltext durchsuchbar. Meinen Kommiliton:innen und mir hats geholfen, besonders die Zusammenfassungen.
+When you stumble into your first semester at university, chances are you’ll feel completely overwhelmed. Suddenly there are lectures, tutorials, readings, deadlines, and about a dozen different expectations no one really explained beforehand.
 
+To make that process a little less chaotic, I decided to publish all of my notes from my entire Economics & Business Administration (VWL/BWL) bachelor’s degree at MLU Halle as a website at: [vwl.martenw.com](https://vwl.martenw.com).
+
+The site contains notes from 30 modules and more than 300 individual lecture write-ups, all organized by date and fully searchable. Think of it as a slightly more structured external hard drive for my bachelor’s brain.
+
+It ended up being surprisingly useful for my classmates and me—especially when exam season rolled around. There are summaries for almost all modules on there, as well as the course papers I submitted.
+
+Under the hood, everything is built from the Markdown files I originally used to take notes during class (including LaTeX formulas). The whole thing is compiled into a website using Sphinx, turning a pile of lecture notes into something that’s actually navigable.
+
+If you’re curious about how it works, you can check out the GitHub repository [here](https://github.com/skriptum/vwl).
