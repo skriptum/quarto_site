@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://martenw.com/about.html</loc>
-    <lastmod>2026-03-09T06:29:15.862Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/stips/index.html</loc>
-    <lastmod>2026-03-09T06:29:15.909Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/mindestlohn/index.html</loc>
-    <lastmod>2026-03-09T06:29:15.896Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/vwl-notizen/index.html</loc>
-    <lastmod>2026-03-09T06:29:15.910Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/zeit-api/index.html</loc>
-    <lastmod>2026-03-09T06:29:15.911Z</lastmod>
+    <loc>https://martenw.com/contact.html</loc>
+    <lastmod>2026-03-28T01:43:29.017Z</lastmod>
   </url>
   <url>
     <loc>https://martenw.com/blog/index.html</loc>
-    <lastmod>2026-03-09T06:29:15.862Z</lastmod>
+    <lastmod>2026-03-28T01:43:29.017Z</lastmod>
   </url>
   <url>
-    <loc>https://martenw.com/index.html</loc>
-    <lastmod>2026-03-09T06:29:15.866Z</lastmod>
+    <loc>https://martenw.com/about.html</loc>
+    <lastmod>2026-03-28T01:43:29.016Z</lastmod>
   </url>
   <url>
-    <loc>https://martenw.com/colophon.html</loc>
-    <lastmod>2026-03-09T06:29:15.862Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/index.html</loc>
-    <lastmod>2026-03-09T06:29:15.889Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/diatypst/index.html</loc>
-    <lastmod>2026-03-09T06:29:15.889Z</lastmod>
-  </url>
-  <url>
-    <loc>https://martenw.com/projects/bundestwitter/index.html</loc>
-    <lastmod>2026-03-09T06:29:15.887Z</lastmod>
+    <loc>https://martenw.com/projects/mindestlohn/index.html</loc>
+    <lastmod>2026-03-28T01:43:29.048Z</lastmod>
   </url>
   <url>
     <loc>https://martenw.com/projects/inequality/index.html</loc>
-    <lastmod>2026-03-09T06:29:15.891Z</lastmod>
+    <lastmod>2026-03-28T01:43:29.042Z</lastmod>
   </url>
   <url>
-    <loc>https://martenw.com/contact.html</loc>
-    <lastmod>2026-03-09T06:29:15.862Z</lastmod>
+    <loc>https://martenw.com/projects/index.html</loc>
+    <lastmod>2026-03-28T01:43:29.041Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/projects/zeit-api/index.html</loc>
+    <lastmod>2026-03-28T01:43:29.060Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/projects/bundestwitter/index.html</loc>
+    <lastmod>2026-03-28T01:43:29.040Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/projects/vwl-notizen/index.html</loc>
+    <lastmod>2026-03-28T01:43:29.060Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/projects/diatypst/index.html</loc>
+    <lastmod>2026-03-28T01:43:29.041Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/projects/stips/index.html</loc>
+    <lastmod>2026-03-28T01:43:29.059Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/index.html</loc>
+    <lastmod>2026-03-28T01:43:29.020Z</lastmod>
+  </url>
+  <url>
+    <loc>https://martenw.com/colophon.html</loc>
+    <lastmod>2026-03-28T01:43:29.017Z</lastmod>
   </url>
 </urlset>
