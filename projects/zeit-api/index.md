@@ -12,7 +12,7 @@ toc: false
 
 ![PyPI Package Website](featured.png)
 
-DIE ZEIT is one of the oldest and most influential newspapers in Germany. Over more than seven decades it has built a vast archive of articles covering politics, culture, science, and society. This archive is not only a historical record of events, but also a reflection of how public debates, political priorities, and social issues evolve over time.
+***`D`IE ZEIT*** is one of the oldest and most influential newspapers in Germany. Over more than seven decades it has built a vast archive of articles covering politics, culture, science, and society. This archive is not only a historical record of events, but also a reflection of how public debates, political priorities, and social issues evolve over time.
 
 The **zeit-online** Python package makes it possible to explore this archive programmatically. With only a few lines of code, anyone can access articles from different decades and experiment with their own ideas for analyzing journalism and historical trends. Whether the goal is simple exploration, building datasets, or experimenting with text analysis, the archive provides a fascinating dataset that captures more than 75 years of reporting.
 

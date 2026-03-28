@@ -6,7 +6,7 @@ categories:
 - politics
 - inequality
 description: |
-  Research Project on the connection between minimum wage recipiency and voting for populist right for a seminar in Empirical Economics. This page presents some findings and visualizations of the resulting seminar paper.
+  Is there a connection between earning minimum wage and voting for the far right? For a seminar in Empirical Economics, this project researches the connection between minimum wage recipiency and AfD election results in german counties.
 author-title: Seminar Paper
 author: '<a href="https://skriptum.github.io/mindestlohn">Online Version</a>'
 bibliography: references.bib
@@ -18,7 +18,7 @@ image: "featured.webp"
 
 > The Code and Data for this project can be downloaded at the [GitHub Repo](https://github.com/skriptum/mindestlohn). An online version of the seminar paper is available [here](https://skriptum.github.io/mindestlohn) with more interactive graphics.
 
-Nestled in the heart of Thuringia, the German district of Sonneberg made headlines with a historic moment – it became the first constituency to elect a district administrator from the right wing Alternative for Germany (AfD) party. In an unexpected turn, Robert Sesselmann of the AfD won a closely contested run-off election against the conservative Christian Democratic Union (CDU), securing 52.8% of the votes. The results not only marked a seismic shift in local politics but sent shockwaves through the established political order [@schuetzeFirstGermanyFar2023]. It exemplifies the growing right-wing populism which has been spreading in Germany and elsewhere over the last few decades.
+***`N`estled in the heart of Thuringia***, the German district of Sonneberg made headlines with a historic moment – it became the first constituency to elect a district administrator from the right wing Alternative for Germany (AfD) party. In an unexpected turn, Robert Sesselmann of the AfD won a closely contested run-off election against the conservative Christian Democratic Union (CDU), securing 52.8% of the votes. The results not only marked a seismic shift in local politics but sent shockwaves through the established political order [@schuetzeFirstGermanyFar2023]. It exemplifies the growing right-wing populism which has been spreading in Germany and elsewhere over the last few decades.
 
 Intriguingly, Sonneberg also holds the distinction of having the highest percentage of minimum wage workers in Germany – 44%. This paper aims to explore the connection between minimum wage recipiency and the support for right-wing populist movements, using Sonneberg as a focal point. Employing data from the WSI and the German Federal Election Officer in an Ordinary Least Squares (OLS) regression, the findings reveals a significant correlation between these variables, even when accounting for other relevant controls.
 

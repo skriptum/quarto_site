@@ -18,7 +18,7 @@ pagetitle: Contact
 
 ## how to contact me?
 
-if youre not a bot, feel free (*for real*) to drop me an e-mail at **[kontakt@martenw.com](mailto:kontakt@martenw.com)** ([OpenPGP-Key](https://keys.openpgp.org/vks/v1/by-fingerprint/36B18BB9C27F985832D0D1E70772DABED0FCB0DA) if youre into [that](https://moxie.org/2015/02/24/gpg-and-me.html) )
+***If youre not a bot***, feel free (*for real*) to drop me an e-mail at **[kontakt@martenw.com](mailto:kontakt@martenw.com)** ([OpenPGP-Key](https://keys.openpgp.org/vks/v1/by-fingerprint/36B18BB9C27F985832D0D1E70772DABED0FCB0DA) if youre into [that](https://moxie.org/2015/02/24/gpg-and-me.html) ) Otherwise just use the linked social media sites ([LinkedIn](https://to.martenw.com/linkedin) or [GitHub](https://to.martenw.com/github))
 
 :::
 

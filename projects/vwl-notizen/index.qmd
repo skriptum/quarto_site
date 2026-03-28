@@ -2,7 +2,7 @@
 title:  "Bachelor.zip"
 draft: false
 description: |
-  368 Notes. 31 Courses. 8 semesters. I turned all my write ups of my economics bachelor into one searchable website for studying, revising, or the occasional academic “shortcut.”
+  368 Notes. 31 Courses. 8 semesters. I turned all the write ups of my economics bachelor into one searchable website for studying, revising, or the occasional academic “shortcut.”
 date: "2024-09-01"
 #author-title: Github
 #author: '<a href="https://github.com/skriptum/vwl">skriptum/vwl</a>'
@@ -13,7 +13,7 @@ image: "featured.webp"
 
 > [***vwl.martenw.com***](https://vwl.martenw.com)
 
-When you stumble into your first semester at university, chances are you’ll feel completely overwhelmed. Suddenly there are lectures, tutorials, readings, deadlines, and about a dozen different expectations no one really explained beforehand.
+***When you stumble into your first semester at university***, chances are you’ll feel completely overwhelmed. Suddenly there are lectures, tutorials, readings, deadlines, and about a dozen different expectations no one really explained beforehand.
 
 To make that process a little less chaotic, I decided to publish all of my notes from my entire Economics & Business Administration (VWL/BWL) bachelor’s degree at MLU Halle as a website at: [vwl.martenw.com](https://vwl.martenw.com).
 

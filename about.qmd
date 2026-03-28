@@ -9,13 +9,12 @@ toc: false
 ::: grid
 ::: {.g-col-12 .g-col-lg-6}
 
-I am a graduate of economics from University of Halle (a small town next to Leipzig, Germany).
 
-Im quite interested in the different aspects of political economy and economic history. This was sparked by my activity with Rethinking Economics, a global network of students who want to change the way economics is thought and practiced. 
+***`I`m quite interested*** in the different aspects of political economy and economic history. This was sparked by my activity with Rethinking Economics, a global network of students who want to change the way economics is thought and practiced. 
 
 On this website I collect various projects and ideas, mostly in a technical / political / economic context. All adorned with a bunch of beautiful Vermeer paintings (like the one on this page, titled ["The Geographer"](https://en.wikipedia.org/wiki/The_Geographer) )
 
-**Newsletters I find interesting and that shaped my thinking:**
+**Newsletters that shaped my thinking:**
 
 ##### [Adam Tooze:  Chartbook](https://adamtooze.substack.com/)
 

@@ -17,13 +17,13 @@ website:
     title: ""
     collapse-below: lg
     right: 
-      - text: PROJECTS
+      - text: projects
         href: projects/index.qmd
       # - text: BLOG
       #   href: blog/index.qmd
-      - text: ABOUT
+      - text: about
         href: about.qmd
-      - text: CONTACT
+      - text: contact
         href: contact.qmd
 
 
