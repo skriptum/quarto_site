@@ -19,8 +19,8 @@ website:
     right: 
       - text: projects
         href: projects/index.qmd
-      # - text: BLOG
-      #   href: blog/index.qmd
+      - text: blog
+        href: blog/index.qmd
       - text: about
         href: about.qmd
       - text: contact
@@ -39,9 +39,6 @@ website:
       - href: https://to.martenw.com/linkedin
         icon: linkedin
         aria-label: LinkedIn
-      # - href: https://to.martenw.com/bsky
-      #   icon: twitter
-      #   aria-label: bluesky
     left: 
       - text: "© 2021-2026 Marten Walk"
     right:
@@ -68,7 +65,6 @@ format:
           "image": "",
           "sameAs": [
             "https://de.linkedin.com/in/marten-walk",
-            "https://bsky.app/profile/mwd.bsky.social",
             "https://github.com/skriptum"
           ],
           "jobTitle": "Economist"  

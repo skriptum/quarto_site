@@ -14,16 +14,17 @@
 // Custom Color Definitions
 $primary-color: #FFEDE0;  // page background
 $primary-color-shade: #F2DBCE; // code blocks etc
-
 $highlight-color: #990f3d; // color highlights
 $highlight-color-shade: #DFB2B2; // hover color for buttons
-
 $dark : #000000;  // mostly used for borders
 $font-color: #1b1b1b; // self explanatory 
 
-$font-family-headings: 'Playfair Display', monospace;
-$font-family-text: 'Josefin Sans', serif;
-$font-family-smallcaps: 'Playfair Display SC', serif;
+$font-family-headings: 'Playfair Display', 'Bodoni', 'Times New Roman', serif;
+$font-family-text: 'Josefin Sans', 'Geneva', 'Arial', sans-serif;
+$font-family-smallcaps: 'Playfair Display SC', 'Playfair Display', 'Bodoni', 'Times New Roman', serif;
+$font-size-base: 19px;
+$font-size-small: 0.85em;
+$bold-weight: 700;
 
 // Bootstrap Color overwrites
 $link-color: $highlight-color;
@@ -36,8 +37,12 @@ $headings-color: $font-color;
 
 $navbar-bg: $primary-color;
 $navbar-fg: $highlight-color;
-$footer-bg: $primary-color;
-$footer-fg: $font-color;
+$navbar-toggler-border-radius: 0px;
+$navbar-toggler-border-color: $primary-color;
+$navbar-toggler-focus-width: 2px;
+$navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23990f3d' stroke-linecap='butt' stroke-miterlimit='10' stroke-width='1.2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+$footer-bg: black;
+$footer-fg: white;
 
 $table-border-width: 0px;
 $table-border-color: $highlight-color;
@@ -70,11 +75,12 @@ $table-border-color: $highlight-color;
       max-height: 60px;
     }
   }
+  .navbar-toggler {
+    box-shadow: none;
+    order: 4;
+  }
 }
 
-.navbar-toggler {
-  box-shadow: none;
-}
 
 .footer {
   border-top: 1px solid $dark;
@@ -124,15 +130,16 @@ header:empty {
 
 // TOC in body
 
-nav#TOC {
+nav[id*="TOC"] {
   background-color: $primary-color-shade;
   padding: 0.5em 1em;
   margin-bottom: 1em;
 
   #toc-title {
-    font-size: 1em;
+    font-size: $font-size-small;
     font-family: $font-family-headings;
-    margin: 0.0em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
   }
 
   li a {
@@ -141,13 +148,27 @@ nav#TOC {
     }
 }
 
-nav.toc-active#TOC {
+nav.toc-active {
   background-color: $primary-color;
 }
 
+// if TOC location = body-right, you have to catch it
+nav#TOC-body {
+  li::marker {
+    content: "→ ";
+  }
+  li a {
+    font-size: $font-size-small;
+  }
+}
+
+// and if the body toc is the only one
 nav:not(.toc-active)#TOC {
   li::marker {
     content: "→ ";
+  }
+  li a {
+    font-size: $font-size-small;
   }
 }
 
@@ -213,35 +234,61 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 500;
   border-bottom: 0px !important;
   color: $font-color;
+  line-height: 1.2em;
+  padding-bottom: 0em;
 }
 
 //Smallcaps for em tags in strong tags
 strong em {
   font-family: $font-family-smallcaps;
-  font-weight: 500;
+  font-weight: 500 !important;
   font-style: normal;
+  font-size: $font-size-small;
 }
 
 // Drop Cap for first letter of Smallcaps
 strong em code {
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 4.85em;
+  font-weight: 500;
   float: left;
-  line-height: 0.65;
-  margin: 0.1em 0.1em 0.2em 0em;
+  margin-top: 0.11em;
+  margin-right: 0.175em;
+  line-height: 0.7;
+  padding: 0 !important;
+  text-align: left;
   background-color: $primary-color !important;
   font-family: $font-family-headings;
 }
 
 hr {
-  margin: 2em 20vw 2em 20vw;
-  border-top: 1px solid $dark;
-  border-bottom: 1px solid $dark;
-  height: 4px;
-  opacity: 1;
+  // margin: 2em 20vw 2em 20vw;
+  // border-top: 1px solid $dark;
+  // border-bottom: 1px solid $dark;
+  // height: 4px;
+  // opacity: 1;
+
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  border-top: medium double $font-color;
+  color:$font-color;
+  text-align: center;
+  // margin at sides to make it shorter than the text width
+  margin: 2em 10vw 2em 10vw;
+  opacity: 0.8;
+
+  &:after {
+    content: "§";
+    font-family: $font-family-headings;
+    display: inline-block;
+    position: relative;
+    top: -0.9em;
+    padding: 0 0.25em;
+    background: $primary-color;
+  }
 }
 
-button {
+button:not([class])  {
   border: 1px solid $highlight-color;
   padding: 0.2em 1em 0.05em 1em;
   border-radius: 0px;
@@ -261,11 +308,23 @@ a {
   font-weight: 300;
 }
 
+// Code Blocks
 pre {
   background-color: $code-block-bg;
   padding: 1em;
   border-radius: 5px;
   font-family: 'Courier New', Courier, monospace;
+}
+
+
+.code-with-filename-file { // Quarto code blocks with filename
+  background-color: darken($code-block-bg, 5%) !important; 
+  border: 0px !important;
+  pre {
+    border-radius: 0px;
+    padding: 0px;
+    background-color: darken($code-block-bg, 5%);
+  }
 }
 
 .table {
@@ -281,18 +340,15 @@ pre {
   border-left: 5px solid $highlight-color;
   padding-left: 1rem;
   font-family: $font-family-headings;
+  // font-size: $font-size-base;
   border-radius: .25rem;
   background-color: $primary-color-shade;
   text-align: center;
   color: $font-color;
-  margin: 2em 5vw 2em 5vw;
+  margin: 2em 2vw 2em 2vw;
 
-  em {
-  color: $highlight-color;
-  font-family: $font-family-smallcaps;
-  font-style: normal;
-  font-weight: 500;
-  letter-spacing: 0.05em;
+  strong em {
+    color: $highlight-color;
   }
 }
 

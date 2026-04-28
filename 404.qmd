@@ -1,11 +1,14 @@
 ---
 pagetitle: "404"
-#about: jolla #for centering
 toc: false
 ---
 
+
+:::{.content-block}
+
 # 404 - Page not found
 
-The page you requested cannot be found → go [***home***](index.qmd)
+![Vermeer: Art of Painting](../images/painting.webp){fig-alt="Vermeer: Art of Painting"}
+:::
 
-![Vermeer: Girl interrupted at her Music](images/interrupt.webp){fig-alt="Vermeer: Girl interrupted at her Music"}
+The page you requested cannot be found → go [***home***](index.qmd)
