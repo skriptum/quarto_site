@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/projects/pipeline/index.html",
       "/projects/inequality/index.html",
       "/projects/diatypst/index.html",
       "/projects/stips/index.html",
@@ -14,6 +15,7 @@
   {
     "listing": "/projects/index.html",
     "items": [
+      "/projects/pipeline/index.html",
       "/projects/inequality/index.html",
       "/projects/diatypst/index.html",
       "/projects/stips/index.html",

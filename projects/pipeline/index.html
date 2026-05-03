@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-03-01">
+<meta name="description" content="or: Accessing IMF, OECD, and World Bank Data with SDMX and R">
 
-<title>Projects</title>
+<title>A Data Pipeline for the United Nations World Economic Forecasting Model</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,25 +25,58 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<link href="../images/favicon.ico" rel="icon">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-bdf67b448a403dde36248dfdc89c95ef.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1141c23487a12e117698ad89ba27a6ba.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<link href="../../images/favicon.ico" rel="icon">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bdf67b448a403dde36248dfdc89c95ef.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-1141c23487a12e117698ad89ba27a6ba.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -57,35 +92,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -111,66 +117,23 @@ ul.task-list li input[type="checkbox"] {
 </script>
 <script defer="" src="https://cloud.umami.is/script.js" data-website-id="e9146946-1847-401b-98ea-d1d9981a1b02"></script>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css">
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<meta property="og:title" content="Projects">
+<meta property="og:title" content="A Data Pipeline for the United Nations World Economic Forecasting Model">
 <meta property="og:description" content="quantitative econ student interested in monetary theory, inequality and the history of economic thought">
-<meta property="og:image" content="https://martenw.com/projects/images/preview.jpg">
+<meta property="og:image" content="https://martenw.com/projects/pipeline/images/preview.jpg">
 <meta property="og:site_name" content="marten walk">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../images/logo.webp" alt="logo" class="navbar-logo light-content">
-    <img src="../images/logo.webp" alt="logo" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo.webp" alt="logo" class="navbar-logo light-content">
+    <img src="../../images/logo.webp" alt="logo" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -179,19 +142,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects/index.html"> 
 <span class="menu-text">projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../blog/index.html"> 
+    <a class="nav-link" href="../../blog/index.html"> 
 <span class="menu-text">blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">about</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../contact.html"> 
+    <a class="nav-link" href="../../contact.html"> 
 <span class="menu-text">contact</span></a>
   </li>  
 </ul>
@@ -205,207 +168,214 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#whats-sdmx" id="toc-whats-sdmx" class="nav-link" data-scroll-target="#whats-sdmx">What’s SDMX?!</a></li>
+  <li><a href="#a-practical-example-imf-inflation-data" id="toc-a-practical-example-imf-inflation-data" class="nav-link" data-scroll-target="#a-practical-example-imf-inflation-data">A practical example: IMF Inflation data</a></li>
+  <li><a href="#r-you-ready" id="toc-r-you-ready" class="nav-link" data-scroll-target="#r-you-ready">R you ready?</a></li>
+  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">A Data Pipeline for the United Nations World Economic Forecasting Model</h1>
+</div>
+
+<div>
+  <div class="description">
+    or: Accessing IMF, OECD, and World Bank Data with SDMX and R
+  </div>
+</div>
 
 
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 1, 2026</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
-<section id="projects" class="level1 content-block">
-<h1>Projects</h1>
+</header>
+
+
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="../images/painting.webp" class="img-fluid figure-img" alt="Vermeer: Art of Painting"></p>
-<figcaption>Vermeer: Art of Painting</figcaption>
+<p><img src="UN7670766.jpg" class="img-fluid figure-img"></p>
+<figcaption>United Nations Satellite Communications Centre; by Michos Tzovaras 1992 (<a href="https://dam.media.un.org">Photo ID: UN7670766</a>)</figcaption>
 </figure>
 </div>
+<section id="preface" class="level2">
+<h2 class="anchored" data-anchor-id="preface">Preface</h2>
+<p>During my internship at the United Nations, I worked closely with the team behind the World Economic Forecasting Model (WEFM), the central model used for macroeconomic forecasting at the UN. <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>The model fed on datasets from a dozen international organisations, among them IMF International Financial Statistics (now discontinued), each requiring careful transformation before the WEFM would accept them. Before I arrived, gathering all this data was largely a manual affair. Someone on the team would dutifully visit each organisation’s website, click through whatever interface stood between them and the numbers, then download, clean, and wrangle the results into shape.</p>
+<p>Now, thanks to a new data pipeline developed in R, it’s much quicker, less error-prone, and less of a hassle (anyone who’s ever had to click through online databases to find that one Excel dataset knows how annoying it can be). The pipeline automatically accesses the organisations’ databases and processes the data. All thanks to the magic of ✨ SDMX APIs ✨. And because documentation on using SDMX and R is incredibly sparse, here is the guide I wished had existed.</p>
+<blockquote class="blockquote">
+<p>If you want to learn more about the pipeline itself, take a look at the <a href="https://github.com/skriptum/WESP-Pipeline">GitHub Repository</a>. It goes into further detail on how it works. Be reminded that it is quite specific code for the United Nations WEFM, so it may be of limited use to others.</p>
+</blockquote>
+</section>
+<section id="whats-sdmx" class="level2">
+<h2 class="anchored" data-anchor-id="whats-sdmx">What’s SDMX?!</h2>
+<p>In short: Statistical Data and Metadata eXchange (<a href="https://en.wikipedia.org/wiki/SDMX">wiki</a>). Bear with me here, I know it sounds extremely dull at first, but it’s really quite a magical feat of engineering. With SDMX, anyone can access statistical – as the name hints at – from a lot of different organisations (BIS, IMF, WB, OECD, the list goes on…) trough one unified API.</p>
+<p>It does far more than just serving downloads. Uploading, managing, cataloguing, the full 145-page <a href="https://sdmx.org/wp-content/uploads/SDMX_2-1_User_Guide_draft_0-1.pdf">user guide</a> is a testament to how much territory it covers. For our purposes, though, none of that matters. We just want data!</p>
+<p>A basic API Call needs 3 identifiers to download requested data:</p>
+<ol type="1">
+<li>The statistical agency you want data from (e.g IMF), called a <em>Provider</em> in SDMX Lingo</li>
+<li>The name of the database you want to access (the <em>Dataflow</em>)</li>
+<li>Specific columns / groupings (the <em>Dimensions</em>), e.g
+<ul>
+<li>only some Countries</li>
+<li>a certain Time Period</li>
+<li>etc.</li>
+<li><em>these dimensions differ for each dataset, so you need to adjust your call</em></li>
+</ul></li>
+</ol>
+<p>You just need to chain all of these together, et voila: your dataset. This sounds easier than it is, because most organisations dont document their APIs in an accessible manner, and because every database has slightly different names for their dimensions.</p>
+<p>That was quite abstract, so lets see some real data.</p>
+</section>
+<section id="a-practical-example-imf-inflation-data" class="level2">
+<h2 class="anchored" data-anchor-id="a-practical-example-imf-inflation-data">A practical example: IMF Inflation data</h2>
+<p>Imagine we want to download Consumer Price Index (CPI) data for the US, UK and Germany.</p>
+<p>We start on <a href="https://data.imf.org/en">IMF data website</a>, search for CPI and land on the <a href="https://data.imf.org/en/datasets/IMF.STA:CPI">CPI dataset</a>. Then, we first take a quick look at it and open the <a href="https://data.imf.org/en/Data-Explorer?datasetUrn=IMF.STA:CPI(5.0.0)">Data Explorer</a> (the button titled View Data):</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./imf1.png" class="img-fluid figure-img"></p>
+<figcaption>The IMF data explorer</figcaption>
+</figure>
+</div>
+<p>On the left panel, select the three countries, set the index to All Items, and ask for the year-on-year percentage change. On the right, you should now see the data series for Germany, UK and the US.</p>
+<p>Okay, so we know the <em>Agency</em> (IMF), the Dataset / <em>Dataflow</em> (CPI) and the specific selection / <em>Dimensions</em> (Country, Category etc.). Now, the remaining task is finding what these things are actually called inside the database, because the human-readable labels and the underlying IDs are entirely different creatures.</p>
+<p>The fix is simple: in the Data Explorer, click the small icon beside each dimension and switch the display to ID. Germany stops being Germany and becomes DEU. The United Kingdom becomes GBR. And so on.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./IMF2.png" class="img-fluid figure-img"></p>
+<figcaption>From readable names …</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./IMF3.png" class="img-fluid figure-img"></p>
+<figcaption>… to short IDs</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>For all dimensions, this will look something like this:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 53%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimension</th>
+<th>Name</th>
+<th>ID</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Country</td>
+<td>United Stations, United Kingdom, Germany</td>
+<td>USA, GBR, DEU</td>
+</tr>
+<tr class="even">
+<td>Index Type</td>
+<td>Consumer Price Index</td>
+<td>CPI</td>
+</tr>
+<tr class="odd">
+<td>Expenditure</td>
+<td>All Items</td>
+<td>_T</td>
+</tr>
+<tr class="even">
+<td>Type of Transformation</td>
+<td>Period average, Y-O-Y percentage change</td>
+<td>YOY_PCH_PA_PT</td>
+</tr>
+<tr class="odd">
+<td>Frequency</td>
+<td>Annual</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<p>Now we have everything to get started in R.</p>
+</section>
+<section id="r-you-ready" class="level2">
+<h2 class="anchored" data-anchor-id="r-you-ready">R you ready?</h2>
+<p>First, lets import the relevant libraries. We will use the <a href="https://github.com/eblondel/rsdmx/wiki">rsdmx</a> library, so install it if you haven’t already.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("rsdmx") # if you havent already</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse) <span class="co"># the one and only</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rsdmx)     <span class="co"># the workhorse library</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Next, we assemble our key by stringing the dimension IDs together. Think of it as writing the address on an envelope: get one part wrong and nothing arrives.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>COUNTRIES <span class="ot">&lt;-</span> <span class="st">"USA+GBR+DEU"</span> <span class="co"># The countries we selected</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>INDICATOR <span class="ot">&lt;-</span> <span class="st">"CPI"</span> <span class="co"># Consumer Price Index</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>EXPENDITURE <span class="ot">&lt;-</span> <span class="st">"_T"</span> <span class="co"># All items / Total</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>TRANSFORMATION <span class="ot">&lt;-</span> <span class="st">"YOY_PCH_PA_PT"</span> <span class="co"># Percentage change YOY</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>FREQUENCY <span class="ot">&lt;-</span> <span class="st">"A"</span> <span class="co"># Annual</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>key <span class="ot">&lt;-</span> <span class="fu">paste0</span>(COUNTRIES, <span class="st">"."</span>, INDICATOR,<span class="st">"."</span>, EXPENDITURE, <span class="st">"."</span>, TRANSFORMATION, <span class="st">"."</span>, FREQUENCY)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>With our key in hand, we call the API, specifying our provider, database, and (optionally) a time period:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>raw_data <span class="ot">&lt;-</span> <span class="fu">readSDMX</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">providerId =</span> <span class="st">"IMF_DATA"</span>,  <span class="co"># IMF as Provider</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">resource =</span> <span class="st">"data"</span>,        <span class="co"># we want data</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">flowRef =</span> <span class="st">"CPI"</span>,          <span class="co"># from the CPI database</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">key =</span> key,                <span class="co"># with our carefully created key</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">start =</span> <span class="dv">1960</span>,             <span class="co"># lets limit it to start in 1960</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The response is in SDMX format, so we have to convert it to a data frame first.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(raw_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Let’s make a quick plot:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(COUNTRY, TIME_PERIOD, OBS_VALUE) <span class="sc">%&gt;%</span>   <span class="co"># select relevant columns</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(                                       <span class="co"># change types of columns</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">OBS_VALUE =</span> <span class="fu">as.numeric</span>(OBS_VALUE),</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">TIME_PERIOD =</span> <span class="fu">as.numeric</span>(TIME_PERIOD)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span>  </span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>TIME_PERIOD, <span class="at">y=</span>OBS_VALUE, <span class="at">color=</span>COUNTRY)) <span class="sc">+</span>     <span class="co"># basic ggplot call</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_line</span>() <span class="sc">+</span>                               <span class="co"># present as line plot</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="fu">labs</span>(<span class="at">title=</span><span class="st">"CPI since 1960"</span>)                <span class="co"># add title</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><img src="plot-transparent.png" class="img-fluid"></p>
+<p>There you have it, this is how you get any IMF dataset into R.</p>
+</section>
+<section id="appendix" class="level2">
+<h2 class="anchored" data-anchor-id="appendix">Appendix</h2>
+<p>Most major statistical institutions speak SDMX, and <code>rsdmx</code> can talk to all of them. Some make life easier than others. The OECD, for instance, is positively generous about it: navigate to any dataset, make your selection, and hit “Developer API.” It hands you the query string ready-made, and you can drop it straight into <code>readSDMX</code> without touching a dimension ID. Would be great if all of them made it that easy (looking at you, ECB :).</p>
+
+
 </section>
 
 
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1772323200000" data-listing-file-modified-sort="1777841572500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8" data-listing-word-count-sort="1458">
-<div class="thumbnail"><a href="../projects/pipeline/index.html" class="no-external">
-
-<p class="card-img-top"><img loading='lazy' src="pipeline/UN7670766.jpg"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/pipeline/index.html" class="no-external">A Data Pipeline for the United Nations World Economic Forecasting Model</a>
-</h3>
-<div class="delink listing-description"><a href="../projects/pipeline/index.html" class="no-external">
-<p>or: Accessing IMF, OECD, and World Bank Data with SDMX and R</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../projects/pipeline/index.html" class="no-external">
-<div class="listing-date">
-Mar 1, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="UiUyQ3BvbGl0aWNzJTJDaW5lcXVhbGl0eQ==" data-listing-date-sort="1746057600000" data-listing-file-modified-sort="1777841572487" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="841">
-<div class="thumbnail"><a href="../projects/inequality/index.html" class="no-external">
-
-<img loading="lazy" src="../projects/inequality/HP_coeff.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/inequality/index.html" class="no-external">Cementing the Divide? Housing and Wealth Inequality in Europe</a>
-</h3>
-<div class="delink listing-description"><a href="../projects/inequality/index.html" class="no-external">
-<p>How do asset prices shape the wealth distribution? My econometric bachelors thesis analysing the distributional effects of housing prices in the EU, using the ECB’s novel Distributional Wealth Accounts.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../projects/inequality/index.html" class="no-external">
-<div class="listing-date">
-May 1, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-listing-date-sort="1736899200000" data-listing-file-modified-sort="1777841572486" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="466">
-<div class="thumbnail"><a href="../projects/diatypst/index.html" class="no-external">
-
-<img loading="lazy" src="../projects/diatypst/title.webp" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/diatypst/index.html" class="no-external">diatypst - easy slides in typst</a>
-</h3>
-<div class="delink listing-description"><a href="../projects/diatypst/index.html" class="no-external">
-<p>a package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics (⭐ +100 GitHub stars)</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../projects/diatypst/index.html" class="no-external">
-<div class="listing-date">
-Jan 15, 2025
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-listing-date-sort="1728000000000" data-listing-file-modified-sort="1777841572500" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="918">
-<div class="thumbnail"><a href="../projects/stips/index.html" class="no-external">
-
-<img loading="lazy" src="../projects/stips/featured.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/stips/index.html" class="no-external">Stipendien nur für Privilegierte?</a>
-</h3>
-<div class="delink listing-description"><a href="../projects/stips/index.html" class="no-external">
-<p>Wie setzt sich eigentlich die Stipendiat:innenschaft der sog. “Begabtenförderungswerke” zusammen? Alles nur Bildungsbürgerkids aus gutem Haushalt? Eine Datenanalyse</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../projects/stips/index.html" class="no-external">
-<div class="listing-date">
-Oct 4, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-listing-date-sort="1725148800000" data-listing-file-modified-sort="1777841572501" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="189">
-<div class="thumbnail"><a href="../projects/vwl-notizen/index.html" class="no-external">
-
-<img loading="lazy" src="../projects/vwl-notizen/featured.webp" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/vwl-notizen/index.html" class="no-external">Bachelor.zip</a>
-</h3>
-<div class="delink listing-description"><a href="../projects/vwl-notizen/index.html" class="no-external">
-<p>368 Notes. 31 Courses. 8 semesters. I turned all the write ups of my economics bachelor into one searchable website for studying, revising, or the occasional academic “shortcut.”</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../projects/vwl-notizen/index.html" class="no-external">
-<div class="listing-date">
-Sep 1, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="UiUyQ3BvbGl0aWNzJTJDaW5lcXVhbGl0eQ==" data-listing-date-sort="1710028800000" data-listing-file-modified-sort="1777841572491" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="507">
-<div class="thumbnail"><a href="../projects/mindestlohn/index.html" class="no-external">
-
-<img loading="lazy" src="../projects/mindestlohn/featured.webp" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/mindestlohn/index.html" class="no-external">Paycheck Politics</a>
-</h3>
-<div class="delink listing-description"><a href="../projects/mindestlohn/index.html" class="no-external">
-<p>Is there a connection between earning minimum wage and voting for the far right? For a seminar in Empirical Economics, this project researches the connection between minimum wage recipiency and AfD election results in german counties.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../projects/mindestlohn/index.html" class="no-external">
-<div class="listing-date">
-Mar 10, 2024
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-listing-date-sort="1619827200000" data-listing-file-modified-sort="1777841572503" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="701">
-<div class="thumbnail"><a href="../projects/zeit-api/index.html" class="no-external">
-
-<img loading="lazy" src="../projects/zeit-api/featured.webp" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/zeit-api/index.html" class="no-external">ZEIT API in Python</a>
-</h3>
-<div class="delink listing-description"><a href="../projects/zeit-api/index.html" class="no-external">
-<p><code>zeit-online</code> is a Python package that lets you explore over 75 years of DIE ZEIT, germanys leading weekly newspaper. It wraps the ZEIT API in a simple interface, making it easy to search for articles, retrieve content, and experiment with text analysis.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../projects/zeit-api/index.html" class="no-external">
-<div class="listing-date">
-May 1, 2021
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="cHl0aG9uJTJDcG9saXRpY3MlMkN0d2l0dGVy" data-listing-date-sort="1613433600000" data-listing-file-modified-sort="1777841572485" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="215">
-<div class="thumbnail"><a href="../projects/bundestwitter/index.html" class="no-external">
-
-<img loading="lazy" src="../projects/bundestwitter/featured.webp" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../projects/bundestwitter/index.html" class="no-external">Bundestwitter</a>
-</h3>
-<div class="delink listing-description"><a href="../projects/bundestwitter/index.html" class="no-external">
-<p>Eine Web-App, die alle Twitter-Accounts von Bundestagsmitgliedern erfahrbar macht und kartiert. Damit die 90% der Wähler:innen ohne Twitter erfahren, was ihre Abgeordneten so im Internet treiben</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../projects/bundestwitter/index.html" class="no-external">
-<div class="listing-date">
-Feb 16, 2021
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<ol>
+<li id="fn1"><p>The model is written in EViews and extremely complex, with hundreds of variables and matrices linking individual country models. Take a look <a href="https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/publication/2016_Apr_WorldEconomicForecastingModel.pdf">here</a>, if you’re interested<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -840,7 +810,7 @@ Feb 16, 2021
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="../colophon.html">
+    <a class="nav-link" href="../../colophon.html">
 <p>Colophon</p>
 </a>
   </li>  
