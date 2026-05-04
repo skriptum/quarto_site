@@ -2,12 +2,12 @@
 title:  "Stipendien nur für Privilegierte?"
 date:   "2024-10-04"
 description: |
-  Wie setzt sich eigentlich die Stipendiat:innenschaft der sog. "Begabtenförderungswerke" zusammen? Alles nur Bildungsbürgerkids aus gutem Haushalt? Eine Datenanalyse
+  Wie setzt sich eigentlich die Stipendiat:innenschaft der sogenannten "Begabtenförderungswerke" zusammen? Eine Analyse auf Basis von Informationsfreiheitsanfragen.
 ---
 
 ![Sommerakademie der Studienstiftung 1982 (mit bildungsbürgerlichem Konzert)](studienstiftung.jpg)
 
-> Die analysierten Daten stammen aus einer Informationsfreiheitsanfrage an das BMBF, veröffentlicht auf [FragDenStaat](https://fragdenstaat.de/anfrage/begabtenfoerderungswerke-anteil-bafoeg-berechtigter/). Der Schwerpunkt liegt auf der Heinrich-Böll Stiftung, da ich dort selbst Stipendiat war.
+> Die analysierten Daten stammen aus einer Informationsfreiheitsanfrage an das BMBF, veröffentlicht auf [FragDenStaat](https://fragdenstaat.de/anfrage/begabtenfoerderungswerke-anteil-bafoeg-berechtigter/). Der Schwerpunkt liegt auf der Heinrich-Böll Stiftung, da ich dort selbst Stipendiat war und ein Seminar dazu gehalten habe. 
 
 ***`S`ind Stipendiat:innen der Begabtenförderungswerke privilegiert?*** Eine Frage, die sich der eine oder andere Stip* wahrscheinlich schonmal gestellt hat. Auch medial wird immer wieder die These aufgestellt, dass die Studienstiftungen eine Elitenförderung sind ([SZ](https://www.sueddeutsche.de/bildung/stipendien-begabtenfoerderung-kritik-1.4518691), [taz](https://taz.de/Begabtenfoerderung-in-der-Kritik/!5060373/) ,[FAZ](https://www.faz.net/aktuell/karriere-hochschule/hoersaal/begabtenfoerderung-wie-gerecht-sind-stipendien-19337664.html)). Also, was ist dran an dem Vorwurf?
 
