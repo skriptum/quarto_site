@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-03-01">
+<meta name="dcterms.date" content="2026-03-21">
 <meta name="description" content="or: Accessing IMF, OECD, and World Bank Data with SDMX and R">
 
 <title>A Data Pipeline for the United Nations World Economic Forecasting Model</title>
@@ -168,18 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
-  <li><a href="#whats-sdmx" id="toc-whats-sdmx" class="nav-link" data-scroll-target="#whats-sdmx">What’s SDMX?!</a></li>
-  <li><a href="#a-practical-example-imf-inflation-data" id="toc-a-practical-example-imf-inflation-data" class="nav-link" data-scroll-target="#a-practical-example-imf-inflation-data">A practical example: IMF Inflation data</a></li>
-  <li><a href="#r-you-ready" id="toc-r-you-ready" class="nav-link" data-scroll-target="#r-you-ready">R you ready?</a></li>
-  <li><a href="#appendix" id="toc-appendix" class="nav-link" data-scroll-target="#appendix">Appendix</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -202,7 +191,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 1, 2026</p>
+      <p class="date">March 21, 2026</p>
     </div>
   </div>
   
@@ -213,7 +202,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-
+<nav id="TOC" role="doc-toc">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#preface" id="toc-preface">Preface</a></li>
+  <li><a href="#whats-sdmx" id="toc-whats-sdmx">What’s SDMX?!</a></li>
+  <li><a href="#a-practical-example-imf-inflation-data" id="toc-a-practical-example-imf-inflation-data">A practical example: IMF Inflation data</a></li>
+  <li><a href="#r-you-ready" id="toc-r-you-ready">R you ready?</a></li>
+  <li><a href="#appendix" id="toc-appendix">Appendix</a></li>
+  </ul>
+</nav>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="UN7670766.jpg" class="img-fluid figure-img"></p>
@@ -254,7 +253,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>We start on <a href="https://data.imf.org/en">IMF data website</a>, search for CPI and land on the <a href="https://data.imf.org/en/datasets/IMF.STA:CPI">CPI dataset</a>. Then, we first take a quick look at it and open the <a href="https://data.imf.org/en/Data-Explorer?datasetUrn=IMF.STA:CPI(5.0.0)">Data Explorer</a> (the button titled View Data):</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="./imf1.png" class="img-fluid figure-img"></p>
+<p><img src="./IMF1.png" class="img-fluid figure-img"></p>
 <figcaption>The IMF data explorer</figcaption>
 </figure>
 </div>

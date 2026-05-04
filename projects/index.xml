@@ -1,0 +1,1612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>marten walk</title>
+<link>https://martenw.com/projects/</link>
+<atom:link href="https://martenw.com/projects/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<image>
+<url>https://martenw.com/images/preview.jpg</url>
+<title>marten walk</title>
+<link>https://martenw.com/projects/</link>
+</image>
+<generator>quarto-1.9.37</generator>
+<lastBuildDate>Sat, 21 Mar 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>A Data Pipeline for the United Nations World Economic Forecasting Model</title>
+  <link>https://martenw.com/projects/pipeline/</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/pipeline/UN7670766.jpg" class="img-fluid figure-img"></p>
+<figcaption>United Nations Satellite Communications Centre; by Michos Tzovaras 1992 (<a href="https://dam.media.un.org">Photo ID: UN7670766</a>)</figcaption>
+</figure>
+</div>
+<section id="preface" class="level2">
+<h2 class="anchored" data-anchor-id="preface">Preface</h2>
+<p>During my internship at the United Nations, I worked closely with the team behind the World Economic Forecasting Model (WEFM), the central model used for macroeconomic forecasting at the UN. <sup>1</sup></p>
+<p>The model fed on datasets from a dozen international organisations, among them IMF International Financial Statistics (now discontinued), each requiring careful transformation before the WEFM would accept them. Before I arrived, gathering all this data was largely a manual affair. Someone on the team would dutifully visit each organisation’s website, click through whatever interface stood between them and the numbers, then download, clean, and wrangle the results into shape.</p>
+<p>Now, thanks to a new data pipeline developed in R, it’s much quicker, less error-prone, and less of a hassle (anyone who’s ever had to click through online databases to find that one Excel dataset knows how annoying it can be). The pipeline automatically accesses the organisations’ databases and processes the data. All thanks to the magic of ✨ SDMX APIs ✨. And because documentation on using SDMX and R is incredibly sparse, here is the guide I wished had existed.</p>
+<blockquote class="blockquote">
+<p>If you want to learn more about the pipeline itself, take a look at the <a href="https://github.com/skriptum/WESP-Pipeline">GitHub Repository</a>. It goes into further detail on how it works. Be reminded that it is quite specific code for the United Nations WEFM, so it may be of limited use to others.</p>
+</blockquote>
+</section>
+<section id="whats-sdmx" class="level2">
+<h2 class="anchored" data-anchor-id="whats-sdmx">What’s SDMX?!</h2>
+<p>In short: Statistical Data and Metadata eXchange (<a href="https://en.wikipedia.org/wiki/SDMX">wiki</a>). Bear with me here, I know it sounds extremely dull at first, but it’s really quite a magical feat of engineering. With SDMX, anyone can access statistical – as the name hints at – from a lot of different organisations (BIS, IMF, WB, OECD, the list goes on…) trough one unified API.</p>
+<p>It does far more than just serving downloads. Uploading, managing, cataloguing, the full 145-page <a href="https://sdmx.org/wp-content/uploads/SDMX_2-1_User_Guide_draft_0-1.pdf">user guide</a> is a testament to how much territory it covers. For our purposes, though, none of that matters. We just want data!</p>
+<p>A basic API Call needs 3 identifiers to download requested data:</p>
+<ol type="1">
+<li>The statistical agency you want data from (e.g IMF), called a <em>Provider</em> in SDMX Lingo</li>
+<li>The name of the database you want to access (the <em>Dataflow</em>)</li>
+<li>Specific columns / groupings (the <em>Dimensions</em>), e.g
+<ul>
+<li>only some Countries</li>
+<li>a certain Time Period</li>
+<li>etc.</li>
+<li><em>these dimensions differ for each dataset, so you need to adjust your call</em></li>
+</ul></li>
+</ol>
+<p>You just need to chain all of these together, et voila: your dataset. This sounds easier than it is, because most organisations dont document their APIs in an accessible manner, and because every database has slightly different names for their dimensions.</p>
+<p>That was quite abstract, so lets see some real data.</p>
+</section>
+<section id="a-practical-example-imf-inflation-data" class="level2">
+<h2 class="anchored" data-anchor-id="a-practical-example-imf-inflation-data">A practical example: IMF Inflation data</h2>
+<p>Imagine we want to download Consumer Price Index (CPI) data for the US, UK and Germany.</p>
+<p>We start on <a href="https://data.imf.org/en">IMF data website</a>, search for CPI and land on the <a href="https://data.imf.org/en/datasets/IMF.STA:CPI">CPI dataset</a>. Then, we first take a quick look at it and open the <a href="https://data.imf.org/en/Data-Explorer?datasetUrn=IMF.STA:CPI(5.0.0)">Data Explorer</a> (the button titled View Data):</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/pipeline/IMF1.png" class="img-fluid figure-img"></p>
+<figcaption>The IMF data explorer</figcaption>
+</figure>
+</div>
+<p>On the left panel, select the three countries, set the index to All Items, and ask for the year-on-year percentage change. On the right, you should now see the data series for Germany, UK and the US.</p>
+<p>Okay, so we know the <em>Agency</em> (IMF), the Dataset / <em>Dataflow</em> (CPI) and the specific selection / <em>Dimensions</em> (Country, Category etc.). Now, the remaining task is finding what these things are actually called inside the database, because the human-readable labels and the underlying IDs are entirely different creatures.</p>
+<p>The fix is simple: in the Data Explorer, click the small icon beside each dimension and switch the display to ID. Germany stops being Germany and becomes DEU. The United Kingdom becomes GBR. And so on.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/pipeline/IMF2.png" class="img-fluid figure-img"></p>
+<figcaption>From readable names …</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/pipeline/IMF3.png" class="img-fluid figure-img"></p>
+<figcaption>… to short IDs</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<p>For all dimensions, this will look something like this:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 29%">
+<col style="width: 53%">
+<col style="width: 17%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dimension</th>
+<th>Name</th>
+<th>ID</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Country</td>
+<td>United Stations, United Kingdom, Germany</td>
+<td>USA, GBR, DEU</td>
+</tr>
+<tr class="even">
+<td>Index Type</td>
+<td>Consumer Price Index</td>
+<td>CPI</td>
+</tr>
+<tr class="odd">
+<td>Expenditure</td>
+<td>All Items</td>
+<td>_T</td>
+</tr>
+<tr class="even">
+<td>Type of Transformation</td>
+<td>Period average, Y-O-Y percentage change</td>
+<td>YOY_PCH_PA_PT</td>
+</tr>
+<tr class="odd">
+<td>Frequency</td>
+<td>Annual</td>
+<td>A</td>
+</tr>
+</tbody>
+</table>
+<p>Now we have everything to get started in R.</p>
+</section>
+<section id="r-you-ready" class="level2">
+<h2 class="anchored" data-anchor-id="r-you-ready">R you ready?</h2>
+<p>First, lets import the relevant libraries. We will use the <a href="https://github.com/eblondel/rsdmx/wiki">rsdmx</a> library, so install it if you haven’t already.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># install.packages("rsdmx") # if you havent already</span></span>
+<span id="cb1-2"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(tidyverse) <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># the one and only</span></span>
+<span id="cb1-3"><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">library</span>(rsdmx)     <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># the workhorse library</span></span></code></pre></div></div>
+<p>Next, we assemble our key by stringing the dimension IDs together. Think of it as writing the address on an envelope: get one part wrong and nothing arrives.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1">COUNTRIES <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"USA+GBR+DEU"</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># The countries we selected</span></span>
+<span id="cb2-2">INDICATOR <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"CPI"</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Consumer Price Index</span></span>
+<span id="cb2-3">EXPENDITURE <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"_T"</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># All items / Total</span></span>
+<span id="cb2-4">TRANSFORMATION <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"YOY_PCH_PA_PT"</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Percentage change YOY</span></span>
+<span id="cb2-5">FREQUENCY <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"A"</span> <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># Annual</span></span>
+<span id="cb2-6"></span>
+<span id="cb2-7">key <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">paste0</span>(COUNTRIES, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"."</span>, INDICATOR,<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"."</span>, EXPENDITURE, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"."</span>, TRANSFORMATION, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"."</span>, FREQUENCY)</span></code></pre></div></div>
+<p>With our key in hand, we call the API, specifying our provider, database, and (optionally) a time period:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1">raw_data <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">readSDMX</span>(</span>
+<span id="cb3-2">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">providerId =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"IMF_DATA"</span>,  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># IMF as Provider</span></span>
+<span id="cb3-3">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">resource =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"data"</span>,        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># we want data</span></span>
+<span id="cb3-4">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">flowRef =</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"CPI"</span>,          <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># from the CPI database</span></span>
+<span id="cb3-5">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">key =</span> key,                <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># with our carefully created key</span></span>
+<span id="cb3-6">  <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">start =</span> <span class="dv" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">1960</span>,             <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># lets limit it to start in 1960</span></span>
+<span id="cb3-7">  )</span></code></pre></div></div>
+<p>The response is in SDMX format, so we have to convert it to a data frame first.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1">df <span class="ot" style="color: #003B4F;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.data.frame</span>(raw_data)</span></code></pre></div></div>
+<p>Let’s make a quick plot:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1">df <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span></span>
+<span id="cb5-2">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">select</span>(COUNTRY, TIME_PERIOD, OBS_VALUE) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span>   <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># select relevant columns</span></span>
+<span id="cb5-3">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">mutate</span>(                                       <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># change types of columns</span></span>
+<span id="cb5-4">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">OBS_VALUE =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.numeric</span>(OBS_VALUE),</span>
+<span id="cb5-5">    <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">TIME_PERIOD =</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">as.numeric</span>(TIME_PERIOD)</span>
+<span id="cb5-6">    ) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">%&gt;%</span>  </span>
+<span id="cb5-7">  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">ggplot</span>(<span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">aes</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">x=</span>TIME_PERIOD, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">y=</span>OBS_VALUE, <span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">color=</span>COUNTRY)) <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span>     <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># basic ggplot call</span></span>
+<span id="cb5-8">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">geom_line</span>() <span class="sc" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">+</span>                               <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># present as line plot</span></span>
+<span id="cb5-9">    <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">labs</span>(<span class="at" style="color: #657422;
+background-color: null;
+font-style: inherit;">title=</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"CPI since 1960"</span>)                <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># add title</span></span></code></pre></div></div>
+<p><img src="https://martenw.com/projects/pipeline/plot-transparent.png" class="img-fluid"></p>
+<p>There you have it, this is how you get any IMF dataset into R.</p>
+</section>
+<section id="appendix" class="level2">
+<h2 class="anchored" data-anchor-id="appendix">Appendix</h2>
+<p>Most major statistical institutions speak SDMX, and <code>rsdmx</code> can talk to all of them. Some make life easier than others. The OECD, for instance, is positively generous about it: navigate to any dataset, make your selection, and hit “Developer API.” It hands you the query string ready-made, and you can drop it straight into <code>readSDMX</code> without touching a dimension ID. Would be great if all of them made it that easy (looking at you, ECB :).</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>The model is written in EViews and extremely complex, with hundreds of variables and matrices linking individual country models. Take a look <a href="https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/publication/2016_Apr_WorldEconomicForecastingModel.pdf">here</a>, if you’re interested↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://martenw.com/projects/pipeline/</guid>
+  <pubDate>Sat, 21 Mar 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Cementing the Divide? Housing and Wealth Inequality in Europe</title>
+  <dc:creator>Marten Walk</dc:creator>
+  <link>https://martenw.com/projects/inequality/</link>
+  <description><![CDATA[ 
+
+
+
+
+<div id="fig-indiv" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-indiv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://martenw.com/projects/inequality/HP_coeff.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-indiv-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: House price coefficients of individual countries
+</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>This project is part of my bachelor thesis at the University of Halle-Wittenberg, supervised by prof. Dr.&nbsp;Börner and Hakon Albers. The <a href="https://raw.githubusercontent.com/skriptum/inequality/refs/heads/main/text/main.pdf">latest version (PDF)</a> and the Code can be found on <a href="https://github.com/skriptum/inequality">GitHub</a>.</p>
+</blockquote>
+<p><strong><em><code>H</code>ow do asset prices shape the wealth distribution?</em></strong> Motivated by the different trajectories of European housing markets after the financial crisis, this thesis examines how capital gains, particularly in housing, influence wealth inequality in Europe. Drawing on the ECB’s new Distributional Wealth Accounts, the analysis uses panel regressions that exploit cross-country variation in housing markets. The results show that asset prices have first-order consequences on the wealth distribution, driven by differences in portfolio composition across population groups. Rising house prices increase the shares of the middle 40% and especially the bottom 50%, while a booming stock market mainly benefits the top 10%. These effects are robust across specifications but vary substantially across countries, reflecting institutional and portfolio differences. Simulations of alternative price scenarios show that housing booms can slow concentration. However, no country saw house prices grow fast enough to reverse the upward trend in top wealth shares. Together, the results provide detailed insights into the distributional effects of asset prices in Europe, with implications for both monetary and housing policy.</p>
+<section id="motivation" class="level5">
+<h5 class="anchored" data-anchor-id="motivation">Motivation</h5>
+<p><strong><em>Housing is Europe’s largest asset</em></strong>. Its value is central to both household finances and the macroeconomy. Yet despite advances in the literature, there is still limited comparative evidence on the distributional consequences of housing wealth accumulation in Europe. This thesis draws on recent improvements in distributional data <span class="citation" data-cites="blatnikIntroducingDistributionalWealth2024">(Blatnik et al. 2024)</span> and methodological approaches developed for the United States <span class="citation" data-cites="kuhnIncomeWealthInequality2020">(Kuhn et al. 2020)</span> to examine how the wealth distribution reacts to changes in house prices.</p>
+<p>The importance of housing for the modern economy cannot be overstated: houses are the primary item on household balance sheets; mortgages make up the largest share of debt in developed economies <span class="citation" data-cites="jordaGreatMortgagingHousing2016">(Jordà et al. 2016)</span>; and housing cycles play a central role in macroeconomic fluctuations <span class="citation" data-cites="cesa-bianchiHousingCyclesMacroeconomic2013">(Cesa-Bianchi 2013)</span>, particularly apparent during and after the financial crisis of 2008.</p>
+<p>At the same time, inequality has returned to the forefront of economic debate. Since Piketty’s Capital in the Twenty-First Century <span class="citation" data-cites="pikettyCapitalTwentyFirstCentury2014">(Piketty 2014)</span>, research on the distribution of wealth and income has expanded rapidly, supported by large-scale data initiatives such as WID.world <span class="citation" data-cites="alvaredoGlobalInequalityDynamics2017">(Alvaredo et al. 2017)</span> and the creation of official distributional accounts in developed economies <span class="citation" data-cites="battyDistributionalFinancialAccounts2022">(e.g. Batty et al. 2022)</span>.</p>
+<p>Bringing these two strands together, this thesis investigates how changes in asset prices, particularly housing, affect the distribution of wealth in Europe. Because the composition of household portfolios differs across the population (Figure&nbsp;2), identical price movements can have vastly different distributional consequences. While high-wealth households tend to hold more business and financial assets tied to stock market performance, middle- and lower-wealth households primarily own housing and often carry more leverage, making them more exposed to house price movements <span class="citation" data-cites="adamDistributionalConsequencesAsset2016">(Adam and Tzamourani 2016)</span>.</p>
+</section>
+<section id="data" class="level5">
+<h5 class="anchored" data-anchor-id="data">Data</h5>
+<p>This analysis relies on newly released Distributional Wealth Accounts (DWA) from the European Central Bank <span class="citation" data-cites="blatnikIntroducingDistributionalWealth2024">(Blatnik et al. 2024)</span>. The DWA combine detailed micro-level survey’s of households balance sheets with data from national accounts, ensuring macro-consistent estimates while preserving detailed information about the distribution of assets. The result is a harmonised, cross-country dataset for the Eurozone that captures changes in the wealth distribution at a much higher frequency than traditional surveys, making it well-suited for analysing the distributional effects of asset price movements.</p>
+</section>
+<section id="method" class="level5">
+<h5 class="anchored" data-anchor-id="method">Method</h5>
+<p>Building on the regression framework of <span class="citation" data-cites="kuhnIncomeWealthInequality2020">Kuhn et al. (2020)</span>, who relate changes in US wealth shares to asset price movements using broad survey data over several decades, this thesis applies a higher-frequency and cross-country approach. Using the quarterly data from the DWA for all euro area countries from 2009–2022, it estimates panel models linking changes in the wealth shares of the bottom 50%, middle 40%, and top 10% respectively to movements in housing and equity prices.</p>
+</section>
+<section id="results" class="level5">
+<h5 class="anchored" data-anchor-id="results">Results</h5>
+<p>The results demonstrate the central role asset prices play in the evolution of wealth inequality (Table&nbsp;1). Rising house prices increase the share of the middle 40% and particularly the bottom 50% at the expense of the top decile. Conversely, increasing stock prices are found to benefit the top 10%, to the detriment of the rest of the population. Notably, these results vary strongly across european countries (Figure&nbsp;1), reflecting differences in portfolio structures and institutional settings.</p>
+</section>
+<section id="simulations" class="level5">
+<h5 class="anchored" data-anchor-id="simulations">Simulations</h5>
+<p>To further analyze the effects, counterfactual simulations explore how alternative asset price paths would have affected wealth shares in Europe (Figure&nbsp;3). Scenarios with strong housing growth shift wealth away from the top 10% toward the middle and lower segments, while weak or falling house prices have the opposite effect. However, even in the most extreme housing boom observed, these appreciations cannot offset the gains of rising stock prices for the top decile. In no counterfactual scenario does the share of the top 10% decrease over the observed timeframe.</p>
+</section>
+<section id="selected-outputs" class="level3">
+<h3 class="anchored" data-anchor-id="selected-outputs">Selected Outputs</h3>
+<p><strong>How did the wealth of different deciles grow?</strong></p>
+<div id="fig-portfolio" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-portfolio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://martenw.com/projects/inequality/featured.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-portfolio-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Portfolio composition of different Deciles in Europe
+</figcaption>
+</figure>
+</div>
+<p><strong>Regression Table: Elasticities of top decile wealth shares with respect to asset prices</strong></p>
+<div id="tbl-results" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-tbl figure">
+<figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl quarto-uncaptioned" id="tbl-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Table&nbsp;1
+</figcaption>
+<div aria-describedby="tbl-results-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="table-wrap" style="overflow-x:auto;">
+  <style>
+    /* Simple, self-contained table styling (no body overrides) */
+    .reg-table{
+      border-collapse:collapse;
+      font:12px system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+      color:#333;
+      width:auto;
+      background:transparent;
+      margin:0 auto;
+    }
+    .reg-table caption{padding:4px 0;}
+    .reg-table th, .reg-table td{
+      padding:6px 8px;
+      border-top:1px solid #d3d3d3;
+      vertical-align:middle;
+      white-space:nowrap;
+    }
+    .reg-table thead th{
+      border-top-width:0;
+      border-bottom:2px solid #d3d3d3;
+      font-weight:600;
+      text-align:center;
+    }
+    /* Top/bottom table rules */
+    .reg-table{border-top:2px solid #a8a8a8;border-bottom:2px solid #a8a8a8;}
+    /* Column spanner row */
+    .reg-table .spanner-row th{
+      border-bottom:2px solid #d3d3d3;
+      font-weight:600;
+    }
+    /* Stub (row labels) */
+    .reg-table .stub{
+      text-align:left;
+      font-weight:500;
+      border-right:2px solid #d3d3d3;
+    }
+    /* Subtle zebra striping */
+    .reg-table tbody tr:nth-child(odd){background:rgba(128,128,128,0.05);}
+    /* Hard rules used in the original */
+    .reg-table .rule-top{border-top:1px solid #000;}
+    .reg-table .rule-bottom{border-bottom:1px solid #000;}
+    /* Footnotes */
+    .reg-table tfoot td{
+      font-size:90%;
+      padding:6px 8px;
+      border-top:0;
+    }
+  </style>
+
+  
+<table class="reg-table caption-top table" aria-label="Regression results">
+<thead>
+<tr class="spanner-row header">
+<th rowspan="2" class="stub" data-quarto-table-cell-role="th" scope="col"></th>
+<th colspan="3" data-quarto-table-cell-role="th" scope="colgroup">OLS Estimator</th>
+<th colspan="2" data-quarto-table-cell-role="th" scope="colgroup">Mean Group Estimator</th>
+</tr>
+<tr class="even">
+<th data-quarto-table-cell-role="th" scope="col">(1)</th>
+<th data-quarto-table-cell-role="th" scope="col">(2)</th>
+<th data-quarto-table-cell-role="th" scope="col">(3)</th>
+<th data-quarto-table-cell-role="th" scope="col">(4)</th>
+<th data-quarto-table-cell-role="th" scope="col">(5)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<th class="stub" data-quarto-table-cell-role="th" scope="row">House Prices</th>
+<td>-0.091***</td>
+<td>-0.077***</td>
+<td>-0.056</td>
+<td>-0.055***</td>
+<td>-0.057***</td>
+</tr>
+<tr class="even">
+<th class="stub" data-quarto-table-cell-role="th" scope="row"></th>
+<td>(0.013)</td>
+<td>(0.009)</td>
+<td>(0.047)</td>
+<td>(0.020)</td>
+<td>(0.018)</td>
+</tr>
+<tr class="odd">
+<th class="stub" data-quarto-table-cell-role="th" scope="row">Stock Prices</th>
+<td></td>
+<td>0.017***</td>
+<td>0.027***</td>
+<td></td>
+<td>0.014***</td>
+</tr>
+<tr class="even">
+<th class="stub rule-bottom" data-quarto-table-cell-role="th" scope="row"></th>
+<td class="rule-bottom"></td>
+<td class="rule-bottom">(0.007)</td>
+<td class="rule-bottom">(0.009)</td>
+<td class="rule-bottom"></td>
+<td class="rule-bottom">(0.004)</td>
+</tr>
+<tr class="odd">
+<th class="stub" data-quarto-table-cell-role="th" scope="row">Unit Fixed Effects</th>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr class="even">
+<th class="stub" data-quarto-table-cell-role="th" scope="row">Time Fixed Effects</th>
+<td>Yes</td>
+<td>No</td>
+<td>Year + Quarter</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr class="rule-top odd">
+<th class="stub" data-quarto-table-cell-role="th" scope="row">N</th>
+<td>860</td>
+<td>860</td>
+<td>860</td>
+<td>860</td>
+<td>860</td>
+</tr>
+<tr class="even">
+<th class="stub" data-quarto-table-cell-role="th" scope="row">R²</th>
+<td>0.071</td>
+<td>0.087</td>
+<td>0.076</td>
+<td>0.443</td>
+<td>0.313</td>
+</tr>
+<tr class="odd">
+<th class="stub" data-quarto-table-cell-role="th" scope="row">Adj. R²</th>
+<td>0.013</td>
+<td>0.062</td>
+<td>0.050</td>
+<td>0.408</td>
+<td>0.269</td>
+</tr>
+</tbody><tfoot>
+<tr class="odd">
+<td colspan="6">* p &lt; 0.1, ** p &lt; 0.05, *** p &lt; 0.01</td>
+</tr>
+<tr class="even">
+<td colspan="6">OLS Estimators use the SCC Standard Errors by Millo (2017)</td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</figure>
+</div>
+<p><strong>How would the share of wealth held by the top decile in Europe look under different price trajectories?</strong></p>
+<div id="fig-simulation" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-simulation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://martenw.com/projects/inequality/counterfactual_T10.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-simulation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: Counterfactual Simulations
+</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>For the full paper, see the <a href="https://raw.githubusercontent.com/skriptum/inequality/refs/heads/main/text/main.pdf">latest PDF version</a></p>
+</blockquote>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-adamDistributionalConsequencesAsset2016" class="csl-entry">
+Adam, Klaus, and Panagiota Tzamourani. 2016. <span>“Distributional Consequences of Asset Price Inflation in the <span>Euro Area</span>.”</span> <em>European Economic Review</em> 89 (October): 172–92. <a href="https://doi.org/10.1016/j.euroecorev.2016.07.005">https://doi.org/10.1016/j.euroecorev.2016.07.005</a>.
+</div>
+<div id="ref-alvaredoGlobalInequalityDynamics2017" class="csl-entry">
+Alvaredo, Facundo, Lucas Chancel, Thomas Piketty, Emmanuel Saez, and Gabriel Zucman. 2017. <span>“Global <span>Inequality Dynamics</span>: <span>New Findings</span> from <span>WID</span>.world.”</span> <em>American Economic Review</em> 107 (5): 404–9. <a href="https://doi.org/10.1257/aer.p20171095">https://doi.org/10.1257/aer.p20171095</a>.
+</div>
+<div id="ref-battyDistributionalFinancialAccounts2022" class="csl-entry">
+Batty, Michael, Jesse Bricker, Joseph Briggs, et al. 2022. <span>“The <span>Distributional Financial Accounts</span> of the <span>United States</span>.”</span> In <em>Measuring <span>Distribution</span> and <span>Mobility</span> of <span>Income</span> and <span>Wealth</span></em>. Studies in <span>Income</span> and <span>Wealth</span>. University of Chicago Press.
+</div>
+<div id="ref-blatnikIntroducingDistributionalWealth2024" class="csl-entry">
+Blatnik, Nina, Alina Bobasu, Georgi Krustev, and Mika Tujula. 2024. <span>“Introducing the <span>Distributional Wealth Accounts</span> for Euro Area Households.”</span> <em>Economic Bulletin Articles</em> 5.
+</div>
+<div id="ref-cesa-bianchiHousingCyclesMacroeconomic2013" class="csl-entry">
+Cesa-Bianchi, Ambrogio. 2013. <span>“Housing Cycles and Macroeconomic Fluctuations: <span>A</span> Global Perspective.”</span> <em>Journal of International Money and Finance</em> 37 (October): 215–38. <a href="https://doi.org/10.1016/j.jimonfin.2013.06.004">https://doi.org/10.1016/j.jimonfin.2013.06.004</a>.
+</div>
+<div id="ref-jordaGreatMortgagingHousing2016" class="csl-entry">
+Jordà, Òscar, Moritz Schularick, and Alan M. Taylor. 2016. <span>“The Great Mortgaging: Housing Finance, Crises and Business Cycles.”</span> <em>Economic Policy</em> 31 (85): 107–52. <a href="https://doi.org/10.1093/epolic/eiv017">https://doi.org/10.1093/epolic/eiv017</a>.
+</div>
+<div id="ref-kuhnIncomeWealthInequality2020" class="csl-entry">
+Kuhn, Moritz, Moritz Schularick, and Ulrike I. Steins. 2020. <span>“Income and <span>Wealth Inequality</span> in <span>America</span>, 1949–2016.”</span> <em>Journal of Political Economy</em> 128 (9): 3469–519. <a href="https://doi.org/10.1086/708815">https://doi.org/10.1086/708815</a>.
+</div>
+<div id="ref-pikettyCapitalTwentyFirstCentury2014" class="csl-entry">
+Piketty, Thomas. 2014. <em>Capital in the <span>Twenty-First Century</span></em>. Harvard University Press. <a href="https://doi.org/10.4159/9780674369542">https://doi.org/10.4159/9780674369542</a>.
+</div>
+</div></section><section class="quarto-appendix-contents" id="quarto-citation"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@phdthesis{walk2025,
+  author = {Walk, Marten},
+  title = {Cementing the {Divide?} {Housing} and {Wealth} {Inequality}
+    in {Europe}},
+  date = {2025-05-01},
+  url = {https://martenw.com/projects/inequality/},
+  doi = {10.5281/zenodo.16941045},
+  langid = {en},
+  abstract = {How do asset prices shape the wealth distribution?
+    Motivated by the different trajectories of European housing markets
+    after the financial crisis, this thesis examines how capital gains,
+    particularly in housing, influence wealth inequality in Europe.
+    Drawing on the ECB’s new Distributional Wealth Accounts, the
+    analysis uses panel regressions that exploit cross-country variation
+    in housing markets. The results show that asset prices have
+    first-order consequences on the wealth distribution, driven by
+    differences in portfolio composition across population groups.
+    Rising house prices increase the shares of the middle 40\% and
+    especially the bottom 50\%, while a booming stock market mainly
+    benefits the top 10\%. These effects are robust across
+    specifications but vary substantially across countries, reflecting
+    institutional and portfolio differences. Simulations of alternative
+    price scenarios show that housing booms can slow concentration.
+    However, no country saw house prices grow fast enough to reverse the
+    upward trend in top wealth shares. Together, the results provide
+    detailed insights into the distributional effects of asset prices in
+    Europe, with implications for both monetary and housing policy.}
+}
+</code></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-walk2025" class="csl-entry quarto-appendix-citeas">
+Walk, Marten. 2025. <span>“Cementing the Divide? Housing and Wealth
+Inequality in Europe.”</span> <a href="https://doi.org/10.5281/zenodo.16941045">https://doi.org/10.5281/zenodo.16941045</a>.
+</div></div></section></div> ]]></description>
+  <category>R</category>
+  <category>politics</category>
+  <category>inequality</category>
+  <guid>https://martenw.com/projects/inequality/</guid>
+  <pubDate>Thu, 01 May 2025 00:00:00 GMT</pubDate>
+  <media:content url="https://martenw.com/projects/inequality/HP_coeff.png" medium="image" type="image/png" height="72" width="144"/>
+</item>
+<item>
+  <title>diatypst - easy slides in typst</title>
+  <dc:creator>&lt;a href=&quot;https://github.com/skriptum/diatypst&quot;&gt;skriptum/diatypst&lt;/a&gt;</dc:creator>
+  <link>https://martenw.com/projects/diatypst/</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/diatypst/diatype2.jpg" class="img-fluid figure-img"></p>
+<figcaption>The inspiration: the 1960s diatype machine</figcaption>
+</figure>
+</div>
+<p><strong><em><code>T</code>here is a new LaTeX contender</em></strong> on the block: <a href="typst.app">typst</a>. Featuring a much easier syntax and instant-preview, it feels like a serious replacement for the clunky workflows of producing PDF via <code>\{weird command}</code>. What was missing until now is an easy way to create good looking slides, the existing packages in the typst ecosystem are overblown for the quick creation of presentations (in my opinion).</p>
+<p>That’s why I created <em>diatypst</em>, a package that makes it a breeze to create stunning slides without having to memorize complicated commands or settle for dull styling. The slides are set up to make your life easier, with a dot counter in the upper left corner (like the one in Beamer) and helpful defaults for title and section slides. Users can also set a theme color that’ll influence everything from the page footer to the hyperlinks.</p>
+<blockquote class="blockquote">
+<p>To learn more about diatypst, also take a look at at <a href="https://typst.app/universe/package/diatypst/">Typst Universe</a>, the <a href="https://github.com/skriptum/Diatypst">GitHub</a> or the <a href="https://mdwm.org/diatypst/">Documentation</a></p>
+</blockquote>
+<p>There are two different themes available, the normal theme and the full theme. The latter one is more like a fully-fledged beamer theme that’s used a lot in academia.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Normal Theme</th>
+<th>Full Theme</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://martenw.com/projects/diatypst/Example-Slide.png" class="img-fluid" alt="Example-Slide"></td>
+<td><img src="https://martenw.com/projects/diatypst/Full-Example-Slide.png" class="img-fluid" alt="Full-Example-Slide"></td>
+</tr>
+<tr class="even">
+<td>Example <a href="https://github.com/skriptum/diatypst/blob/main/example/example.typ">.typ file</a> and the <a href="https://raw.githubusercontent.com/skriptum/diatypst/refs/heads/main/example/example.pdf">resulting PDF</a></td>
+<td>same for the <a href="https://raw.githubusercontent.com/skriptum/diatypst/refs/heads/main/example/example_full.pdf">Full Theme PDF</a></td>
+</tr>
+</tbody>
+</table>
+<section id="how-to-get-started" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-get-started">How to get started?</h3>
+<p>The easiest way to use diatypst is via the <a href="https://typst.app">Typst web app</a> and importing the template from the <a href="https://typst.app/universe/package/diatypst/">typst universe</a>. To create new slides, just delimit them with a header and they are created automatically. For more fine-tuning and explanation, visit the <a href="https://github.com/skriptum/diatypst">GitHub Repo</a>.</p>
+<p>Another option is to use <a href="https://quarto.org">Quarto</a> to create the slides. To do this, you need to import the <a href="https://quarto.org/docs/extensions/listing-formats.html">diaquarto extension</a> into your project and some things in your YAML Footer. Slides are created similar to beamer presentations with the <code>---</code> delimiter. For more info, see <a href="https://mdwm.org/diatypst/quarto.html">here</a></p>
+</section>
+<section id="what-does-diatypst-stand-for" class="level3">
+<h3 class="anchored" data-anchor-id="what-does-diatypst-stand-for">What does diatypst stand for?</h3>
+<p>The word diatypst is inspired by the ease of use of a <a href="https://de.wikipedia.org/wiki/Diaprojektor">Diaprojektor</a> (German for Slide Projector) and the <a href="https://en.wikipedia.org/wiki/Diatype_(machine)">Diatype</a> (60s typesetting machine)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/diatypst/explanation.png" class="img-fluid figure-img"></p>
+<figcaption>A Diaprojektor</figcaption>
+</figure>
+</div>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://martenw.com/projects/diatypst/</guid>
+  <pubDate>Wed, 15 Jan 2025 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Stipendien nur für Privilegierte?</title>
+  <link>https://martenw.com/projects/stips/</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/stips/studienstiftung.jpg" class="img-fluid figure-img"></p>
+<figcaption>Sommerakademie der Studienstiftung 1982 (mit bildungsbürgerlichem Konzert)</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>Die analysierten Daten stammen aus einer Informationsfreiheitsanfrage an das BMBF, veröffentlicht auf <a href="https://fragdenstaat.de/anfrage/begabtenfoerderungswerke-anteil-bafoeg-berechtigter/">FragDenStaat</a>. Der Schwerpunkt liegt auf der Heinrich-Böll Stiftung, da ich dort selbst Stipendiat war.</p>
+</blockquote>
+<p><strong><em><code>S</code>ind Stipendiat:innen der Begabtenförderungswerke privilegiert?</em></strong> Eine Frage, die sich der eine oder andere Stip* wahrscheinlich schonmal gestellt hat. Auch medial wird immer wieder die These aufgestellt, dass die Studienstiftungen eine Elitenförderung sind (<a href="https://www.sueddeutsche.de/bildung/stipendien-begabtenfoerderung-kritik-1.4518691">SZ</a>, <a href="https://taz.de/Begabtenfoerderung-in-der-Kritik/!5060373/">taz</a> ,<a href="https://www.faz.net/aktuell/karriere-hochschule/hoersaal/begabtenfoerderung-wie-gerecht-sind-stipendien-19337664.html">FAZ</a>). Also, was ist dran an dem Vorwurf?</p>
+<p>Vorab: es geht hier vor allem darum, die Zusammensetzung der Stips mit der Gesamtstudierendenschaft in Deutschland zu vergleichen, und auch nur anhand weniger Diskrimierungsformen. Außerdem soll natürlich nicht suggeriert werden, dass ein Studium das “einzig Wahre” ist vs.&nbsp;eine Ausbildung, sondern aufgezeigt werden, dass beide Optionen sehr ungleich verteilt sind.</p>
+<section id="wer-fängt-überhaupt-an-zu-studieren" class="level2">
+<h2 class="anchored" data-anchor-id="wer-fängt-überhaupt-an-zu-studieren">Wer fängt überhaupt an zu studieren?</h2>
+<p>Bildung ist in Deutschland eine Klassenfrage. Unser Bildungssystem ist sozial hochselektiv, und wer ein Studium anfängt ist meist bereits privilegiert.</p>
+<iframe title="Bildungstrichter" aria-label="Split Bars" id="datawrapper-chart-LpEkQ" src="https://datawrapper.dwcdn.net/LpEkQ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="262" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+<p>Gerade einmal 27% der Kinder aus Nicht-Akademiker Haushalten schaffen es, überhaupt ein Studum anzufangen (verglichen mit 79% aus Akademikerhaushalten. Auch in den späteren Berufsphasen zieht sich diese Ungleichheit fort, beispielsweise promovieren gerade einmal 1% der Nicht-Akademiker-Kinder (6% der Aka. Kinder).</p>
+<iframe title="Absolute Zahlen" aria-label="Multiple Donuts" id="datawrapper-chart-BYgN8" src="https://datawrapper.dwcdn.net/BYgN8/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="277" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+<p>In absoluten Zahlen haben wir im Jahrgang 2022 72% Nicht-Akademiker-Kinder. Sobald man aber das erste Mal in den Audimax schaut, sind sie bereits in der Unterzahl (45% vs 55% Akademikerkinder).</p>
+<p>Die Selektion in unserer Gesellschaft fängt also schon wesentlich früher an und zieht sich in der Uni fort. Nicht-Akademikerkinder sind hier vor allem auf FHs (Fachhochschulen) und eher in praxisnäheren Studiengängen (bspw. BWL), während Akademikerkinder im Schnitt öfter an die Uni gehen und eine breitere Palette an Studiengängen studieren.</p>
+</section>
+<section id="wer-bekommt-ein-stipendium" class="level1">
+<h1>Wer bekommt ein Stipendium?</h1>
+<p>Und auch in den Aufnahmeprozessen der Stiftungen zieht sich die Selektion durch. In den letzten Jahren ist die Zahl der geförderten stark gewachsen, es werden heute wesentlich mehr Stips gefördert als noch vor 10 Jahren. (Hier am Beispiel Böll Stiftung)</p>
+<iframe title="Anteile der Förderung" aria-label="Interactive line chart" id="datawrapper-chart-opqQA" src="https://datawrapper.dwcdn.net/opqQA/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="407" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+<p>Das Wachstum ist aber vor allem aufgrund eines Zuwachses bei den Studierenden mit Studienkostenpauschale (300€ Büchergeld). Der Großteil der Stips, die heutzutage in der Stiftung sind, hat keine Bafög-Anspruch, und ihr Anteil ist in der letzten Zeit gewachsen, während die Zahl der Stips mit Bafög Anspruch (ob nur eine Teilförderung oder eine Vollförderung) stagniert ist. <strong>Die Böll Stiftung ist also heutzutage effektiv privilegierter als vor 10 Jahren</strong>, da eine Studienkostenpauschale meist bedeutet, dass die Eltern über den Verdienstgrenzen von Bafög ist.</p>
+<p>Vergleichsweise gut sieht es hingegen beim Migrationshintergrund aus. Hier sind viele Stiftungen gut dabei und fördern mehr, als es der Durchschnitt in der Gesamtbevölkerung (22%) oder in der Studierendenschaft (20%) sind. Der Grund dafür sind vor allem spezifische Programme, die die Stiftungen aufgelegt haben, um sie mehr zu fördern, nachdem es in der Vergangenheit oft Kritik gab, dass die Stiftungen sehr <em>weiß</em> sind.</p>
+<iframe title="Migrationshintergrund in %, 2022" aria-label="Bar Chart" id="datawrapper-chart-O4VkQ" src="https://datawrapper.dwcdn.net/O4VkQ/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="378" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+<p>Schlechter sieht es aus bei dem Anteil der Erstakademiker in der Stiftung.</p>
+<iframe title="Erstakademiker in %, 2022" aria-label="Bar Chart" id="datawrapper-chart-tcXRX" src="https://datawrapper.dwcdn.net/tcXRX/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="407" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+<p>Zur Erinnerung: 72% ist der Anteil der Nicht-Akademikerkinder an einem Jahrgang, 45% der Anteil an der Studierendenschaft. Spitzenreiter ist die Böckler-Stiftung mit über 60%, gemeinsam mit der Rosa-Luxemburg Stiftung. Diese beiden haben spezifisch Programme für Erstakademiker und sind in ihrem Outreach darauf bedacht, insbesondere diese Gruppe anzusprechen.</p>
+<p>Eine weitere starke Abweichung ist die Hochschulart, die die Böll fördert. Wie bereits erwähnt, wählen Kinder aus Nicht-Akademikerhaushalten als auch aus ärmeren Haushalten oft Studiengänge an Fachhoschulen und studieren eher praxisnähere Studiengänge.</p>
+<iframe title="Hochschulart" aria-label="Multiple Donuts" id="datawrapper-chart-C5cxP" src="https://datawrapper.dwcdn.net/C5cxP/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="373" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+<p>Diese sind aber in der Stiftung komplett unterrepräsentiert. Während in der Gesamt-studierendenschaft fast 40% auf einer FH studieren, sind sie in der Böll gerade mal mit 10% vertreten.</p>
+<p>Und wer es sich schon immer gefragt hat, welches Bundesland unterrepräsentiert ist, es ist:</p>
+<iframe title="Bundesländer Representation" aria-label="Map" id="datawrapper-chart-bGQ3p" src="https://datawrapper.dwcdn.net/bGQ3p/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="739" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+<p>Nordrhein-Westfalen. 25% der Studis in der Gesamtstudierendenschaft, aber gerade mal 13% in der Böll. Übrigens auch ein Bundesland mit vielen ärmeren Studierenden und vielen FHs. Absolut überrepräsentiert: natürlich Berlin.</p>
+</section>
+<section id="fazit" class="level1">
+<h1>Fazit</h1>
+<p>Ja, wir sind as Stips absolut privilegiert. Im Schnitt haben wir sowieso schon keine Bafög-Anspruch und kommen aus Akademikerhaushalten, und sobald wir hier sind, bauen wir natürlich auch Netzwerke auf und bekommen nochmal 300€ obendrauf.</p>
+<p><strong>Was tun?</strong></p>
+<p>Die Antwort der Stiftungen auf diese Frage ist immer, dass wir als Stips mehr in unseren Studiengängen und Unis werben müssen für das Stipendium. Das hat natürlich wenig Sinn, wenn die meisten von uns nicht auf einer FH sind und nicht in unterrepräsentierten Studiengängen und meist auch nicht in NRW. Wenn die Stiftung ihr Ziel einer diversen Stipendiat:innenschaft auch erreichen möchte, muss auch sie nachbessern.</p>
+<p>Andere Stiftungen zeigen, dass man mit einem Fokus auf Benachteiligungen Ungerechtigkeiten abbauen kann und die Diversität in de Förderung erhöhen kann. Das sollte auch der Anspruch aller Stiftungen sein, wenn sie ihre eigenen Werte ernstnimmt.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://martenw.com/projects/stips/</guid>
+  <pubDate>Fri, 04 Oct 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Bachelor.zip</title>
+  <link>https://martenw.com/projects/vwl-notizen/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p><img src="https://martenw.com/projects/vwl-notizen/featured.jpg" class="img-fluid"></p>
+<blockquote class="blockquote">
+<p>Go to <a href="https://vwl.martenw.com"><strong><em>vwl.martenw.com</em></strong></a> to take a look</p>
+</blockquote>
+<p><strong><em>When you stumble into your first semester at university</em></strong>, chances are you’ll feel completely overwhelmed. Suddenly there are lectures, tutorials, readings, deadlines, and about a dozen different expectations no one really explained beforehand.</p>
+<p>To make that process a little less chaotic, I decided to publish all of my notes from my entire Economics &amp; Business Administration (VWL/BWL) bachelor’s degree at MLU Halle as a website at: <a href="https://vwl.martenw.com">vwl.martenw.com</a>.</p>
+<p>The site contains notes from 30 modules and more than 300 individual lecture write-ups, all organized by date and fully searchable. Think of it as a slightly more structured external hard drive for my bachelor’s brain.</p>
+<p>It ended up being surprisingly useful for my classmates and me—especially when exam season rolled around. There are summaries for almost all modules on there, as well as the course papers I submitted.</p>
+<p>Under the hood, everything is built from the Markdown files I originally used to take notes during class (including LaTeX formulas). The whole thing is compiled into a website using Sphinx, turning a pile of lecture notes into something that’s actually navigable.</p>
+<p>If you’re curious about how it works, you can check out the GitHub repository <a href="https://github.com/skriptum/vwl">here</a>.</p>
+
+
+
+ ]]></description>
+  <guid>https://martenw.com/projects/vwl-notizen/</guid>
+  <pubDate>Sun, 01 Sep 2024 00:00:00 GMT</pubDate>
+  <media:content url="https://martenw.com/projects/vwl-notizen/featured.webp" medium="image" type="image/webp"/>
+</item>
+<item>
+  <title>Paycheck Politics</title>
+  <dc:creator>&lt;a href=&quot;https://skriptum.github.io/mindestlohn&quot;&gt;Online Version&lt;/a&gt;</dc:creator>
+  <link>https://martenw.com/projects/mindestlohn/</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/mindestlohn/sonneberg-doll.jpg" class="img-fluid figure-img"></p>
+<figcaption>Sonneberg’s main industry in the GDR: Workers in doll production, ca 1950</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>The Code and Data for this project can be downloaded at the <a href="https://github.com/skriptum/mindestlohn">GitHub Repo</a>. An online version of the seminar paper is available <a href="https://skriptum.github.io/mindestlohn">here</a> with more interactive graphics.</p>
+</blockquote>
+<p><strong><em><code>N</code>estled in the heart of Thuringia</em></strong>, the German district of Sonneberg made headlines with a historic moment – it became the first constituency to elect a district administrator from the right wing Alternative for Germany (AfD) party. In an unexpected turn, Robert Sesselmann of the AfD won a closely contested run-off election against the conservative Christian Democratic Union (CDU), securing 52.8% of the votes. The results not only marked a seismic shift in local politics but sent shockwaves through the established political order <span class="citation" data-cites="schuetzeFirstGermanyFar2023">(Schuetze 2023)</span>. It exemplifies the growing right-wing populism which has been spreading in Germany and elsewhere over the last few decades.</p>
+<div class="no-row-height column-margin column-container"><div id="ref-schuetzeFirstGermanyFar2023" class="csl-entry">
+Schuetze, Christopher F. 2023. <span>“In a <span>First</span>, <span>Germany</span>’s <span>Far Right AfD Party Will Take Control</span> of a <span>District</span>.”</span> <em>The New York Times</em>, June. <a href="https://www.nytimes.com/2023/06/26/world/europe/germany-afd-far-right.html">https://www.nytimes.com/2023/06/26/world/europe/germany-afd-far-right.html</a>.
+</div></div><p>Intriguingly, Sonneberg also holds the distinction of having the highest percentage of minimum wage workers in Germany – 44%. This paper aims to explore the connection between minimum wage recipiency and the support for right-wing populist movements, using Sonneberg as a focal point. Employing data from the WSI and the German Federal Election Officer in an Ordinary Least Squares (OLS) regression, the findings reveals a significant correlation between these variables, even when accounting for other relevant controls.</p>
+<section id="data" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>The analysis is based on data compiled by <span class="citation" data-cites="puschMindestlohn12Euro2022">Pusch and Seils (2022)</span> at the Institute of Economic and Social Sciences (WSI). They provide an estimate of the share of workers in a given district who will be affected by the increase in the minimum wage to €12 in October 2022 (henceforth minimum wage workers).</p>
+<div class="no-row-height column-margin column-container"><div id="ref-puschMindestlohn12Euro2022" class="csl-entry">
+Pusch, Toralf, and Eric Seils. 2022. <em><span>Mindestlohn 12 Euro - Auswirkungen in den Kreisen</span></em>. Wirtschafts- und Sozialwissenschaftliche Institut (WSI). <a href="https://hdl.handle.net/10419/265130">https://hdl.handle.net/10419/265130</a>.
+</div><div id="ref-diebundeswahlleiterinBundestagswahl2021Endgultiges2021" class="csl-entry">
+Bundeswahlleiterin, Die. 2021. <em>Bundestagswahl 2021: <span class="nocase">Endg<span class="nocase">ü</span>ltiges Ergebnis</span></em>. <a href="https://bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2021/52_21_endgueltiges-ergebnis.html">https://bundeswahlleiterin.de/info/presse/mitteilungen/bundestagswahl-2021/52_21_endgueltiges-ergebnis.html</a>.
+</div></div><p>Alternative for Germany (AfD) results from the federal election on the 26.10.2021 are from the Federal Election Commissioner (<span class="citation" data-cites="diebundeswahlleiterinBundestagswahl2021Endgultiges2021">Bundeswahlleiterin (2021)</span>). Elections in Germany take place in constituencies (Wahlkreise), which are different from the standard counties (Landkreise). Therefore, the data is transformed by the election office, which does not lead to any losses.</p>
+<div id="fig-maps-bg" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-maps-bg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="https://martenw.com/projects/mindestlohn/maps.png" id="fig-maps-bg" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-maps-bg-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1
+</figcaption>
+</figure>
+</div>
+<p>Additional data on socio-economic and socio-demographic factors are provided by the regional statistical offices of the Länder. Most of these data are for the year 2022, with the exception of population density estimates, for which more recent data are not yet available.</p>
+<table class="caption-top table">
+<caption>Summary Statistics</caption>
+<thead>
+<tr class="header">
+<th>Statistic</th>
+<th>N</th>
+<th>Mean</th>
+<th>St.&nbsp;Dev.</th>
+<th>Min</th>
+<th>Max</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>AfD vote share</td>
+<td>400</td>
+<td>0.113</td>
+<td>0.058</td>
+<td>0.029</td>
+<td>0.321</td>
+</tr>
+<tr class="even">
+<td>MW share</td>
+<td>400</td>
+<td>0.194</td>
+<td>0.064</td>
+<td>0.079</td>
+<td>0.440</td>
+</tr>
+<tr class="odd">
+<td>Ost Dummy</td>
+<td>400</td>
+<td>0.190</td>
+<td>0.393</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>Unempl.</td>
+<td>400</td>
+<td>0.052</td>
+<td>0.022</td>
+<td>0.019</td>
+<td>0.148</td>
+</tr>
+<tr class="odd">
+<td>GDP</td>
+<td>400</td>
+<td>40,329.500</td>
+<td>16,743.150</td>
+<td>17,553</td>
+<td>158,749</td>
+</tr>
+<tr class="even">
+<td>Avg. Age</td>
+<td>400</td>
+<td>45.277</td>
+<td>2.008</td>
+<td>40.700</td>
+<td>51.000</td>
+</tr>
+<tr class="odd">
+<td>Pop. Density</td>
+<td>400</td>
+<td>536.540</td>
+<td>708.669</td>
+<td>35.300</td>
+<td>4,788.200</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="regression" class="level2">
+<h2 class="anchored" data-anchor-id="regression">Regression</h2>
+<p>Regression Formula:</p>
+<p><span id="eq-1"><img src="https://latex.codecogs.com/png.latex?%0A%5Ctext%7Bafd%7D_%7Bi%7D%20=%20%5Cbeta_0%20+%20%5Cbeta_1%20%5Ctext%7Bmw%7D_%7Bi%7D%20+%20%5Csum_2%5Ek%5Cbeta_k%20%5Ctext%7Bcontrols%7D_%7Bi,k%7D%20+%20%5Cepsilon_%7Bi%7D%0A%5Ctag%7B1%7D"></span></p>
+<p>Simple Regression Line</p>
+<p><img src="https://martenw.com/projects/mindestlohn/plot_basic.png" class="img-fluid"></p>
+<p>Multiple Regression Results</p>
+<table style="text-align:center">
+<caption>
+<strong>Effect of Minimum Wage Recipients on AfD Vote Share</strong>
+</caption>
+<tbody><tr>
+<td colspan="7" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="6">
+<em>Dependent variable:</em>
+</td>
+</tr>
+<tr>
+<td>
+</td>
+<td colspan="6" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td colspan="6">
+AfD Vote Share
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(1)
+</td>
+<td>
+(2)
+</td>
+<td>
+(3)
+</td>
+<td>
+(4)
+</td>
+<td>
+(5)
+</td>
+<td>
+(6)
+</td>
+</tr>
+<tr>
+<td colspan="7" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Minimum Wage Rate
+</td>
+<td>
+0.714<sup>***</sup>
+</td>
+<td>
+0.291<sup>***</sup>
+</td>
+<td>
+0.308<sup>***</sup>
+</td>
+<td>
+0.301<sup>***</sup>
+</td>
+<td>
+0.227<sup>***</sup>
+</td>
+<td>
+0.220<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.028)
+</td>
+<td>
+(0.039)
+</td>
+<td>
+(0.039)
+</td>
+<td>
+(0.044)
+</td>
+<td>
+(0.044)
+</td>
+<td>
+(0.044)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+East Germany
+</td>
+<td>
+</td>
+<td>
+0.086<sup>***</sup>
+</td>
+<td>
+0.088<sup>***</sup>
+</td>
+<td>
+0.088<sup>***</sup>
+</td>
+<td>
+0.081<sup>***</sup>
+</td>
+<td>
+0.082<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+(0.006)
+</td>
+<td>
+(0.006)
+</td>
+<td>
+(0.006)
+</td>
+<td>
+(0.006)
+</td>
+<td>
+(0.006)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Unemployment Rate
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+-0.279<sup>***</sup>
+</td>
+<td>
+-0.275<sup>***</sup>
+</td>
+<td>
+-0.244<sup>***</sup>
+</td>
+<td>
+-0.163<sup>*</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.071)
+</td>
+<td>
+(0.072)
+</td>
+<td>
+(0.070)
+</td>
+<td>
+(0.093)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Log GDP p.&nbsp;C.
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+-0.002
+</td>
+<td>
+0.011<sup>*</sup>
+</td>
+<td>
+0.013<sup>**</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.005)
+</td>
+<td>
+(0.006)
+</td>
+<td>
+(0.006)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Avg. Age
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+0.006<sup>***</sup>
+</td>
+<td>
+0.006<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.001)
+</td>
+<td>
+(0.001)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Log Pop. Density
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+-0.003
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+(0.002)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Constant
+</td>
+<td>
+-0.026<sup>***</sup>
+</td>
+<td>
+0.040<sup>***</sup>
+</td>
+<td>
+0.051<sup>***</sup>
+</td>
+<td>
+0.071
+</td>
+<td>
+-0.332<sup>***</sup>
+</td>
+<td>
+-0.315<sup>***</sup>
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+(0.006)
+</td>
+<td>
+(0.007)
+</td>
+<td>
+(0.007)
+</td>
+<td>
+(0.060)
+</td>
+<td>
+(0.091)
+</td>
+<td>
+(0.092)
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+<tr>
+<td colspan="7" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Observations
+</td>
+<td>
+400
+</td>
+<td>
+400
+</td>
+<td>
+400
+</td>
+<td>
+400
+</td>
+<td>
+400
+</td>
+<td>
+400
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Adjusted R<sup>2</sup>
+</td>
+<td>
+0.612
+</td>
+<td>
+0.732
+</td>
+<td>
+0.742
+</td>
+<td>
+0.741
+</td>
+<td>
+0.760
+</td>
+<td>
+0.761
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+Residual Std. Error
+</td>
+<td>
+0.036
+</td>
+<td>
+0.030
+</td>
+<td>
+0.030
+</td>
+<td>
+0.030
+</td>
+<td>
+0.029
+</td>
+<td>
+0.029
+</td>
+</tr>
+<tr>
+<td colspan="7" style="border-bottom: 1px solid black">
+</td>
+</tr>
+<tr>
+<td style="text-align:left">
+<em>Note:</em>
+</td>
+<td colspan="6" style="text-align:right">
+<sup><em></em></sup><em>p&lt;0.1; <sup><strong></strong></sup><strong>p&lt;0.05; <sup></sup></strong></em>p&lt;0.01
+</td>
+</tr>
+</tbody></table>
+
+
+
+</section>
+
+ ]]></description>
+  <category>R</category>
+  <category>politics</category>
+  <category>inequality</category>
+  <guid>https://martenw.com/projects/mindestlohn/</guid>
+  <pubDate>Sun, 10 Mar 2024 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>ZEIT API in Python</title>
+  <dc:creator>&lt;a href=&quot;https://github.com/skriptum/zeit&quot;&gt;skriptum/zeit&lt;/a&gt;</dc:creator>
+  <link>https://martenw.com/projects/zeit-api/</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/zeit-api/featured.png" class="img-fluid figure-img"></p>
+<figcaption>PyPI Package Website</figcaption>
+</figure>
+</div>
+<p><strong><em><code>D</code>IE ZEIT</em></strong> is one of the oldest and most influential newspapers in Germany. Over more than seven decades it has built a vast archive of articles covering politics, culture, science, and society. This archive is not only a historical record of events, but also a reflection of how public debates, political priorities, and social issues evolve over time.</p>
+<p>The <strong>zeit-online</strong> Python package makes it possible to explore this archive programmatically. With only a few lines of code, anyone can access articles from different decades and experiment with their own ideas for analyzing journalism and historical trends. Whether the goal is simple exploration, building datasets, or experimenting with text analysis, the archive provides a fascinating dataset that captures more than 75 years of reporting.</p>
+<p>The project was originally created as a small technical experiment. The underlying ZEIT Online API already exists, but interacting with it directly can be cumbersome. This package wraps the API in a simple Python interface and makes it easier to query articles, search the archive, and work with the results in code. At the same time, it serves as a practical way to experiment with building and publishing a Python library.</p>
+<blockquote class="blockquote">
+<p><strong>Update (2022):</strong> ZEIT Online has since discontinued the public API. The package therefore no longer works for retrieving new data, but the project remains available as a demonstration of how the API could be used and how such a wrapper library can be built.</p>
+</blockquote>
+<section id="getting-started" class="level3">
+<h3 class="anchored" data-anchor-id="getting-started">Getting started</h3>
+<p>To try the package, install it using pip:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1">pip install zeit<span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">-</span>online</span></code></pre></div></div>
+<p>Then import the library and initialize the API client with your API key:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><span class="im" style="color: #00769E;
+background-color: null;
+font-style: inherit;">import</span> zeit</span>
+<span id="cb2-2"></span>
+<span id="cb2-3">api <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> zeit.API()</span>
+<span id="cb2-4">api.set_token(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"API-KEY"</span>)  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># insert your API key here</span></span></code></pre></div></div>
+<p>You can quickly check that the connection works using a simple status method:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1">api.get_status()  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># returns "everything ok" if the API is reachable</span></span></code></pre></div></div>
+<p>The most important method in the package is search_for, which allows you to search all available endpoints in the API for a given string. For example, searching for “Bundestag” in the default content endpoint returns a list of matching articles:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1">api.search_for(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"Bundestag"</span>)  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># returns a search class containing results</span></span></code></pre></div></div>
+<pre><code>Search for 'Bundestag': 42942 results, limit: 10, matches : 
+ 
+Koalition streicht Begriff "Rasse" aus dem Grundgesetz: http://api.zeit.de/content/1NRyOjRaneKYH6JRs87m46
+Bund einigt sich mit AKW-Betreibern auf Entschädigung: http://api.zeit.de/content/5A6U2BpxAaU1YV6Yx9xPY4
+"Das Gift ist da": http://api.zeit.de/content/3vrvroDbLrfwJ5VtigrEbh
+Die Losbürger: http://api.zeit.de/content/7jM8ZQEFHYM0slSPyL3AN2
+"Eine Weigerung hätte schmerzhafte Folgen für die Türkei": http://api.zeit.de/content/7h40VsJ5r2wNJgg6Msld8K
+Der nächste Schock nimmt schon Anlauf: http://api.zeit.de/content/j4LDNEBKPGN1vjbOJKpxz
+Für Störungen im Bundestag kann künftig Ordnungsgeld verhängt werden: http://api.zeit.de/content/2GOxLhUi8B48g2OziIZPCA
+Von Storch und Pazderski wollen gemeinsam Berliner AfD führen: http://api.zeit.de/content/JB8hW8UFGRB9NZyY0TgMM
+Bundestag hebt Immunität von CDU-Abgeordnetem Axel Fischer auf: http://api.zeit.de/content/tjB5SFOmwOmzGyZfOpZMq
+Bundestag verlängert Rechtsgrundlage für Pandemie-Maßnahmen: http://api.zeit.de/content/3eGseNLQSwHjA3SHwq22hP</code></pre>
+<p>On a given day, such a search might return tens of thousands of results. For example, the top matches today (March 2021) include articles like “Koalition streicht Begriff ‘Rasse’ aus dem Grundgesetz” or “Bund einigt sich mit AKW-Betreibern auf Entschädigung”, each with a link to its original content.</p>
+<p>Once you select a specific article from the search results, you can retrieve it using the get_article method. This returns an Article object, which provides access to various properties and methods:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1">Article <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> api.get_article(<span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"1NRyOjRaneKYH6JRs87m46"</span>)  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># can use full URI or just the ID</span></span>
+<span id="cb6-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(Article)</span></code></pre></div></div>
+<pre><code>Article with title 'Koalition streicht Begriff "Rasse" aus dem Grundgesetz' 
+UUID: 1NRyOjRaneKYH6JRs87m46, 
+URI: http://api.zeit.de/content/1NRyOjRaneKYH6JRs87m46        
+teaser_text: 'Die Bundesregierung hat sich auf eine Änderung des Grundgesetzes verständigt: Innen- und Justizministerium einigten sich darauf, wie das Wort "Rasse" ersetzt werden soll.'</code></pre>
+<p>The output shows basic information about the article, including its title, unique ID, URI, and teaser text. You can then access different attributes, like the supertitle, full title, and teaser text:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(Article.supertitle)  <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># prints the supertitle</span></span>
+<span id="cb8-2"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(Article.title)        <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># prints the title</span></span>
+<span id="cb8-3"><span class="bu" style="color: null;
+background-color: null;
+font-style: inherit;">print</span>(Article.text)         <span class="co" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;"># prints the teaser text</span></span></code></pre></div></div>
+<p>For example, a returned article might look like this:</p>
+<pre><code>Verfassungsänderung
+Koalition streicht Begriff "Rasse" aus dem Grundgesetz
+Die Bundesregierung hat sich auf eine Änderung des Grundgesetzes verständigt: Innen- und Justizministerium einigten sich darauf, wie das Wort "Rasse" ersetzt werden soll.</code></pre>
+<p>The package also allows you to retrieve keywords linked to the article, which can help with analysis, categorization, or further exploration:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10" style="background: #f1f3f5;"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1">Article.get_keywords()</span></code></pre></div></div>
+<pre><code>{'http://api.zeit.de/keyword/grundgesetz': 'Grundgesetz',
+ 'http://api.zeit.de/keyword/rassismus': 'Rassismus',
+ 'http://api.zeit.de/keyword/diskriminierung': 'Diskriminierung',
+ 'http://api.zeit.de/keyword/justizministerium': 'Justizministerium',
+ 'http://api.zeit.de/keyword/horst-seehofer': 'Horst Seehofer',
+ 'http://api.zeit.de/keyword/berlin': 'Berlin',
+ 'http://api.zeit.de/keyword/alexanderplatz': 'Alexanderplatz',
+ 'http://api.zeit.de/keyword/usa': 'USA',
+ 'http://api.zeit.de/keyword/bundesregierung': 'Bundesregierung',
+ 'http://api.zeit.de/keyword/csu': 'CSU',
+ 'http://api.zeit.de/keyword/bundestag': 'Bundestag'}</code></pre>
+<p>Take a look at the <a href="https://github.com/skriptum/zeit/">GitHub repository</a> and the documentation for more details on how to use the package.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://martenw.com/projects/zeit-api/</guid>
+  <pubDate>Sat, 01 May 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://martenw.com/projects/zeit-api/featured.webp" medium="image" type="image/webp"/>
+</item>
+<item>
+  <title>Bundestwitter</title>
+  <dc:creator>&lt;a href=&quot;https://github.com/skriptum/bundestag&quot;&gt;skriptum/bundestag&lt;/a&gt;</dc:creator>
+  <link>https://martenw.com/projects/bundestwitter/</link>
+  <description><![CDATA[ 
+
+
+
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://martenw.com/projects/bundestwitter/featured.png" class="img-fluid figure-img"></p>
+<figcaption>Screen Shot of the Web Page</figcaption>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p><strong>Update</strong>: aufgrund des neuen Bundestages sind die Daten nicht mehr aktuell, ich arbeite bereits an einer verbesserten Variante für die neuen MdBs</p>
+</blockquote>
+<p>Twitter ist aus die politische Meinungsbildung heutzutage nicht mehr wegzudenken. Sei es sinnlose Diskussion, sinnvoler Austausch oder Kontakt mit Journalist:innen, all das findet auf dieser Plattform statt. Jedoch ohne Transparenz und ohne die Mehrheit der Bürger:innen, die zu 90% nicht da sind. Genau da soll diese Website ansetzen, und Interessierte über eine Karte zu einer Übersicht über das Twitter-Profil ihrer Abgeordneten führen. Es erlaubt allen, jeden MdB mit anderen zu vergleichen, sei es über die Tweetrate, die zeit auf der Plattform, die Aktivität, die genutzten Hashtags etc.</p>
+<section id="technisches" class="level2">
+<h2 class="anchored" data-anchor-id="technisches">Technisches</h2>
+<p>Täglich werden über die <strong>Twitter-API</strong> die letzten 50 Tweets aller Accounts abgefragt und gesammelt. Daraufhin wird der Text jedes Tweets mit einem Machine-Learning Algorithmus anhand der Laune bewertet, was jedoch aufgrund der kurzen Länge nicht immer funktioniert. Anschließend werden alle Daten der Tweets aggregiert und in eine Datenbank eingespeist.</p>
+<p>Auf diese Datenbank greift dann <strong>Web-App</strong>, die komplett in <em>Python</em> geschrieben ist, zu und stellt sie schön dar und baut Rangfolgen anhand der Daten. Zusätzlich wird noch eine Karte mit Deutschands Wahlkreisen und den Vertretern mit Twitter generiert. Die Visualisierungen basieren vor allem auf der <em>Plotly-Library</em> und die App baut auf <em>Dash</em> und <em>Flask</em> auf.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>python</category>
+  <category>politics</category>
+  <category>twitter</category>
+  <guid>https://martenw.com/projects/bundestwitter/</guid>
+  <pubDate>Tue, 16 Feb 2021 00:00:00 GMT</pubDate>
+  <media:content url="https://martenw.com/projects/bundestwitter/featured.webp" medium="image" type="image/webp"/>
+</item>
+</channel>
+</rss>
