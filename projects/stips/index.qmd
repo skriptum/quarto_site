@@ -2,7 +2,7 @@
 title:  "Stipendien nur für Privilegierte?"
 date:   "2024-10-04"
 description: |
-  Wie setzt sich eigentlich die Stipendiat:innenschaft der sogenannten "Begabtenförderungswerke" zusammen? Eine Analyse auf Basis von Informationsfreiheitsanfragen.
+  Die Stipendiat:innen der sogenannten "Begabtenförderungswerke" – alles nur Bildungsbürgerkids? Eine Datenanalyse auf Basis von Informationsfreiheitsanfragen. 
 ---
 
 ![Sommerakademie der Studienstiftung 1982 (mit bildungsbürgerlichem Konzert)](studienstiftung.jpg)

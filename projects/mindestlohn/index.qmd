@@ -6,7 +6,7 @@ categories:
 - politics
 - inequality
 description: |
-  Is there a connection between earning minimum wage and voting for the far right? For a seminar in Empirical Economics, this project researches the connection between minimum wage recipiency and AfD election results in german counties.
+  Does earning minimum wage lead to higher voting for the far right? What the german district of Sonneberg can teach us about the economic determinants of voting for the AfD. A seminar paper in Empirical Economics
 author-title: Seminar Paper
 author: '<a href="https://skriptum.github.io/mindestlohn">Online Version</a>'
 bibliography: references.bib

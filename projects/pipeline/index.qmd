@@ -5,6 +5,10 @@ date: 2026-03-21
 execute: 
   freeze: true
 toc-location: body
+categories:
+  - R
+  - API
+  - Technical-guide
 ---
 
 ![United Nations Satellite Communications Centre; by Michos Tzovaras 1992 ([Photo ID: UN7670766](https://dam.media.un.org))](UN7670766.jpg)
