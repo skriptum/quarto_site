@@ -324,6 +324,9 @@ font-style: inherit;"># add title</span></span></code></pre></div></div>
 <li id="fn1"><p>The model is written in EViews and extremely complex, with hundreds of variables and matrices linking individual country models. Take a look <a href="https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/publication/2016_Apr_WorldEconomicForecastingModel.pdf">here</a>, if you’re interested↩︎</p></li>
 </ol>
 </section></div> ]]></description>
+  <category>R</category>
+  <category>API</category>
+  <category>Technical-guide</category>
   <guid>https://martenw.com/projects/pipeline/</guid>
   <pubDate>Sat, 21 Mar 2026 00:00:00 GMT</pubDate>
 </item>
@@ -669,6 +672,24 @@ Inequality in Europe.”</span> <a href="https://doi.org/10.5281/zenodo.16941045
 </tr>
 </tbody>
 </table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 47%">
+<col style="width: 52%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Title Slide</strong></th>
+<th>Section Slide</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://martenw.com/projects/diatypst/Example-Title.png" class="img-fluid" alt="Example-Title"></td>
+<td><img src="https://martenw.com/projects/diatypst/Example-Section.png" class="img-fluid" alt="Example-Section"></td>
+</tr>
+</tbody>
+</table>
 <section id="how-to-get-started" class="level3">
 <h3 class="anchored" data-anchor-id="how-to-get-started">How to get started?</h3>
 <p>The easiest way to use diatypst is via the <a href="https://typst.app">Typst web app</a> and importing the template from the <a href="https://typst.app/universe/package/diatypst/">typst universe</a>. To create new slides, just delimit them with a header and they are created automatically. For more fine-tuning and explanation, visit the <a href="https://github.com/skriptum/diatypst">GitHub Repo</a>.</p>
@@ -706,7 +727,7 @@ Inequality in Europe.”</span> <a href="https://doi.org/10.5281/zenodo.16941045
 </figure>
 </div>
 <blockquote class="blockquote">
-<p>Die analysierten Daten stammen aus einer Informationsfreiheitsanfrage an das BMBF, veröffentlicht auf <a href="https://fragdenstaat.de/anfrage/begabtenfoerderungswerke-anteil-bafoeg-berechtigter/">FragDenStaat</a>. Der Schwerpunkt liegt auf der Heinrich-Böll Stiftung, da ich dort selbst Stipendiat war.</p>
+<p>Die analysierten Daten stammen aus einer Informationsfreiheitsanfrage an das BMBF, veröffentlicht auf <a href="https://fragdenstaat.de/anfrage/begabtenfoerderungswerke-anteil-bafoeg-berechtigter/">FragDenStaat</a>. Der Schwerpunkt liegt auf der Heinrich-Böll Stiftung, da ich dort selbst Stipendiat war und ein Seminar dazu gehalten habe.</p>
 </blockquote>
 <p><strong><em><code>S</code>ind Stipendiat:innen der Begabtenförderungswerke privilegiert?</em></strong> Eine Frage, die sich der eine oder andere Stip* wahrscheinlich schonmal gestellt hat. Auch medial wird immer wieder die These aufgestellt, dass die Studienstiftungen eine Elitenförderung sind (<a href="https://www.sueddeutsche.de/bildung/stipendien-begabtenfoerderung-kritik-1.4518691">SZ</a>, <a href="https://taz.de/Begabtenfoerderung-in-der-Kritik/!5060373/">taz</a> ,<a href="https://www.faz.net/aktuell/karriere-hochschule/hoersaal/begabtenfoerderung-wie-gerecht-sind-stipendien-19337664.html">FAZ</a>). Also, was ist dran an dem Vorwurf?</p>
 <p>Vorab: es geht hier vor allem darum, die Zusammensetzung der Stips mit der Gesamtstudierendenschaft in Deutschland zu vergleichen, und auch nur anhand weniger Diskrimierungsformen. Außerdem soll natürlich nicht suggeriert werden, dass ein Studium das “einzig Wahre” ist vs.&nbsp;eine Ausbildung, sondern aufgezeigt werden, dass beide Optionen sehr ungleich verteilt sind.</p>
