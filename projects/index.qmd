@@ -9,7 +9,8 @@ listing:
   sort-ui: false
   filter-ui: false
   page-size: 30
-  feed: true
+  feed: 
+    title: marten walk
   fields: [date, title, description, image]
 ---
 

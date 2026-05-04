@@ -1,9 +1,10 @@
 ---
 title: "A Data Pipeline for the United Nations World Economic Forecasting Model"
 description: "or: Accessing IMF, OECD, and World Bank Data with SDMX and R"
-date: 2026-03-01
+date: 2026-03-21
 execute: 
   freeze: true
+toc-location: body
 ---
 
 ![United Nations Satellite Communications Centre; by Michos Tzovaras 1992 ([Photo ID: UN7670766](https://dam.media.un.org))](UN7670766.jpg)
@@ -46,7 +47,7 @@ Imagine we want to download Consumer Price Index (CPI) data for the US, UK and G
 
 We start on [IMF data website](https://data.imf.org/en), search for CPI and land on the [CPI dataset](https://data.imf.org/en/datasets/IMF.STA:CPI). Then, we first take a quick look at it and open the [Data Explorer](https://data.imf.org/en/Data-Explorer?datasetUrn=IMF.STA:CPI(5.0.0)) (the button titled View Data):
 
-![The IMF data explorer](./imf1.png)
+![The IMF data explorer](./IMF1.png)
 
 On the left panel, select the three countries, set the index to All Items, and ask for the year-on-year percentage change. On the right, you should now see the data series for Germany, UK and the US.
 

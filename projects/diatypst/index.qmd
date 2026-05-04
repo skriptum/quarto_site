@@ -3,15 +3,14 @@ title: diatypst - easy slides in typst
 date: 2025-01-15
 description: |
   a package for the LaTeX competitor typst to quickly create slides. Featuring a simple syntax, sensible styling and adjustable aestethics (⭐ +100 GitHub stars)
-image: "title.webp"
 author-title: GitHub Project
 author: '<a href="https://github.com/skriptum/diatypst">skriptum/diatypst</a>'
 ---
 
+![The inspiration: the 1960s diatype machine](diatype2.jpg)
 
-![](./title.webp)
 
-There is a new LaTeX contender on the block: [typst](typst.app). Featuring a much easier syntax and instant-preview, it feels like a serious replacement for the clunky workflows of producing PDF via `\{weird command}`. What was missing until now is an easy way to create good looking slides, the existing packages in the typst ecosystem are overblown for the quick creation of presentations (in my opinion).
+***`T`here is a new LaTeX contender*** on the block: [typst](typst.app). Featuring a much easier syntax and instant-preview, it feels like a serious replacement for the clunky workflows of producing PDF via `\{weird command}`. What was missing until now is an easy way to create good looking slides, the existing packages in the typst ecosystem are overblown for the quick creation of presentations (in my opinion).
 
 That's why I created *diatypst*, a package that makes it a breeze to create stunning slides without having to memorize complicated commands or settle for dull styling. The slides are set up to make your life easier, with a dot counter in the upper left corner (like the one in Beamer) and helpful defaults for title and section slides. Users can also set a theme color that'll influence everything from the page footer to the hyperlinks. 
 

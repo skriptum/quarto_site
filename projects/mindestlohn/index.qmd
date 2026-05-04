@@ -11,10 +11,9 @@ author-title: Seminar Paper
 author: '<a href="https://skriptum.github.io/mindestlohn">Online Version</a>'
 bibliography: references.bib
 citation-location: margin
-image: "featured.webp"
 ---
 
-![Representation of Minimum Wage and Vote Share Data](maps.png){#fig-maps}
+![Sonneberg's main industry in the GDR: Workers in doll production, ca 1950](sonneberg-doll.jpg)
 
 > The Code and Data for this project can be downloaded at the [GitHub Repo](https://github.com/skriptum/mindestlohn). An online version of the seminar paper is available [here](https://skriptum.github.io/mindestlohn) with more interactive graphics.
 
@@ -24,12 +23,11 @@ Intriguingly, Sonneberg also holds the distinction of having the highest percent
 
 ## Data
 
-
 The analysis is based on data compiled by @puschMindestlohn12Euro2022 at the Institute of Economic and Social Sciences (WSI). They provide an estimate of the share of workers in a given district who will be affected by the increase in the minimum wage to €12 in October 2022 (henceforth minimum wage workers). 
 
 Alternative for Germany (AfD) results from the federal election on the 26.10.2021 are from the Federal Election Commissioner (@diebundeswahlleiterinBundestagswahl2021Endgultiges2021). Elections in Germany take place in constituencies (Wahlkreise), which are different from the standard counties (Landkreise). Therefore, the data is transformed by the election office, which does not lead to any losses.
 
-![Repr. of Minimum Wage (left) and Vote Share (right)](maps_bg.png){#fig-maps-bg}
+![](maps.png){#fig-maps-bg}
 
 Additional data on socio-economic and socio-demographic factors are provided by the regional statistical offices of the Länder. Most of these data are for the year 2022, with the exception of population density estimates, for which more recent data are not yet available.
 

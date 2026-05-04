@@ -3,8 +3,9 @@ title:  "Stipendien nur für Privilegierte?"
 date:   "2024-10-04"
 description: |
   Wie setzt sich eigentlich die Stipendiat:innenschaft der sog. "Begabtenförderungswerke" zusammen? Alles nur Bildungsbürgerkids aus gutem Haushalt? Eine Datenanalyse
-image: "featured.png"
 ---
+
+![Sommerakademie der Studienstiftung 1982 (mit bildungsbürgerlichem Konzert)](studienstiftung.jpg)
 
 > Die analysierten Daten stammen aus einer Informationsfreiheitsanfrage an das BMBF, veröffentlicht auf [FragDenStaat](https://fragdenstaat.de/anfrage/begabtenfoerderungswerke-anteil-bafoeg-berechtigter/). Der Schwerpunkt liegt auf der Heinrich-Böll Stiftung, da ich dort selbst Stipendiat war.
 
