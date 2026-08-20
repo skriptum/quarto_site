@@ -1,6 +1,6 @@
 [
   {
-    "listing": "/index.html",
+    "listing": "/projects/index.html",
     "items": [
       "/projects/pipeline/index.html",
       "/projects/inequality/index.html",
@@ -13,7 +13,7 @@
     ]
   },
   {
-    "listing": "/projects/index.html",
+    "listing": "/index.html",
     "items": [
       "/projects/pipeline/index.html",
       "/projects/inequality/index.html",
