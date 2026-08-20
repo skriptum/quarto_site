@@ -10,17 +10,15 @@ toc: false
 ::: {.g-col-12 .g-col-lg-6}
 
 
-***`I`m quite interested*** in the different aspects of political economy and economic history. This was sparked by my activity with Rethinking Economics, a global network of students who want to change the way economics is thought and practiced. 
+***`I`m quite interested*** in the different aspects of political economy and economic history. This was sparked by my activity with Rethinking Economics, a global network of students who want to change the way economics is taught and practiced. On this website I collect various projects and ideas, adorned with a bunch of  Vermeer paintings (like the one on this page: ["The Geographer"](https://en.wikipedia.org/wiki/The_Geographer) )
 
-On this website I collect various projects and ideas, mostly in a technical / political / economic context. All adorned with a bunch of beautiful Vermeer paintings (like the one on this page, titled ["The Geographer"](https://en.wikipedia.org/wiki/The_Geographer) )
+### My ideological inspiration
 
-**Newsletters that shaped my thinking:**
+and their respective newsletters:
 
-##### [Adam Tooze:  Chartbook](https://adamtooze.substack.com/)
-
-##### [Branko Milanovic:  Global Inequality](https://branko2f7.substack.com/)
-
-##### [Financial Times:  Alphaville](https://www.ft.com/alphaville)
+- ***Thomas Piketty***: [LeMonde](https://www.ft.com/alphaville)
+- ***Adam Tooze***: [Chartbook](https://adamtooze.substack.com/)
+- ***Branko Milanovic***: [Global Inequality and More 3.0](https://branko2f7.substack.com/)
 
 
 :::

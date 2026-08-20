@@ -298,7 +298,7 @@ nav:not(.toc-active)#TOC {
 .card {
   background-color: $primary-color-shade;
   border: 0px solid $dark;
-  border-radius: 5px;
+  border-radius: 0px;
   line-height: 1.2em;
   .listing-date {
     font-family: $font-family-headings;
@@ -306,6 +306,10 @@ nav:not(.toc-active)#TOC {
   }
   .listing-title {
     margin-bottom: 0.5em;
+  }
+
+  .card-img {
+    border-radius: 0px;
   }
 }
 

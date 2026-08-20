@@ -4,7 +4,7 @@ pagetitle: "marten walk"
 canonical-url: "https://martenw.com"
 section-divs: false
 description: | 
-  Interested in monetary theory, wealth inequality and the history of economic thought.
+  Economics student interested in wealth inequality and development economics.
 listing:
   - id: projects
     contents: 
@@ -15,7 +15,7 @@ listing:
     categories: false
     sort-ui: false
     filter-ui: false
-    max-items: 6
+    max-items: 3
     feed: false
     fields: [image, date, title, description]  
 toc: false
@@ -43,7 +43,7 @@ format:
 
 ::: {.img-text}
 
-I'm an economics graduate, currently interning at the [United Nations Department of Economic and Social Affairs](https://www.un.org/en/desa) in NYC
+I'm a Master's student of Economics at Université Panthéon-Sorbonne in Paris. 
 
 :::
 
