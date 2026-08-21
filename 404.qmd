@@ -1,14 +1,25 @@
 ---
-pagetitle: "404"
+sidebar: false
+page-layout: article
 toc: false
+pagetitle: "404"
 ---
 
 
-:::{.content-block}
+::: grid
 
-# 404 - Page not found
+::: {.g-col-12 .g-col-lg-6}
 
-![Vermeer: Art of Painting](../images/painting.webp){fig-alt="Vermeer: Art of Painting"}
+## 404 - Page not found
+
+Seems like the page you were looking for does not exist  → go [***home***](index.qmd)
+
 :::
 
-The page you requested cannot be found → go [***home***](index.qmd)
+::: {.g-col-12 .g-col-lg-6}
+
+![Vermeer: Girl asleep](./images/girl_asleep.jpg){fig-alt="Vermeer: Girl asleep"}
+
+:::
+
+:::
